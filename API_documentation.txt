@@ -7,11 +7,12 @@ Monthly Centiles
 “longitude”: {defaults to country-wide statistics},
 “month”: {forecast valid/ release month},
 “year”: {forecast valid/ release year},
-“lead”: “1” | “2” | “3”
+“lead”: “1” | “2” | “3”,
 “extension”: “asc”,
 “output_type”: “weatherlogisticsltd” | “benchmark” | “climatology”,
 “meteorological_variable”: “tmin” | ”tmax” | “tmean” | “rainfall”,
-“percentile”: “10th” | “30th” | “median” | “70th” | “90th”, “projection_year”: {default is forecast release year},
+“percentile”: “10th” | “30th” | “median” | “70th” | “90th”,
+“projection_year”: {default is forecast release year},
 “forecast_type”: “monthly-centiles”,
 “filename”: “{filename without extension}”,
 }
