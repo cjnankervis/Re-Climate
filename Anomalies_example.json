@@ -1,0 +1,12 @@
+{
+    "country": "uk",
+    "month": 10,
+    "year": 2022,
+    "lead": "3",
+    "extension": "csv",
+    "output_type": "benchmark",
+    "meteorological_variable": "Rainfall",
+    "percentile": "30th",
+    "forecast_type": "anomaly",
+    "filename": "UK_RainfallAnomaly_Month3_January2023_CSV",
+}
