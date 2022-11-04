@@ -5,7 +5,7 @@ WeatherLogistics' Re-Climate® product supplies reliable seasonal climate foreca
 The API provides access to four main data streams:
 
 1. Monthly Centiles
-
+ASCII formatted grid of precipitation in addition to minimum, maximum and average monthly temperatures.
 
 2. Daily Ensemble
 
