@@ -4,7 +4,22 @@
 Created on Wed Nov  2 16:05:09 2022
 
 @author: Dr Christopher Nankervis, WeatherLogistics.
-Re-Climate Product Developer & Owner.
+Re-Climate® Product Developer & Owner.
+
+Description.
+Post-processing code to generate climate hazard metrics.
+
+Firstly 'ensemble' forecast data must be requested from the Re-Climate® API, which requires authorization.
+Please contact the product owner (accounts@weatherlogistics.com).
+
+Predicting the daily weather events more than 7-10 days in advance is challenging, and is non-deterministic i.e., there are a range of possible outcomes.
+Each ensemble member provides a plausible future weather outcome, which provide a well-calibrated confidence interval (error bar) in the weather conditions. Together these comprise an ensemble.
+In combination an ensemble provides a probabilistic viewpoint on the future likelihoods of events of different intensities.
+
+The script below provides a quickstart framework to calculate frequencies of occurrence, daily counts, 
+threshold or centile-based exceedance calculations and accumulations.
+
+The Python script is designed for use with JSON formatted daily weather inputs.
 
 """
 
