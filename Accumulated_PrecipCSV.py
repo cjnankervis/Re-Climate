@@ -19,7 +19,7 @@ In combination an ensemble provides a probabilistic viewpoint on the future like
 The script below provides a quickstart framework to calculate frequencies of occurrence, daily counts, 
 threshold or centile-based exceedance calculations and accumulations.
 
-The Python script is designed for use with JSON formatted daily weather inputs.
+The Python script is designed for use with daily weather inputs in a Comma-Separated Value (CSV) format.
 
 """
 
