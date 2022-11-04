@@ -16,7 +16,7 @@ To request this climate data, see request [MonthlyCentiles_example.json]
 
 **Unique access to 100 daily simulations at the town/ city scale, ideal for those with assets at specified locations
 
-WeatherLogistics' daily ensembles provide the opportunity to calculate reliable frequencies of occurrence, daily counts, threshold or centile-based exceedance rates and accumulations using the quickstart Python scripts to generate customised metrics.
+WeatherLogistics' daily ensembles provide a quickstart framework to calculate frequencies of occurrence, daily counts, threshold or centile-based exceedance calculations and accumulations and generate customised metrics.
 
 The first 50 ensemble members are generated using WeatherLogistics' statistical forecast system, and members 51 to 100 are generated using a multi-model average of modified Copernicus seasonal climate forecast data*. Both systems have been developed to achieve the best-on-market accuracy and reliability and have been independently and impartially reviewed by the National Physical Laboratory.
 
@@ -26,7 +26,7 @@ To request this climate data, see request [DailyEnsembles_example.json]
 
 **Mapped country-wide town/ city indices, useful for a snapshot overview of acute seasonal climate hazards
 
-Hazard indices show index values as a shift in the tail distribution from a baseline climatology. Climate hazards indices include precipitation, drought, SPI, hail, aridity, humidity, solar, wind, heat and cold. These are scaled from 0/ 10, indicating probability shifted by 4 deciles below/ above climatatology, with 5 indicating the the forecast is on par with climate expectations for the current forecast month or season.
+Hazard indices show index values as a shift in the tail distribution from a baseline climatology. Climate hazards indices include precipitation, drought, SPI, hail, aridity, humidity, solar, wind, heat and cold. These are scaled from 0 - 10, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatatology reference, with 5 indicating the the forecast is on par with climate expectations for the current forecast month or season.
 To request this climate data, see request [HazardIndices_example.json]
 
 4.	Anomalies
