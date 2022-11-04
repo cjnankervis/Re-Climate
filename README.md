@@ -1,4 +1,4 @@
-# Re-Climate® API Service
+# Re-Climate® API
 
 WeatherLogistics' Re-Climate® product supplies reliable seasonal climate forecasts to prepare for extended weather hazards.
 
@@ -20,13 +20,15 @@ The first 50 ensemble members are generated using WeatherLogistics' statistical 
 
 3. Hazard Indices
 
-Mapped country-wide town/ city indices, useful for a big-picture overview of acute seasonal climate hazards
+Mapped country-wide town/ city indices, useful for a snapshot overview of acute seasonal climate hazards
 
 Hazard indices show index values as a shift in the tail distribution from a baseline climatology. Climate hazards indices include precipitation, drought, SPI, hail, aridity, humidity, solar, wind, heat and cold. These are scaled from 0/ 10, indicating probability shifted by 4 deciles below/ above climatatology, with 5 indicating the the forecast is on par with climate expectations for the current forecast month or season.
 
 
-4. Anomaly
+4. Anomalies
 
+Country-wide ASCII grid/ town or city CSV provided at a monthly granularity, a departure forecast useful for a big-picture seasonal overview
 
+Similar to the monthly centiles, anomalies provide a country-wide mapped overview of departures from an up-to-date climatology to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years.
 
 *Contains modified Copernicus Climate Change Service information 2022. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains
