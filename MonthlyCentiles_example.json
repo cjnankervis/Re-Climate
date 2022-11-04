@@ -2,11 +2,11 @@
     "country": "uk",
     "month": 10,
     "year": 2022,
-    "lead": "1",
+    "lead": "2",
     "extension": "asc",
     "output_type": "weatherlogisticsltd",
     "meteorological_variable": "rainfall",
     "percentile": "median",
     "forecast_type": "monthly-centiles",
-    "filename": "UK_Rainfall_1Month_November2022_ASCII",
+    "filename": "UK_Rainfall_Month2_November2022_ASCII",
 }
