@@ -2,10 +2,10 @@
     "country": "turkey",
     "month": 10,
     "year": 2022,
-    "lead": "2",
+    "lead": "1",
     "extension": "png",
     "output_type": "weatherlogisticsltd",
     "meteorological_variable": "Drought",
     "forecast_type": "hazard-indices",
-    "filename": "Turkey_Drought_Month2_November2022_PNG",
+    "filename": "Turkey_Drought_Month1_November2022_PNG",
 }
