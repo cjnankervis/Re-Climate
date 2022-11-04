@@ -16,7 +16,7 @@ Monthly Centiles
 “filename”: “{filename without extension}”,
 }
 
-Daily Ensemble
+Daily Ensembles
 - JSON keywords
 
 {
