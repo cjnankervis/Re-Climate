@@ -55,7 +55,7 @@ Hazard Indices
 “filename”: “{filename without extension}”,
 }
 
-Anomaly
+Anomalies
 - JSON keywords
 
 {
