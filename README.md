@@ -1,4 +1,4 @@
-# Re-Climate®
+# Re-Climate® API Service
 
 WeatherLogistics' Re-Climate® product supplies reliable seasonal climate forecasts to prepare for extended weather hazards.
 
