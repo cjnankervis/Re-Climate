@@ -17,7 +17,7 @@ Each ensemble member provides a plausible future weather outcome, which provide 
 In combination an ensemble provides a probabilistic viewpoint on the future likelihoods of events of different intensities.
 
 The script below provides a quickstart framework to calculate frequencies of occurrence, daily counts, 
-threshold or centile-based exceedance calculations and accumulations.
+threshold or centile-based exceedance calculations, accumulations and consecutive days of events within specified thresholds.
 
 The Python script is designed for use with daily weather inputs in a JSON format.
 
