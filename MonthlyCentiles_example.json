@@ -8,5 +8,5 @@
     "meteorological_variable": "rainfall",
     "percentile": "median",
     "forecast_type": "monthly-centiles",
-    "filename": "UK_Rainfall_Month2_December2022_ASCII",
+    "filename": "UK_Rainfall_Month2_December2022_ASCII"
 }
