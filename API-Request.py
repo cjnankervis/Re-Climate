@@ -1,4 +1,8 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
+Created on Mon Nov  7 10:08:00 2022
+
 @author: Dr Christopher Nankervis, WeatherLogistics.
 Re-Climate® Product Developer & Owner.
 Description.
