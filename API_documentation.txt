@@ -14,7 +14,7 @@ Monthly Centiles
 “percentile”: “10th” | “30th” | “median” | “70th” | “90th”,
 “projection_year”: {default is forecast release year},
 “forecast_type”: “monthly-centiles”,
-“filename”: “{filename without extension}”,
+“filename”: “{filename without extension}”
 }
 
 Daily Ensembles
@@ -33,7 +33,7 @@ Daily Ensembles
 “percentile”: {no percentile is required},
 “projection_year”: {default is forecast release year},
 “forecast_type”: “ensemble”,
-“filename”: “{filename without extension}”,
+“filename”: “{filename without extension}”
 }
 
 Hazard Indices
@@ -53,7 +53,7 @@ Hazard Indices
 “percentile”: {no percentile is required},
 “projection_year”: {default is forecast release year},
 “forecast_type”: “hazard-indices”,
-“filename”: “{filename without extension}”,
+“filename”: “{filename without extension}”
 }
 
 Anomalies
@@ -72,5 +72,5 @@ Anomalies
 “percentile”: “10th” | “30th” | “median” | “70th” | “90th”,
 “projection_year”: {default is forecast release year},
 “forecast_type”: “anomaly”,
-“filename”: “{filename without extension}”,
+“filename”: “{filename without extension}”
 }
