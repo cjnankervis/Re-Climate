@@ -8,38 +8,57 @@ Created on Mon Nov  7 10:08:00 2022
 Description.
 API request script using authentication "key" provided
 """
-
+########## Importing the required modules ##############
+# Importing Requests module
 import requests
+# Importing Google Auth Modules
 import google.auth.transport.requests
 import google.oauth2.id_token
+# Importing Os Module
 import os
+# Importing JSON Module
 import json
 
-def make_authorized_get_request(endpoint, audience):
+# Defining Function to send Authorised Requests.
+def make_authorized_get_request(URL):
     """
-    Makes a request to the Re-Climate® HTTP endpoint by authenticating with the ID token.
+    make_authorized_get_request send a POST request to the specified HTTP(S) endpoint
+    by authenticating with the ID token obtained from the google-auth client library
+    using the specified URL.
     """
     # Specifying the Service Account Credentials created for the User.
-    credential_path = "User.json"
-    # Loading the Service Account Credentials as Environment Variables
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
+    credential_path = "./User_Cred.json"
+    # Specifying the Climate info path
+    climate_info_path = "./Climate_Info.json"
+    # Extracting the climate data from JSON file and storing in dictionary
+    climate_data = json.load(open(climate_info_path))
     
-    # Fetching the Authentication Request
+    # Loading the User Credentials as Environment Variables
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
+    # Loading User Credentials from JSON file and storing in dictionary
+    user_credentials = json.load(open(credential_path))
+        
+    # Fetching the Authentication Request from Environment Variables
     auth_req = google.auth.transport.requests.Request()
     # Fetching the ID Token from the Authentication Request
-    id_token = google.oauth2.id_token.fetch_id_token(auth_req, audience)
+    id_token = google.oauth2.id_token.fetch_id_token(auth_req, URL)
 
-    # Specifying the request to be sent
-    with open('Climate_Info.json') as json_file:
-        values = json.load(json_file)
+    # Extracting the User ID and User Email and storing in dictionary
+    user_data = { "client_id" : f"{user_credentials['client_id']}", "client_email" : f"{user_credentials['client_email']}" }
     
-    # Building Authenticated User Request
+    # Combining all the required data into single dictionary
+    request_data = user_data | climate_data
+
+    # Building Header for Authenticated User Request
     user_header = {'Authorization': 'Bearer ' + id_token}
     
-    response = requests.post(audience, json=values, headers=user_header)
-    print(f"Response: {response.text}")
+    # Sending the POST Request and reading the Response received.    
+    response = requests.post(URL, json=request_data, headers=user_header)
+    
+    # Returning the Response received from the ReClimate API
+    return f"{response.text}"
 
-
-audience = endpoint = "https://europe-west2-calcium-pod-337210.cloudfunctions.net/ReClimate"
-
-make_authorized_get_request(audience, endpoint)
+# Specifying the URL to access the ReClimate API
+URL = "https://europe-west2-calcium-pod-337210.cloudfunctions.net/ReClimate"
+# Calling the function 'make_authorized_get_request' and displaying the response
+print(make_authorized_get_request(URL))
