@@ -9,7 +9,6 @@ Description.
 API request script using authentication "key" provided
 """
 
-import urllib
 import requests
 import google.auth.transport.requests
 import google.oauth2.id_token
