@@ -3,10 +3,11 @@
 """
 Created on Mon Nov  7 10:08:00 2022
 
-@author: Dr Christopher Nankervis, WeatherLogistics.
-Re-Climate® Product Developer & Owner.
+@author: WeatherLogistics/ Re-Climate® Product Developer & Owner.
+
 Description.
-Post-processing code to generate climate hazard metrics.
+API request script using authentication "key" provided
+
 """
 
 import urllib
