@@ -33,7 +33,7 @@ forecast_type = 'wl' # 'c3s', 'wl', 'combined'
 metric_type = 'centile' # 'days, 'frequency', 'accumulation', 'centile'
 threshold_type = 'between' # 'below', 'above', 'between'
 thresholds = (0, 10) # Single threshold value for daily weather event, or percentile if {metric_type} = 'centile'
-forecast_month = 3 # 1,2,3 :: forecast month at t + {forecast_month}
+forecast_month = (1,2,3) # 1,2 or 3 or any combination of month :: forecast month at t + {forecast_month}
 ###
 
 month_names = ('January','February','March',\
@@ -68,6 +68,9 @@ else:
         print('Error. Expecting one threshold valus, but only received multiple values.')
         sys.exit()
 
+if not len(np.shape(forecast_month)):
+    forecast_month = [forecast_month]
+
 DailyEnsembleCSV = '/Users/Chris-Win/Desktop/WEATHERDOCKER/Output_Visuals/CSV/SalisburyWeatherLogisticsLtd_RainfallDAILYENSEMBLE-Early-Winter2023_2023dClimate.csv'
 
 '''Read daily CSV outputs into a dataframe '''
@@ -76,7 +79,12 @@ dates = df_csv.columns # datecode format 'dd/mm/yyyy'
 datecodes = pd.to_datetime(dates, format="%d/%m/%Y"); date_list = dates.to_numpy()
 indices = np.arange(0,len(date_list))
 first_month = date_list[0][3:5] # Establish the first forecast month
-month_name = month_names[forecast_months[int(first_month)-1][forecast_month-1]-1]
+#
+if len(np.shape(forecast_month)):
+    month_name = [month_names[forecast_months[int(first_month)-1][m-1]-1] for m in forecast_month]
+else:
+    month_name = [month_names[forecast_months[int(first_month)-1][forecast_month[0]-1]-1]]
+#
 month2 = format('%02d' % forecast_months[int(first_month)-1][1]) # Second forecast month
 month3 = format('%02d' % forecast_months[int(first_month)-1][2]) # Third forecast month
 #
@@ -98,8 +106,9 @@ elif forecast_type.lower() == 'combined':
     num_ensembles = 100
 
 '''Compute meteorological statistics'''
-
-mth_data = df_subset[forecast_month-1].values.flatten(); mth_days = np.shape(df_subset[forecast_month-1])[1]
+mth_data = []; mth_days = 0
+for m in forecast_month:
+    mth_data = np.concatenate((mth_data, df_subset[m-1].values.flatten())); mth_days += np.shape(df_subset[m-1])[1]
 if threshold_type.lower() == 'above':
     '''Predicted number of days with event intensities equal to or above {threshold} threshold'''
     if metric_type.lower() == 'days':
@@ -154,4 +163,4 @@ if threshold_type.lower() == 'between':
         metric_description = f'Accumulated meteorological value of events with intensities between {threshold_lower}th and {threshold_upper}th centiles'
         metric_output = round(np.sum(mth_data[(mth_data >= np.percentile(mth_data, threshold_lower)) & (mth_data <= np.percentile(mth_data, threshold_upper))]) / num_ensembles, 1)
 
-print(f'{metric_description} is {metric_output}, which is based on analysis of {num_ensembles} ensemble members and {mth_days} days in {month_name}')
+print(f"{metric_description} is {metric_output}, which is based on analysis of {num_ensembles} ensemble members and {mth_days} days in {', '.join(month_name)}")
