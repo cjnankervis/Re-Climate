@@ -71,14 +71,12 @@ else:
 if not len(np.shape(forecast_month)):
     forecast_month = [forecast_month]
 
-DailyEnsembleJSON = '/Users/Chris-Win/Desktop/WEATHERDOCKER/Output_Visuals/JSON/SalisburyWeatherLogisticsLtd_RainfallDAILYENSEMBLE-Early-Winter2023_2023dClimate.json'
+DailyEnsembleCSV = '/Users/Chris-Win/Desktop/WEATHERDOCKER/Output_Visuals/CSV/SalisburyWeatherLogisticsLtd_RainfallDAILYENSEMBLE-Early-Winter2023_2023dClimate.csv'
 
-'''Read daily JSON outputs into a dataframe'''
-with open(DailyEnsembleJSON, 'r') as f:
-    data = json.load(f)
-df_json = pd.DataFrame(data)['data']
-dates = df_json.columns # datecode format 'dd/mm/yyyy'
-datecodes = pd.to_datetime(dates, format="%d/%m/%Y"); date_list = np.array(dates)
+'''Read daily CSV outputs into a dataframe '''
+df_csv = pd.read_csv(DailyEnsembleCSV, index_col=[0])
+dates = df_csv.columns # datecode format 'dd/mm/yyyy'
+datecodes = pd.to_datetime(dates, format="%d/%m/%Y"); date_list = dates.to_numpy()
 indices = np.arange(0,len(date_list))
 first_month = date_list[0][3:5] # Establish the first forecast month
 #
@@ -94,18 +92,17 @@ mth1_idx = indices[datecodes.strftime('%m')==first_month]
 mth2_idx = indices[datecodes.strftime('%m')==month2]
 mth3_idx = indices[datecodes.strftime('%m')==month3]
 
-data_array = np.array(df_json['data'])
 if forecast_type.lower() == 'wl':
     '''Model type 1. WeatherLogistics Statistical Forecast System'''
-    df_subset = [data_array[0:50,mth1_idx], data_array[0:50,mth2_idx], data_array[0:50,mth3_idx]]
+    df_subset = [df_csv.iloc[0:50,mth1_idx], df_csv.iloc[0:50,mth2_idx], df_csv.iloc[0:50,mth3_idx]]
     num_ensembles = 50
 elif forecast_type.lower() == 'c3s':
     '''Model type 2. Copernicus Climate Change Service Multi-Model Average.'''
-    df_subset = [data_array[50:100,mth1_idx], data_array[50:100,mth2_idx], data_array[50:100,mth3_idx]]
+    df_subset = [df_csv.iloc[50:100,mth1_idx], df_csv.iloc[50:100,mth2_idx], df_csv.iloc[50:100,mth3_idx]]
     num_ensembles = 50
 elif forecast_type.lower() == 'combined':
     '''Model type 3. Combined WeatherLogistics and Copernicus Climate Change Service Multi-Model Average.'''
-    df_subset = [data_array[0:100,mth1_idx], data_array[0:100,mth2_idx], data_array[0:100,mth3_idx]]
+    df_subset = [df_csv.iloc[0:100,mth1_idx], df_csv.iloc[0:100,mth2_idx], df_csv.iloc[0:100,mth3_idx]]
     num_ensembles = 100
 
 '''Compute meteorological statistics'''
@@ -113,7 +110,7 @@ for m_ind, m in enumerate(forecast_month):
     if not m_ind:
         mth_data = df_subset[m-1]; mth_days = np.shape(df_subset[m-1])[1]
     else:
-        mth_data = np.concatenate((mth_data, df_subset[m-1]), axis=1); mth_days += np.shape(df_subset[m-1])[1]
+        mth_data = np.concatenate((mth_data, df_subset[m-1].values), axis=1); mth_days += np.shape(df_subset[m-1])[1]
 mth_data = mth_data.flatten()
 if threshold_type.lower() == 'above':
     '''Predicted number of days with event intensities equal to or above a threshold'''
