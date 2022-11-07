@@ -16,7 +16,7 @@ To request this climate data, see request [MonthlyCentiles_example.json]. See do
 
 **Unique access to 100 daily simulations at the town/ city scale, ideal for those with assets at specified locations
 
-WeatherLogistics' daily ensembles provide a quickstart framework to calculate frequencies of occurrence, daily counts, threshold or centile-based exceedance calculations and accumulations and generate customised metrics.
+WeatherLogistics' daily ensembles provide a quickstart framework to calculate frequencies of occurrence, threshold or centile-based exceedance calculations, consecutive day counts or accumulations; and generate customised metrics.
 
 The first 50 ensemble members are generated using WeatherLogistics' statistical forecast system, and members 51 to 100 are generated using a multi-model average of modified Copernicus seasonal climate forecast data*. Both systems have been developed to achieve the best-on-market accuracy and reliability and have been independently and impartially reviewed by the National Physical Laboratory.
 
