@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Nov  7 10:08:00 2022
-
-@author: WeatherLogistics/ Re-Climate® Product Developer & Owner.
-
-Description.
-API request script using authentication "key" provided
-"""
 ########## Importing the required modules ##############
 # Importing Requests module
 import requests
@@ -33,7 +23,7 @@ def make_authorized_get_request(URL):
     # Extracting the climate data from JSON file and storing in dictionary
     climate_data = json.load(open(climate_info_path))
     
-    # Loading the User Credentials as Environment Variables
+    # Loading the User  Credentials as Environment Variables
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
     # Loading User Credentials from JSON file and storing in dictionary
     user_credentials = json.load(open(credential_path))
@@ -55,10 +45,10 @@ def make_authorized_get_request(URL):
     # Sending the POST Request and reading the Response received.    
     response = requests.post(URL, json=request_data, headers=user_header)
     
-    # Returning the Response received from the ReClimate API
+    # Returning the Response received from the Re-Climate API
     return f"{response.text}"
 
-# Specifying the URL to access the ReClimate API
-URL = "https://europe-west2-calcium-pod-337210.cloudfunctions.net/ReClimate"
+# Specifying the URL to access the Re-Climate API
+URL = "https://re-climate-4un5g5jztq-nw.a.run.app"
 # Calling the function 'make_authorized_get_request' and displaying the response
 print(make_authorized_get_request(URL))
