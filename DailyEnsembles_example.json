@@ -9,6 +9,5 @@
     "output_type": "benchmark",
     "meteorological_variable": "maxhumidity",
     "forecast_type": "ensemble",
-    "filename": "UK_MaxHumidity_SeasonalEnsemble_EarlyWinter2023_JSON",
     "show_metadata": ""
 }
