@@ -2,75 +2,79 @@ Monthly Centiles
 - JSON keywords 
 
 {
-“country”: “uk” | “spain” | “turkey”,
-“latitude”: {defaults to country-wide statistics},
-“longitude”: {defaults to country-wide statistics},
-“month”: {forecast valid/ release month},
-“year”: {forecast valid/ release year},
-“lead”: “1” | “2” | “3”,
-“extension”: “asc”,
-“output_type”: “weatherlogisticsltd” | “benchmark”,
-“meteorological_variable”: “tmin” | ”tmax” | “tmean” | “rainfall”,
-“percentile”: “10th” | “30th” | “median” | “70th” | “90th”,
-“projection_year”: {default is forecast release year},
-“forecast_type”: “monthly-centiles”,
-“filename”: “{filename without extension}”
+"country": "uk" | "spain" | "turkey",
+"latitude": {defaults to country-wide statistics},
+"longitude": {defaults to country-wide statistics},
+"month": {forecast valid/ release month},
+"year": {forecast valid/ release year},
+"lead": "1" | "2" | "3",
+"extension": "asc",
+"output_type": "weatherlogisticsltd" | "benchmark",
+"meteorological_variable": "tmin" | "tmax" | "tmean" | "rainfall",
+"percentile": "10th" | "30th" | "median" | "70th" | "90th",
+"projection_year": {default is forecast release year},
+"forecast_type": "monthly-centiles",
+"filename": "{filename without extension}",
+"show_metadata": ""
 }
 
 Daily Ensembles
 - JSON keywords
 
 {
-“country”: “uk” | “spain” | “turkey”,
-“latitude”: {latitude within country bounding box},
-“longitude”: {longitude within country bounding box},
-“month”: {forecast valid/ release month},
-“year”: {forecast valid/ release year},
-“lead”: “seasonal”,
-“extension”: “json” | “csv”,
-“output_type”: “weatherlogisticsltd” | “benchmark”,
-“meteorological_variable”: “tmin” | ”tmax” | “rainfall” | “solar” | “wind” | “hail” | “minhumidity” | ”maxhumidity”,
-“percentile”: {no percentile is required},
-“projection_year”: {default is forecast release year},
-“forecast_type”: “ensemble”,
-“filename”: “{filename without extension}”
+"country": "uk" | "spain" | "turkey",
+"latitude": {latitude within country bounding box},
+"longitude": {longitude within country bounding box},
+"month": {forecast valid/ release month},
+"year": {forecast valid/ release year},
+"lead": "seasonal",
+"extension": "json" | "csv",
+"output_type": "weatherlogisticsltd" | "benchmark",
+"meteorological_variable": "tmin" | "tmax" | "rainfall" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity",
+"percentile": {no percentile is required},
+"projection_year": {default is forecast release year},
+"forecast_type": "ensemble",
+"filename": "{filename without extension}",
+"show_metadata": ""
 }
 
 Hazard Indices
 - JSON keywords
 
 {
-“country”: “uk” | “spain” | “turkey”,
-“latitude”: {defaults to country-wide statistics},
-“longitude”: {defaults to country-wide statistics},
-“month”: {forecast valid/ release month},
-“year”: {forecast valid/ release year},
-“lead”: “1” | “2” | “seasonal”,
-“extension”: “png” | “csv”,
-“output_type”: “weatherlogisticsltd” | “benchmark”,
-“meteorological_variable”: “Hail” | “Solar” | “Wind” | \
-“Aridity” | “Cold” | “Drought” | “Heat” | “Humidity” | \ “Precipitation” | “Spi”
-“percentile”: {no percentile is required},
-“projection_year”: {default is forecast release year},
-“forecast_type”: “hazard-indices”,
-“filename”: “{filename without extension}”
+"country": "uk" | "spain" | "turkey",
+"latitude": {defaults to country-wide statistics},
+"longitude": {defaults to country-wide statistics},
+"month": {forecast valid/ release month},
+"year": {forecast valid/ release year},
+"lead": "1" | "2" | "seasonal",
+"extension": "png" | "csv",
+"output_type": "weatherlogisticsltd" | "benchmark",
+"meteorological_variable": "Hail" | "Solar" | "Wind" | \
+"Aridity" | "Cold" | "Drought" | "Heat" | "Humidity" | \ "Precipitation" | "Spi"
+"percentile": {no percentile is required},
+"projection_year": {default is forecast release year},
+"forecast_type": "hazard-indices",
+"filename": "{filename without extension}",
+"show_metadata": ""
 }
 
 Anomalies
 - JSON keywords
 
 {
-“country”: “uk” | “spain” | “turkey”,
-“latitude”: {defaults to country-wide statistics},
-“longitude”: {defaults to country-wide statistics},
-“month”: {forecast valid/ release month},
-“year”: {forecast valid/ release year},
-“lead”: “1” | “2” | “3”,
-“extension”: “asc” | “csv”,
-“output_type”: “weatherlogisticsltd” | “benchmark”,
-“meteorological_variable”: “Temperature” | “Rainfall”,
-“percentile”: “10th” | “30th” | “median” | “70th” | “90th”,
-“projection_year”: {default is forecast release year},
-“forecast_type”: “anomaly”,
-“filename”: “{filename without extension}”
+"country": "uk" | "spain" | "turkey",
+"latitude": {defaults to country-wide statistics},
+"longitude": {defaults to country-wide statistics},
+"month": {forecast valid/ release month},
+"year": {forecast valid/ release year},
+"lead": "1" | "2" | "3",
+"extension": "asc" | "csv",
+"output_type": "weatherlogisticsltd" | "benchmark",
+"meteorological_variable": "Temperature" | "Rainfall",
+"percentile": "10th" | "30th" | "median" | "70th" | "90th",
+"projection_year": {default is forecast release year},
+"forecast_type": "anomaly",
+"filename": "{filename without extension}",
+"show_metadata": ""
 }
