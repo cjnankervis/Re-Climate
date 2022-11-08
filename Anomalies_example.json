@@ -8,5 +8,6 @@
     "meteorological_variable": "Rainfall",
     "percentile": "30th",
     "forecast_type": "anomaly",
-    "filename": "UK_RainfallAnomaly_Month3_January2023_CSV"
+    "filename": "UK_RainfallAnomaly_Month3_January2023_CSV",
+    "show_metadata": ""
 }
