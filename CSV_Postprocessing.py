@@ -31,7 +31,7 @@ import pandas as pd
 '''User Inputs'''
 forecast_type = 'wl' # 'c3s', 'wl', 'combined'
 metric_type = 'centile' # 'days, 'frequency', 'accumulation', 'centile', 'consecutive'
-threshold_type = 'between' # 'below', 'above', 'between'
+threshold_type = ('between', 90) # 'below', 'above', 'between' or ({threshold_type}, percentile) to assess consecutive days at a percentile level
 thresholds = (0, 10) # Single threshold value for daily weather event, or percentile if {metric_type} = 'centile'
 forecast_month = (1,2,3) # 1,2 or 3 or any combination of month :: forecast month at t + {forecast_month}
 ###
@@ -67,6 +67,17 @@ else:
     else:
         print('Error. Expecting one threshold valus, but only received multiple values.')
         sys.exit()
+
+if metric_type == 'consecutive':
+    '''Define the threshold_type and percentile for consecutive daily events'''
+    if not len(np.shape(threshold_type)):
+        if len(threshold_type) == 2:
+            try:
+                threshold_type = threshold_type[0]; percentile = threshold_type[1]
+            except TypeError:
+                pass
+    else:
+        threshold_type = thresholds_type; percentile = 50 # Assess the median interval of consecutive days as a default
 
 if not len(np.shape(forecast_month)):
     forecast_month = [forecast_month]
@@ -136,7 +147,7 @@ if threshold_type.lower() == 'above':
         groups = accumulate([0]+[(a>=threshold) != (b>=threshold) for a,b in zip(mth_data,mth_data[1:])])
         counts = sorted(Counter(groups).items())
         counts_list = [c for n,c in counts if (n%2==0) == (mth_data[0]>=threshold)]
-        metric_output = np.nanpercentile(counts_list, (1-1/num_ensembles)*100)
+        metric_output = np.nanpercentile(counts_list, (1-1/num_ensembles)*(percentile*2))
         metric_output = round(metric_output, 1) if np.isfinite(metric_output) else 0.0
 
 if threshold_type.lower() == 'below':
@@ -163,7 +174,7 @@ if threshold_type.lower() == 'below':
         groups = accumulate([0]+[(a<=threshold) != (b<=threshold) for a,b in zip(mth_data,mth_data[1:])])
         counts = sorted(Counter(groups).items())
         counts_list = [c for n,c in counts if (n%2==0) == (mth_data[0]<=threshold)]    
-        metric_output = np.nanpercentile(counts_list, (1-1/num_ensembles)*100)
+        metric_output = np.nanpercentile(counts_list, (1-1/num_ensembles)*(percentile*2))
         metric_output = round(metric_output, 1) if np.isfinite(metric_output) else 0.0
 
 if threshold_type.lower() == 'between':
@@ -190,7 +201,7 @@ if threshold_type.lower() == 'between':
         groups = accumulate([0]+[((a>=threshold_lower) & (a>=threshold_upper)) != ((b<threshold_lower) & (b>threshold_upper)) for a,b in zip(mth_data,mth_data[1:])])
         counts = sorted(Counter(groups).items())
         counts_list = [c for n,c in counts if (n%2==0) == ((mth_data[0]>=threshold_lower) & (mth_data[0]<=threshold_upper))]
-        metric_output = np.nanpercentile(counts_list, (1-1/num_ensembles)*100)
+        metric_output = np.nanpercentile(counts_list, (1-1/num_ensembles)*(percentile*2))
         metric_output = round(metric_output, 1) if np.isfinite(metric_output) else 0.0
 
 print(f"{metric_description} is {metric_output}, which is based on analysis of {num_ensembles} ensemble members and {mth_days} days in {', '.join(month_name)}")
