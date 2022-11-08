@@ -27,7 +27,8 @@ The Python script is designed for use with daily weather inputs in a Comma-Separ
 import sys
 import numpy as np
 import pandas as pd 
-import itertools
+from itertools import accumulate
+from collections import Counter
 
 '''User Inputs'''
 forecast_type = 'wl' # 'c3s', 'wl', 'combined'
@@ -147,7 +148,7 @@ if threshold_type.lower() == 'above':
     elif metric_type.lower() == 'consecutive':
         '''Mean consecutive days with an event intensity equal to or above a threshold'''
         metric_description = f'Mean consecutive days with an event intensity equal to or above {threshold}'
-        groups = itertools.accumulate([0]+[(a>=threshold) != (b>=threshold) for a,b in zip(mth_data,mth_data[1:])])
+        groups = accumulate([0]+[(a>=threshold) != (b>=threshold) for a,b in zip(mth_data,mth_data[1:])])
         counts = sorted(Counter(groups).items())
         counts_list = [c for n,c in counts if (n%2==0) == (mth_data[0]>=threshold)]
         metric_output = np.nanpercentile(counts_list, (1-1/num_ensembles)*(percentile*2))
@@ -174,7 +175,7 @@ if threshold_type.lower() == 'below':
     elif metric_type.lower() == 'consecutive':
         '''Mean consecutive days with an event intensity equal to or below a threshold'''
         metric_description = f'Mean consecutive days with an event intensity equal to or below {threshold}'
-        groups = itertools.accumulate([0]+[(a<=threshold) != (b<=threshold) for a,b in zip(mth_data,mth_data[1:])])
+        groups = accumulate([0]+[(a<=threshold) != (b<=threshold) for a,b in zip(mth_data,mth_data[1:])])
         counts = sorted(Counter(groups).items())
         counts_list = [c for n,c in counts if (n%2==0) == (mth_data[0]<=threshold)]    
         metric_output = np.nanpercentile(counts_list, (1-1/num_ensembles)*(percentile*2))
@@ -201,7 +202,7 @@ if threshold_type.lower() == 'between':
     elif metric_type.lower() == 'consecutive':
         '''Mean consecutive days with an event intensity between a lower and upper threshold'''
         metric_description = f'Mean consecutive days with event intensities between {threshold_lower} and {threshold_upper}'
-        groups = itertools.accumulate([0]+[((a>=threshold_lower) & (a>=threshold_upper)) != ((b<threshold_lower) & (b>threshold_upper)) for a,b in zip(mth_data,mth_data[1:])])
+        groups = accumulate([0]+[((a>=threshold_lower) & (a>=threshold_upper)) != ((b<threshold_lower) & (b>threshold_upper)) for a,b in zip(mth_data,mth_data[1:])])
         counts = sorted(Counter(groups).items())
         counts_list = [c for n,c in counts if (n%2==0) == ((mth_data[0]>=threshold_lower) & (mth_data[0]<=threshold_upper))]
         metric_output = np.nanpercentile(counts_list, (1-1/num_ensembles)*(percentile*2))
