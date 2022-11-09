@@ -40,10 +40,10 @@ def make_authorized_get_request(URL):
     request_data = user_data | climate_data
 
     # Building Header for Authenticated User Request
-    user_header = {'Authorization': 'Bearer ' + id_token}
+    user_header = {"Content-Type": "application/json", "Authorization": "Bearer " + id_token}
     
     # Sending the POST Request and reading the Response received.    
-    response = requests.post(URL, json=request_data, headers=user_header)
+    response = requests.post(URL, json=request_data, headers=user_header, stream=True)
     
     # Returning the Response received from the Re-Climate API
     return f"{response.text}"
