@@ -1,3 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov  9 17:00:32 2022
+@author: Dr Christopher Nankervis, WeatherLogistics.
+Re-Climate® Product Developer & Owner.
+
+Description.
+Allows multiple Re-Climate® API requests for a set of town/ city locations within a country bounding box
+
+"""
+
 ########## Importing the required modules ##############
 from concurrent.futures import ThreadPoolExecutor, as_completed
 # Import Pandas
