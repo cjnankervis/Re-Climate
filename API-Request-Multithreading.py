@@ -43,17 +43,17 @@ auth_req = google.auth.transport.requests.Request()
 id_token = google.oauth2.id_token.fetch_id_token(auth_req, URL)
 
 # Building Header for Authenticated User Request
-user_header = {'Authorization': 'Bearer ' + id_token}
+user_header = {"Content-Type": "application/json", "Authorization": "Bearer " + id_token}
 
 def load_url(URL, request_data, user_header):
     # Sending the POST Request and reading the Response received.  
-    response = requests.post(URL, json=request_data, headers=user_header)
+    response = requests.post(URL, json=request_data, headers=user_header, stream=True).text
     return response
     
 # Extracting the User ID and User Email and storing in dictionary
 user_data = { "client_id" : f"{user_credentials['client_id']}", "client_email" : f"{user_credentials['client_email']}" }
 # Extracting the climate data from JSON file and storing in dictionary
-climate_data = []; request_data = []; request = []
+climate_data = []; request_data = []; response = []; data = []
 with ThreadPoolExecutor(max_workers=200) as executor:
     for n in range(num_cities):
         climate_data.append(json.load(open(climate_info_path)))
@@ -66,5 +66,8 @@ with ThreadPoolExecutor(max_workers=200) as executor:
         # Combining all the required data into single dictionary
         request_data.append(user_data | climate_data[n])
         
-        request.append(load_url(URL, request_data[n], user_header))
-        print(f"{request[n].text}")
+        response.append(load_url(URL, request_data[n], user_header))
+        print(f"{response[n]}")
+        
+        # Write API string data to an output
+        data.append(response[n])
