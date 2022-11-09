@@ -1,3 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov  9 17:01:25 2022
+@author: Dr Christopher Nankervis, WeatherLogistics.
+Re-Climate® Product Developer & Owner.
+
+Description.
+For a single Re-Climate® API location request for within a country bounding box
+
+"""
+
 ########## Importing the required modules ##############
 # Importing Requests module
 import requests
