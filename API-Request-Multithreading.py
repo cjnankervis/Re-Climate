@@ -1,5 +1,5 @@
 ########## Importing the required modules ##############
-import concurrent.futures
+from concurrent.futures import ThreadPoolExecutor, as_completed
 # Import Pandas
 import pandas as pd
 # Importing Requests module
@@ -14,8 +14,8 @@ import json
 
 '''User Inputs'''
 # Define the locations for the specified country
-country = 'Spain' # 'uk' or 'spain' or 'turkey'
-Cities = "SPAIN_TownsCities.csv" # "UK_TownCities.csv" or "SPAIN_TownCities.csv" or "TURKEY_TownsCities.csv"
+country = 'uk' # 'uk' or 'spain' or 'turkey'
+Cities = "UK_TownsCities.csv" # "UK_TownCities.csv" or "SPAIN_TownCities.csv" or "TURKEY_TownsCities.csv"
 Cities_list = pd.read_csv(Cities, header=None)
 
 outputs = [] # Outputs are concatenated into a list
@@ -45,38 +45,26 @@ id_token = google.oauth2.id_token.fetch_id_token(auth_req, URL)
 # Building Header for Authenticated User Request
 user_header = {'Authorization': 'Bearer ' + id_token}
 
-def load_url(URL, request_data, user_header, timeout):
-    # Sending the POST Request and reading the Response received.    
+def load_url(URL, request_data, user_header):
+    # Sending the POST Request and reading the Response received.  
     response = requests.post(URL, json=request_data, headers=user_header)
     return response
-
-with concurrent.futures.ThreadPoolExecutor(max_workers=connections) as executor:
     
-    # Extracting the User ID and User Email and storing in dictionary
-    user_data = { "client_id" : f"{user_credentials['client_id']}", "client_email" : f"{user_credentials['client_email']}" }
-    # Extracting the climate data from JSON file and storing in dictionary
-    climate_data = []; request_data = []; request = []; future_to_url = []
+# Extracting the User ID and User Email and storing in dictionary
+user_data = { "client_id" : f"{user_credentials['client_id']}", "client_email" : f"{user_credentials['client_email']}" }
+# Extracting the climate data from JSON file and storing in dictionary
+climate_data = []; request_data = []; request = []
+with ThreadPoolExecutor(max_workers=200) as executor:
     for n in range(num_cities):
         climate_data.append(json.load(open(climate_info_path)))
         
         # Adjust Re-Climate JSON information to read data from different town/ city locations
-        climate_data[n]['country'] = country
+        climate_data[n]['country'] = str(country)
         climate_data[n]['latitude'] = Cities_list.iloc[n][1]
         climate_data[n]['longitude'] = Cities_list.iloc[n][2]
     
         # Combining all the required data into single dictionary
         request_data.append(user_data | climate_data[n])
         
-        request.append(load_url(URL, request_data[n], user_header, timeout))
-    
-        future_to_url.append(executor.submit(load_url, URL, request[n], user_header, timeout))
-    
-    out = []
-    for future in concurrent.futures.as_completed(future_to_url):
-        try:
-            data = future.result()
-        except Exception as exc:
-            data = str(type(exc))
-        finally:
-            out.append(data)
-            print(data)
+        request.append(load_url(URL, request_data[n], user_header))
+        print(f"{request[n].text}")
