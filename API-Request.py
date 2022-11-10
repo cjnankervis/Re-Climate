@@ -57,10 +57,12 @@ def make_authorized_get_request(URL):
     # Sending the POST Request and reading the Response received.    
     response = requests.post(URL, json=request_data, headers=user_header, stream=True)
     
+    '''N.b. Column/ item length of 100 indicates Ensemble Numbers from 1 to 100'''
+    
     # Returning the Response received from the Re-Climate API
-    return f"{response.text}"
+    return f"{response.json()}"
 
 # Specifying the URL to access the Re-Climate API
 URL = "https://re-climate-4un5g5jztq-nw.a.run.app"
 # Calling the function 'make_authorized_get_request' and displaying the response
-print(make_authorized_get_request(URL))
+print(make_authorized_get_request(URL)['data'])
