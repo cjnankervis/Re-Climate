@@ -63,8 +63,11 @@ def load_url(URL, request_data, user_header):
     try:
         response = response.json()
     except Exception as e:
-        print(e)
-        pass
+        try:
+            response = response.text
+        except Exception as e:
+            print(e)
+            pass
     #
     return response
     
@@ -91,4 +94,3 @@ with ThreadPoolExecutor(max_workers=200) as executor:
         
         # Write API string data to an output
         data.append(response[n])
-        
