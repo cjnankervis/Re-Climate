@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+
 Created on Wed Nov  9 17:01:25 2022
 @author: Dr Christopher Nankervis, WeatherLogistics.
 Re-Climate® Product Developer & Owner.
@@ -59,8 +60,14 @@ def make_authorized_get_request(URL):
     
     '''N.b. Column/ item length of 100 indicates Ensemble Numbers from 1 to 100'''
     
+    try:
+        response = f"{response.json()}"
+    except Exception as e:
+        print(e)
+        pass
+    
     # Returning the Response received from the Re-Climate API
-    return f"{response.json()}"
+    return response
 
 # Specifying the URL to access the Re-Climate API
 URL = "https://re-climate-4un5g5jztq-nw.a.run.app"
