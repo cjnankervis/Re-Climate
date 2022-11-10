@@ -81,5 +81,7 @@ with ThreadPoolExecutor(max_workers=200) as executor:
         response.append(load_url(URL, request_data[n], user_header))
         print(f"{response[n]}")
         
+        '''N.b. Column/ item length of 100 indicates Ensemble Numbers from 1 to 100'''
+        
         # Write API string data to an output
         data.append(response[n])
