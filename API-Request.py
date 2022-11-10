@@ -63,8 +63,11 @@ def make_authorized_get_request(URL):
     try:
         response = f"{response.json()}"
     except Exception as e:
-        print(e)
-        pass
+        try:
+            response = response.text
+        except Exception as e:
+            print(e)
+            pass
     
     # Returning the Response received from the Re-Climate API
     return response
