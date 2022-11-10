@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+
 Created on Wed Nov  9 17:00:32 2022
 @author: Dr Christopher Nankervis, WeatherLogistics.
 Re-Climate® Product Developer & Owner.
-
 Description.
 Allows multiple Re-Climate® API requests for a set of town/ city locations within a country bounding box
 
@@ -58,8 +58,14 @@ id_token = google.oauth2.id_token.fetch_id_token(auth_req, URL)
 user_header = {"Content-Type": "application/json", "Authorization": "Bearer " + id_token}
 
 def load_url(URL, request_data, user_header):
-    # Sending the POST Request and reading the Response received.  
-    response = requests.post(URL, json=request_data, headers=user_header, stream=True).text
+    # Sending the POST Request and reading the Response received.
+    response = requests.post(URL, json=request_data, headers=user_header, stream=True)
+    try:
+        response = response.json()
+    except Exception as e:
+        print(e)
+        pass
+    #
     return response
     
 # Extracting the User ID and User Email and storing in dictionary
@@ -85,3 +91,4 @@ with ThreadPoolExecutor(max_workers=200) as executor:
         
         # Write API string data to an output
         data.append(response[n])
+        
