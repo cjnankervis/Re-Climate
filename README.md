@@ -1,8 +1,8 @@
 # WeatherLogistics Re-Climate® API
 
-https://github.com/cjnankervis/Re-Climate/blob/main/RE-CLIMATE_PLOTS.png
-
 The Re-Climate® product supplies reliable seasonal climate forecasts to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see https://seasonalforecasts.earth/docs.
+
+Sample seasonal climate hazard plots can be viewed at: https://github.com/cjnankervis/Re-Climate/blob/main/RE-CLIMATE_PLOTS.png
 
 Firstly, an API authentication key and user credentials are required to make requests using [API-Request.py]. The API provides access to four main data streams, with the opportunity for post-processing using Daily Ensembles:
 
