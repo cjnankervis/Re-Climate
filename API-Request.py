@@ -61,10 +61,10 @@ def make_authorized_get_request(URL):
     '''N.b. Column/ item length of 100 indicates Ensemble Numbers from 1 to 100'''
     
     try:
-        response = f"{response.json()}"
+        response = response.json().replace("\'", "\"")
     except Exception as e:
         try:
-            response = response.text
+            response = response.text.replace("\'", "\"")
         except Exception as e:
             print(e)
             pass
@@ -75,4 +75,4 @@ def make_authorized_get_request(URL):
 # Specifying the URL to access the Re-Climate API
 URL = "https://re-climate-4un5g5jztq-nw.a.run.app"
 # Calling the function 'make_authorized_get_request' and displaying the response
-print(make_authorized_get_request(URL)['data'])
+print(make_authorized_get_request(URL))
