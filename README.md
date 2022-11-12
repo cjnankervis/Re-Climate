@@ -38,7 +38,7 @@ WeatherLogistics' daily ensembles provide a quickstart framework to calculate fr
 
 The first 50 ensemble members are generated using WeatherLogistics' statistical forecast system, and members 51 to 100 are generated using a multi-model average of modified Copernicus seasonal climate forecast data*. Both systems have been developed to achieve the best-on-market accuracy and reliability and have been independently and impartially reviewed by the National Physical Laboratory.
 
-To request this climate data, see request [DailyEnsembles_example.json], with postprocessing scripts provided for CSV [CSV_Postprocessing.py] and JSON [JSON_Postprocessing.py]. See documentation at https://seasonalforecasts.earth/climate-api-overview//hazard-indices/.
+To request this climate data, see request [DailyEnsembles_example.json], with postprocessing scripts provided for CSV [CSV_Postprocessing.py] and JSON [JSON_Postprocessing.py]. See documentation at https://seasonalforecasts.earth/docs/daily-time-series/.
 
 3.	Hazard Indices
 
