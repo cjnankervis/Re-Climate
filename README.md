@@ -5,10 +5,10 @@ The Re-Climate® product supplies reliable seasonal climate forecasts to prepare
 Sample seasonal climate hazard plots can be viewed at: https://github.com/cjnankervis/Re-Climate/blob/main/RE-CLIMATE_PLOTS.png
 
 The Re-Climate (seasonal climate forecast) API:
-- Combines state-of-the-art seasonal climate prediction data, statistical post-processing and chronic climate change science
-- Supply reliable daily precipitation probablistic event generation to manage local flood/ drought risk to operations
+- Combines state-of-the-art seasonal climate prediction data, downscaling, statistical post-processing, chronic climate trend adjustments, and rigorous validation methods
+- Supply reliable daily precipitation event generation (ERA-5 alligned weather generator) to manage local flood/ drought risk to operations
 - Provide acute physical risk information to assess within-season daily intensities and likelihoods of weather events
-- Extend weather predictions with three month probabilistic forecasts
+- Extend deterministic weather predictions with a seemless 3-month probabilistic forecast
 - Provide access for historical start dates from month: '09', year: '2022'
 - Supply town or city data, reporting the closest datapoint where applicable
 - Are available for the United Kingdom, Spain and Turkey and are udated on 14th day of each month
