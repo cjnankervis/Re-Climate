@@ -6,7 +6,7 @@ Sample seasonal climate hazard plots can be viewed at: https://github.com/cjnank
 
 The Re-Climate (seasonal climate forecast) API:
 - Combines state-of-the-art seasonal climate prediction data, statistical post-processing and chronic climate change science
-- Show unique access to reliable daily precipitation for local flood/ drought risk management
+- Supply reliable daily precipitation probablistic event generation to manage local flood/ drought risk to operations
 - Provide acute physical risk information to assess within-season daily intensities and likelihoods of weather events
 - Extend weather predictions with three month probabilistic forecasts
 - Provide access for historical start dates from month: '09', year: '2022'
