@@ -4,6 +4,20 @@ The Re-Climate® product supplies reliable seasonal climate forecasts to prepare
 
 Sample seasonal climate hazard plots can be viewed at: https://github.com/cjnankervis/Re-Climate/blob/main/RE-CLIMATE_PLOTS.png
 
+The Re-Climate (seasonal climate forecast) API:
+- Combines state-of-the-art seasonal climate prediction data, statistical post-processing and chronic climate change science
+- Show unique access to reliable daily precipitation for local flood/ drought risk management
+- Provide acute physical risk information to assess within-season daily intensities and likelihoods of weather events
+- Extend weather predictions with three month probabilistic forecasts
+- Provide access for historical start dates from month: '09', year: '2022'
+- Supply town or city data, reporting the closest datapoint where applicable
+- Are available for the United Kingdom, Spain and Turkey and are udated on 14th day of each month
+
+Bounding box restrictions:
+UK: 49.84° to 60.85° North, 10.7° to 2.69° East
+Spain: 35.71° to 44.17° North, -9.67° to 3.67° East
+Turkey: 35.82° to 42.14° North, 26.04° to 44.79° East
+
 Firstly, an API authentication key and user credentials are required to make requests using [API-Request.py]. The API provides access to four main data streams, with the opportunity for post-processing using Daily Ensembles:
 
 1.	Monthly Centiles
