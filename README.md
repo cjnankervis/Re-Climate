@@ -52,6 +52,6 @@ To request this climate data, see request [HazardIndices_example.json]. See docu
 **Country-wide ASCII grid/ town or city CSV provided at a monthly granularity; a departure forecast useful for a big-picture seasonal overview
 
 Similar to the monthly centiles, anomalies provide a country-wide mapped overview of departures from an up-to-date climatology to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years.
-To request this climate data, see request [Anomalies_example.json]
+To request this climate data, see request [Anomalies_example.json]. See documentation at https://seasonalforecasts.earth/docs/gridded-datasets/.
 
-*Contains modified Copernicus Climate Change Service information 2022. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains. See documentation at https://seasonalforecasts.earth/docs/gridded-datasets/.
+*Contains modified Copernicus Climate Change Service information 2022. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
