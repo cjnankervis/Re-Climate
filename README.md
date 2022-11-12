@@ -10,7 +10,7 @@ Sample seasonal climate hazard plots can be viewed at: https://github.com/cjnank
 •	Extend deterministic weather predictions with a seamless 3-month probabilistic forecast
 •	Provide access for historical start dates from month: '09', year: '2022'
 •	Supply town or city data, reporting the closest datapoint where applicable
-•	Are available for the United Kingdom, Spain and Turkey and are updated on 14th day of each month
+• Are available for the United Kingdom, Spain and Turkey and are updated on 14th day of each month
 
 Bounding box restrictions:
 UK: 49.84° to 60.85° North, 10.7° to 2.69° East
