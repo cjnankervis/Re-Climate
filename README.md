@@ -13,9 +13,9 @@ Sample seasonal climate hazard plots can be viewed at: https://github.com/cjnank
 - Are available for the United Kingdom, Spain and Turkey and are updated on 14th day of each month
 
 Bounding box restrictions:
-UK: 49.84° to 60.85° North, 10.7° to 2.69° East
-Spain: 35.71° to 44.17° North, -9.67° to 3.67° East
-Turkey: 35.82° to 42.14° North, 26.04° to 44.79° East
+- UK: 49.84° to 60.85° North, 10.7° to 2.69° East
+- Spain: 35.71° to 44.17° North, -9.67° to 3.67° East
+- Turkey: 35.82° to 42.14° North, 26.04° to 44.79° East
 
 Firstly, an API authentication key and user credentials are required to make requests using [API-Request.py]. The API provides access to four main data streams, with the opportunity for post-processing using Daily Ensembles:
 
