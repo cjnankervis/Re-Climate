@@ -6,6 +6,7 @@ Sample seasonal climate hazard plots can be viewed at: https://github.com/cjnank
 
 The Re-Climate (seasonal climate forecast) API:
 
+- Builds on 10-years of R&D to improve the reliability and accuracy of extended weather forecasts
 - Delivers the essential requirements to facilitate short-term climate action in the United Kingdom, Spain and Turkey
 - Combines state-of-the-art seasonal climate prediction data, downscaling, statistical post-processing, chronic climate trend adjustments, and rigorous validation methods
 - Supplies reliable daily precipitation event generation (ERA-5 aligned weather generator) to manage local flood/ drought risk to operations
