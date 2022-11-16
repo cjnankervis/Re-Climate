@@ -27,7 +27,7 @@ table {
   font-size: 13px;
 }
 </style>
-| API Technical Specifications  | #### Monthly Centiles | #### Daily Ensembles | #### Hazard Indices | #### Anomalies |
+| API Technical Specifications  | Monthly Centiles | Daily Ensembles | Hazard Indices | Anomalies |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Country-wide Forecasts (Downscaled to a 5km Regular Grid) | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 | Town-level Modelling
