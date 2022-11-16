@@ -32,10 +32,11 @@ from itertools import accumulate
 from collections import Counter
 
 '''User Inputs'''
-forecast_type = 'wl' # 'c3s', 'wl', 'combined'
-metric_type = 'centile' # 'days, 'frequency', 'accumulation', 'centile', 'consecutive'
-threshold_type = ('between', 90) # 'below', 'above', 'between' or ({threshold_type}, percentile) to assess consecutive days at a percentile level
-thresholds = (0, 10) # Single threshold value for daily weather event, or percentile if {metric_type} = 'centile'
+filename = '/Users/Chris-Win/Desktop/WEATHERDOCKER/Output_Visuals/JSON/NottinghamWeatherLogisticsLtd_TMinDAILYENSEMBLE-Early-Winter2023_2023dClimate.json'
+forecast_type = 'c3s' # 'c3s', 'wl', 'combined'
+metric_type = 'consecutive' # 'days, 'frequency', 'accumulation', 'centile', 'consecutive'
+threshold_type = ('between', 50) # 'below', 'above', 'between' or ({threshold_type}, percentile) to assess consecutive days at a percentile level
+thresholds = (-1, 0) # Single threshold value for daily weather event, or percentile if {metric_type} = 'centile'
 forecast_month = (1,2,3) # 1,2 or 3 or any combination of month :: forecast month at t + {forecast_month}
 ###
 
@@ -47,7 +48,20 @@ month_names = ('January','February','March',\
 forecast_months = ((1,2,3),(2,3,4),(3,4,5),\
                    (4,5,6),(5,6,7),(6,7,8),\
                    (7,8,9),(8,9,10),(9,10,11),\
-                   (10,11,12),(11,12,1),(12,1,2))
+                   (10,11,12),(11,12,1),(12,1,2)) 
+
+if metric_type == 'consecutive':
+    '''Define the threshold_type and percentile for consecutive daily events'''
+    if len(np.shape(threshold_type)):
+        if len(threshold_type) == 2:
+            try:
+                percentile = threshold_type[1]; threshold_type = threshold_type[0]
+            except TypeError:
+                pass
+        else:
+            threshold_type = threshold_type[0]; percentile = 50
+    else:
+        threshold_type = threshold_type; percentile = 50 # Assess the median interval of consecutive days as a default
     
 if threshold_type == 'between':
     '''Define the lower and upper threshold values for daily weather events'''
@@ -68,26 +82,13 @@ else:
     if not len(np.shape(thresholds)):
         threshold = thresholds
     else:
-        print('Error. Expecting one threshold valus, but only received multiple values.')
+        print('Error. Expecting one threshold value, but only received multiple values.')
         sys.exit()
-
-if metric_type == 'consecutive':
-    '''Define the threshold_type and percentile for consecutive daily events'''
-    if len(np.shape(threshold_type)):
-        if len(threshold_type) == 2:
-            try:
-                threshold_type = threshold_type[0]; percentile = threshold_type[1]
-            except TypeError:
-                pass
-        else:
-            threshold_type = threshold_type[0]; percentile = 50
-    else:
-        threshold_type = threshold_type; percentile = 50 # Assess the median interval of consecutive days as a default
 
 if not len(np.shape(forecast_month)):
     forecast_month = [forecast_month]
 
-DailyEnsembleJSON = '/Users/Chris-Win/Desktop/WEATHERDOCKER/Output_Visuals/JSON/SalisburyWeatherLogisticsLtd_RainfallDAILYENSEMBLE-Early-Winter2023_2023dClimate.json'
+DailyEnsembleJSON = f'{filename}'
 
 '''Read daily JSON outputs into a dataframe'''
 with open(DailyEnsembleJSON, 'r') as f:
@@ -130,86 +131,97 @@ for m_ind, m in enumerate(forecast_month):
         mth_data = df_subset[m-1]; mth_days = np.shape(df_subset[m-1])[1]
     else:
         mth_data = np.concatenate((mth_data, df_subset[m-1]), axis=1); mth_days += np.shape(df_subset[m-1])[1]
-mth_data = mth_data.flatten()
+
 if threshold_type.lower() == 'above':
     '''Predicted number of days with event intensities equal to or above a threshold'''
     if metric_type.lower() == 'days':
         '''Count of meteorological events equal to or above a threshold value'''
         metric_description = f'Count of meteorological events equal to or above {threshold}'
-        metric_output = round(np.sum(mth_data >= threshold) / num_ensembles, 1)
+        metric_output = round(np.sum(mth_data.flatten() >= threshold) / num_ensembles, 1)
     elif metric_type.lower() == 'frequency':
         '''Frequency of occurrence of events with intensities equal to or above threshold'''
         metric_description = f'Frequency of occurrence of events with intensities equal to or above {threshold}'
-        metric_output = round(np.sum(mth_data >= threshold) / (num_ensembles * mth_days), 1)
+        metric_output = round(np.sum(mth_data.flatten() >= threshold) / (num_ensembles * mth_days), 1)
     elif metric_type.lower() == 'accumulation':
         '''Accumulated meteorological value of events with an intensity equal to or above threshold'''
         metric_description = f'Accumulated meteorological value of events with an intensity equal to or above {threshold}'
-        metric_output = round(np.sum(mth_data[mth_data >= threshold]) / num_ensembles, 1)
+        metric_output = round(np.mean([np.sum(mth_data[e][mth_data[e] >= threshold]) for e in range(num_ensembles)]) / num_ensembles, 1)
     elif metric_type.lower() == 'centile':
         '''Frequency of occurrence of events with with an intensity equal to or above a centile threshold'''
         metric_description = f'Frequency of occurrence of events with an intensity equal to or above {threshold}th centile'
-        metric_output = round(np.sum(mth_data[mth_data >= np.percentile(mth_data, threshold)]) / num_ensembles, 1)
+        metric_output = round(np.mean([np.sum(mth_data[e][mth_data[e] >= np.percentile(mth_data[e], threshold)]) for e in range(num_ensembles)]) / num_ensembles, 1)
     elif metric_type.lower() == 'consecutive':
         '''Mean consecutive days with an event intensity equal to or above a threshold'''
         metric_description = f'Mean consecutive days with an event intensity equal to or above {threshold}'
-        groups = accumulate([0]+[(a>=threshold) != (b>=threshold) for a,b in zip(mth_data,mth_data[1:])])
-        counts = sorted(Counter(groups).items())
-        counts_list = [c for n,c in counts if (n%2==0) == (mth_data[0]>=threshold)]
-        metric_output = np.nanpercentile(counts_list, (1-1/num_ensembles)*(percentile*2))
-        metric_output = round(metric_output, 1) if np.isfinite(metric_output) else 0.0
+        metric_output = []
+        for e in range(num_ensembles):
+            groups = accumulate([0]+[(a>=threshold) != (b>=threshold) for a,b in zip(mth_data[e],mth_data[e][1:])])
+            counts = sorted(Counter(groups).items())
+            counts_list = [c for n,c in counts if (n%2==0) == (mth_data[e][0]>=threshold)]
+            metric_output.append(np.nanpercentile(counts_list, percentile))
+        flat_list = [item for sublist in counts_list for item in sublist]
+        metric_output = np.nanpercentile(flat_list, (1-1/(num_ensembles*percentile/100*2))*100)
+        metric_output = round(np.mean(metric_output), 1) if np.isfinite(np.nanmean(metric_output)) else 0.0
 
 if threshold_type.lower() == 'below':
     '''Predicted number of days with event intensities equal to or below a threshold'''
     if metric_type.lower() == 'days':
         '''Count of meteorological events equal to or below a threshold value'''
         metric_description = f'Count of meteorological events equal to or below {threshold}'
-        metric_output = round(np.sum(mth_data <= threshold) / num_ensembles, 1)
+        metric_output = round(np.sum(mth_data.flatten() <= threshold) / num_ensembles, 1)
     elif metric_type.lower() == 'frequency':
         '''Frequency of occurrence of events with intensities equal to or below threshold'''
         metric_description = f'Frequency of occurrence of events with an intensity below {threshold}'
-        metric_output = round(np.sum(mth_data <= threshold) / (num_ensembles * mth_days), 1)
+        metric_output = round(np.sum(mth_data.flatten() <= threshold) / (num_ensembles * mth_days), 1)
     elif metric_type.lower() == 'accumulation':
         '''Accumulated meteorological value of events with an intensity equal to or below {threshold} threshold'''
         metric_description = f'Accumulated meteorological value of events with an intensity equal to or below {threshold}'
-        metric_output = round(np.sum(mth_data[mth_data <= threshold]) / num_ensembles, 1)
+        metric_output = round(np.mean([np.sum(mth_data[e][mth_data[e] <= threshold]) for e in range(num_ensembles)]) / num_ensembles, 1)
     elif metric_type.lower() == 'centile':
         '''Frequency of occurrence of events with with an intensity equal to or below a centile threshold'''
         metric_description = f'Frequency of occurrence of events with an intensity equal to or below {threshold}th centile'
-        metric_output = round(np.sum(mth_data[mth_data <= np.percentile(mth_data, threshold)]) / num_ensembles, 1)
+        metric_output = round(np.mean([np.sum(mth_data[e][mth_data[e] <= np.percentile(mth_data[e], threshold)]) for e in range(num_ensembles)]) / num_ensembles, 1)
     elif metric_type.lower() == 'consecutive':
         '''Mean consecutive days with an event intensity equal to or below a threshold'''
         metric_description = f'Mean consecutive days with an event intensity equal to or below {threshold}'
-        groups = accumulate([0]+[(a<=threshold) != (b<=threshold) for a,b in zip(mth_data,mth_data[1:])])
-        counts = sorted(Counter(groups).items())
-        counts_list = [c for n,c in counts if (n%2==0) == (mth_data[0]<=threshold)]    
-        metric_output = np.nanpercentile(counts_list, (1-1/num_ensembles)*(percentile*2))
-        metric_output = round(metric_output, 1) if np.isfinite(metric_output) else 0.0
+        metric_output = []
+        for e in range(num_ensembles):
+            groups = accumulate([0]+[(a<=threshold) != (b<=threshold) for a,b in zip(mth_data[e],mth_data[e][1:])])
+            counts = sorted(Counter(groups).items())
+            counts_list = [c for n,c in counts if (n%2==0) == (mth_data[e][0]<=threshold)]    
+            metric_output.append(np.nanpercentile(counts_list, percentile))
+        flat_list = [item for sublist in counts_list for item in sublist]
+        metric_output = np.nanpercentile(flat_list, (1-1/(num_ensembles*percentile/100*2))*100)
+        metric_output = round(np.mean(metric_output), 1) if np.isfinite(np.nanmean(metric_output)) else 0.0
 
 if threshold_type.lower() == 'between':
     '''Predicted number of days with event intensities between a lower and upper threshold'''
     if metric_type.lower() == 'days':
         '''Count of meteorological events between a lower and upper threshold'''
         metric_description = f'Count of meteorological events between {threshold_lower} and {threshold_upper}'
-        metric_output = round(np.sum((mth_data >= threshold_lower) & (mth_data <= threshold_upper)) / num_ensembles, 1)
+        metric_output = round(np.sum((mth_data.flatten() >= threshold_lower) & (mth_data.flatten() <= threshold_upper)) / num_ensembles, 1)
     elif metric_type.lower() == 'frequency':
         '''Frequency of occurrence of events with intensities between thresholds'''
         metric_description = f'Frequency of occurrence of events with intensities between {threshold_lower} and {threshold_upper}'
-        metric_output = round(np.sum((mth_data >= threshold_lower) & (mth_data <= threshold_upper)) / (num_ensembles * mth_days), 1)
+        metric_output = round(np.sum((mth_data.flatten() >= threshold_lower) & (mth_data.flatten() <= threshold_upper)) / (num_ensembles * mth_days), 1)
     elif metric_type.lower() == 'accumulation':
         '''Accumulated meteorological value of events with an intensity between thresholds'''
         metric_description = f'Accumulated meteorological value of events with intensities between {threshold_lower} and {threshold_upper}'
-        metric_output = round(np.sum(mth_data[(mth_data >= threshold_lower) & (mth_data <= threshold_upper)]) / num_ensembles, 1)
+        metric_output = round(np.mean([np.sum(mth_data[e][(mth_data[e] >= threshold_lower) & (mth_data[e] <= threshold_upper)]) for e in range(num_ensembles)]) / num_ensembles, 1)
     elif metric_type.lower() == 'centile':
         '''Frequency of occurrence of events with with an intensity between a lower and upper centile threshold'''
         metric_description = f'Frequency of occurrence of events with intensities between {threshold_lower}th and {threshold_upper}th centiles'
-        metric_output = round(np.sum(mth_data[(mth_data >= np.percentile(mth_data, threshold_lower)) & (mth_data <= np.percentile(mth_data, threshold_upper))]) / num_ensembles, 1)
+        metric_output = round(np.mean([np.sum(mth_data[e][(mth_data[e] >= np.percentile(mth_data[e], threshold_lower)) & (mth_data[e] <= np.percentile(mth_data[e], threshold_upper))]) for e in range(num_ensembles)]) / num_ensembles, 1)
     elif metric_type.lower() == 'consecutive':
         '''Mean consecutive days with an event intensity between a lower and upper threshold'''
         metric_description = f'Mean consecutive days with event intensities between {threshold_lower} and {threshold_upper}'
-        groups = accumulate([0]+[((a>=threshold_lower) & (a>=threshold_upper)) != ((b<threshold_lower) & (b>threshold_upper)) for a,b in zip(mth_data,mth_data[1:])])
-        counts = sorted(Counter(groups).items())
-        counts_list = [c for n,c in counts if (n%2==0) == ((mth_data[0]>=threshold_lower) & (mth_data[0]<=threshold_upper))]
-        metric_output = np.nanpercentile(counts_list, (1-1/num_ensembles)*(percentile*2))
-        metric_output = round(metric_output, 1) if np.isfinite(metric_output) else 0.0
+        counts_list = []
+        for e in range(num_ensembles):
+            groups = accumulate([0]+[((a>=threshold_lower) & (a>=threshold_upper)) != ((b<threshold_lower) & (b>threshold_upper)) for a,b in zip(mth_data[e],mth_data[e][1:])])
+            counts = sorted(Counter(groups).items())
+            counts_list.append([c for n,c in counts if (n%2==0) == ((mth_data[e][0]>=threshold_lower) & (mth_data[e][0]<=threshold_upper))])
+        flat_list = [item for sublist in counts_list for item in sublist]
+        metric_output = np.nanpercentile(flat_list, (1-1/(num_ensembles*percentile/100*2))*100)
+        metric_output = round(np.mean(metric_output), 1) if np.isfinite(np.nanmean(metric_output)) else 0.0
 
 print(f"{metric_description} is {metric_output}, which is based on analysis of {num_ensembles} ensemble members and {mth_days} days in {', '.join(month_name)}")
