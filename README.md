@@ -1,6 +1,4 @@
-# WeatherLogistics Re-Climate® API
-
-<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" alt="Reliable Seasonal Climate Forecasts" width="250"/>
+# WeatherLogistics Re-Climate® API <img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" alt="Reliable Seasonal Climate Forecasts" width="250"/>
 
 The Re-Climate® product supplies reliable seasonal climate forecasts to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see [WeatherLogistics' Docs](https://seasonalforecasts.earth/docs).
 
