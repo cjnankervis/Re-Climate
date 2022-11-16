@@ -5,22 +5,31 @@ The Re-Climate® product supplies reliable seasonal climate forecasts to prepare
 
 The Re-Climate (seasonal climate forecast) API:
 
-Builds on 10-years of R&D to improve the reliability and accuracy of extended weather forecasts
-Delivers the essential requirements to facilitate short-term climate action in the United Kingdom, Spain and Turkey
-Combines state-of-the-art seasonal climate prediction data, downscaling, statistical post-processing, chronic climate trend adjustments, and rigorous validation methods
-Supplies reliable daily precipitation event generation (ERA-5 aligned weather generator) to manage local flood/ drought risk to operations
-Provides acute physical risk information to assess within-season daily intensities and likelihoods of weather events
-Extends deterministic weather predictions with a seamless 3-month probabilistic forecast
-Provides access for historical start dates from month: '09', year: '2022'
-Supplies town or city data, reporting the closest datapoint where applicable
-Updates climate hazard information on the 14th day of each month
-Bounding box restrictions:
+- Builds on 10-years of R&D to improve the reliability and accuracy of extended weather forecasts
+- Delivers the essential requirements to facilitate short-term climate action in the United Kingdom, Spain and Turkey
+- Combines state-of-the-art seasonal climate prediction data, downscaling, statistical post-processing, chronic climate trend adjustments, and rigorous validation methods
+- Supplies reliable daily precipitation event generation (ERA-5 aligned weather generator) to manage local flood/ drought risk to operations
+- Provides acute physical risk information to assess within-season daily intensities and likelihoods of weather events
+- Extends deterministic weather predictions with a seamless 3-month probabilistic forecast
+- Provides access for historical start dates from month: '09', year: '2022'
+- Supplies town or city data, reporting the closest datapoint where applicable
+- Updates climate hazard information on the 14th day of each month
+
+### Bounding Box Restrictions
 
 - UK: 49.84° to 60.85° North, -10.7° to 2.69° East
 - Spain: 35.71° to 44.17° North, -9.67° to 3.67° East
 - Turkey: 35.82° to 42.14° North, 26.04° to 44.79° East
 
-To get started, an API authentication key and user credentials are required to make requests using the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script. Please contact the [product owner](mailto:accounts@weatherlogistics.com). The API request scripts will provide access to four main data streams, with the opportunity for post-processing using "Daily Ensembles" data:
+## Validation
+
+Weather Logistics completed a successful collaboration with the National Physical Laboratory (NPL) in April 2022. As part of its deliverable, NPL validated our short-term climate forecasts and provided us with a framework for quality assessment of probabilistic weather predictions. WeatherLogistics used these techniques to ensure the reliability of its Re-Climate® product delivery.
+
+## Requesting API Access
+
+To get started, an API authentication key and user credentials are required to make requests using the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script. Please contact the [product owner](mailto:accounts@weatherlogistics.com). The API request scripts will provide access to four main data streams, with the opportunity for post-processing using "Daily Ensembles" data.
+
+## Understanding Seasonal Forecast Requests
 
 <table>
   <tr><center><td width="50%" align="center">
@@ -40,10 +49,6 @@ To get started, an API authentication key and user credentials are required to m
 
   </td></center></tr>
 </table>
-
-## Validation
-
-Weather Logistics completed a successful collaboration with the National Physical Laboratory (NPL) in April 2022. As part of its deliverable, NPL validated our short-term climate forecasts and provided us with a framework for quality assessment of probabilistic weather predictions. WeatherLogistics used these techniques to ensure the reliability of its Re-Climate® product delivery.
 
 ### Direct Comparisons of Seasonal Forecasts Against Observations
 
