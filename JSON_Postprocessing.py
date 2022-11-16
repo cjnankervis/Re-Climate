@@ -32,7 +32,7 @@ from itertools import accumulate
 from collections import Counter
 
 '''User Inputs'''
-filename = '/Users/Chris-Win/Desktop/WEATHERDOCKER/Output_Visuals/JSON/NottinghamWeatherLogisticsLtd_TMinDAILYENSEMBLE-Early-Winter2023_2023dClimate.json'
+filename = '/NottinghamWeatherLogisticsLtd_TMinDAILYENSEMBLE-Early-Winter2023_2023dClimate.json'
 forecast_type = 'c3s' # 'c3s', 'wl', 'combined'
 metric_type = 'consecutive' # 'days, 'frequency', 'accumulation', 'centile', 'consecutive'
 threshold_type = ('between', 50) # 'below', 'above', 'between' or ({threshold_type}, percentile) to assess consecutive days at a percentile level
