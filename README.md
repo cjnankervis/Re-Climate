@@ -43,6 +43,16 @@ To get started, an API authentication key and user credentials are required to m
   </td></center></tr>
 </table>
 
+## Validation
+
+Weather Logistics completed a successful collaboration with the National Physical Laboratory (NPL) in April 2022. As part of its deliverable, NPL validated our short-term climate forecasts and provided us with a framework for quality assessment of probabilistic weather predictions. WeatherLogistics used these techniques to ensure the reliability of its Re-Climate® product delivery.
+
+### Direct Comparisons of Seasonal Forecasts Against Observations
+
+NPL's validation report presents a comparison of the predicted frequencies of occurence of daily precipitation events of different intensities against ERA5-land measurements. Covering 96 UK cities for the years 2018 to 2022, the results summarise the [late winter assessment](https://seasonalforecasts.earth/wp-content/uploads/2022/07/Late-WinterNPL_WL.pdf) from January to March period (lead time of 1 to 3 months) as they would be issued on 13th December.
+
+Similarly, NPL’s report also provided direct comparisons for the [late summer period](https://seasonalforecasts.earth/wp-content/uploads/2022/07/Late-SummerNPL-WL.pdf) as issued on 13th June, which cover the months July to September from 2018 to 2022. For both the winter and summer the results demonstrate a good overall seasonal consistency between observations and WeatherLogistics' retrospective seasonal climate predictions  at the city scale.
+
 ## Monthly Centiles
 **Country-wide ASCII grid provided at a monthly granularity, useful for a big-picture seasonal overview
 
