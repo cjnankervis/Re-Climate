@@ -21,7 +21,7 @@ Bounding box restrictions:
 - Spain: 35.71° to 44.17° North, -9.67° to 3.67° East
 - Turkey: 35.82° to 42.14° North, 26.04° to 44.79° East
 
-To get started, an API authentication key and user credentials are required to make requests using the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script. Please contact the [product owner] (accounts@weatherlogistics.com). The API request scripts will provide access to four main data streams, with the opportunity for post-processing using "Daily Ensembles" data:
+To get started, an API authentication key and user credentials are required to make requests using the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script. Please contact the [product owner](mailto:accounts@weatherlogistics.com). The API request scripts will provide access to four main data streams, with the opportunity for post-processing using "Daily Ensembles" data:
 
 <table>
   <tr><center><td width="50%" align="center">
