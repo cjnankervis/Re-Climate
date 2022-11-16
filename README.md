@@ -30,7 +30,7 @@ To get started, an API authentication key and user credentials are required to m
 | <sub>Country-wide Forecasts<br /> (Downscaled to a 5km<br /> Regular Grid)</sub> | :white_check_mark: | :x: | :x: | :white_check_mark: |
 | <sub>Town-level Modelling<br /> (Closest Location Match)</sub> | :x: | :white_check_mark: | :white_check_mark: | :x: |
 | <sub>Confidence Intervals (100<br /> Ensemble Members  'E' or<br /> Centile Bands 'C' or Shift-<br />of-the-Tails 'T')</sub> | <b>C</b> | <b>E</b> | <b>T</b> | <b>C</b> |
-    | <sub>Temporal Granularity<br /> (Seasonal 'S' or Monthly 'M'<br /> or Daily 'D')</sub> | <b>M</b> | <b>D</b> | <b>S, M</b> | <b>M</b> |
+| <sub>Temporal Granularity<br /> (Seasonal 'S' or Monthly 'M'<br /> or Daily 'D')</sub> | <b>M</b> | <b>D</b> | <b>S, M</b> | <b>M</b> |
 | <sub>Spatially Correlated Daily<br /> Event Generation</sub> | :white_check_mark: | :x: | :x: | :white_check_mark: |
 | <sub>Combines NWP with<br /> Statistical Model</sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | <sub>Validated by the National<br /> Physical Laboratory</sub> | :x: | :white_check_mark: | :x: | :x: |
