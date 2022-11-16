@@ -23,8 +23,7 @@ Turkey: 35.82° to 42.14° North, 26.04° to 44.79° East
 To get started, an API authentication key and user credentials are required to make requests using [API-Request.py]. Please contact the product owner (accounts@weatherlogistics.com). The API request scripts will provide access to four main data streams, with the opportunity for post-processing using "Daily Ensembles" data:
 
 <table width="100%">
-  <tr><td width="50%">
-    <center>
+  <center><tr><td width="50%">
 
 |<sub>API Technical Specifications</sub> | <sub>Monthly Centiles</sub> | <sub>Daily Ensembles</sub> | <sub>Hazard Indices</sub> | <sub>Anomalies</sub> |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -39,8 +38,7 @@ To get started, an API authentication key and user credentials are required to m
 | <sub>Forecast Trained<br /> to Local Geography</sub> | Content Cell</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
 | <sub>Chronic & Acute Physical<br /> Climate Change<br /> Adjustments</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
 
-    </center>
-  </td></tr>
+  </td></tr></center>
 </table>
 
 Monthly Centiles
