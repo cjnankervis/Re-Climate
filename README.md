@@ -24,19 +24,19 @@ To get started, an API authentication key and user credentials are required to m
 
 | API Technical Specifications  | Monthly Centiles | Daily Ensembles | Hazard Indices | Anomalies |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Country-wide Forecasts (Downscaled to a 5km Regular Grid) | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Country-wide Forecasts (Downscaled to a 5km Regular Grid) | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 | Town-level Modelling
-(Closest Location Match) | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Confidence Intervals (100 Ensemble Members  'E' or Centile Bands 'C' or Shift-of-the-Tails 'T') | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+(Closest Location Match) | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Confidence Intervals (100 Ensemble Members  'E' or Centile Bands 'C' or Shift-of-the-Tails 'T') | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 | Temporal Granularity
-(Seasonal 'S' or Monthly 'M' or Daily 'D') | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Spatially Correlated Daily Event Generation | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Combines NWP with Statistical Model | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Validated by the National Physical Laboratory | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Weather Variability as a Function of Numerical Model Output | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+(Seasonal 'S' or Monthly 'M' or Daily 'D') | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Spatially Correlated Daily Event Generation | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Combines NWP with Statistical Model | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Validated by the National Physical Laboratory | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Weather Variability as a Function of Numerical Model Output | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 | Forecast Trained 
-to Local Geography | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Chronic & Acute Physical Climate Change Adjustments | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+to Local Geography | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Chronic & Acute Physical Climate Change Adjustments | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 
 Monthly Centiles
 **Country-wide ASCII grid provided at a monthly granularity, useful for a big-picture seasonal overview
