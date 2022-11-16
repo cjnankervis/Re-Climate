@@ -25,17 +25,14 @@ To get started, an API authentication key and user credentials are required to m
 | <sub>API Technical Specifications</sub>  | <sub>Monthly Centiles</sub> | <sub>Daily Ensembles</sub> | <sub>Hazard Indices</sub> | <sub>Anomalies</sub> |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | <sub>Country-wide Forecasts (Downscaled to a 5km Regular Grid)</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
-| <sub>Town-level Modelling
-(Closest Location Match)</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
+| <sub>Town-level Modelling (Closest Location Match)</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
 | <sub>Confidence Intervals (100 Ensemble Members  'E' or Centile Bands 'C' or Shift-of-the-Tails 'T')</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
-| <sub>Temporal Granularity
-(Seasonal 'S' or Monthly 'M' or Daily 'D')</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
+| <sub>Temporal Granularity (Seasonal 'S' or Monthly 'M' or Daily 'D')</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
 | <sub>Spatially Correlated Daily Event Generation</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
 | <sub>Combines NWP with Statistical Model</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
 | <sub>Validated by the National Physical Laboratory</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
 | <sub>Weather Variability as a Function of Numerical Model Output</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
-| <sub>Forecast Trained 
-to Local Geography | Content Cell</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
+| <sub>Forecast Trained to Local Geography</sub> | Content Cell</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
 | <sub>Chronic & Acute Physical Climate Change Adjustments</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
 
 Monthly Centiles
