@@ -25,7 +25,7 @@ To get started, an API authentication key and user credentials are required to m
 <table>
   <tr><center><td width="50%">
 
-|API Technical<br />Specifications | :Monthly<br /> Centiles: | :Daily<br /> Ensembles: | :Hazard<br /> Indices: | :Anomalies: |
+|API Technical<br />Specifications | Monthly<br /> Centile: | Daily<br /> Ensembles | Hazard<br /> Indices | Anomalies |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | <sub>Country-wide Forecasts<br /> (Downscaled to a 5km<br /> Regular Grid)</sub> | :white_check_mark: | :x: | :x: | :white_check_mark: |
 | <sub>Town-level Modelling<br /> (Closest Location Match)</sub> | :x: | :white_check_mark: | :white_check_mark: | :x: |
