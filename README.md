@@ -25,18 +25,18 @@ To get started, an API authentication key and user credentials are required to m
 <table>
   <tr><center><td width="50%" align="center">
 
-|API Technical<br />Specifications | Monthly<br /> Centile: | Daily<br /> Ensembles | Hazard<br /> Indices | Anomalies |
+|API Technical<br />Specifications | Monthly<br /> Centile | Daily<br /> Ensembles | Hazard<br /> Indices | Anomalies |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| <sub>Country-wide Forecasts<br /> (Downscaled to a 5km<br /> Regular Grid)</sub> | :white_check_mark: | :x: | :x: | :white_check_mark: |
-| <sub>Town-level Modelling<br /> (Closest Location Match)</sub> | :x: | :white_check_mark: | :white_check_mark: | :x: |
-| <sub>Confidence Intervals (100<br /> Ensemble Members  'E' or<br /> Centile Bands 'C' or Shift-<br />of-the-Tails 'T')</sub> | <font size="20"><b>C</b></font> | <font size="20"><b>E</b></font> | <font size="20"><b>T</b></font> | <font size="20"><b>C</b></font> |
-| <sub>Temporal Granularity<br /> (Seasonal 'S' or Monthly 'M'<br /> or Daily 'D')</sub> | <font size="20"><b>M</b></font> | <font size="20"><b>D</b></font> | <font size="20"><b>S, M</b></font> | <font size="20"><b>M</b></font> |
-| <sub>Spatially Correlated Daily<br /> Event Generation</sub> | :white_check_mark: | :x: | :x: | :white_check_mark: |
-| <sub>Combines NWP with<br /> Statistical Model</sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| <sub>Validated by the National<br /> Physical Laboratory</sub> | :x: | :white_check_mark: | :x: | :x: |
-| <sub>Weather Variability as a<br /> Function of Numerical<br /> Model Output</sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| <sub>Forecast Trained<br /> to Local Geography</sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| <sub>Chronic & Acute Physical<br /> Climate Change<br /> Adjustments</sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| <sub><b>Country-wide Forecasts<br /> (Downscaled to a 5km<br /> Regular Grid)</b></sub> | :white_check_mark: | :x: | :x: | :white_check_mark: |
+| <sub><b>Town-level Modelling<br /> (Closest Location Match)</b></sub> | :x: | :white_check_mark: | :white_check_mark: | :x: |
+| <sub><b>Confidence Intervals (100<br /> Ensemble Members  'E' or<br /> Centile Bands 'C' or Shift-<br />of-the-Tails 'T')</b></sub> | <font size="20"><b>C</b></font> | <font size="20"><b>E</b></font> | <font size="20"><b>T</b></font> | <font size="20"><b>C</b></font> |
+| <sub><b>Temporal Granularity<br /> (Seasonal 'S' or Monthly 'M'<br /> or Daily 'D')</b></sub> | <font size="20"><b>M</b></font> | <font size="20"><b>D</b></font> | <font size="20"><b>S, M</b></font> | <font size="20"><b>M</b></font> |
+| <sub><b>Spatially Correlated Daily<br /> Event Generation</b></sub> | :white_check_mark: | :x: | :x: | :white_check_mark: |
+| <sub><b>Combines NWP with<br /> Statistical Model</b></sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| <sub><b>Validated by the National<br /> Physical Laboratory</b></sub> | :x: | :white_check_mark: | :x: | :x: |
+| <sub><b>Weather Variability as a<br /> Function of Numerical<br /> Model Output</b></sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| <sub><b>Forecast Trained<br /> to Local Geography</b></sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| <sub><b>Chronic & Acute Physical<br /> Climate Change<br /> Adjustments</b></sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
   </td></center></tr>
 </table>
