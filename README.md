@@ -26,7 +26,7 @@ To get started, an API authentication key and user credentials are required to m
 <table>
   <tr><td width="50%">
 
-|<sub>API Technical Specifications</sub> | <sub>Monthly Centiles</sub> | <sub>Daily Ensembles</sub> | <sub>Hazard Indices</sub> | <sub>Anomalies</sub> |
+|API Technical<br />Specifications | <sub>Monthly Centiles</sub> | <sub>Daily Ensembles</sub> | <sub>Hazard Indices</sub> | <sub>Anomalies</sub> |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | <sub>Country-wide Forecasts<br /> (Downscaled to a 5km<br /> Regular Grid)</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub> |
 | <sub>Town-level Modelling<br /> (Closest Location Match)</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> |
