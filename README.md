@@ -3,8 +3,6 @@
 
 The Re-Climate® product supplies reliable seasonal climate forecasts to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see [WeatherLogistics' Docs](https://seasonalforecasts.earth/docs).
 
-See sample [seasonal climate hazard plots](https://github.com/cjnankervis/Re-Climate/blob/main/RE-CLIMATE_PLOTS.png)
-
 The Re-Climate (seasonal climate forecast) API:
 
 Builds on 10-years of R&D to improve the reliability and accuracy of extended weather forecasts
