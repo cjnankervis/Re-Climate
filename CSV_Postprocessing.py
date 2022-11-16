@@ -149,12 +149,11 @@ if threshold_type.lower() == 'above':
     elif metric_type.lower() == 'consecutive':
         '''Mean consecutive days with an event intensity equal to or above a threshold'''
         metric_description = f'Mean consecutive days with an event intensity equal to or above {threshold}'
-        metric_output = []
+        counts_list = []
         for e in range(num_ensembles):
             groups = accumulate([0]+[(a>=threshold) != (b>=threshold) for a,b in zip(mth_data[e],mth_data[e][1:])])
             counts = sorted(Counter(groups).items())
-            counts_list = [c for n,c in counts if (n%2==0) == (mth_data[e][0]>=threshold)]
-            metric_output.append(np.nanpercentile(counts_list, percentile))
+            counts_list.append([c for n,c in counts if (n%2==0) == (mth_data[e][0]>=threshold)])
         flat_list = [item for sublist in counts_list for item in sublist]
         metric_output = np.nanpercentile(flat_list, (1-1/(num_ensembles*percentile/100*2))*100)
         metric_output = round(np.mean(metric_output), 1) if np.isfinite(np.nanmean(metric_output)) else 0.0
@@ -180,12 +179,11 @@ if threshold_type.lower() == 'below':
     elif metric_type.lower() == 'consecutive':
         '''Mean consecutive days with an event intensity equal to or below a threshold'''
         metric_description = f'Mean consecutive days with an event intensity equal to or below {threshold}'
-        metric_output = []
+        counts_list = []
         for e in range(num_ensembles):
             groups = accumulate([0]+[(a<=threshold) != (b<=threshold) for a,b in zip(mth_data[e],mth_data[e][1:])])
             counts = sorted(Counter(groups).items())
-            counts_list = [c for n,c in counts if (n%2==0) == (mth_data[e][0]<=threshold)]    
-            metric_output.append(np.nanpercentile(counts_list, percentile))
+            counts_list.append([c for n,c in counts if (n%2==0) == (mth_data[e][0]<=threshold)]  )  
         flat_list = [item for sublist in counts_list for item in sublist]
         metric_output = np.nanpercentile(flat_list, (1-1/(num_ensembles*percentile/100*2))*100)
         metric_output = round(np.mean(metric_output), 1) if np.isfinite(np.nanmean(metric_output)) else 0.0

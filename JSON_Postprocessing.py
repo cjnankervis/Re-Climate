@@ -32,12 +32,12 @@ from itertools import accumulate
 from collections import Counter
 
 '''User Inputs'''
-filename = '/NottinghamWeatherLogisticsLtd_TMinDAILYENSEMBLE-Early-Winter2023_2023dClimate.json'
+filename = '/CanterburyWeatherLogisticsLtd_RainfallDAILYENSEMBLE-Late-Summer2022_2022dClimate.json'
 forecast_type = 'c3s' # 'c3s', 'wl', 'combined'
 metric_type = 'consecutive' # 'days, 'frequency', 'accumulation', 'centile', 'consecutive'
-threshold_type = ('between', 50) # 'below', 'above', 'between' or ({threshold_type}, percentile) to assess consecutive days at a percentile level
-thresholds = (-1, 0) # Single threshold value for daily weather event, or percentile if {metric_type} = 'centile'
-forecast_month = (1,2,3) # 1,2 or 3 or any combination of month :: forecast month at t + {forecast_month}
+threshold_type = ('below', 90) # 'below', 'above', 'between' or ({threshold_type}, percentile) to assess consecutive days at a percentile level
+thresholds = (1.0) # Single threshold value for daily weather event, or percentile if {metric_type} = 'centile'
+forecast_month = (1) # 1,2 or 3 or any combination of month :: forecast month at t + {forecast_month}
 ###
 
 month_names = ('January','February','March',\
@@ -153,12 +153,11 @@ if threshold_type.lower() == 'above':
     elif metric_type.lower() == 'consecutive':
         '''Mean consecutive days with an event intensity equal to or above a threshold'''
         metric_description = f'Mean consecutive days with an event intensity equal to or above {threshold}'
-        metric_output = []
+        counts_list = []
         for e in range(num_ensembles):
             groups = accumulate([0]+[(a>=threshold) != (b>=threshold) for a,b in zip(mth_data[e],mth_data[e][1:])])
             counts = sorted(Counter(groups).items())
-            counts_list = [c for n,c in counts if (n%2==0) == (mth_data[e][0]>=threshold)]
-            metric_output.append(np.nanpercentile(counts_list, percentile))
+            counts_list.append([c for n,c in counts if (n%2==0) == (mth_data[e][0]>=threshold)])
         flat_list = [item for sublist in counts_list for item in sublist]
         metric_output = np.nanpercentile(flat_list, (1-1/(num_ensembles*percentile/100*2))*100)
         metric_output = round(np.mean(metric_output), 1) if np.isfinite(np.nanmean(metric_output)) else 0.0
@@ -184,12 +183,11 @@ if threshold_type.lower() == 'below':
     elif metric_type.lower() == 'consecutive':
         '''Mean consecutive days with an event intensity equal to or below a threshold'''
         metric_description = f'Mean consecutive days with an event intensity equal to or below {threshold}'
-        metric_output = []
+        counts_list = []
         for e in range(num_ensembles):
             groups = accumulate([0]+[(a<=threshold) != (b<=threshold) for a,b in zip(mth_data[e],mth_data[e][1:])])
             counts = sorted(Counter(groups).items())
-            counts_list = [c for n,c in counts if (n%2==0) == (mth_data[e][0]<=threshold)]    
-            metric_output.append(np.nanpercentile(counts_list, percentile))
+            counts_list.append([c for n,c in counts if (n%2==0) == (mth_data[e][0]<=threshold)]  )  
         flat_list = [item for sublist in counts_list for item in sublist]
         metric_output = np.nanpercentile(flat_list, (1-1/(num_ensembles*percentile/100*2))*100)
         metric_output = round(np.mean(metric_output), 1) if np.isfinite(np.nanmean(metric_output)) else 0.0
