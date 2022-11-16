@@ -72,9 +72,11 @@ Similar to the monthly centiles, anomalies provide a country-wide mapped overvie
 
 ## Example Outputs
 
-Monitoring summer heat extremes, July forecast issued on 13th June 2022
-<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/TMax_System2.png" alt="July 2022 extreme temperatures and heatwave conditions" width="300px">
+Monitoring summer temperature extremes and heatwave extremes, July forecast issued on 13th June 2022
 
-Monitoring summer drought conditions, July forecast issued on 13th June 2022
-<img src="[https://seasonalforecasts.earth/wp-content/uploads/2022/11/TMax_System2.png](https://seasonalforecasts.earth/wp-content/uploads/2022/11/Precip_System2.png)" alt="July 2022 extreme temperatures and heatwave conditions" width="300px">
+<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/TMax_System2.png" alt="July 2022 temperature extremes and heatwave conditions" width="80%">
+
+Monitoring summer precipitation deficits and drought conditions, July forecast issued on 13th June 2022
+
+<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Precip_System2.png" alt="Summer 2022 drought management and heatwave conditions" width="80%">
 
