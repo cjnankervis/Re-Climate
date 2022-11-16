@@ -27,16 +27,16 @@ To get started, an API authentication key and user credentials are required to m
 
 |API Technical<br />Specifications | <sub>Monthly Centiles</sub> | <sub>Daily Ensembles</sub> | <sub>Hazard Indices</sub> | <sub>Anomalies</sub> |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| <sub>Country-wide Forecasts<br /> (Downscaled to a 5km<br /> Regular Grid)</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub> |
-| <sub>Town-level Modelling<br /> (Closest Location Match)</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> |
-| <sub>Confidence Intervals (100<br /> Ensemble Members  'E' or<br /> Centile Bands 'C' or Shift-<br />of-the-Tails 'T')</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub> |
+| <sub>Country-wide Forecasts<br /> (Downscaled to a 5km<br /> Regular Grid)</sub> | &#10004 | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> |
+| <sub>Town-level Modelling<br /> (Closest Location Match)</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> |
+| <sub>Confidence Intervals (100<br /> Ensemble Members  'E' or<br /> Centile Bands 'C' or Shift-<br />of-the-Tails 'T')</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> |
 | <sub>Temporal Granularity<br /> (Seasonal 'S' or Monthly 'M'<br /> or Daily 'D')</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> |
-| <sub>Spatially Correlated Daily<br /> Event Generation</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub> | <sub>Content Cell</sub> |
-| <sub>Combines NWP with<br /> Statistical Model</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub> |
-| <sub>Validated by the National<br /> Physical Laboratory</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub> | <sub>Content Cell</sub> |
+| <sub>Spatially Correlated Daily<br /> Event Generation</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub> | <sub>Content Cell</sub> |
+| <sub>Combines NWP with<br /> Statistical Model</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub> |
+| <sub>Validated by the National<br /> Physical Laboratory</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub> | <sub>Content Cell</sub> |
 | <sub>Weather Variability as a<br /> Function of Numerical<br /> Model Output</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> |
-| <sub>Forecast Trained<br /> to Local Geography</sub> | Content Cell</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub> |
-| <sub>Chronic & Acute Physical<br /> Climate Change<br /> Adjustments</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> |
+| <sub>Forecast Trained<br /> to Local Geography</sub> | Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub> |
+| <sub>Chronic & Acute Physical<br /> Climate Change<br /> Adjustments</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> | <sub>Content Cell</sub> |
 
   </td></center></tr>
 </table>
