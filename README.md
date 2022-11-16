@@ -22,7 +22,7 @@ Spain: 35.71° to 44.17° North, -9.67° to 3.67° East
 Turkey: 35.82° to 42.14° North, 26.04° to 44.79° East
 To get started, an API authentication key and user credentials are required to make requests using [API-Request.py]. Please contact the product owner (accounts@weatherlogistics.com). The API request scripts will provide access to four main data streams, with the opportunity for post-processing using "Daily Ensembles" data:
 
-| <div style="width:100px"><sub>API Technical Specifications</sub></div>  | <sub>Monthly Centiles</sub> | <sub>Daily Ensembles</sub> | <sub>Hazard Indices</sub> | <sub>Anomalies</sub> |
+<div style="width:100px">| <sub>API Technical Specifications</sub> |</div> <sub>Monthly Centiles</sub> | <sub>Daily Ensembles</sub> | <sub>Hazard Indices</sub> | <sub>Anomalies</sub> |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | <sub>Country-wide Forecasts (Downscaled to a 5km Regular Grid)</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
 | <sub>Town-level Modelling (Closest Location Match)</sub> | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  | <sub>Content Cell</sub>  |
