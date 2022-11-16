@@ -82,7 +82,7 @@ else:
     if not len(np.shape(thresholds)):
         threshold = thresholds
     else:
-        print('Error. Expecting one threshold value, but only received multiple values.')
+        print('Error. Expecting one threshold value, but received multiple values.')
         sys.exit()
 
 if not len(np.shape(forecast_month)):
