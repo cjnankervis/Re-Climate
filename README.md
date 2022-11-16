@@ -47,7 +47,7 @@ To get started, an API authentication key and user credentials are required to m
 
 Monthly centile data supplies users with mapped averages of precipitation in addition to minimum, maximum and average monthly temperatures. At present these are available for the United Kingdom, Spain and Turkey. They present the lower to upper thresholds in the respectively meteorological variables at the 10th, 30th, median (50th), 70th and 90th centiles. Since the seasonal climate forecasts provide well-calibrated information, 8 in 10 months are likely to present monthly conditions between the 10th and 90th centiles at any specified geographical location.
 
-To request this climate data, see [monthly centile request example input](https://github.com/cjnankervis/Re-Climate/blob/main/MonthlyCentiles_example.json). See further [documentation](https://seasonalforecasts.earth/docs/gridded-datasets/).
+To request this climate data, see [monthly centile request example input](https://github.com/cjnankervis/Re-Climate/blob/main/MonthlyCentiles_example.json). See further [documentation](https://seasonalforecasts.earth/docs/gridded-datasets/) and [ASCII formatting](https://seasonalforecasts.earth/docs/climate-data-outputs/).
 
 ## Daily Ensembles
 **Unique access to 100 daily simulations at the town/ city scale, ideal for those with assets at specified locations
