@@ -33,7 +33,7 @@ Similarly, NPL’s report also provided direct comparisons for the [late summer 
 
 ## Requesting API Access
 
-To get started, an API authentication key and user credentials are required to make requests. Please contact the [product owner](mailto:accounts@weatherlogistics.com). To make single requests the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script should be used, and for multiple requests please seethe [API-RequestMultithreading.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-RequestMultithreading.py). These API request scripts will provide access to four main data streams, with the scripts also supplied for post-processing into daily statistics using "Daily Ensembles" data.
+To get started, an API authentication key and user credentials are required to make requests. Please contact the [product owner](mailto:accounts@weatherlogistics.com). To make single requests the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script should be used, and for multiple requests please see [API-Request-Multithreading.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request-Multithreading.py). These API request scripts will provide access to four main data streams, with the scripts also supplied for post-processing into daily statistics using "Daily Ensembles" data.
 
 ## Understanding Seasonal Forecast Requests
 
