@@ -1,8 +1,8 @@
 # WeatherLogistics Re-Climate® API
 
-The Re-Climate® product supplies reliable seasonal climate forecasts to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see https://seasonalforecasts.earth/docs.
+The Re-Climate® product supplies reliable seasonal climate forecasts to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see [WeatherLogistics' Docs](https://seasonalforecasts.earth/docs).
 
-Sample seasonal climate hazard plots can be viewed at: https://github.com/cjnankervis/Re-Climate/blob/main/RE-CLIMATE_PLOTS.png
+See sample [seasonal climate hazard plots](https://github.com/cjnankervis/Re-Climate/blob/main/RE-CLIMATE_PLOTS.png)
 
 The Re-Climate (seasonal climate forecast) API:
 
@@ -17,10 +17,10 @@ Supplies town or city data, reporting the closest datapoint where applicable
 Updates climate hazard information on the 14th day of each month
 Bounding box restrictions:
 
-UK: 49.84° to 60.85° North, -10.7° to 2.69° East
-Spain: 35.71° to 44.17° North, -9.67° to 3.67° East
-Turkey: 35.82° to 42.14° North, 26.04° to 44.79° East
-To get started, an API authentication key and user credentials are required to make requests using [API-Request.py]. Please contact the product owner (accounts@weatherlogistics.com). The API request scripts will provide access to four main data streams, with the opportunity for post-processing using "Daily Ensembles" data:
+- UK: 49.84° to 60.85° North, -10.7° to 2.69° East
+- Spain: 35.71° to 44.17° North, -9.67° to 3.67° East
+- Turkey: 35.82° to 42.14° North, 26.04° to 44.79° East
+To get started, an API authentication key and user credentials are required to make requests using the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script. Please contact the [product owner] (mailto:accounts@weatherlogistics.com). The API request scripts will provide access to four main data streams, with the opportunity for post-processing using "Daily Ensembles" data:
 
 <table>
   <tr><center><td width="50%" align="center">
@@ -46,7 +46,7 @@ Monthly Centiles
 
 Monthly centile data supplies users with mapped averages of precipitation in addition to minimum, maximum and average monthly temperatures. At present these are available for the United Kingdom, Spain and Turkey. They present the lower to upper thresholds in the respectively meteorological variables at the 10th, 30th, median (50th), 70th and 90th centiles. Since the seasonal climate forecasts provide well-calibrated information, 8 in 10 months are likely to present monthly conditions between the 10th and 90th centiles at any specified geographical location.
 
-To request this climate data, see request [MonthlyCentiles_example.json]. See documentation at https://seasonalforecasts.earth/docs/gridded-datasets/.
+To request this climate data, see [monthly centile request example input](https://github.com/cjnankervis/Re-Climate/blob/main/MonthlyCentiles_example.json). See further [documentation](https://seasonalforecasts.earth/docs/gridded-datasets/).
 
 Daily Ensembles
 **Unique access to 100 daily simulations at the town/ city scale, ideal for those with assets at specified locations
@@ -55,16 +55,16 @@ WeatherLogistics' daily ensembles provide a quickstart framework to calculate fr
 
 The first 50 ensemble members are generated using WeatherLogistics' statistical forecast system, and members 51 to 100 are generated using a multi-model average of modified Copernicus seasonal climate forecast data*. Both systems have been developed to achieve the best-on-market accuracy and reliability and have been independently and impartially reviewed by the National Physical Laboratory.
 
-To request this climate data, see request [DailyEnsembles_example.json], with postprocessing scripts provided for CSV [CSV_Postprocessing.py] and JSON [JSON_Postprocessing.py]. See documentation at https://seasonalforecasts.earth/docs/daily-time-series/.
+To request this climate data, see [daily ensembles example input](https://github.com/cjnankervis/Re-Climate/blob/main/DailyEnsembles_example.json), and its postprocessing scripts provided for [CSV](https://github.com/cjnankervis/Re-Climate/blob/main/CSV_Postprocessing.py) and [JSON](https://github.com/cjnankervis/Re-Climate/blob/main/JSON_Postprocessing.py) inputs. See further [documentation](https://seasonalforecasts.earth/docs/daily-time-series/).
 
 Hazard Indices
 **Mapped country-wide town/ city indices, useful for a snapshot overview of acute seasonal climate hazards
 
-Hazard indices show index values as a shift in the tail distribution from a baseline climatology. Climate hazards indices include precipitation, drought, SPI, hail, aridity, humidity, solar, wind, heat and cold. These are scaled from 0 - 10, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatatology reference, with 5 indicating the the forecast is on par with climate expectations for the current forecast month or season. To request this climate data, see request [HazardIndices_example.json]. See documentation at https://seasonalforecasts.earth/docs/hazard-indices/.
+Hazard indices show index values as a shift in the tail distribution from a baseline climatology. Climate hazards indices include precipitation, drought, SPI, hail, aridity, humidity, solar, wind, heat and cold. These are scaled from 0 - 10, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatatology reference, with 5 indicating the the forecast is on par with climate expectations for the current forecast month or season. To request this climate data, see [hazard indices example input](https://github.com/cjnankervis/Re-Climate/blob/main/HazardIndices_example.json). See further [documentation](https://seasonalforecasts.earth/docs/hazard-indices/).
 
 Anomalies
 **Country-wide ASCII grid/ town or city CSV provided at a monthly granularity; a departure forecast useful for a big-picture seasonal overview
 
-Similar to the monthly centiles, anomalies provide a country-wide mapped overview of departures from an up-to-date climatology to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data, see request [Anomalies_example.json]. See documentation at https://seasonalforecasts.earth/docs/gridded-datasets/.
+Similar to the monthly centiles, anomalies provide a country-wide mapped overview of departures from an up-to-date climatology to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Anomalies_example.json). See further [documentation](https://seasonalforecasts.earth/docs/gridded-datasets/).
 
 *Contains modified Copernicus Climate Change Service information 2022. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
