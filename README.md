@@ -23,7 +23,7 @@ Turkey: 35.82° to 42.14° North, 26.04° to 44.79° East
 To get started, an API authentication key and user credentials are required to make requests using [API-Request.py]. Please contact the product owner (accounts@weatherlogistics.com). The API request scripts will provide access to four main data streams, with the opportunity for post-processing using "Daily Ensembles" data:
 
 <table>
-  <tr><center><td width="50%">
+  <tr><center><td width="50%" align="center">
 
 |API Technical<br />Specifications | Monthly<br /> Centile: | Daily<br /> Ensembles | Hazard<br /> Indices | Anomalies |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -36,7 +36,7 @@ To get started, an API authentication key and user credentials are required to m
 | <sub>Validated by the National<br /> Physical Laboratory</sub> | :x: | :white_check_mark: | :x: | :x: |
 | <sub>Weather Variability as a<br /> Function of Numerical<br /> Model Output</sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | <sub>Forecast Trained<br /> to Local Geography</sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| <sub>Chronic & Acute Physical<br /> Climate Change<br /> Adjustments</sub> | :white_check_mark: | :white_check_mark: | <:white_check_mark: | :white_check_mark: |
+| <sub>Chronic & Acute Physical<br /> Climate Change<br /> Adjustments</sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
   </td></center></tr>
 </table>
