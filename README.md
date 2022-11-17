@@ -72,6 +72,10 @@ The first 50 ensemble members are generated using WeatherLogistics' statistical 
 
 To request this climate data, see [daily ensembles example input](https://github.com/cjnankervis/Re-Climate/blob/main/DailyEnsembles_example.json), and its postprocessing scripts provided for [CSV](https://github.com/cjnankervis/Re-Climate/blob/main/CSV_Postprocessing.py) and [JSON](https://github.com/cjnankervis/Re-Climate/blob/main/JSON_Postprocessing.py) inputs. See further [documentation](https://seasonalforecasts.earth/docs/daily-time-series/).
 
+<code>Mean consecutive days with an event intensity equal to or above 20 is 1.0, which is based on analysis of 50 ensemble members and 31 days in July</code>
+
+<code>Mean consecutive days with an event intensity equal to or below 1.0 is 13.67, which is based on analysis of 50 ensemble members and 31 days in July</code>
+
 ## Hazard Indices
 **Mapped country-wide town/ city indices, useful for a snapshot overview of acute seasonal climate hazards
 
