@@ -20,6 +20,7 @@ Supplied as an 'ensemble', a collection of well-calibrated daily weather time se
 ### Supporting Sustainable Agriculture
 
 WeatherLogistics has a mission to help meet UN Sustainable Development Goals (SDGs) for food, water and natural resources. Currently the firm is developing a sustainability monitoring platform to advise farmers on their present and future climate exposure and how to reduce both their agricultural inputs and reduce greenhouse gas emissions. This forms part of a 12-month project in partnership with the University of Leicester, the University of Reading and supported and funded by UKRI/ STFC.
+
 Future farmers will be able to build smarter precision farming solutions and benchmarking platforms, integrated pest management systems, and decision-support applications to avoid food supply distribution. Growers can also optimise their operations with better timed preventative spraying, frost protection, and crop quality assurance.
 
 # Features
@@ -43,6 +44,7 @@ The Re-Climate (seasonal climate forecast) API:
 - UK: 49.84° to 60.85° North, -10.7° to 2.69° East
 - Spain: 35.71° to 44.17° North, -9.67° to 3.67° East
 - Turkey: 35.82° to 42.14° North, 26.04° to 44.79° East
+*USA is in our future development pipeline
 
 ## Validation
 
