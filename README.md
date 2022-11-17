@@ -72,8 +72,10 @@ The first 50 ensemble members are generated using WeatherLogistics' statistical 
 
 To request this climate data, see [daily ensembles example input](https://github.com/cjnankervis/Re-Climate/blob/main/DailyEnsembles_example.json), and its postprocessing scripts provided for [CSV](https://github.com/cjnankervis/Re-Climate/blob/main/CSV_Postprocessing.py) and [JSON](https://github.com/cjnankervis/Re-Climate/blob/main/JSON_Postprocessing.py) inputs. See further [documentation](https://seasonalforecasts.earth/docs/daily-time-series/).
 
+Using "JSON_Postprocessing.py" to calculate the 90th centile of ensemble members with consecutive dry days with 24-hour accumulated precipitation of less than 1mm
 <code>Mean consecutive days with an event intensity equal to or above 20 is 1.0, which is based on analysis of 50 ensemble members and 31 days in July</code>
 
+Using "CSV_Postproccessing.py" to calculate an ensemble average of conseuctive days with tropical nights (T<sub>min</sub> > 20°C) for the multi-model benchmark/ numerical weather prediction models
 <code>Mean consecutive days with an event intensity equal to or below 1.0 is 13.67, which is based on analysis of 50 ensemble members and 31 days in July</code>
 
 ## Hazard Indices
