@@ -61,7 +61,7 @@ To get started, an API authentication key and user credentials are required to m
 
 Monthly centile data supplies users with mapped averages of precipitation in addition to minimum, maximum and average monthly temperatures. At present these are available for the mainland geographical area of the United Kingdom, Spain and Turkey. They present the lower to upper thresholds in the respectively meteorological variables at the 10th, 30th, median (50th), 70th and 90th centiles. Since the seasonal climate forecasts provide well-calibrated information, 8 in 10 months are likely to present monthly conditions between the 10th and 90th centiles at any specified geographical location.
 
-To request this climate data, see [monthly centile request example input](https://github.com/cjnankervis/Re-Climate/blob/main/MonthlyCentiles_example.json). See further [documentation](https://seasonalforecasts.earth/docs/gridded-datasets/) and [ASCII formatting](https://seasonalforecasts.earth/docs/climate-data-outputs/).
+To request this climate data, see [monthly centile request example input](https://github.com/cjnankervis/Re-Climate/blob/main/MonthlyCentiles_example.json). See further [documentation](https://seasonalforecasts.earth/docs/gridded-datasets/) and [ASCII formatting](https://seasonalforecasts.earth/docs/climate-data-outputs/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
 
 ## Daily Ensembles
 **Unique access to 100 daily simulations at the town/ city scale, ideal for those with assets at specified locations
@@ -80,7 +80,9 @@ Hazard indices show index values as a shift in the tail distribution from a base
 ## Anomalies
 **Country-wide ASCII grid/ town or city CSV provided at a monthly granularity; a departure forecast useful for a big-picture seasonal overview
 
-Similar to the monthly centiles, anomalies provide a country-wide mapped overview of departures from an up-to-date climatology to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Anomalies_example.json). See further [documentation](https://seasonalforecasts.earth/docs/gridded-datasets/).
+Similar to the monthly centiles, anomalies provide a country-wide mapped overview of departures from an up-to-date climatology to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Anomalies_example.json). See further [documentation](https://seasonalforecasts.earth/docs/gridded-datasets/).To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
+
+## Acknowledgements
 
 *Contains modified Copernicus Climate Change Service information 2022. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
 
