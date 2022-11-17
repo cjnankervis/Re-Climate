@@ -82,6 +82,9 @@ Hazard indices show index values as a shift in the tail distribution from a base
 
 Similar to the monthly centiles, anomalies provide a country-wide mapped overview of departures from an up-to-date climatology to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Anomalies_example.json). See further [documentation](https://seasonalforecasts.earth/docs/gridded-datasets/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
 
+November precipitation anomalies using Visualise_ASCII.py, using Re-Climate data issued on 13th October 2022.
+<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots.png" alt="Extended precipitation forecast for November 2022" width="80%">
+
 ## Acknowledgements
 
 *Contains modified Copernicus Climate Change Service information 2022. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
