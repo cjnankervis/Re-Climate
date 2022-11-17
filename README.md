@@ -3,21 +3,23 @@
 
 ## About WeatherLogistics
 
-WeatherLogistics® is an ambitious UK based climate technology company, founded in 2014. Its core development expertise is seasonal climate forecasting, offering over 10-years technological expertise.
+WeatherLogistics® is an ambitious climate technology company with 10-years expertise in seasonal climate forecasting.
 
-The company’s successful projects include a European Space Agency kick-start activity. WeatherLogistics® has also undertaken data validation and meteorological product audits for the agricultural industry. They deliver climate services to renewable energy and water utility firms, and has worked with insurance clients. Delivered through the Google Cloud Platform, its best-on-market extended precipitation data helps support operations teams in Turkey and the UK impacted by drought.
+The company’s successful projects include a European Space Agency kick-start activity. WeatherLogistics® has also undertaken data validation and meteorological product audits for the agricultural industry. Its clients include renewable energy, water management and insurance firms. Delivered through the Google Cloud Platform, its extended precipitation data offers the most detailed information available to support operations teams in Turkey and the UK impacted by drought.
 
-WeatherLogistics' seasonal forecast codebase has been verified by the [Science & Technology Facilities Council](https://www.ukri.org/news-and-events/responding-to-climate-change/predicting-and-managing-climate-risks/flexible-and-scalable-solutions-for-climate-smart-forecasting/) and results validated internally and by [data specialists at Agrimetrics](https://agrimetrics.co.uk/2020/06/03/seasonal-climate-forecasts-for-agriculture/). Weather Logistics also helped initiate and sponsor [Yield21 ‘Predict Our Harvest’](https://www.agritechcentres.com/news/uks-2021-wheat-yield-predicted-to-surpass-defra-estimate) and is also a [UKRI/ NERC project partner for Seasonal Weather Prediction](https://gtr.ukri.org/project/C31D56B3-9A23-4AD9-BD85-752248E3D09F).
+Over the past 5 years WeatherLogistics' seasonal forecast codebase has been verified by the [Science & Technology Facilities Council](https://www.ukri.org/news-and-events/responding-to-climate-change/predicting-and-managing-climate-risks/flexible-and-scalable-solutions-for-climate-smart-forecasting/) and its results validated internally and by [data specialists at Agrimetrics](https://agrimetrics.co.uk/2020/06/03/seasonal-climate-forecasts-for-agriculture/). Weather Logistics also helped initiate and sponsor [Yield21 ‘Predict Our Harvest’](https://www.agritechcentres.com/news/uks-2021-wheat-yield-predicted-to-surpass-defra-estimate) and is also a [UKRI/ NERC project partner for Seasonal Weather Prediction](https://gtr.ukri.org/project/C31D56B3-9A23-4AD9-BD85-752248E3D09F).
 
 ## Benefits
 
-Re-Climate® product delivers the most reliable seasonal climate prediction system in Europe, with its precipitation forecasts independently assessed by the National Physical Laboratory. It achieves this by blending numerous climate datasets and weather models through its algorithms; and this helps organisations to accurately forecast extreme weather, calculate their risk exposure and build operational resilience.
+The Re-Climate® API delivers the most reliable seasonal climate prediction system in Europe, with its precipitation forecasts independently assessed by the National Physical Laboratory. It achieves this by blending numerous climate datasets and weather models through its algorithms; and this helps organisations to accurately forecast extreme weather, calculate their risk exposure and build operational resilience.
 
 Modelling weather events and seasonal climate helps decision-makers communicate losses linked to floods, drought, wind damage, hail, heatwaves or freeze days to within a few kilometres.
 
-Supplied as an ‘ensemble’, a collection of well-calibrated weather time series, Re-Climate® enables re/insurance firms to better hedge or price their risk. The product will also help clients build resilience plans, develop scenario plans and protect assets from extreme weather that impact supply chain management.
+Supplied as an ‘ensemble’, a collection of well-calibrated daily weather time series, Re-Climate® enables firms to better hedge or price their risk. The product also helps clients adapt to acute physical risks posed by extreme weather events such as heatwaves and floods, develop rigorous scenario plans, and protect assets from climate hazards on operational timescales.
 
-Build smarter precision farming solutions and benchmarking platforms, integrated pest management systems, and decision-support applications to avoid food supply distribution. Improve operations with better timed preventative spraying, frost protection, crop quality assurance.
+### Supporting Sustainable Agriculture
+
+WeatherLogistics has a mission to help meet UN Sustainable Development Goals (SGDs) for food, water and resources. Build smarter precision farming solutions and benchmarking platforms, integrated pest management systems, and decision-support applications to avoid food supply distribution. Improve operations with better timed preventative spraying, frost protection, crop quality assurance.
 
 # Features
 
