@@ -44,7 +44,8 @@ The Re-Climate (seasonal climate forecast) API:
 - UK: 49.84° to 60.85° North, -10.7° to 2.69° East
 - Spain: 35.71° to 44.17° North, -9.67° to 3.67° East
 - Turkey: 35.82° to 42.14° North, 26.04° to 44.79° East
-*USA is in our future development pipeline
+
+*USA is in our future development pipeline, a world without boundaries
 
 ## Validation
 
