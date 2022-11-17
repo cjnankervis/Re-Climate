@@ -15,7 +15,7 @@ Generates a country-wide plot of a Re-Climate® temperature or precipitation var
 import numpy as np
 import matplotlib.pyplot as plt
 
-data_path = "/Anom_TemperatureNovemberRawDataEarly-Winter2022_20222-4mth_10thC3S_ForecastdClimate.asc"
+data_path = "./Rainfall_Anomaly.asc"
 variable_units = "Variable Units"
 
 # Read in Re-Climate data header data
