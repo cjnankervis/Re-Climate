@@ -14,10 +14,16 @@ Generates a country-wide plot of a Re-Climate® temperature or precipitation var
 
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
 
 data_paths = ("./Rainfall_AnomalyBenchmark.asc", "./Rainfall_AnomalyWeatherLogistics.asc")
-titles = ("Rainfall Benchmark", "Rainfall WeatherLogistics")
+titles = ("Benchmark", "WeatherLogistics")
 variable_units = "Precipitation/ % of Climate"
+
+fig, (ax1, ax2) = plt.subplots(1,2,dpi=2000,figsize=(14,5),constrained_layout=True)
+plt.subplots_adjust(wspace=0.3)
+fig.suptitle("Re-Climate® November Rainfall Departure Forecast. Copyright 2022. All rights reserved.")
+gs = gridspec.GridSpec(1,3,width_ratios=[5,0.5,5])
 
 for ind, data_path in enumerate(data_paths):
     # Read in Re-Climate data header data
@@ -35,19 +41,20 @@ for ind, data_path in enumerate(data_paths):
      
     # Read in the data array
     data_array = np.loadtxt(data_path, dtype=np.float, skiprows=6)
-     
+    
     # Set the nodata values to nan
     data_array[data_array == data_nodata] = np.nan
-     
+    
+    ax = ax1 if not ind else ax2
     # Plot Re-Climate ASCII grid with colorbar
-    fig, ax = plt.subplots(dpi=2000)
-    ax.set_title("Re-Climate® "+titles[ind]+" Forecast. \nCopyright. All rights reserved.")
-     
-    # Get the img object in order to pass it to the colorbar function
+    ax.set_title(titles[ind])
+    
+    # Show a colorbar legend
     img_plot = ax.imshow(data_array, cmap='jet')
      
-    # Place a colorbar next to the map
-    cbar = fig.colorbar(img_plot, label=f"{variable_units}")
-     
     ax.grid(True)
-    plt.show()
+
+# Place a colorbar next to the map
+cbar = fig.colorbar(img_plot, cax=fig.add_subplot(gs[1]), label=f"{variable_units}")
+# Show forecast plots
+plt.show()
