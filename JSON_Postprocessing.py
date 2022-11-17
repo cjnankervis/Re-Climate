@@ -32,7 +32,7 @@ from itertools import accumulate
 from collections import Counter
 
 '''User Inputs'''
-filename = '/CanterburyWeatherLogisticsLtd_RainfallDAILYENSEMBLE-Late-Summer2022_2022dClimate.json'
+filename = './Canterbury_RainfallDAILYENSEMBLE-Late-Summer2022.json'
 forecast_type = 'c3s' # 'c3s', 'wl', 'combined'
 metric_type = 'consecutive' # 'days, 'frequency', 'accumulation', 'centile', 'consecutive'
 threshold_type = ('below', 90) # 'below', 'above', 'between' or ({threshold_type}, percentile) to assess consecutive days at a percentile level
