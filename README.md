@@ -52,7 +52,7 @@ To get started, an API authentication key and user credentials are required to m
 | <sub><b>Weather Variability as a<br /> Function of Numerical<br /> Model Output</b></sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | <sub><b>Forecast Trained<br /> to Local Geography</b></sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | <sub><b>Chronic & Acute Physical<br /> Climate Change<br /> Adjustments</b></sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-NWP = Numerical Weather Prediction
+    <sub>NWP = Numerical Weather Prediction</sub>
 
   </td></center></tr>
 </table>
