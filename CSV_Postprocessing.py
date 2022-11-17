@@ -31,7 +31,7 @@ from itertools import accumulate
 from collections import Counter
 
 '''User Inputs'''
-filename = '/NottinghamWeatherLogisticsLtd_TMinDAILYENSEMBLE-Early-Winter2023_2023dClimate.csv'
+filename = './Nottingham_TMinDAILYENSEMBLE-Early-Winter2023.csv'
 forecast_type = 'wl' # 'c3s', 'wl', 'combined'
 metric_type = 'consecutive' # 'days, 'frequency', 'accumulation', 'centile', 'consecutive'
 threshold_type = ('between', 50) # 'below', 'above', 'between' or ({threshold_type}, percentile) to assess consecutive days at a percentile level
