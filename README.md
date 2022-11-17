@@ -15,11 +15,11 @@ The Re-Climate® API delivers the most reliable seasonal climate prediction syst
 
 Modelling weather events and seasonal climate helps decision-makers communicate losses linked to floods, drought, wind damage, hail, heatwaves or freeze days to within a few kilometres.
 
-Supplied as an ‘ensemble’, a collection of well-calibrated daily weather time series, Re-Climate® enables firms to better hedge or price their risk. The product also helps clients adapt to acute physical risks posed by extreme weather events such as heatwaves and floods, develop rigorous scenario plans, and protect assets from climate hazards on operational timescales.
+Supplied as an 'ensemble', a collection of well-calibrated daily weather time series, Re-Climate® enables firms to better hedge or price their risk. The product also helps clients adapt to acute physical risks posed by extreme weather events such as heatwaves and floods, develop rigorous scenario plans, and protect assets from climate hazards on operational timescales.
 
 ### Supporting Sustainable Agriculture
 
-WeatherLogistics has a mission to help meet UN Sustainable Development Goals (SGDs) for food, water and resources. Build smarter precision farming solutions and benchmarking platforms, integrated pest management systems, and decision-support applications to avoid food supply distribution. Improve operations with better timed preventative spraying, frost protection, crop quality assurance.
+WeatherLogistics has a mission to help meet UN Sustainable Development Goals (SDGs) for food, water and natural resources. Currently the firm is developing a sustainability monitoring platform to advise farmers on their present and future climate exposure and how to reduce both their agricultural inputs and reduce greenhouse gas emissions. This forms part of a 12-month project in partnership with the University of Leicester, the University of Reading and supported and funded by UKRI/ STFC. Using WeatherLogistics' services future farmers will be able to build smarter precision farming solutions and benchmarking platforms, integrated pest management systems, and decision-support applications to avoid food supply distribution. Improve operations with better timed preventative spraying, frost protection, crop quality assurance.
 
 # Features
 
