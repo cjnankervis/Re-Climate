@@ -101,7 +101,7 @@ November precipitation anomalies plotted using Re-Climate® data issued on 13th 
 
 *Contains modified Copernicus Climate Change Service information 2022. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
 
-## Example Outputs
+## Additional Examples
 
 Monitoring summer temperature extremes and heatwave extremes, July forecast issued on 13th June 2022
 
