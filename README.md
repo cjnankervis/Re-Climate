@@ -1,6 +1,14 @@
 # WeatherLogistics Re-Climate® API
 [<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" alt="Reliable Seasonal Climate Forecasts" width="250"/>](https://weatherlogistics.com)
 
+Independently and impartially assessed by the [National Physical Laboratory](https://www.npl.co.uk/national-challenges), Re-Climate™ delivers reliable forecasts of climate perils covering the next 3 months. Modelling weather events and seasonal climate helps decision-makers communicate losses linked to floods, drought, wind damage, hail, heatwaves or freeze days to within a few kilometres.
+
+Supplied as an ‘ensemble’, a collection of well-calibrated weather time series, we enable re/insurance firms to better hedge or price their risk. We help clients build resilience plans, develop scenario plans and protect assets from extreme weather that impact supply chain management.
+
+Build smarter precision farming solutions and benchmarking platforms, integrated pest management systems, and decision-support applications to avoid food supply distribution. Improve operations with better timed preventative spraying, frost protection, crop quality assurance.
+
+Weather Logistics’ seasonal forecast codebase has been verified by the [Science & Technology Facilities Council](https://www.ukri.org/news-and-events/responding-to-climate-change/predicting-and-managing-climate-risks/flexible-and-scalable-solutions-for-climate-smart-forecasting/) and results validated internally and by [data specialists at Agrimetrics](https://agrimetrics.co.uk/2020/06/03/seasonal-climate-forecasts-for-agriculture/). Weather Logistics also helped initiate and sponsor [Yield21 ‘Predict Our Harvest’](https://www.agritechcentres.com/news/uks-2021-wheat-yield-predicted-to-surpass-defra-estimate) and is also a [UKRI/ NERC project partner for Seasonal Weather Prediction](https://gtr.ukri.org/project/C31D56B3-9A23-4AD9-BD85-752248E3D09F).
+
 The Re-Climate® product supplies reliable seasonal climate forecasts to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see [WeatherLogistics' Docs](https://seasonalforecasts.earth/docs).
 
 The Re-Climate (seasonal climate forecast) API:
