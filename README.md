@@ -49,7 +49,7 @@ The Re-Climate (seasonal climate forecast) API:
 
 ## Validation
 
-WeatherLogistics completed a successful collaboration with the National Physical Laboratory (NPL) in April 2022. As part of its deliverable, NPL validated WeatherLogistics' short-term climate forecasts and provided us with a framework for quality assessment of probabilistic weather predictions. WeatherLogistics used these techniques to ensure the reliability of its Re-Climate® product delivery.
+WeatherLogistics completed a successful collaboration with the National Physical Laboratory (NPL) in April 2022. As part of its deliverable, NPL validated its short-term climate forecasts and provided a statistical framework for quality assessment of probabilistic weather predictions. WeatherLogistics used these techniques to ensure the reliability of its Re-Climate® product delivery.
 
 ### Direct Comparisons of Seasonal Forecasts Against Observations
 
