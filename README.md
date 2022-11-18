@@ -122,7 +122,10 @@ Like the monthly centiles request, anomalies provide a country-wide mapped overv
 ### Example C.
 November precipitation anomalies plotted using Re-Climate® data issued on 13th October 2022.
 
+### Median
 <center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots.png" alt="Extended precipitation forecast for November 2022" width="80%"></center>
+### 90th Centile
+<center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots_90th.png alt="Northeast and Central Scotland flooding, 90th centile of precipitation forecast for November 2022" width="80%"></center>
 
 ## Acknowledgements
 
