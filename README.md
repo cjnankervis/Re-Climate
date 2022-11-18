@@ -1,7 +1,7 @@
 # WeatherLogistics Re-Climate® API
 [<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" alt="Reliable Seasonal Climate Forecasts" width="250"/>](https://weatherlogistics.com)
 
-## About WeatherLogistics
+## About WeatherLogistics®
 
 WeatherLogistics® is an ambitious climate technology company with 10-years expertise in seasonal climate forecasting.
 
