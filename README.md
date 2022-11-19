@@ -29,11 +29,10 @@ Independently and impartially assessed by the [National Physical Laboratory](htt
 
 The Re-Climate (seasonal climate forecast) API:
 
-- Builds on 10-years of R&D to improve the reliability and accuracy of extended weather forecasts
-- Delivers the essential requirements to facilitate short-term climate action in the United Kingdom, Spain and Turkey
-- Combines state-of-the-art seasonal climate prediction data, downscaling, statistical post-processing, chronic climate trend adjustments, and rigorous validation methods
-- Supplies reliable daily precipitation event generation (ERA-5 aligned weather generator) to manage local flood/ drought risk to operations
-- Provides acute physical risk information to assess within-season daily intensities and likelihoods of weather events
+- Builds on 10-years of R&D in seasonal climate prediction science
+- Combines state-of-the-art models, downscaling, statistical post-processing, chronic climate trend adjustments, and rigorous validation methods
+- Simulates daily precipitation event generation to manage local flood/ drought
+- Delivers accurate physical risk analytics to assess intensities of daily weather events
 - Extends deterministic weather predictions with a seamless 3-month probabilistic forecast
 - Provides access for historical start dates from month: '09', year: '2022'
 - Supplies town or city data, reporting the closest datapoint where applicable
