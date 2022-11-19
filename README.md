@@ -30,7 +30,7 @@ Independently and impartially assessed by the [National Physical Laboratory](htt
 The Re-Climate (seasonal climate forecast) API:
 
 - Builds on 10-years of R&D in seasonal climate prediction science
-- Combines state-of-the-art models, downscaling, statistical post-processing, chronic climate trend adjustments, and rigorous validation methods
+- Combines state-of-the-art models, downscaling, statistical post-processing, chronic climate trend adjustments, and rigorous validation
 - Simulates daily precipitation event generation to manage local flood/ drought
 - Delivers accurate physical risk analytics to assess intensities of daily weather events
 - Extends deterministic weather predictions with a seamless 3-month probabilistic forecast
