@@ -15,7 +15,7 @@ The Re-Climate® API delivers the most reliable seasonal climate prediction syst
 
 Modelling weather events and seasonal climate helps decision-makers communicate losses linked to floods, drought, wind damage, hail, heatwaves or freeze days to within a few kilometres.
 
-Supplied as an 'ensemble', a collection of well-calibrated daily weather time series, Re-Climate® enables firms to better hedge or price their risk. The product also helps clients adapt to acute physical risks posed by extreme weather events such as heatwaves and floods, develop rigorous scenario plans, and protect assets from climate hazards on operational timescales.
+Supplied as an 'ensemble', a collection of well-calibrated daily weather time series, Re-Climate® enables firms to better hedge or price their risk. The product also helps clients adapt to acute physical risks posed by extreme weather events such as heatwaves and floods, develop rigorous scenario plans, and protect assets from acute climate hazards on operational timescales.
 
 ### Supporting Sustainable Agriculture
 
@@ -25,7 +25,7 @@ Future farmers will be able to build smarter precision farming solutions and ben
 
 # Features
 
-Independently and impartially assessed by the [National Physical Laboratory](https://www.npl.co.uk/national-challenges), Re-Climate™ delivers reliable forecasts of climate perils covering the next 3 months. Re-Climate® supplies reliable seasonal climate forecasts to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see [WeatherLogistics' Docs](https://seasonalforecasts.earth/docs).
+Independently and impartially assessed by the [National Physical Laboratory](https://www.npl.co.uk/national-challenges), Re-Climate™ delivers forecasts of climate perils covering the next 3 months and at a 5 kilometre resolution to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see [WeatherLogistics' Docs](https://seasonalforecasts.earth/docs).
 
 The Re-Climate (seasonal climate forecast) API:
 
