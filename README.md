@@ -117,7 +117,7 @@ Hazard indices show index values as a shift in the tail distribution from a base
 ## Anomalies
 **Country-wide ASCII grid/ town or city CSV provided at a monthly granularity; a departure forecast useful for a big-picture seasonal overview
 
-Like the monthly centiles request, anomalies provide a country-wide mapped overview of departures from an up-to-date climatology to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Anomalies_example.json). See further [documentation](https://seasonalforecasts.earth/docs/gridded-datasets/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
+Like the monthly centiles request, anomalies provide a country-wide mapped overview of departures from an up-to-date climatology to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/Anomalies_example.json). See further [documentation](https://seasonalforecasts.earth/docs/gridded-datasets/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
 
 ### Example C.
 November precipitation anomalies plotted using Re-Climate® data issued on 13th October 2022.
