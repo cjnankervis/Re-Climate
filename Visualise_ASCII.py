@@ -20,7 +20,7 @@ data_paths = ("./Rainfall_AnomalyBenchmark.asc", "./Rainfall_AnomalyWeatherLogis
 titles = ("Benchmark", "WeatherLogistics")
 variable_units = "Precipitation/ % of Climate"
 
-fig, (ax1, ax2) = plt.subplots(1,2,dpi=2000,figsize=(18,5),constrained_layout=True)
+fig, (ax1, ax2) = plt.subplots(1,2,dpi=2000,figsize=(15,5),constrained_layout=True)
 plt.subplots_adjust(wspace=0.3)
 fig.suptitle("Re-Climate® November Rainfall Departure Forecast. Copyright 2022. All rights reserved.")
 gs = gridspec.GridSpec(1,3,width_ratios=[5,0.2,5])
