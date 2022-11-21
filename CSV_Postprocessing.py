@@ -218,8 +218,8 @@ if threshold_type.lower() == 'between':
         for e in range(num_ensembles):
             groups = accumulate([0]+[((a>=threshold_lower) & (a>=threshold_upper)) != ((b<threshold_lower) & (b>threshold_upper)) for a,b in zip(mth_data[e],mth_data[e][1:])])
             counts = sorted(Counter(groups).items())
-            groups = [c for n,c in counts if (n%2==0) == ((mth_data[e][0]>=threshold_lower) & (mth_data[e][0]<=threshold_upper))]
-            groups = [0] if not groups else groups # Weight by ensemble size, to take into account ensemble members with zero consecutive days
+            groups2 = [c for n,c in counts if (n%2==0) == ((mth_data[e][0]>=threshold_lower) & (mth_data[e][0]<=threshold_upper))]
+            groups2 = [0] if not groups2 else groups2 # Weight by ensemble size, to take into account ensemble members with zero consecutive days
             counts_list.append(groups2)
         flat_list = [item for sublist in counts_list for item in sublist]
         metric_output = np.nanpercentile(flat_list, (1-1/(num_ensembles*percentile/100*2))*100)
