@@ -33,7 +33,7 @@ The Re-Climate (seasonal climate forecast) API:
 - Combines state-of-the-art models, downscaling, statistical post-processing, chronic climate trend adjustments, and rigorous validation
 - Simulates daily precipitation event generation to manage local flood/ drought
 - Delivers accurate physical risk analytics to assess intensities of daily weather events
-- Extends deterministic weather predictions with a seamless 3-month probabilistic forecast
+- Extends deterministic weather predictions with a seamless 3-month probabilistic forecast extending from 2 to 15 weeks
 - Provides access for historical start dates from month: '09', year: '2022'
 - Supplies town or city data, reporting the closest datapoint where applicable
 - Updates climate hazard information on the 14th day of each month
