@@ -11,7 +11,7 @@ Over the past 5 years WeatherLogistics' seasonal forecast codebase has been veri
 
 ## Benefits
 
-<center>[<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Re-Climate_API-video.png" width="560" height="315" alt="Seasonal climate forecasts, Re-Climate® API YouTube Marketing Video" />](https://youtu.be/GkMn4gPZjts)</center>
+[<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Re-Climate_API-video.png" width="560" height="315" alt="Seasonal climate forecasts, Re-Climate® API YouTube Marketing Video" />](https://youtu.be/GkMn4gPZjts)
 
 The [Re-Climate® API](https://youtu.be/GkMn4gPZjts) delivers the most reliable seasonal climate prediction system in Europe, with its precipitation forecasts independently assessed by the National Physical Laboratory. It achieves this by blending numerous climate datasets and weather models through its algorithms; and this helps organisations to accurately forecast extreme weather, calculate their risk exposure and build their resilience.
 
