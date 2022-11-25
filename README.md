@@ -1,6 +1,4 @@
 # WeatherLogistics® Re-Climate® API
-[<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Re-Climate_API-video.png" alt="Seasonal climate forecasts Re-Climate API YouTube Marketing Video" width="560" height="315" />](https://youtu.be/GkMn4gPZjts)
-
 [<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" alt="Reliable Seasonal Climate Forecasts" width="250"/>](https://weatherlogistics.com)
 
 ## About WeatherLogistics®
@@ -13,7 +11,9 @@ Over the past 5 years WeatherLogistics' seasonal forecast codebase has been veri
 
 ## Benefits
 
-The [Re-Climate® API](https://youtu.be/GkMn4gPZjts) delivers the most reliable seasonal climate prediction system in Europe, with its precipitation forecasts independently assessed by the National Physical Laboratory. It achieves this by blending numerous climate datasets and weather models through its algorithms; and this helps organisations to accurately forecast extreme weather, calculate their risk exposure and build their resilience.
+[<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Re-Climate_API-video.png" alt="Seasonal climate forecasts Re-Climate API YouTube Marketing Video" width="560" height="315" />](https://youtu.be/GkMn4gPZjts)
+
+The Re-Climate® API delivers the most reliable seasonal climate prediction system in Europe, with its precipitation forecasts independently assessed by the National Physical Laboratory. It achieves this by blending numerous climate datasets and weather models through its algorithms; and this helps organisations to accurately forecast extreme weather, calculate their risk exposure and build their resilience.
 
 Modelling weather events and seasonal climate helps decision-makers communicate losses linked to floods, drought, wind damage, hail, heatwaves or freeze days to within a few kilometres.
 
