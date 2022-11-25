@@ -1,5 +1,6 @@
 # WeatherLogistics® Re-Climate® API
-<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Re-Climate_API-video.png">
+[<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Re-Climate_API-video.png" alt="Seasonal climate forecasts Re-Climate API YouTube Marketing Video" width="560" height="315" />](https://youtu.be/GkMn4gPZjts)
+
 [<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" alt="Reliable Seasonal Climate Forecasts" width="250"/>](https://weatherlogistics.com)
 
 ## About WeatherLogistics®
@@ -11,8 +12,6 @@ The company’s successful projects include a European Space Agency kick-start a
 Over the past 5 years WeatherLogistics' seasonal forecast codebase has been verified by the [Science & Technology Facilities Council](https://www.ukri.org/news-and-events/responding-to-climate-change/predicting-and-managing-climate-risks/flexible-and-scalable-solutions-for-climate-smart-forecasting/) and its results validated internally and by [data specialists at Agrimetrics](https://agrimetrics.co.uk/2020/06/03/seasonal-climate-forecasts-for-agriculture/). Weather Logistics also helped initiate and sponsor [Yield21 ‘Predict Our Harvest’](https://www.agritechcentres.com/news/uks-2021-wheat-yield-predicted-to-surpass-defra-estimate) and is also a [UKRI/ NERC project partner for Seasonal Weather Prediction](https://gtr.ukri.org/project/C31D56B3-9A23-4AD9-BD85-752248E3D09F).
 
 ## Benefits
-
-[<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Re-Climate_API-video.png" alt="Seasonal climate forecasts Re-Climate API YouTube Marketing Video" width="560" height="315" />](https://youtu.be/GkMn4gPZjts)
 
 The [Re-Climate® API](https://youtu.be/GkMn4gPZjts) delivers the most reliable seasonal climate prediction system in Europe, with its precipitation forecasts independently assessed by the National Physical Laboratory. It achieves this by blending numerous climate datasets and weather models through its algorithms; and this helps organisations to accurately forecast extreme weather, calculate their risk exposure and build their resilience.
 
