@@ -70,7 +70,7 @@ To get started, an API authentication key and user credentials are required to m
 |API Technical<br />Specifications | Monthly<br /> Centile | Daily<br /> Ensembles | Hazard<br /> Indices | Anomalies |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | <sub><b>Country-wide Forecasts<br /> (Downscaled to a 5km<br /> Regular Grid)</b></sub> | :white_check_mark: | :x: | :x: | :white_check_mark: |
-| <sub><b>Town-level Modelling<br /> (Closest Location Match)</b></sub> | :x: | :white_check_mark: | :white_check_mark: | :x: |
+| <sub><b>Town-level Modelling<br /> (Closest Location Match)</b></sub> | :x: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | <sub><b>Confidence Intervals (100<br /> Ensemble Members  'E' or<br /> Centile Bands 'C' or Shift-<br />of-the-Tails 'T')</b></sub> | <font size="20"><b>C</b></font> | <font size="20"><b>E</b></font> | <font size="20"><b>T</b></font> | <font size="20"><b>C</b></font> |
 | <sub><b>Temporal Granularity<br /> (Seasonal 'S' or Monthly 'M'<br /> or Daily 'D')</b></sub> | <font size="20"><b>M</b></font> | <font size="20"><b>D</b></font> | <font size="20"><b>S, M</b></font> | <font size="20"><b>M</b></font> |
 | <sub><b>Spatially Correlated Daily<br /> Event Generation</b></sub> | :x: | :white_check_mark: | :white_check_mark:| :x: |
