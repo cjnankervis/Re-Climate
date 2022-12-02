@@ -29,7 +29,7 @@ Future farmers will be able to build smarter precision farming solutions and ben
 
 Independently and impartially assessed by the [National Physical Laboratory](https://www.npl.co.uk/national-challenges), Re-Climate™ delivers forecasts of climate perils covering the next 3 months and at a 5 kilometre resolution to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see [WeatherLogistics' Docs](https://seasonalforecasts.earth/docs).
 
-The Re-Climate (seasonal climate forecast) API:
+**The Re-Climate (seasonal climate forecast) API**:
 
 - Builds on 10-years of R&D in seasonal climate prediction science
 - Combines state-of-the-art models, downscaling, statistical post-processing, chronic climate trend adjustments, and rigorous validation
