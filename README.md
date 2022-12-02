@@ -9,6 +9,10 @@ The company’s successful projects include a European Space Agency kick-start a
 
 Over the past 5 years WeatherLogistics' seasonal forecast codebase has been verified by the [Science & Technology Facilities Council](https://www.ukri.org/news-and-events/responding-to-climate-change/predicting-and-managing-climate-risks/flexible-and-scalable-solutions-for-climate-smart-forecasting/) and its results validated internally and by [data specialists at Agrimetrics](https://agrimetrics.co.uk/2020/06/03/seasonal-climate-forecasts-for-agriculture/). Weather Logistics also helped initiate and sponsor [Yield21 ‘Predict Our Harvest’](https://www.agritechcentres.com/news/uks-2021-wheat-yield-predicted-to-surpass-defra-estimate) and is also a [UKRI/ NERC project partner for Seasonal Weather Prediction](https://gtr.ukri.org/project/C31D56B3-9A23-4AD9-BD85-752248E3D09F).
 
+## Requesting API Access
+
+To get started, an API authentication key and user credentials are required to make requests. Please contact the [product owner](mailto:accounts@weatherlogistics.com). To make single requests the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script should be used, and for multiple requests please see [API-Request-Multithreading.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request-Multithreading.py). These API request scripts will provide access to four main data streams, with the scripts also supplied for post-processing into daily statistics using "Daily Ensembles" data.
+
 ## Re-Climate® Product
 
 [<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Re-Climate_API-video.png" width="50%">](https://youtu.be/GkMn4gPZjts "Seasonal climate forecasts Re-Climate API YouTube Marketing Video")
@@ -57,10 +61,6 @@ WeatherLogistics completed a successful collaboration with the National Physical
 NPL's validation report presents a comparison of the predicted frequencies of occurrence of daily precipitation events of different intensities against ERA5-land measurements. Covering 96 UK cities for the years 2018 to 2022, the results summarise the [late winter assessment](https://seasonalforecasts.earth/wp-content/uploads/2022/07/Late-WinterNPL_WL.pdf) from January to March period (lead times of 1 to 3 months) as they would be issued on 13th December.
 
 Similarly, NPL’s report also provided direct comparisons for the [late summer period](https://seasonalforecasts.earth/wp-content/uploads/2022/07/Late-SummerNPL-WL.pdf) as issued on 13th June, which cover the months July to September from 2018 to 2022. For both the winter and summer the results demonstrate a good overall seasonal consistency between observations and WeatherLogistics' retrospective seasonal climate predictions  at the city scale.
-
-## Requesting API Access
-
-To get started, an API authentication key and user credentials are required to make requests. Please contact the [product owner](mailto:accounts@weatherlogistics.com). To make single requests the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script should be used, and for multiple requests please see [API-Request-Multithreading.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request-Multithreading.py). These API request scripts will provide access to four main data streams, with the scripts also supplied for post-processing into daily statistics using "Daily Ensembles" data.
 
 ## Understanding Seasonal Forecast Requests
 
