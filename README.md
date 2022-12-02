@@ -9,7 +9,7 @@ The company’s successful projects include a European Space Agency kick-start a
 
 Over the past 5 years WeatherLogistics' seasonal forecast codebase has been verified by the [Science & Technology Facilities Council](https://www.ukri.org/news-and-events/responding-to-climate-change/predicting-and-managing-climate-risks/flexible-and-scalable-solutions-for-climate-smart-forecasting/) and its results validated internally and by [data specialists at Agrimetrics](https://agrimetrics.co.uk/2020/06/03/seasonal-climate-forecasts-for-agriculture/). Weather Logistics also helped initiate and sponsor [Yield21 ‘Predict Our Harvest’](https://www.agritechcentres.com/news/uks-2021-wheat-yield-predicted-to-surpass-defra-estimate) and is also a [UKRI/ NERC project partner for Seasonal Weather Prediction](https://gtr.ukri.org/project/C31D56B3-9A23-4AD9-BD85-752248E3D09F).
 
-## Benefits
+## Re-Climate® API Product
 
 [<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Re-Climate_API-video.png" width="50%">](https://youtu.be/GkMn4gPZjts "Seasonal climate forecasts Re-Climate API YouTube Marketing Video")
 
