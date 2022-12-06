@@ -94,7 +94,7 @@ To request this climate data, see [monthly centile request example input](https:
 ## Daily Ensembles
 **Unique access to 100 daily simulations at the town/ city scale, ideal for those with assets at specified locations
 
-WeatherLogistics' daily ensembles provide a quickstart framework to calculate frequencies of occurrence, threshold or centile-based exceedance calculations, consecutive day counts or accumulations; and generate customised metrics.
+WeatherLogistics' daily ensembles provide a Quickstart framework to calculate frequencies of occurrence, threshold or centile-based exceedance calculations, consecutive day counts or accumulations; and generate customised metrics.
 
 The first 50 ensemble members are generated using WeatherLogistics' statistical forecast system, and members 51 to 100 are generated using a multi-model average of modified Copernicus seasonal climate forecast data*. Both systems have been developed to achieve the best-on-market accuracy and reliability and have been independently and impartially reviewed by the National Physical Laboratory.
 
@@ -106,7 +106,7 @@ Using "JSON_Postprocessing.py" to calculate the 90th centile of ensemble members
 <code>Mean consecutive days with an event intensity equal to or below 1.0 is 13.67, which is based on analysis of 50 ensemble members and 31 days in July</code>
 
 ### Example B.
-Using "CSV_Postproccessing.py" to calculate an ensemble average of conseuctive days of tropical nights (T<sub>min</sub> > 20°C), for the multi-model benchmark/ numerical weather prediction models
+Using "CSV_Postproccessing.py" to calculate an ensemble average of consecutive days of tropical nights (T<sub>min</sub> > 20°C), for the multi-model benchmark/ numerical weather prediction models
 
 <code>Mean consecutive days with an event intensity equal to or above 20 is 1.0, which is based on analysis of 50 ensemble members and 31 days in July</code>
 
