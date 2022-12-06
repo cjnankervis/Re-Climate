@@ -96,7 +96,7 @@ To request this climate data on a regular 5km grid, see [monthly centile request
 
 WeatherLogistics' daily ensembles provide a Quickstart framework to calculate frequencies of occurrence, threshold or centile-based exceedance calculations, consecutive day counts or accumulations; and generate customised metrics.
 
-The first 50 ensemble members are generated using WeatherLogistics' statistical forecast system, and members 51 to 100 are generated using a multi-model average of modified Copernicus seasonal climate forecast data*. Both systems have been developed to achieve the best-on-market accuracy and reliability and have been independently and impartially reviewed by the National Physical Laboratory.
+Ensemble members 1 to 50 are generated using WeatherLogistics' statistical forecast system, while members 51 to 100 are generated using a multi-model average of modified Copernicus seasonal climate forecast data*. Both systems have been developed to achieve the best-on-market accuracy and reliability and have been independently and impartially reviewed by the National Physical Laboratory.
 
 To request this climate data, see [daily ensembles example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/DailyEnsembles_example.json), and its postprocessing scripts provided for [CSV](https://github.com/cjnankervis/Re-Climate/blob/main/CSV_Postprocessing.py) and [JSON](https://github.com/cjnankervis/Re-Climate/blob/main/JSON_Postprocessing.py) inputs. See further [documentation](https://seasonalforecasts.earth/docs/daily-time-series/).
 
