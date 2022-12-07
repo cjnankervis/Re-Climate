@@ -57,23 +57,38 @@ def make_authorized_get_request(URL):
     
     # Sending the POST Request and reading the Response received.    
     response = requests.post(URL, json=request_data, headers=user_header, stream=True)
-    
+
     '''N.b. Column/ item length of 100 indicates Ensemble Numbers from 1 to 100'''
-    if climate_data["extension"] != 'csv':
+    if climate_data["extension"] not in ('csv', 'png'):
         try:
-            responsex = response.json().replace("\'", "\"")
+            response = response.json().replace("\'", "\"")
         except Exception as e:
             try:
-                responsex = response.text.replace("\'", "\"")
+                response = response.text.replace("\'", "\"")
             except Exception as e:
                 print(e)
                 pass
     else:
-        responsex = response.text
-    print(responsex)
+        if climate_data["extension"] == 'csv':
+            response = response.text
+        elif climate_data["extension"] == 'png':
+            try:
+                if response.status_code == 200:
+                    with open(climate_data["filename"], 'wb') as f:
+                        for chunk in response:
+                            f.write(chunk)
+                        print(f'Hazard index file was saved to {climate_data["filename"]}')
+                    f.close()
+            except KeyError:
+                with open("output.png", 'wb') as f:
+                    for chunk in response:
+                        f.write(chunk)
+                    print(f'Hazard index file was saved to output.png')
+                f.close()
+    print(response)
     
     # Returning the Response received from the Re-Climate API
-    return responsex
+    return response
 
 # Specifying the URL to access the Re-Climate API
 URL = "https://re-climate-4un5g5jztq-nw.a.run.app"
