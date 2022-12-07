@@ -60,7 +60,7 @@ user_header = {"Content-Type": "application/json", "Authorization": "Bearer " + 
 def load_url(URL, request_data, user_header):
     # Sending the POST Request and reading the Response received.
     response = requests.post(URL, json=request_data, headers=user_header, stream=True)
-    if request_data["extension"] != 'csv':
+    if request_data["extension"] not in ('csv', 'png'):
         try:
             response = response.json().replace("\'", "\"")
         except Exception as e:
@@ -70,7 +70,22 @@ def load_url(URL, request_data, user_header):
                 print(e)
                 pass
     else:
-        response = response.text
+        if request_data["extension"] == 'csv':
+            response = response.text
+        elif request_data["extension"] == 'png':
+            try:
+                if response.status_code == 200:
+                    with open(request_data["filename"], 'wb') as f:
+                        for chunk in response:
+                            f.write(chunk)
+                        print(f'Hazard index file was saved to {request_data["filename"]}')
+                    f.close()
+            except KeyError:
+                with open("output.png", 'wb') as f:
+                    for chunk in response:
+                        f.write(chunk)
+                    print(f'Hazard index file was saved to output.png')
+                f.close()
     #
     return response
     
