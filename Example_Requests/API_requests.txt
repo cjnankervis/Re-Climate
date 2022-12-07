@@ -53,13 +53,14 @@ Hazard Indices
 "month": {forecast valid/ release month},
 "year": {forecast valid/ release year},
 "lead": "1" | "2" | "seasonal",
-"extension": "csv",
+"extension": "csv" | "png",
 "output_type": "weatherlogisticsltd" | "benchmark",
 "meteorological_variable": "Hail" | "Solar" | "Wind" | "Aridity" | "Cold" | "Drought" | "Heat" | "Humidity" | "Precipitation" | "Spi"
 "percentile": {no percentile is required},
 "projection_year": {default is forecast release year},
 "forecast_type": "hazard-indices",
 "show_metadata": ""
+"filename": "{output filename}.png"
 }
 
 Anomalies
