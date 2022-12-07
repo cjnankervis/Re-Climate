@@ -59,14 +59,17 @@ def make_authorized_get_request(URL):
     response = requests.post(URL, json=request_data, headers=user_header, stream=True)
     
     '''N.b. Column/ item length of 100 indicates Ensemble Numbers from 1 to 100'''
-    try:
-        responsex = response.json().replace("\'", "\"")
-    except Exception as e:
+    if climate_data["extension"] != 'csv':
         try:
-            responsex = response.text.replace("\'", "\"")
+            responsex = response.json().replace("\'", "\"")
         except Exception as e:
-            print(e)
-            pass
+            try:
+                responsex = response.text.replace("\'", "\"")
+            except Exception as e:
+                print(e)
+                pass
+    else:
+        responsex = response.text
     print(responsex)
     
     # Returning the Response received from the Re-Climate API
