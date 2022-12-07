@@ -60,14 +60,17 @@ user_header = {"Content-Type": "application/json", "Authorization": "Bearer " + 
 def load_url(URL, request_data, user_header):
     # Sending the POST Request and reading the Response received.
     response = requests.post(URL, json=request_data, headers=user_header, stream=True)
-    try:
-        response = response.json().replace("\'", "\"")
-    except Exception as e:
+    if request_data["extension"] != 'csv':
         try:
-            response = response.text.replace("\'", "\"")
+            response = response.json().replace("\'", "\"")
         except Exception as e:
-            print(e)
-            pass
+            try:
+                response = response.text.replace("\'", "\"")
+            except Exception as e:
+                print(e)
+                pass
+    else:
+        response = response.text
     #
     return response
     
