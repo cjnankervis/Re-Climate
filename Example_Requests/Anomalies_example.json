@@ -5,7 +5,7 @@
     "lead": "3",
     "extension": "csv",
     "output_type": "benchmark",
-    "meteorological_variable": "Rainfall",
+    "meteorological_variable": "Precipitation",
     "percentile": "30th",
     "forecast_type": "anomaly",
     "show_metadata": ""
