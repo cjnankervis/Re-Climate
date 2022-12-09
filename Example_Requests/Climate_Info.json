@@ -1,0 +1,13 @@
+{
+    "country": "uk",
+    "latitude": 52.954,
+    "longitude": -1.155,
+    "month": 11,
+    "year": 2022,
+    "lead": "seasonal",
+    "extension": "png",
+    "output_type": "benchmark",
+    "meteorological_variable": "precipitation",
+    "forecast_type": "daily-profiles",
+    "filename": "C3S_DailyPrecipitationProfile_MidWinter2023.png"
+}
