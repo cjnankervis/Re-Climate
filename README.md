@@ -92,7 +92,7 @@ Monthly centile data supplies users with mapped averages of precipitation in add
 To request this climate data on a regular 5km grid, see [monthly centile request example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/MonthlyCentiles_example.json). See further [documentation](https://re-climate.co.uk/docs/gridded-datasets/) and [ASCII formatting](https://re-climate.co.uk/docs/climate-data-outputs/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
 
 ## Daily Ensembles
-**Unique access to 100 daily simulations at the town/ city scale, ideal for those with assets at specified locations
+**Unique access to 100 daily simulations at the town/ city level, ideal for those with assets at specified locations
 
 WeatherLogistics' daily ensembles provide a Quickstart framework to calculate frequencies of occurrence, threshold or centile-based exceedance calculations, consecutive day counts or accumulations; and generate customised metrics.
 
@@ -128,6 +128,11 @@ November precipitation anomalies plotted using Re-Climate® data issued on 13th 
 
 ### 90th Centile
 <center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots_90th.png" alt="Northeast and Central Scotland flooding, 90th centile of precipitation forecast for November 2022" width="80%"></center>
+
+## Daily Profiles (Deciles)
+**Graphical access to town/ city daily weather profiles for the upcoming season, based on 100 ensemble member simulations, ideal for who need a quick snapshot view
+
+Comparisons between the seasonal profile (centile distributions) of daily temperature and precipitation, compared directly to the 4.5km Europen UERRA Re-Analysis climatology from 2004 to 2018. To request this climate data for a specified town or city, see [daily profiles example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/DailyProfiles_example.json).
 
 ## Acknowledgements
 
