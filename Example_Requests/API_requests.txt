@@ -113,7 +113,7 @@ Graphical Summaries
 "lead": "1" | "2" | "3" | "seasonal",
 "extension": "png",
 "output_type": "weatherlogisticsltd" | "benchmark",
-"meteorological_variable": "tmin" | "tmax" | "precipitation" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity", "EXCEEDANCES", "GDD",
+"meteorological_variable": "tmin" | "tmax" | "precipitation" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity" | "EXCEEDANCES" | "GDD",
 "percentile": {no percentile is required},
 "projection_year": {default is forecast release year},
 "forecast_type": "graphical-summaries",
