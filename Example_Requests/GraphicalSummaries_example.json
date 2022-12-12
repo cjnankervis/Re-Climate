@@ -1,15 +1,12 @@
 {
     "country": "uk",
-    "latitude": {latitude within country bounding box},
-    "longitude": {longitude within country bounding box},
-    "month": {forecast valid/ release month},
-    "year": {forecast valid/ release year},
-    "lead": "1" | "2" | "3" | "seasonal",
+    "latitude": 51.5072,
+    "longitude": -0.1276,
+    "month": 11,
+    "year": 2022,
+    "lead": 1,
     "extension": "png",
     "output_type": "weatherlogisticsltd",
     "meteorological_variable": "tmin",
-    "percentile": {no percentile is required},
-    "projection_year": {default is forecast release year},
-    "forecast_type": "graphical-summaries",
-    "filename": "{output filename}.png"
+    "forecast_type": "graphical-summaries"
 }
