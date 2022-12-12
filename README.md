@@ -141,7 +141,7 @@ Comparisons between the seasonal profile (centile distributions) of multiple met
 
 <center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/WestminsterSeasonalforecast_MTH3_09-Late-Summer2021_2021TminLondonBoroughsForecast.png" alt="Seasonal climate forecast of minimum temperature for Westminster (London), September 2022" width="80%"></center>
 
-Heating Degree Days for energy utility demand management[https://seasonalforecasts.earth/wp-content/uploads/2022/12/GDD.png]
+https://seasonalforecasts.earth/wp-content/uploads/2022/12/GDD.png[Heating Degree Days for energy utility demand management]
 
 <center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/EXCEEDANCES.png" alt="Likelihood of exceedance for daily precipitation for Bristol, Winter 2023" width="80%"></center>
 
