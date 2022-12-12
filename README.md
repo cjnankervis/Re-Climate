@@ -130,9 +130,14 @@ November precipitation anomalies plotted using Re-Climate® data issued on 13th 
 <center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots_90th.png" alt="Northeast and Central Scotland flooding, 90th centile of precipitation forecast for November 2022" width="80%"></center>
 
 ## Daily Weather Profiles (Reliability Plots)
-**Graphical access to town/ city daily weather profiles for the upcoming season, based on 100 ensemble member simulations, ideal for who need a quick snapshot view
+**Access to figures showing town/ city daily weather profiles as decile line plots for the upcoming season, ideal for who need a quick snapshot view
 
 Comparisons between the seasonal profile (centile distributions) of daily temperature and precipitation, compared directly to the 4.5km Europen UERRA Re-Analysis climatology from 2004 to 2018. To request this climate data for a specified town or city, see [daily profiles example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/DailyProfiles_example.json).
+
+## Graphical Summaries
+**Access to figures showing town/ city daily weather ensemble summaries as box-whisker plots for the upcoming season, ideal for who need a quick snapshot view
+
+Comparisons between the seasonal profile (centile distributions) of multiple meteorological variables, compared against WeatherLogistics' real-time equivalent model climatology. To request this climate data for a specified town or city, see [graphical summaries example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/GraphicalSummaries_example.json).
 
 ## Acknowledgements
 
