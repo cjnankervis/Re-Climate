@@ -1,0 +1,15 @@
+{
+    "country": "uk",
+    "latitude": {latitude within country bounding box},
+    "longitude": {longitude within country bounding box},
+    "month": {forecast valid/ release month},
+    "year": {forecast valid/ release year},
+    "lead": "1" | "2" | "3" | "seasonal",
+    "extension": "png",
+    "output_type": "weatherlogisticsltd",
+    "meteorological_variable": "tmin",
+    "percentile": {no percentile is required},
+    "projection_year": {default is forecast release year},
+    "forecast_type": "graphical-summaries",
+    "filename": "{output filename}.png"
+}
