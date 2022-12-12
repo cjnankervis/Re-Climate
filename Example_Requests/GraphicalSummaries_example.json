@@ -1,11 +1,12 @@
 {
     "country": "uk",
-    "latitude": 51.5072,
-    "longitude": -0.1276,
+    "latitude": 51.4545,
+    "longitude": -2.5879,
     "month": 11,
     "year": 2022,
     "lead": 1,
     "extension": "png",
-    "meteorological_variable": "tmin",
-    "forecast_type": "graphical-summaries"
+    "meteorological_variable": "precipitation",
+    "forecast_type": "graphical-summaries",
+    "filename": "Bristol_December2022-Precipitation.png"
 }
