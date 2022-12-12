@@ -139,6 +139,8 @@ Comparisons between the seasonal profile (centile distributions) of daily temper
 
 Comparisons between the seasonal profile (centile distributions) of multiple meteorological variables, compared against WeatherLogistics' real-time equivalent model climatology. To request this climate data for a specified town or city, see [graphical summaries example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/GraphicalSummaries_example.json).
 
+<center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/WestminsterSeasonalforecast_MTH3_09-Late-Summer2021_2021TminLondonBoroughsForecast.png" alt="Seasonal climate forecast of minimum temperature for Westminster (London), September 2022" width="80%"></center>
+
 ## Acknowledgements
 
 *Contains modified Copernicus Climate Change Service information 2022. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
