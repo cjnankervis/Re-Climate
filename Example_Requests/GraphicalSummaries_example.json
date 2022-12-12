@@ -6,7 +6,6 @@
     "year": 2022,
     "lead": 1,
     "extension": "png",
-    "output_type": "weatherlogisticsltd",
     "meteorological_variable": "tmin",
     "forecast_type": "graphical-summaries"
 }
