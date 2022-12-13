@@ -1,14 +1,23 @@
-## Catalog fields
+## "Monthly Centiles" JSON request fields
 
 | Element         | Type          | Description                                                  |
 | --------------- | ------------- | ------------------------------------------------------------ |
-| type            | string        | **REQUIRED.** Set to `Catalog` if this Catalog only implements the Catalog spec. |
-| stac_version    | string        | **REQUIRED.** The STAC version the Catalog implements. |
-| stac_extensions | \[string]     | A list of extension identifiers the Catalog implements.                 |
-| id              | string        | **REQUIRED.** Identifier for the Catalog.                    |
-| title           | string        | A short descriptive one-line title for the Catalog.          |
-| description     | string        | **REQUIRED.** Detailed multi-line description to fully explain the Catalog. [CommonMark 0.29](http://commonmark.org/) syntax MAY be used for rich text representation. |
-| links           | [[Link Object](#link-object)] | **REQUIRED.** A list of references to other documents.       |
+| country           | string        | **REQUIRED** Set to `Catalog` if this Catalog only implements the Catalog spec. |
+| latitude    | float        | **NOT REQUIRED** |
+| longitude    | float        | **NOT REQUIRED** |
+| month    | integer        | **REQUIRED** seasonal climate forecast release/ initiation month (up to current month if after 13th day)|
+| year    | integer        | **REQUIRED** seasonal climate forecast release/ initiation year (up to current year if before 14th January)|
+| lead    | integer        | **REQUIRED** seasonal climate forecast lead time in months (number of full months after initiation)|
+| extension    | string        | **REQUIRED** "asc" for ASCII data output format|
+| output_type    | string        | **REQUIRED** "weatherlogisticsltd" for statistical/ climate signal based output; or "benchmark" for Met Office/ ECMWF/ Météo-France multi-model average|
+| percentile    | string        | **REQUIRED** confidence interval at either the "10th", "30th", "median", "70th" or "90th" centile|
+| projection_year    | string        | **NOT REQUIRED** seasonal climate output is projected forward to this year|
+| forecast_type    | string        | **REQUIRED** "monthly-centiles" for country-wide monthly gridded data |
+| show_metadata    | string        | **NOT REQUIRED** | 
+
+
+Monthly Centiles
+- JSON keywords 
 
 {
 "country": "uk" | "spain" | "turkey",
