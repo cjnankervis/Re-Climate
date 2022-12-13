@@ -3,7 +3,7 @@
 
 ## About WeatherLogistics®
 
-WeatherLogistics® is an ambitious climate technology company with 10-years expertise in seasonal climate forecasting.
+WeatherLogistics® is an innovative climate technology company with 10-years expertise in improving the value of seasonal climate forecasts for wide operational use.
 
 The company’s successful projects include a European Space Agency kick-start activity. WeatherLogistics® has also undertaken data validation and meteorological product audits for the agricultural industry. Its clients include renewable energy, water management and insurance firms. Delivered through the Google Cloud Platform, its extended precipitation data offers the most detailed information available to support operations teams in Turkey and the UK impacted by drought.
 
@@ -11,7 +11,7 @@ Over the past 5 years WeatherLogistics' seasonal forecast codebase has been veri
 
 ## Requesting API Access
 
-To get started, an API authentication key and user credentials are required to make requests. Please contact the [product owner](mailto:accounts@weatherlogistics.com). To make single requests the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script should be used, and for multiple requests please see [API-Request-Multithreading.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request-Multithreading.py). These API request scripts will provide access to four main data streams, with the scripts also supplied for post-processing into daily statistics using "Daily Ensembles" data.
+To get started, please request an API authentication key and user credentials from the [product owner](mailto:accounts@weatherlogistics.com). To make single requests the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script should be used, while for multiple requests please see [API-Request-Multithreading.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request-Multithreading.py). The Python code can be used to access  six main data streams, with post-processing code also supplied to calculate return periods and other statistics from daily town and city data supplied through "Daily Ensembles".
 
 ## Re-Climate® Product
 
@@ -87,7 +87,7 @@ Similarly, NPL’s report also provided direct comparisons for the [late summer 
 ## Monthly Centiles
 **Country-wide ASCII grid provided at a monthly granularity, useful for a big-picture seasonal overview
 
-Monthly centile data supplies users with mapped averages of precipitation in addition to minimum, maximum and average monthly temperatures. At present these are available for the mainland geographical area of the United Kingdom, Spain and Turkey. They present the lower to upper thresholds in the respectively meteorological variables at the 10th, 30th, median (50th), 70th and 90th centiles. Since the seasonal climate forecasts provide well-calibrated information, 8 in 10 months are likely to present monthly conditions between the 10th and 90th centiles at any specified geographical location.
+Monthly centile data supplies users with mapped averages of precipitation in addition to minimum, maximum and average monthly temperatures. At present these are available for the mainland geographical area of the United Kingdom, Spain and Turkey. These ASCII grids present the lower to upper thresholds in the respectively meteorological variables at the 10th, 30th, median (50th), 70th and 90th centile confidence bounds. Since the seasonal climate forecasts provide well-calibrated information, 8 in 10 months are likely to present monthly conditions between the 10th and 90th centiles at any specified geographical location.
 
 To request this climate data on a regular 5km grid, see [monthly centile request example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/MonthlyCentiles_example.json). See further [documentation](https://re-climate.co.uk/docs/gridded-datasets/) and [ASCII formatting](https://re-climate.co.uk/docs/climate-data-outputs/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
 
@@ -113,7 +113,7 @@ Using "CSV_Postproccessing.py" to calculate an ensemble average of consecutive d
 ## Hazard Indices
 **Mapped country-wide town/ city indices, useful for a snapshot overview of acute seasonal climate hazards
 
-Hazard indices are based on a shift-of-the-tail approach that compares daily distribution to a baseline climatology. Climate hazards indices include precipitation, drought, SPI, hail, aridity, humidity, solar, wind, heat and cold. These are scaled from 1 - 9, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatology reference, with 5 indicating the forecast is on par with climate expectations for the current forecast month or season. To request this climate data, see [hazard indices example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/HazardIndices_example.json). See further [documentation](https://re-climate.co.uk/docs/hazard-indices/).
+Hazard indices are based on a shift-of-the-tail approach that compares daily distribution to a baseline climatology. Climate hazards indices include precipitation, drought, SPI, hail, aridity, humidity, solar, wind, heat and cold. These are scaled from 1 - 9, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatology reference, with 5 indicating the forecast is on par with baseline climate expectations for the current forecast month or season. To request this climate data, see [hazard indices example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/HazardIndices_example.json). See further [documentation](https://re-climate.co.uk/docs/hazard-indices/).
 
 ## Departures (Anomalies)
 **Country-wide ASCII grid/ town or city CSV provided at a monthly granularity; a departure forecast useful for a big-picture seasonal overview
@@ -132,16 +132,17 @@ November precipitation anomalies plotted using Re-Climate® data issued on 13th 
 ## Daily Weather Profiles (Reliability Plots)
 **Access to figures showing town/ city daily weather profiles as decile line plots for the upcoming season, ideal for who need a quick snapshot view
 
-Comparisons between the seasonal profile (centile distributions) of daily temperature and precipitation, compared directly to the 4.5km Europen UERRA Re-Analysis climatology from 2004 to 2018. To request this climate data for a specified town or city, see [daily profiles example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/DailyProfiles_example.json).
+Comparisons between the seasonal profile (centile distributions) of daily temperature and precipitation plotted at each decile, compared directly to the 4.5km Europen UERRA Re-Analysis climatology from 2004 to 2018. To request this climate data for a specified town or city, see [daily profiles example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/DailyProfiles_example.json).
 
 ## Graphical Summaries
 **Access to figures showing town/ city daily weather ensemble summaries as box-whisker/ violin plots for the upcoming season, ideal for who need a quick snapshot view
 
 Comparisons between the seasonal profile (centile distributions) of multiple meteorological variables, compared against WeatherLogistics' real-time equivalent model climatology. To request this climate data for a specified town or city, see [graphical summaries example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/GraphicalSummaries_example.json).
 
+Daily precipitation return period forecast for central London covering the mid-winter 2023 period, using the "meteorological_variable": "Exceedances" option.
 <center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/WestminsterSeasonalforecast_MTH3_09-Late-Summer2021_2021TminLondonBoroughsForecast.png" alt="Seasonal climate forecast of minimum temperature for Westminster (London), September 2022" width="80%"></center>
 
-[Heating Degree Days for energy utility demand management, as a 7-day running accumulation of daily temperatures](https://seasonalforecasts.earth/wp-content/uploads/2022/12/GDD.png)
+[Heating Degree Days for energy utility demand management, presented as a 7-day running accumulation of daily temperatures, using the "meteorological_variable": "Gdd" option](https://seasonalforecasts.earth/wp-content/uploads/2022/12/GDD.png)
 
 <center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/EXCEEDANCES.png" alt="Likelihood of exceedance for daily precipitation for Bristol, Winter 2023" width="80%"></center>
 
