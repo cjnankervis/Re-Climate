@@ -5,7 +5,7 @@
     "lead": "1",
     "extension": "csv",
     "output_type": "weatherlogisticsltd",
-    "meteorological_variable": "Drought",
+    "meteorological_variable": "drought",
     "forecast_type": "hazard-indices",
     "show_metadata": ""
 }
