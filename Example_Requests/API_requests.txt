@@ -35,7 +35,7 @@ Daily Ensembles
 "year": {forecast valid/ release year},
 "lead": "seasonal",
 "extension": "json" | "csv",
-"output_type": "weatherlogisticsltd" | "benchmark",
+"output_type": "weatherlogisticsltd" | "benchmark" | "climatology", {*NOTE* both the first two forecast options supply the entire 100 members}
 "meteorological_variable": "tmin" | "tmax" | "precipitation" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity",
 "percentile": {no percentile is required},
 "projection_year": {default is forecast release year},
