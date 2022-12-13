@@ -31,7 +31,7 @@
 | lead    | integer        | **REQUIRED** "seasonal" is the only valid option which supplies 3 full months of forecasts after initiation |
 | extension    | string        | **REQUIRED** "json" or "csv" for JSON/ CSV data outputs|
 | output_type    | string        | **REQUIRED** "benchmark"/ "weatherlogisticsltd" options both supply statistical/ climate signal based outputs in the first 50 records, and Met Office + ECMWF + Météo-France multi-model average forecasts in records 51 - 100. Additionally, a "climatology" option will supply the internal model climatology for the most recent year and season |
-| meteorological_variable    | string        | **REQUIRED** "tmin", "tmax", "tmean" or "precipitation" for monthly mean daily minimum and maximum temperatures (degrees Celsius) or monthly accumulated precipitation (millimetres) |
+| meteorological_variable    | string        | **REQUIRED** "tmin", "tmax", "precipitation", "solar", "wind", "hail", "minhumidity", "maxhumidity" for daily: minimum and maximum temperatures (degrees Celsius), precipitation (millimetres), solar radiation (average daily Watts-per-metre-squared), hail/ precipitation intensity (millimetres per second), minimum and maximum relative humidity (%) |
 | percentile    | string        | **NOT REQUIRED** entire 100 ensemble members are supplied |
 | projection_year    | string        | **NOT REQUIRED** seasonal climate output is projected forward to this year |
 | forecast_type    | string        | **REQUIRED** "ensemble" for town/ location-specific daily weather realizations |
