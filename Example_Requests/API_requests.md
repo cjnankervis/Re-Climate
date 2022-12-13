@@ -26,7 +26,7 @@
 | year    | integer        | **REQUIRED** seasonal climate forecast release/ initiation year (up to current year if before 14th January) |
 | lead    | integer        | **REQUIRED** "seasonal" is the only valid option which supplies 3 full months of forecasts after initiation |
 | extension    | string        | **REQUIRED** "json" or "csv" for JSON/ CSV data outputs|
-| output_type    | string        | **NOT REQUIRED**  statistical/ climate signal based output are supplied in the first 50 records, while Met Office + ECMWF + Météo-France multi-model average forecasts are supplied in records 51 - 100 |
+| output_type    | string        | **REQUIRED** "benchmark"/ "weatherlogisticsltd" options both supply statistical/ climate signal based outputs in the first 50 records, and Met Office + ECMWF + Météo-France multi-model average forecasts in records 51 - 100. Additionally, a "climatology" option will supply the internal model climatology for the most recent year and season |
 | percentile    | string        | **NOT REQUIRED** entire 100 ensemble members are supplied |
 | projection_year    | string        | **NOT REQUIRED** seasonal climate output is projected forward to this year |
 | forecast_type    | string        | **REQUIRED** "ensemble" for town/ location-specific daily weather realizations |
