@@ -25,7 +25,7 @@
 | country           | string        | **REQUIRED** geography/ mainland country area; either "uk", "spain" or "turkey" |
 | instance_name    | string        | **NOT REQUIRED** necessary for tailored/ bespoke client requests only
 | latitude    | float        | **REQUIRED** latitude requirement contained within the country mainland bounding-box area |
-| longitude    | float        | **REQUIRED** longitude requirement contained within the country mainland bounding-box area|
+| longitude    | float        | **REQUIRED** longitude requirement contained within the country mainland bounding-box area |
 | month    | integer        | **REQUIRED** seasonal climate forecast release/ initiation month (up to current month if after 13th day) |
 | year    | integer        | **REQUIRED** seasonal climate forecast release/ initiation year (up to current year if before 14th January) |
 | lead    | integer        | **REQUIRED** "seasonal" is the only valid option which supplies 3 full months of forecasts after initiation |
@@ -51,7 +51,7 @@
 | lead    | integer        | **REQUIRED** seasonal climate forecast lead time of "1" or "2" months (number of full months after initiation) or "seasonal" for average of 1 + 2 + 3 months |
 | extension    | string        | **REQUIRED** "csv" or "png" for CSV/ XML type data output format or PNG for graphical download to supplied "filename" |
 | output_type    | string        | **REQUIRED** "weatherlogisticsltd" for statistical/ climate signal based output; or "benchmark" for Met Office +ECMWF + Météo-France multi-model average |
-| meteorological_variable    | string        | **REQUIRED** "Hail", "Solar", "Wind", "Aridity", "Cold", "Drought", "Heat", "Humidity", "Precipitation" or "Spi" for 20th/80th daily weather centile shift-of-the-tails analysis for hazards, or shift-of-the-median (50th) centile for Standard Precipitation Index (SPI) on a scale of low (1) to high (9) extreme |
+| meteorological_variable    | string        | **REQUIRED** "hail", "solar", "wind", "aridity", "cold", "drought", "heat", "humidity", "precipitation" or "spi" for 20th/80th daily weather centile shift-of-the-tails analysis for hazards, or shift-of-the-median (50th) centile for Standard Precipitation Index (SPI) on a scale of low (1) to high (9) extreme |
 | percentile    | string        | **REQUIRED** confidence interval at either the "10th", "30th", "median", "70th" or "90th" centile|
 | projection_year    | string        | **NOT REQUIRED** seasonal climate output is projected forward to this year |
 | forecast_type    | string        | **REQUIRED** "hazard-indices" for country-wide monthly gridded data |
@@ -84,38 +84,19 @@
 | --------------- | ------------- | ------------------------------------------------------------ |
 | country           | string        | **REQUIRED** Geography/ mainland country area; either "uk", "spain" or "turkey" |
 | instance_name    | string        | **NOT REQUIRED** necessary for tailored/ bespoke client requests only
-| latitude    | float        | **NOT REQUIRED** defaults to country-wide statistics |
-| longitude    | float        | **NOT REQUIRED** defaults to country-wide statistics |
+| latitude    | float        | **REQUIRED** latitude requirement contained within the country mainland bounding-box area |
+| longitude    | float        | **REQUIRED** longitude requirement contained within the country mainland bounding-box area |
 | month    | integer        | **REQUIRED** seasonal climate forecast release/ initiation month (up to current month if after 13th day) |
 | year    | integer        | **REQUIRED** seasonal climate forecast release/ initiation year (up to current year if before 14th January) |
-| lead    | integer        | **REQUIRED** seasonal climate forecast lead time of "1" or "2" months (number of full months after initiation) or "seasonal" for average of 1 + 2 + 3 months |
-| extension    | string        | **REQUIRED** "csv" or "png" for CSV/ XML type data output format or PNG for graphical download to supplied "filename" |
+| lead    | integer        | **REQUIRED** "seasonal" climate forecast provides single graphics that show data at lead times of 1, 2 and 3 months |
+| extension    | string        | **REQUIRED** "png" for graphical download to supplied "filename" |
 | output_type    | string        | **REQUIRED** "weatherlogisticsltd" for statistical/ climate signal based output; or "benchmark" for Met Office +ECMWF + Météo-France multi-model average |
-| meteorological_variable    | string        | **REQUIRED** "Hail", "Solar", "Wind", "Aridity", "Cold", "Drought", "Heat", "Humidity", "Precipitation" or "Spi" for 20th/80th daily weather centile shift-of-the-tails analysis for hazards, or shift-of-the-median (50th) centile for Standard Precipitation Index (SPI) on a scale of low (1) to high (9) extreme |
-| percentile    | string        | **REQUIRED** confidence interval at either the "10th", "30th", "median", "70th" or "90th" centile|
+| meteorological_variable    | string        | **REQUIRED** "tmin", "tmax" or "precipitation" for monthly mean daily minimum and maximum temperatures (degrees Celsius) or monthly accumulated precipitation (millimetres per month) |
+| percentile    | string        | **NOT REQUIRED** all daily ensemble data is aggregated into a statistical output |
 | projection_year    | string        | **NOT REQUIRED** seasonal climate output is projected forward to this year |
-| forecast_type    | string        | **REQUIRED** "monthly-centiles" for country-wide monthly gridded data |
+| forecast_type    | string        | **REQUIRED** "daily-profiles" for country-wide monthly gridded data |
 | filename    | string        | **NOT REQUIRED** optional filename for "png" extension only
 | show_metadata    | string        | **NOT REQUIRED** | 
-
-Daily Profiles (Deciles)
-- JSON keywords
-
-{
-"country": "uk" | "spain" | "turkey",
-"latitude": {latitude within country bounding box},
-"longitude": {longitude within country bounding box},
-"month": {forecast valid/ release month},
-"year": {forecast valid/ release year},
-"lead": "seasonal",
-"extension": "png",
-"output_type": "weatherlogisticsltd" | "benchmark",
-"meteorological_variable": "tmin" | "tmax" | "precipitation",
-"percentile": {no percentile is required},
-"projection_year": {default is forecast release year},
-"forecast_type": "daily-profiles",
-"filename": "{output filename}.png"
-}
 
 ## "Graphical Summaries" JSON request fields
 
