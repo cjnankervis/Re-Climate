@@ -2,7 +2,7 @@
 
 | Element         | Type          | Description                                                  |
 | --------------- | ------------- | ------------------------------------------------------------ |
-| country           | string        | **REQUIRED** Set to `Catalog` if this Catalog only implements the Catalog spec. |
+| country           | string        | **REQUIRED** Geography/ mainland country area; either "uk", "spain" or "turkey" |
 | latitude    | float        | **NOT REQUIRED** |
 | longitude    | float        | **NOT REQUIRED** |
 | month    | integer        | **REQUIRED** seasonal climate forecast release/ initiation month (up to current month if after 13th day)|
