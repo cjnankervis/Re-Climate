@@ -15,6 +15,8 @@
 | forecast_type    | string        | **REQUIRED** "monthly-centiles" for country-wide monthly gridded data |
 | show_metadata    | string        | **NOT REQUIRED** | 
 
+## "Daily Ensembles" JSON request fields
+
 Daily Ensembles
 - JSON keywords
 
@@ -33,6 +35,8 @@ Daily Ensembles
 "forecast_type": "ensemble",
 "show_metadata": ""
 }
+
+## "Hazard Indices" JSON request fields
 
 Hazard Indices
 - JSON keywords
@@ -54,6 +58,8 @@ Hazard Indices
 "filename": "{output filename}.png"
 }
 
+## "Anomalies" JSON request fields
+
 Anomalies
 - JSON keywords
 
@@ -73,6 +79,8 @@ Anomalies
 "show_metadata": ""
 }
 
+## "Daily Profiles" JSON request fields
+
 Daily Profiles (Deciles)
 - JSON keywords
 
@@ -91,6 +99,8 @@ Daily Profiles (Deciles)
 "forecast_type": "daily-profiles",
 "filename": "{output filename}.png"
 }
+
+## "Graphical Summaries" JSON request fields
 
 Graphical Summaries
 - JSON keywords
