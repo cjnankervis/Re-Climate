@@ -52,7 +52,7 @@
 | extension    | string        | <sub>**REQUIRED** "csv" or "png" for CSV/ XML type data output format or PNG for graphical download to supplied "filename"</sub> |
 | output_type    | string        | <sub>**REQUIRED** "weatherlogisticsltd" for statistical/ climate signal based output; or "benchmark" for Met Office +ECMWF + Météo-France multi-model average</sub> |
 | meteorological_variable    | string        | <sub>**REQUIRED** "hail", "solar", "wind", "aridity", "cold", "drought", "heat", "humidity", "precipitation" or "spi" for 20th/80th daily weather centile shift-of-the-tails analysis for hazards, or shift-of-the-median (50th) centile for Standard Precipitation Index (SPI) on a scale of low (1) to high (9) extreme</sub> |
-| percentile    | string        | <sub>**REQUIRED** confidence interval at either the "10th", "30th", "median", "70th" or "90th" centile </sub> |
+| percentile    | string        | <sub>**NOT REQUIRED** shift-of-the-tail approach examines the 80th (wet or hot)/ 20th centile (dry or cold) daily ensemble </sub> |
 | projection_year    | string        | <sub>**NOT REQUIRED** seasonal climate output is projected forward to this year</sub> |
 | forecast_type    | string        | <sub>**REQUIRED** "hazard-indices" for country-wide mapped or tabular hazard indices at the town/ city level</sub> |
 | filename    | string        | <sub>**NOT REQUIRED** optional filename for "png" extension only (default is used otherwise)</sub> |
