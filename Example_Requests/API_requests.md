@@ -15,26 +15,6 @@
 | forecast_type    | string        | **REQUIRED** "monthly-centiles" for country-wide monthly gridded data |
 | show_metadata    | string        | **NOT REQUIRED** | 
 
-
-Monthly Centiles
-- JSON keywords 
-
-{
-"country": "uk" | "spain" | "turkey",
-"latitude": {defaults to country-wide statistics},
-"longitude": {defaults to country-wide statistics},
-"month": {forecast valid/ release month},
-"year": {forecast valid/ release year},
-"lead": "1" | "2" | "3",
-"extension": "asc",
-"output_type": "weatherlogisticsltd" | "benchmark",
-"meteorological_variable": "tmin" | "tmax" | "tmean" | "precipitation",
-"percentile": "10th" | "30th" | "median" | "70th" | "90th",
-"projection_year": {default is forecast release year},
-"forecast_type": "monthly-centiles",
-"show_metadata": ""
-}
-
 Daily Ensembles
 - JSON keywords
 
