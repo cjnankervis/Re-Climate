@@ -40,7 +40,7 @@ Independently and impartially assessed by the [National Physical Laboratory](htt
 - Simulates daily precipitation event generation to manage local flood/ drought
 - Delivers accurate physical risk analytics to assess intensities of daily weather events
 - Extends deterministic weather predictions with a seamless 3-month probabilistic forecast extending from 2 to 15 weeks
-- Provides access for historical start dates from month: '09', year: '2022'
+- Provides access for historical start dates from month: '12', year: '2022'
 - Supplies town or city data, reporting the closest datapoint where applicable
 - Updates climate hazard information on the 14th day of each month
 
