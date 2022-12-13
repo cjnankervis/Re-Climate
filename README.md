@@ -67,7 +67,7 @@ Similarly, NPL’s report also provided direct comparisons for the [late summer 
 <table>
   <tr><center><td width="50%" align="center">
 
-|API Technical<br />Specifications | Monthly<br /> Centile | Daily<br /> Ensembles | Hazard<br /> Indices | Anomalies | Daily<br /> Profiles | Graphical<br /> Summaries |
+|API Technical<br />Specifications | Monthly<br /> Centile | Daily<br /> Ensembles | Hazard<br /> Indices | Departures<br /> (Anomalies) | Daily<br /> Profiles | Graphical<br /> Summaries |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | <sub><b>Country-wide Forecasts<br /> (Downscaled to a 5km<br /> Regular Grid)</b></sub> | :white_check_mark: | :x: | :x: | :white_check_mark: | :x: | :x: |
 | <sub><b>Town-level Modelling<br /> (Closest Location Match)</b></sub> | :x: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
@@ -115,7 +115,7 @@ Using "CSV_Postproccessing.py" to calculate an ensemble average of consecutive d
 
 Hazard indices are based on a shift-of-the-tail approach that compares daily distribution to a baseline climatology. Climate hazards indices include precipitation, drought, SPI, hail, aridity, humidity, solar, wind, heat and cold. These are scaled from 1 - 9, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatology reference, with 5 indicating the forecast is on par with climate expectations for the current forecast month or season. To request this climate data, see [hazard indices example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/HazardIndices_example.json). See further [documentation](https://re-climate.co.uk/docs/hazard-indices/).
 
-## Anomalies
+## Departures (Anomalies)
 **Country-wide ASCII grid/ town or city CSV provided at a monthly granularity; a departure forecast useful for a big-picture seasonal overview
 
 Like the monthly centiles request, anomalies provide a country-wide mapped overview of departures from an up-to-date climatology to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data on a regular 5km grid, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/Anomalies_example.json). See further [documentation](https://re-climate.co.uk/docs/gridded-datasets/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
