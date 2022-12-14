@@ -11,7 +11,7 @@ Over the past 5 years WeatherLogistics' seasonal forecast codebase has been veri
 
 ## Requesting API Access
 
-To get started, please request an API authentication key and user credentials from the [product owner](mailto:accounts@weatherlogistics.com). To make single requests the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script should be used, while for multiple requests please see [API-Request-Multithreading.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request-Multithreading.py). The Python code can be used to access  six main data streams, with post-processing code also supplied to calculate return periods and other statistics from daily town and city data supplied through "Daily Ensembles".
+To get started, please request an API authentication key and user credentials from the [product owner](mailto:accounts@weatherlogistics.com). To make single requests the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script should be used, while for multiple requests please see [API-Request-Multithreading.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request-Multithreading.py). The Python code can be used to access  six main data streams, with post-processing code also supplied to calculate return periods and other statistics from daily town and city data supplied through "Daily Ensembles". For a description of all available API requests, please see [API_requests.md](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/API_requests.md).
 
 ## Re-Climate® Product
 
