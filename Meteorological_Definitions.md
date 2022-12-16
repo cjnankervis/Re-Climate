@@ -2,9 +2,11 @@
 
 ### All Products Except Hazard Indices and Graphical Summaries
 
-**"tmin"** 24-hour (average) minimum of 2-metre temperature in degrees Celsius (°C) spatially averaged over the native grid area (5 kilometres)
+**"tmin"** 24-hour minimum of 2-metre temperature in degrees Celsius (°C) spatially averaged over the native grid area (5 kilometres)
 
-**"tmax"** 24-hour (average) maximum of 2-metre temperature in degrees Celsius (°C) spatially averaged over the native grid area (5 kilometres)
+**"tmax"** 24-hour maximum of 2-metre temperature in degrees Celsius (°C) spatially averaged over the native grid area (5 kilometres)
+
+**"tmean"** 24-hour average of 2-metre temperature in degrees Celsius (°C) spatially averaged over the native grid area (5 kilometres)
 
 **"precipitation"** 24-hour (OR monthly for "monthly-centiles" and "anomaly" products) accumulation of precipitation of all types in millimetres (mm) spatially averaged over the native grid area (5 kilometres)
 
