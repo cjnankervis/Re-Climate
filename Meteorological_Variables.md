@@ -30,7 +30,7 @@
 
 **"cold"**
 
-**"drought"**
+**"drought"** Drought index values are calculated by comparing the 20th centile of wet days PR20 (where preciptation exceeds 0.6mm per day), with colocated measurements from the [UERRA MESCAN-SURFEX](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-uerra-europe-single-levels?tab=overview) product from the Copernicus Climate Data Store (CDS).
 
 **"heat"**
 
