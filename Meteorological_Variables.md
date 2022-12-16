@@ -15,3 +15,31 @@
 **"wind"** 24-hour average of wind speed at 10 metres above the surface in metres per second (m/s), spatally average over the native grid area (5 kilometres)
 
 **"solar"** 24-hour average of incoming solar radiation at the surface in Watts per metre squared (W/m<sup>2</sup> (daily mean)), spatally average over the native grid area (5 kilometres)
+
+### Hazard Indices
+
+**"hail"**
+
+**"solar"**
+
+**"wind"**
+
+**"aridity"**
+
+**"cold"**
+
+**"drought"**
+
+**"heat"**
+
+**"humidity"**
+
+**"precipitation"**
+
+**"spi"**
+
+### Graphical Summaries
+
+**"EXCEEDANCES"**
+
+**"GDD"**
