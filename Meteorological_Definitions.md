@@ -53,3 +53,7 @@ Both the daily ensemble weather forecast data and observations are statistically
 Σ(tmean)<sub>t+1</sub> + Σ(tmean)<sub>t+2</sub> + Σ(tmean)<sub>t+3</sub> + Σ(tmean)<sub>t+4</sub> + Σ(tmean)<sub>t+5</sub> + Σ(tmean)<sub>t+6</sub> + Σ(tmean)<sub>t+6</sub> + Σ(tmean)<sub>t+7</sub>,
 
 The daily timeline runs from t = 0 days (for the first calendar month of the seasonal climate forecast) to t ≈ 92 at the end of the calendar month 3. Rather than the traditional definition, a baseline temperature of zero degrees Celsius (0°C) is used in these graphical charts, and any period of sub-zero temperatures are accumulated and are subtracted from the rolling 7-day accumulated thermal units. Lower/ upper confidence intervals in the seasonal climate forecasts are supplied as 10th/90th and 25th/75th shading bands, while a real-time climatology reference is also provided. **Compared against WeatherLogistics' model climatology.
+
+## Acknowledgements
+
+*Contains modified Copernicus Climate Change Service information 2022. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
