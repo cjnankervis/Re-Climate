@@ -34,13 +34,13 @@ Both the daily ensemble weather forecast data and observations are statistically
 
 **"cold"**
 
-**"drought"** <u>Drought Indices</u> are calculated by comparing the 20th centile of all non-drizzle days/ PR20 (where preciptation exceeds 0.1mm per day) with closely matched spatial measurements of weather conditions from recent history. The minimum threshold of 0.1mm avoids multiple decile probability of occurence categories of zero precipitation, which is commonplace in arid climates.
+**"drought"** <ins>Drought Indices</ins> are calculated by comparing the 20th centile of all non-drizzle days/ PR20 (where preciptation exceeds 0.1mm per day) with closely matched spatial measurements of weather conditions from recent history. The minimum threshold of 0.1mm avoids multiple decile probability of occurence categories of zero precipitation, which is commonplace in arid climates.
 
 **"heat"**
 
 **"humidity"**
 
-**"precipitation"** <u>Flood Scores</u> are calculated by comparing the 80th centile of predicted wet days/ PR80 (where preciptation exceeds 1.0mm per day) with closely matched spatial measurements of weather conditions from recent history. 
+**"precipitation"** <ins>Flood Scores</ins> are calculated by comparing the 80th centile of predicted wet days/ PR80 (where preciptation exceeds 1.0mm per day) with closely matched spatial measurements of weather conditions from recent history. 
 
 **"spi"**
 
