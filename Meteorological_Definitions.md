@@ -46,6 +46,6 @@ Both the daily ensemble weather forecast data and observations are statistically
 
 ### Graphical Summaries
 
-**"EXCEEDANCES"**
+**"EXCEEDANCES"** <ins>Exceedance curves</ins> compare daily precipitation from a collection of relizations (ensemble members) at different intensities. These are compared directly against spatially correlated UERRA reanalyses from a 15-year history between the years 2004 and 2018. Where the forecast curve exceeds/ subceeds the historical reference at a precipitation intensity threshold, the rate of precipitation is likely to be more/ less intense. 
 
-**"GDD"**
+**"GDD"** <ins>Growing Degree Days</ins> (otherwise known as Heating Degree Days), reports the accumulated daily average mean temperature (Σ(tmean)<sub>t+1</sub> + Σ(tmean)<sub>t+2</sub> + Σ(tmean)<sub>t+3</sub> + Σ(tmean)<sub>t+4</sub> + Σ(tmean)<sub>t+5</sub + Σ(tmean)<sub>t+6</sub> + Σ(tmean)<sub>t+6</sub> + Σ(tmean)<sub>t+7</sub>) over a rolling 7-day (weekly period). Rather than the traditional definition, a baseline temperature of zero degrees Celsius (0°C) is used in these graphical charts, and any period of sub-zero temperatures are accumulated and are subtracted from the rolling 7-day accumulated thermal units.
