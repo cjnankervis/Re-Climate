@@ -1,5 +1,7 @@
 ## Meteorological Variable Definitions
 
+### All Products Except Hazard Indices and Graphical Summaries
+
 **"tmin"** 24-hour (average) minimum of 2-metre temperature in degrees Celsius (°C) spatially averaged over the native grid area (5 kilometres)
 
 **"tmax"** 24-hour (average) maximum of 2-metre temperature in degrees Celsius (°C) spatially averaged over the native grid area (5 kilometres)
