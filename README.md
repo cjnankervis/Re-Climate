@@ -3,7 +3,7 @@
 
 ## About WeatherLogistics®
 
-WeatherLogistics® is an innovative climate technology company with 10-years expertise in improving the value of seasonal climate forecasts for wide operational use.
+WeatherLogistics® is an innovative climate technology company with 10-years expertise in improving the value of seasonal climate forecasts for wider operational use.
 
 The company’s successful projects include a European Space Agency kick-start activity. WeatherLogistics® has also undertaken data validation and meteorological product audits for the agricultural industry. Its clients include renewable energy, water management and insurance firms. Delivered through the Google Cloud Platform, its extended precipitation data offers the most detailed information available to support operations teams in Turkey and the UK impacted by drought.
 
