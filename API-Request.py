@@ -59,33 +59,33 @@ def make_authorized_get_request(URL):
     response = requests.post(URL, json=request_data, headers=user_header, stream=True)
 
     '''N.b. Column/ item length of 100 indicates Ensemble Numbers from 1 to 100'''
-    if climate_data["extension"] not in ('csv', 'png'):
+    if climate_data["extension"] == 'png' or climate_data["filename"]:
         try:
-            response = response.json().replace("\'", "\"")
-        except Exception as e:
-            try:
-                response = response.text.replace("\'", "\"")
-            except Exception as e:
-                print(e)
-                pass
+            if response.status_code == 200:
+                with open(climate_data["filename"], 'wb') as f:
+                    for chunk in response:
+                        f.write(chunk)
+                    print(f'Hazard index file was saved to {climate_data["filename"]}')
+                f.close()
+        except KeyError:
+            with open("output.png", 'wb') as f:
+                for chunk in response:
+                    f.write(chunk)
+                print('Hazard index file was saved to output.png')
+            f.close()
     else:
         if climate_data["extension"] == 'csv':
             response = response.text
-        elif climate_data["extension"] == 'png':
+        else:
             try:
-                if response.status_code == 200:
-                    with open(climate_data["filename"], 'wb') as f:
-                        for chunk in response:
-                            f.write(chunk)
-                        print(f'Hazard index file was saved to {climate_data["filename"]}')
-                    f.close()
-            except KeyError:
-                with open("output.png", 'wb') as f:
-                    for chunk in response:
-                        f.write(chunk)
-                    print(f'Hazard index file was saved to output.png')
-                f.close()
-    print(response)
+                response = response.json().replace("\'", "\"")
+            except Exception as e:
+                try:
+                    response = response.text.replace("\'", "\"")
+                except Exception as e:
+                    print(e)
+                    pass
+        print(response)
     
     # Returning the Response received from the Re-Climate API
     return response
