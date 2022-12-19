@@ -144,9 +144,9 @@ if threshold_type.lower() == 'above':
         metric_description = f'Accumulated meteorological value of events with an intensity equal to or above {threshold}'
         metric_output = round(np.mean([np.sum(mth_data[e][mth_data[e] >= threshold]) for e in range(num_ensembles)]) / num_ensembles, 2)
     elif metric_type.lower() == 'centile':
-        '''Frequency of occurrence of events with with an intensity equal to or above a centile threshold'''
-        metric_description = f'Frequency of occurrence of events with an intensity equal to or above {threshold}th centile'
-        metric_output = round(np.mean([np.sum(mth_data[e][mth_data[e] >= np.percentile(mth_data[e], threshold)]) for e in range(num_ensembles)]) / num_ensembles, 2)
+        '''Average intensity of events with a probability threshold equal to or above a centile threshold'''
+        metric_description = f'Average intensity of events with a probability threshold equal to or above {threshold}th centile'
+        metric_output = round(np.mean([sum(mth_data[e][mth_data[e] >= np.percentile(mth_data[e], threshold)] for e in range(num_ensembles))]) / num_ensembles, 2)
     elif metric_type.lower() == 'consecutive':
         '''Mean consecutive days with an event intensity equal to or above a threshold'''
         metric_description = f'Mean consecutive days with an event intensity equal to or above {threshold}'
@@ -176,9 +176,9 @@ if threshold_type.lower() == 'below':
         metric_description = f'Accumulated meteorological value of events with an intensity equal to or below {threshold}'
         metric_output = round(np.mean([np.sum(mth_data[e][mth_data[e] <= threshold]) for e in range(num_ensembles)]) / num_ensembles, 2)
     elif metric_type.lower() == 'centile':
-        '''Frequency of occurrence of events with with an intensity equal to or below a centile threshold'''
-        metric_description = f'Frequency of occurrence of events with an intensity equal to or below {threshold}th centile'
-        metric_output = round(np.mean([np.sum(mth_data[e][mth_data[e] <= np.percentile(mth_data[e], threshold)]) for e in range(num_ensembles)]) / num_ensembles, 2)
+        '''Average intensity of events with a probability threshold equal to or below a centile threshold'''
+        metric_description = f'Average intensity of events with a probability threshold equal to or below {threshold}th centile'
+        metric_output = round(np.mean([sum(mth_data[e][mth_data[e] <= np.percentile(mth_data[e], threshold)] for e in range(num_ensembles))]) / num_ensembles, 2)
     elif metric_type.lower() == 'consecutive':
         '''Mean consecutive days with an event intensity equal to or below a threshold'''
         metric_description = f'Mean consecutive days with an event intensity equal to or below {threshold}'
@@ -208,9 +208,9 @@ if threshold_type.lower() == 'between':
         metric_description = f'Accumulated meteorological value of events with intensities between {threshold_lower} and {threshold_upper}'
         metric_output = round(np.mean([np.sum(mth_data[e][(mth_data[e] >= threshold_lower) & (mth_data[e] <= threshold_upper)]) for e in range(num_ensembles)]) / num_ensembles, 2)
     elif metric_type.lower() == 'centile':
-        '''Frequency of occurrence of events with with an intensity between a lower and upper centile threshold'''
-        metric_description = f'Frequency of occurrence of events with intensities between {threshold_lower}th and {threshold_upper}th centiles'
-        metric_output = round(np.mean([np.sum(mth_data[e][(mth_data[e] >= np.percentile(mth_data[e], threshold_lower)) & (mth_data[e] <= np.percentile(mth_data[e], threshold_upper))]) for e in range(num_ensembles)]) / num_ensembles, 2)
+        '''Average intensity of events with a probability threshold between a lower and upper centile threshold'''
+        metric_description = f'Average intensity of events with a probability threshold between {threshold_lower}th and {threshold_upper}th centiles'
+        metric_output = round(np.mean([sum(mth_data[e][(mth_data[e] >= np.percentile(mth_data[e], threshold_lower)) & (mth_data[e] <= np.percentile(mth_data[e], threshold_upper))] for e in range(num_ensembles))]) / num_ensembles, 2)
     elif metric_type.lower() == 'consecutive':
         '''Mean consecutive days with an event intensity between a lower and upper threshold'''
         metric_description = f'Mean consecutive days with event intensities between {threshold_lower} and {threshold_upper}'
