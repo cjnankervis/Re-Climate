@@ -38,7 +38,7 @@ Independently and impartially assessed by the [National Physical Laboratory](htt
 - Builds on 10-years of R&D in seasonal climate prediction science
 - Combines state-of-the-art models, downscaling, statistical post-processing, chronic climate trend adjustments, and rigorous validation
 - Simulates daily precipitation event generation to manage local flood/ drought
-- Delivers accurate physical risk analytics to assess intensities of daily weather events
+- Delivers accurate physical hazard analytics to assess intensities of daily weather events
 - Extends deterministic weather predictions with a seamless 3-month probabilistic forecast extending from 2 to 15 weeks
 - Provides access for historical start dates from month: '12', year: '2022'
 - Supplies town or city data, reporting the closest datapoint where applicable
