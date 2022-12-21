@@ -15,8 +15,6 @@ To get started, please request an API authentication key and user credentials fr
 
 ## Re-Climate® Product
 
-[<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Re-Climate_API-video.png" width="50%">](https://youtu.be/GkMn4gPZjts "Seasonal climate forecasts Re-Climate API YouTube Marketing Video")
-
 The Re-Climate® API delivers the most reliable seasonal climate prediction system in Europe, with its precipitation forecasts independently assessed by the National Physical Laboratory. It achieves this by blending numerous climate datasets and weather models through its algorithms; and this helps organisations to accurately forecast extreme weather, calculate their risk exposure and build their resilience.
 
 Modelling weather events and seasonal climate helps decision-makers communicate losses linked to floods, drought, wind damage, hail, heatwaves or freeze days to within a few kilometres.
