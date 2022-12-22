@@ -15,7 +15,7 @@ To get started, please request an API authentication key and user credentials fr
 
 ## Re-Climate® Product
 
-[<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/ReClimateAPI.png" width="80%">](https://youtu.be/GkMn4gPZjts "Seasonal climate forecasts Re-Climate API YouTube Marketing Video")
+[<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/ReClimateAPI.png" width="60%">](https://youtu.be/GkMn4gPZjts "Seasonal climate forecasts Re-Climate API YouTube Marketing Video")
 
 The Re-Climate® API delivers reliable seasonal climate predictions to operations teams in the agri-food, energy and water utilities, and insurance industries. These forecasts have been independently and impartially assessed by the National Physical Laboratory.
 
