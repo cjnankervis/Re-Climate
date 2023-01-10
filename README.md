@@ -120,7 +120,13 @@ Hazard indices are based on a shift-of-the-tail approach that compares daily dis
 ## Departures (Anomalies)
 **Country-wide ASCII grid/ town or city CSV provided at a monthly granularity; a departure forecast useful for a big-picture seasonal overview
 
-Like the monthly centiles request, anomalies provide a country-wide mapped overview of departures from an up-to-date climatology to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data on a regular 5km grid, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/Anomalies_example.json). See further [documentation](https://re-climate.co.uk/docs/gridded-datasets/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
+Like the monthly centiles request, anomalies provide a country-wide mapped overview of departures from a **climatological average** to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data on a regular 5km grid, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/Anomalies_example.json). See further [documentation](https://re-climate.co.uk/docs/gridded-datasets/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
+
+### Climatological Reference
+| Geography/ Country | Meteorological Variable | Reference Product | Resolution | Start Year | End Year | Reference Midpoint | Reference Documentation |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| United Kingdom | Monthly Temperature (tmean) | UKCP09 | 5km | 1962 | 2016 | 1989 | [Hadley Centre](https://catalogue.ceda.ac.uk/uuid/87b3ab3b9bae47adab0c15d594d443b8)
+| United Kingdom | Monthly Precipitation (precipitation) | UKCP09 | 5km | 1962 | 2016 | 1989 | [Hadley Centre](https://catalogue.ceda.ac.uk/uuid/87b3ab3b9bae47adab0c15d594d443b8)
 
 ### Example C.
 November precipitation anomalies plotted using Re-Climate® data issued on 13th October 2022.
