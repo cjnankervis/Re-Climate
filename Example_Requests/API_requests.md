@@ -39,7 +39,7 @@
 | show_metadata    | string        | <sub>**NOT REQUIRED**</sub> | 
 
 ## "Hazard Indices" JSON request fields
-See detailed information about the [climatological reference](https://github.com/cjnankervis/Re-Climate#climatological-references).
+See more information about the [climatological hazard reference](https://github.com/cjnankervis/Re-Climate#climatological-hazard-references)
 
 | Element         | Type          | Description                                                  |
 | --------------- | ------------- | ------------------------------------------------------------ |
@@ -60,6 +60,7 @@ See detailed information about the [climatological reference](https://github.com
 | show_metadata    | string        | <sub>**NOT REQUIRED**</sub> | 
 
 ## "Anomalies" JSON request fields
+See more information about the [climatological departure reference](https://github.com/cjnankervis/Re-Climate#climatological-departure-references)
 
 | Element         | Type          | Description                                                  |
 | --------------- | ------------- | ------------------------------------------------------------ |
