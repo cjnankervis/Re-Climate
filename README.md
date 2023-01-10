@@ -115,7 +115,13 @@ Using "CSV_Postproccessing.py" to calculate an ensemble average of consecutive d
 ## Hazard Indices
 **Mapped country-wide town/ city indices, useful for a snapshot overview of acute seasonal climate hazards
 
-Hazard indices are based on a shift-of-the-tail approach that compares daily distribution to a baseline climatology. Climate hazards indices include precipitation, drought, SPI, hail, aridity, humidity, solar, wind, heat and cold. These are scaled from 1 - 9, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatology reference, with 5 indicating the forecast is on par with baseline climate expectations for the current forecast month or season. To request this climate data, see [hazard indices example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/HazardIndices_example.json). See further [documentation](https://re-climate.co.uk/docs/hazard-indices/).
+Hazard indices are based on a shift-of-the-tail approach that compares daily distribution to a baseline climatology. Climate hazards indices include precipitation, drought, SPI, aridity, heat, cold, hail, minimum humiditiy, maximum humidity, solar and wind. These are scaled from 1 - 9, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatology reference, with 5 indicating the forecast is on par with baseline climate expectations for the current forecast month or season. To request this climate data, see [hazard indices example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/HazardIndices_example.json). See further [documentation](https://re-climate.co.uk/docs/hazard-indices/).
+
+### Climatological References
+| Geography/ Country | Meteorological Variable | Reference Product | Resolution | Start Year | End Year | Reference Midpoint | Reference Documentation |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| ALL GEOGRAPHIES | precipitation, drought, SPI, aridity, heat, cold | UERRA (MESCAN-SURFEX) | 5.5km | 2004 | 2016 | 2010 | [UERRA MESCAN-SURFEX](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-uerra-europe-complete)
+| ALL GEOGRAPHIES | heat, cold, hail, minimum humiditiy, maximum humidity, solar and wind | ERA-5 land | 31km | 1981 | 2019 | 2000 | [ERA](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels)
 
 ## Departures (Anomalies)
 **Country-wide ASCII grid/ town or city CSV provided at a monthly granularity; a departure forecast useful for a big-picture seasonal overview
