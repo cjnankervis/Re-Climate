@@ -120,7 +120,7 @@ Hazard indices are based on a shift-of-the-tail approach that compares daily dis
 ### Climatological Hazard References
 | Geography/<br />Country | Meteorological<br /> Variable | Reference<br /> Product | Resolution | Start Year | End Year | Reference<br />Midpoint | Reference<br /> Documentation |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| ALL GEOGRAPHIES | precipitation, drought, SPI, aridity, heat, cold | UERRA (MESCAN-SURFEX) | 5.5km | 2004 | 2016 | 2010 | [UERRA MESCAN-SURFEX](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-uerra-europe-complete)
+| ALL GEOGRAPHIES | precipitation, drought, SPI, aridity, heat, cold | UERRA (MESCAN-SURFEX) | 5.5km | 2004 | 2018 | 2011 | [UERRA MESCAN-SURFEX](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-uerra-europe-complete)
 | ALL GEOGRAPHIES | heat, cold, hail, minimum humiditiy, maximum humidity, solar and wind | ECMWF ReAnalysis v5 | 31km | 1981 | 2019 | 2000 | [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels)
 
 ## Departures (Anomalies)
