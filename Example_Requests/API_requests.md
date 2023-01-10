@@ -39,6 +39,7 @@
 | show_metadata    | string        | <sub>**NOT REQUIRED**</sub> | 
 
 ## "Hazard Indices" JSON request fields
+See detailed information about the [climatological reference](https://github.com/cjnankervis/Re-Climate#climatological-references).
 
 | Element         | Type          | Description                                                  |
 | --------------- | ------------- | ------------------------------------------------------------ |
