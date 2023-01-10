@@ -123,7 +123,9 @@ Hazard indices are based on a shift-of-the-tail approach that compares daily dis
 Like the monthly centiles request, anomalies provide a country-wide mapped overview of departures from a **climatological average** to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data on a regular 5km grid, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/Anomalies_example.json). See further [documentation](https://re-climate.co.uk/docs/gridded-datasets/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
 
 ### Departure Type
+
 ***Temperature (tmean)*** as an absolute difference from current estimated climate conditions in Kelvin
+
 ***Precipitation*** as an relative % of climatological reference conditions, where 100% indicates near normal conditions relative to history
 
 ### Climatological References
