@@ -117,7 +117,7 @@ Using "CSV_Postproccessing.py" to calculate an ensemble average of consecutive d
 
 Hazard indices are based on a shift-of-the-tail approach that compares daily distribution to a baseline climatology. Climate hazards indices include precipitation, drought, SPI, aridity, heat, cold, hail, minimum humiditiy, maximum humidity, solar and wind. These are scaled from 1 - 9, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatology reference, with 5 indicating the forecast is on par with baseline climate expectations for the current forecast month or season. To request this climate data, see [hazard indices example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/HazardIndices_example.json). See further [documentation](https://re-climate.co.uk/docs/hazard-indices/).
 
-### Climatological References
+### Climatological Hazard References
 | Geography/<br />Country | Meteorological<br /> Variable | Reference<br /> Product | Resolution | Start Year | End Year | Reference<br />Midpoint | Reference<br /> Documentation |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | ALL GEOGRAPHIES | precipitation, drought, SPI, aridity, heat, cold | UERRA (MESCAN-SURFEX) | 5.5km | 2004 | 2016 | 2010 | [UERRA MESCAN-SURFEX](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-uerra-europe-complete)
@@ -134,7 +134,7 @@ Like the monthly centiles request, anomalies provide a country-wide mapped overv
 
 ***Precipitation*** as an relative % of climatological reference conditions, where 100% indicates near normal conditions relative to history
 
-### Climatological References
+### Climatological Departure References
 | Geography/<br />Country | Meteorological<br /> Variable | Reference<br /> Product | Resolution | Start Year | End Year | Reference<br />Midpoint | Reference<br /> Documentation |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | United Kingdom | Monthly Temperature (tmean) | UKCP09 | 5km | 1962 | 2016 | **ADJUSTED TO CURRENT** | [Hadley Centre](https://catalogue.ceda.ac.uk/uuid/87b3ab3b9bae47adab0c15d594d443b8)
