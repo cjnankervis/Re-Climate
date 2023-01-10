@@ -125,12 +125,15 @@ Like the monthly centiles request, anomalies provide a country-wide mapped overv
 ### Climatological References
 | Geography/ Country | Meteorological Variable | Reference Product | Resolution | Start Year | End Year | Reference Midpoint | Reference Documentation |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| United Kingdom | Monthly Temperature (tmean) | UKCP09 | 5km | 1962 | 2016 | ADJUSTED TO CURRENT | [Hadley Centre](https://catalogue.ceda.ac.uk/uuid/87b3ab3b9bae47adab0c15d594d443b8)
+| United Kingdom | Monthly Temperature (tmean) | UKCP09 | 5km | 1962 | 2016 | **ADJUSTED TO CURRENT** | [Hadley Centre](https://catalogue.ceda.ac.uk/uuid/87b3ab3b9bae47adab0c15d594d443b8)
 | United Kingdom | Monthly Precipitation (precipitation) | UKCP09 | 5km | 1962 | 2016 | 1989 | [Hadley Centre](https://catalogue.ceda.ac.uk/uuid/87b3ab3b9bae47adab0c15d594d443b8)
-| Spain | Monthly Temperature (tmean) | SPREAD | 5km | 1962 | 2014 | ADJUSTED TO CURRENT | [STEAD](https://digital.csic.es/handle/10261/188989)
+| Spain | Monthly Temperature (tmean) | SPREAD | 5km | 1962 | 2014 | **ADJUSTED TO CURRENT** | [STEAD](https://digital.csic.es/handle/10261/188989)
 | Spain | Monthly Precipitation (precipitation) | SPREAD | 5km | 1962 | 2013 | 1987 | [SPREAD](https://digital.csic.es/handle/10261/141218)
-| Turkey | Monthly Temperature (tmean) | UERRA | 5km | 1961 | 2017 | ADJUSTED TO CURRENT | [ECMWF-UERRA](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-uerra-europe-single-levels)
+| Turkey | Monthly Temperature (tmean) | UERRA | 5km | 1961 | 2017 | **ADJUSTED TO CURRENT** | [ECMWF-UERRA](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-uerra-europe-single-levels)
 | Turkey | Monthly Precipitation (precipitation) | UERRA | 5km | 1962 | 2015 | 1989 | [ECMWF-UERRA](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-uerra-europe-single-levels)
+
+**ADJUSTED TO CURRENT**
+Chronic climate change adjustments are applied using a linear monthly temperature trend adjustment on a grid-by-grid basis. This shifts the reference midpoint climate to present day.
 
 ### Example C.
 November precipitation anomalies plotted using Re-Climate® data issued on 13th October 2022.
