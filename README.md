@@ -145,7 +145,7 @@ Like the monthly centiles request, anomalies provide a country-wide mapped overv
 | Turkey | Monthly Precipitation (precipitation) | UERRA | 5km | 1962 | 2015 | 1989 | [ECMWF-UERRA](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-uerra-europe-single-levels)
 
 **ADJUSTED TO CURRENT**
-Chronic climate change adjustments are applied using a linear monthly temperature trend adjustment on a grid-by-grid basis. This shifts the reference midpoint climate to present day.
+Chronic climate change adjustments are applied using a linear monthly temperature trend adjustment on an individual gridcell basis. This shifts the reference midpoint climate to present day.
 
 ### Example C.
 November precipitation anomalies plotted using Re-Climate® data issued on 13th October 2022.
