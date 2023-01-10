@@ -101,6 +101,7 @@ See more information about the [climatological departure reference](https://gith
 | show_metadata    | string        | <sub>**NOT REQUIRED**</sub> | 
 
 ## "Graphical Summaries" JSON request fields
+See more information about the [climatological graphical summary references](https://github.com/cjnankervis/Re-Climate/blob/main/README.md#daily-weather-profiles-reliability-plots)
 
 | Element         | Type          | Description                                                  |
 | --------------- | ------------- | ------------------------------------------------------------ |
