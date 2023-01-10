@@ -121,7 +121,7 @@ Hazard indices are based on a shift-of-the-tail approach that compares daily dis
 | Geography/ Country | Meteorological Variable | Reference Product | Resolution | Start Year | End Year | Reference Midpoint | Reference Documentation |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | ALL GEOGRAPHIES | precipitation, drought, SPI, aridity, heat, cold | UERRA (MESCAN-SURFEX) | 5.5km | 2004 | 2016 | 2010 | [UERRA MESCAN-SURFEX](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-uerra-europe-complete)
-| ALL GEOGRAPHIES | heat, cold, hail, minimum humiditiy, maximum humidity, solar and wind | ERA-5 land | 31km | 1981 | 2019 | 2000 | [ERA](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels)
+| ALL GEOGRAPHIES | heat, cold, hail, minimum humiditiy, maximum humidity, solar and wind | ECMWF ReAnalysis v5 | 31km | 1981 | 2019 | 2000 | [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels)
 
 ## Departures (Anomalies)
 **Country-wide ASCII grid/ town or city CSV provided at a monthly granularity; a departure forecast useful for a big-picture seasonal overview
