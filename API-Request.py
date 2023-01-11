@@ -65,14 +65,14 @@ def make_authorized_get_request(URL):
 
     '''N.b. Column/ item length of 100 indicates Ensemble Numbers from 1 to 100'''
     if climate_data["extension"] == 'png' or climate_data["filename"]:
-        try:
+        if climate_data["filename"]:
             if response.status_code == 200:
                 with open(climate_data["filename"], 'wb') as f:
                     for chunk in response:
                         f.write(chunk)
                     print(f'Hazard index file was saved to {climate_data["filename"]}')
                 f.close()
-        except KeyError:
+        else:
             with open("output.png", 'wb') as f:
                 for chunk in response:
                     f.write(chunk)
