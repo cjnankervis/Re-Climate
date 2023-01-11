@@ -47,7 +47,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 # Loading User Credentials from JSON file and storing in dictionary
 user_credentials = json.load(open(credential_path))
 
-URL = "https://re-climate-4un5g5jztq-nw.a.run.app"
+URL = "https://re-climategauges-4un5g5jztq-nw.a.run.app"
     
 # Fetching the Authentication Request from Environment Variables
 auth_req = google.auth.transport.requests.Request()
@@ -65,16 +65,16 @@ def load_url(URL, request_data, user_header):
         request_data["filename"]
     except KeyError:
         request_data["filename"] = None
-      
+    
     if request_data["extension"] == 'png' or request_data["filename"]:
-        try:
+        if request_data["filename"]:
             if response.status_code == 200:
                 with open(request_data["filename"], 'wb') as f:
                     for chunk in response:
                         f.write(chunk)
                     print(f'Hazard index file was saved to {request_data["filename"]}')
                 f.close()
-        except KeyError:
+        else:
             with open("output.png", 'wb') as f:
                 for chunk in response:
                     f.write(chunk)
