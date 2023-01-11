@@ -51,6 +51,11 @@ def make_authorized_get_request(URL):
     
     # Combining all the required data into single dictionary
     request_data = user_data | climate_data
+    
+    try:
+        climate_data["filename"]
+    except KeyError:
+        climate_data["filename"] = None
 
     # Building Header for Authenticated User Request
     user_header = {"Content-Type": "application/json", "Authorization": "Bearer " + id_token}
