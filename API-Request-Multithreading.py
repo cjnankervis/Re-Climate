@@ -60,6 +60,12 @@ user_header = {"Content-Type": "application/json", "Authorization": "Bearer " + 
 def load_url(URL, request_data, user_header):
     # Sending the POST Request and reading the Response received.
     response = requests.post(URL, json=request_data, headers=user_header, stream=True)
+    
+    try:
+        request_data["filename"]
+    except KeyError:
+        request_data["filename"] = None
+      
     if request_data["extension"] == 'png' or request_data["filename"]:
         try:
             if response.status_code == 200:
