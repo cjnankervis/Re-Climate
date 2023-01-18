@@ -115,6 +115,8 @@ Using "CSV_Postproccessing.py" to calculate an ensemble average of consecutive d
 ## Hazard Indices
 **Mapped country-wide town/ city indices, useful for a snapshot overview of acute seasonal climate hazards
 
+Please view more detailed information about [how to interpret seasonal climate forecast hazards](https://github.com/cjnankervis/Re-Climate/blob/main/About-Hazard-Indices.md), which explains: what is meant by forecast reliability, how an ensemble prediction can extend short-term forecasts without breaching mathematical constraints, what is possible from a seasonal precipitation forecast, and how to interpret the seasonal climate forecast hazards. [Forecast graphics](https://github.com/cjnankervis/Re-Climate/blob/main/About-Hazard-Indices.md#graphics-showing-a-worked-example) then show how information is combined from probabilistic forecasts as single value hazard indices.
+
 Hazard indices are based on a shift-of-the-tail approach that compares daily distribution to a baseline climatology. Climate hazards indices include precipitation, drought, SPI, aridity, heat, cold, hail, minimum humiditiy, maximum humidity, solar and wind. These are scaled from 1 - 9, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatology reference, with 5 indicating the forecast is on par with baseline climate expectations for the current forecast month or season. To request this climate data, see [hazard indices example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/HazardIndices_example.json). See further [documentation](https://re-climate.co.uk/docs/hazard-indices/).
 
 ### Climatological Hazard References
