@@ -16,7 +16,7 @@ Firstly, it is important to explain four bounds that restrict what is possible f
 •	Uncertainty or inconsistency between model simulations, and more volatile or changeable hydrological conditions both affect precipitation hazards. It is not possible to discern the difference between the two outcomes mathematically, while both increase hazard scores
 
 ## Drought Index
-We can define an index to assess the driest 20% of collated model run simulations (the ‘ensemble’), then compare this statistic the lower quintile of local observations over at least 15 years of history.
+We can define an index to assess the driest 20% of collated model run simulations (the ‘ensemble’), then compare this statistic to the lower quintile of local observations over at least 15 years of history.
 We quantify the shift-of-the-tail to drier conditions, increasing the index value for each unit departure toward the lower tail of the precipitation distribution. 
 
 ## Precipitation Index
