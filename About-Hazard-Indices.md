@@ -25,7 +25,7 @@ We can define another index to assess the wettest 20% of model runs (‘ensemble
 ## Standardized Precipitation Index (SPI)
 The widely adopted standard measure of precipitation is based on extended accumulations of precipitation over the course of the forecast. To replicate a similar index system to other climate prediction companies, we define an index to assess the median (50th centile) of model simulations. Note here that these graphics provide users with no information about the statistical range in daily precipitation events; either precipitation excess or prolonged dry spells at the tails of the ensemble distribution. Overreliance on this single climate hazard metric is therefore likely to be misleading.
 
-Note that for the SPI method, precipitation is also treated a a standardized value with reference to its climatology.
+Note that for the SPI method, precipitation is also treated as a standardized value with reference to its climatology.
 e.g., daily values are adjusted to (value - mean) / standard deviation
 
 ## [Analysis of hazards](https://github.com/cjnankervis/Re-Climate#hazard-indices).
