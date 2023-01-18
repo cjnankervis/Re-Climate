@@ -1,4 +1,4 @@
-# How to interpret seasonal climate forecast hazards.
+# How to interpret [seasonal climate forecast hazards](https://github.com/cjnankervis/Re-Climate#hazard-indices).
 
 Seasonal climate forecasts provide probabilistic outlooks. These describe the prevailing weather conditions over the coming months. Understanding and quantifying their uncertainties helps guide decision making processes, with actionable information obtained by weighing up benefits against losses.
 
