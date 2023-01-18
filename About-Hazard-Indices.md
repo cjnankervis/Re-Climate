@@ -9,7 +9,7 @@ Firstly, it is important to explain four bounds that restrict what is possible f
 •	Good reliability in a seasonal climate forecast implies that the event count is proportional to their likelihood of occurrence, which permits decision making
 
 •	Extended precipitation forecasts should always be probabilistic in nature, since uncertainty is a natural outcome from mathematical constraints, noting Lorenz’s paper on prediction
-[Edward Norton Lorenz, 1972 American Association for the Advancement of Sciences; 139th meeting] 
+[Edward Norton Lorenz, 1972 American Association for the Advancement of Sciences; 139th meeting](http://eapsweb.mit.edu/research/Lorenz/Butterfly_1972.pdf)
 
 •	Collectively, ensemble members contain useful information about the chances of drier or wetter-than-average conditions, presented as statistics or summaries
 
