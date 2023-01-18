@@ -50,4 +50,8 @@ Mixed scenario with a wet bias. Extended dry periods are less likely than averag
 <img src="https://re-climate.earth/wp-content/uploads/2023/01/Precip_Index.png" width="60%">
 <img src="https://re-climate.earth/wp-content/uploads/2023/01/Drought_Index.png" width="60%">
 
-<sub><b>Figure. Seasonal climate forecasts showing Precipitation Index (80th centile shift-of-the-tail, top) and Drought Index (20th centile shift-of-the-tail, bottom) annotated with analysis of hazards. High hazard scenario (A), Low hazard scenario (B), Mixed scenario with a dry bias (C), Mixed scenario with a wet bias (D).</b></sub>
+<sub><b>Figure 1. Seasonal climate forecasts showing Precipitation Index (80th centile shift-of-the-tail, top) and Drought Index (20th centile shift-of-the-tail, bottom) for the same month annotated with analysis of hazards. High hazard scenario (A), Low hazard scenario (B), Mixed scenario with a dry bias (C), Mixed scenario with a wet bias (D).</b></sub>
+
+<img src="https://re-climate.earth/wp-content/uploads/2023/01/SPI_Index.png" width="60%">
+
+<sub><b>Figure 2. Seasonal climate forecasts showing Standarized Precipitation Index (50th centile analysis) for the same month's forecast as Figure 1. The figure indicates that in terms of total monthly accumulated precipitation the English Midlands and Northeast England are likely to be wetter-than-average.</b></sub>
