@@ -16,11 +16,15 @@ Firstly, it is important to explain four bounds that restrict what is possible f
 •	Uncertainty or inconsistency between model simulations, and more volatile or changeable hydrological conditions both affect precipitation hazards. It is not possible to discern the difference between the two outcomes mathematically, while both increase hazard scores
 
 ## Drought Index
-We can define an index to assess the driest 20% of collated model run simulations (the ‘ensemble’), then compare this statistic to the lower quintile of local observations over at least 15 years of history.
+We can define an index to assess the driest 20% of collated model runs/ simulations (the ‘ensemble’), then compare this statistic to the lower quintile of local observations over at least 15 years of history.
 We quantify the shift-of-the-tail to drier conditions, increasing the index value for each unit departure toward the lower tail of the precipitation distribution. 
 
 ## Precipitation Index
-We can define another index to assess the wettest 20% of model run simulations (‘ensemble’), then compare this statistic to local observations over the same observational history. We can quantify the shift-of-the-tail to wetter daily conditions and increase the Precipitation Index upward for each unit departure toward the upper tail of the precipitation distribution.
+We can define another index to assess the wettest 20% of model runs (‘ensemble’), then compare this statistic to local observations over the same observational history. We can quantify the shift-of-the-tail to wetter daily conditions and increase the Precipitation Index upward for each unit departure toward the upper tail of the precipitation distribution.
+
+## Standardized Precipitation Index (SPI)
+The widely adopted standard measure of precipitation is based on extended accumulations of precipitation over the course of the forecast. To replicate a similar index system to other climate prediction companies, we define an index to assess the median (50th centile) of model simulations. Note here that these graphics provide users with no information about the statistical range in daily precipitation events; either precipitation excess or prolonged dry spells at the tails of the ensemble distribution. Overreliance on this single climate hazard metric is therefore likely to be misleading.
+
 
 ## [Analysis of hazards](https://github.com/cjnankervis/Re-Climate#hazard-indices).
 With the two indices described above there are four possible seasonal climate hazards scenarios:
