@@ -28,7 +28,7 @@ The widely adopted standard measure of precipitation is based on an extended acc
 Note that for the SPI method, precipitation is also treated as a standardized value with reference to its climatology.
 e.g., daily values are adjusted to (value - mean) / standard deviation
 
-See further parameterization, methodologies in [meteorological definitions](https://github.com/cjnankervis/Re-Climate/blob/main/Meteorological_Definitions.md#hazard-indices)
+For more information see further parameterization and methodologies in [meteorological definitions](https://github.com/cjnankervis/Re-Climate/blob/main/Meteorological_Definitions.md#hazard-indices)
 
 ## [Analysis of climate hazards](https://github.com/cjnankervis/Re-Climate#hazard-indices).
 With the two indices described above there are four possible seasonal climate hazards scenarios:
