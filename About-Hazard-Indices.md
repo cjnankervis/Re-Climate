@@ -54,4 +54,4 @@ Mixed scenario with a wet bias. Extended dry periods are less likely than averag
 
 <img src="https://re-climate.earth/wp-content/uploads/2023/01/SPI_Index.png" width="60%">
 
-<sub><b>Figure 2. Seasonal climate forecasts showing Standarized Precipitation Index (50th centile analysis) for the same month's forecast as Figure 1. The figure indicates that in terms of total monthly accumulated precipitation the English Midlands and Northeast England are likely to be wetter-than-average.</b></sub>
+<sub><b>Figure 2. Seasonal climate forecasts showing Standardized Precipitation Index (50th centile analysis) for the same month's forecast as Figure 1. The figure indicates that in terms of total monthly accumulated precipitation the English Midlands and Northeast England are likely to be wetter-than-average.</b></sub>
