@@ -22,7 +22,7 @@ We quantify the shift-of-the-tail to drier conditions, increasing the index valu
 ## Precipitation Index
 We can define another index to assess the wettest 20% of model run simulations (‘ensemble’), then compare this statistic to local observations over the same observational history. We can quantify the shift-of-the-tail to wetter daily conditions and increase the Precipitation Index upward for each unit departure toward the upper tail of the precipitation distribution.
 
-## Analysis of hazards.
+## [Analysis of hazards](https://github.com/cjnankervis/Re-Climate#hazard-indices).
 With the two indices described above there are four possible seasonal climate hazards scenarios:
 
 ### A.	Drought Index > 6, Precipitation Index > 6
