@@ -41,6 +41,8 @@ Mixed scenario with a dry bias. Extended periods of dry weather are more likely 
 
 Mixed scenario with a wet bias. Extended dry periods are less likely than average, with a higher-than-average likelihood and/ or intensity of extreme precipitation events with more wet ensemble members.
 
+## Graphics showing a worked example
+
 <img src="https://re-climate.earth/wp-content/uploads/2023/01/Precip_Index.png" width="60%">
 <img src="https://re-climate.earth/wp-content/uploads/2023/01/Drought_Index.png" width="60%">
 
