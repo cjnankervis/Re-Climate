@@ -15,6 +15,10 @@ Generates a country-wide plot of a Re-Climate® temperature or precipitation var
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+import datetime
+
+now = datetime.datetime.now()
+copy_yr = now.year
 
 data_paths = ("./Rainfall_AnomalyBenchmark.asc", "./Rainfall_AnomalyWeatherLogistics.asc")
 titles = ("Benchmark", "WeatherLogistics")
@@ -22,7 +26,7 @@ variable_units = "Precipitation/ % of Climate"
 
 fig, (ax1, ax2) = plt.subplots(1,2,dpi=2000,figsize=(15,5),constrained_layout=True)
 plt.subplots_adjust(wspace=0.3)
-fig.suptitle("Re-Climate® November Rainfall Departure Forecast. Copyright 2022. All rights reserved.")
+fig.suptitle("Re-Climate® November Rainfall Departure Forecast. Copyright "+str(copy_yr)+". All rights reserved.")
 gs = gridspec.GridSpec(1,3,width_ratios=[5,0.2,5])
 
 for ind, data_path in enumerate(data_paths):
