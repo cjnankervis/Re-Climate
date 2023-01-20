@@ -16,19 +16,30 @@ Firstly, it is important to explain four bounds that restrict what is possible f
 •	Uncertainty or inconsistency between model simulations, and more volatile or changeable hydrological conditions both affect precipitation hazards. It is not possible to discern the difference between the two outcomes mathematically, while both increase hazard scores
 
 ## Drought Index
-We can define an index to assess the driest 20% of collated model runs/ simulations (the ‘ensemble’), then compare this statistic to the lower quintile of local observations over at least 15 years of history.
-We quantify the shift-of-the-tail to drier conditions, increasing the index value for each unit departure toward the lower tail of the precipitation distribution. 
+We define an index to assess the driest 20% of collated model runs/ simulations (the ‘ensemble’), then compare this statistic to the lower quintile of local observations over at least 15 years of history.
+We quantify the shift-of-the-tail to drier conditions, increasing the index value for each unit departure toward the lower tail of the precipitation distribution. Figure 3 (top) shows an example forecast for this index, noting that analyses should be combined with information from other hydrological indices.
 
 ## Precipitation Index
-We can define another index to assess the wettest 20% of model runs (‘ensemble’), then compare this statistic to local observations over the same observational history. We can quantify the shift-of-the-tail to wetter daily conditions and increase the Precipitation Index upward for each unit departure toward the upper tail of the precipitation distribution.
+We define another index to assess the wettest 20% of model runs (‘ensemble’), then compare this statistic to local observations over the same observational history. We can quantify the shift-of-the-tail to wetter daily conditions and increase the Precipitation Index upward for each unit departure toward the upper tail of the precipitation distribution. Figure 3 (bottom) shows an example forecast for this index, noting that analyses should be combined with the Drought Index and Standard Precipitation Index.
 
 ## Standardized Precipitation Index (SPI)
-The widely adopted standard measure of precipitation is based on an extended accumulation. To replicate a similar index system as other climate prediction companies, we define an index to assess the median (50th centile) of model simulations. Note here that these graphics (see Figure 2) provide users with no information about the statistical range in daily precipitation events; either precipitation excess or prolonged dry spells at the tails of the ensemble distribution. Overreliance on this single climate hazard metric is therefore likely to be misleading.
+One measure of precipitation is to accumulate precipitation over the course of the seasonal climate forecast. However, we define an SPI as the median (50th centile) of daily weather simulations. When using a median value as a measure of precipitation the shape of the distribution curve proves especially problematic. The SPI index, combined with our other hydrological indices, can be used to evaluate the predicted skewness of daily precipitation events.
 
-Note that for the SPI method, precipitation is also treated as a standardized value with reference to its climatology.
-e.g., daily values are adjusted to (value - mean) / standard deviation
+With expert analysis, hazard indices can help support flood and drought operations on seasonal timescales, which is unique offering of the Re-Climate® prediction system. Figure 4 shows an example of SPI mapped onto Environment Agency rainfall gauge sites, which provides additional information to indices presented in Figure 3.
+
+As a demonstration of skewness, Figures 1 and 2 (below) present two precipitation intensity plots from a plausible forecast compared to a daily climatology. Figure 1 shows a drier-than-average season associated with **anticyclonic conditions**. This more often results in a low SPI Index with neither precipitation extremes nor prolonged dry spells likely. However, counter-intuitively, this can present itself with a negative kurtosis (broader tailed distribution). For example, **Tropical Continental Air Mass** events often lead to supercell events, thunderstorms, hail and surface water flooding in the spring and summer months.
+
+Conversely, Figure 2 shows a negative skew (i.e., outcomes with generally more wet day extremes), commonly associated with a tendency toward a **Maritime Air Mass**. 
 
 For more information see further parameterization and methodologies in [meteorological definitions](https://github.com/cjnankervis/Re-Climate/blob/main/Meteorological_Definitions.md#hazard-indices)
+
+<img src="https://re-climate.earth/wp-content/uploads/2023/01/Positive_Skew.png" width="60%">
+
+<sub><b>Figure 1. Forecasted frequency of daily precipitation plotted against their intensities (black curve) with median value (black dashed line) for a positive skew/ dry event bias. Monthly observations for the same location are shown in orange. In this example heavier precipitation events are less likely (Precipitation Index < 4), dry periods are more likely (Drought Index > 6), while the median ‘average’ of daily precipitation is less than the climatological average (SPI < 4).</b></sub>
+  
+<img src="https://re-climate.earth/wp-content/uploads/2023/01/Negative_Skew.png" width="60%">
+
+<sub><b>Figure 2. As in Figure 1, but with a negative skew/ wet event bias. Heavier daily precipitation events are more likely in this example (Precipitation Index > 6), dry periods are less likely (Drought Index < 4), while the median of daily precipitation is more than the monthly climatological average at the same location (SPI > 6).</b></sub>
 
 ## [Analysis of climate hazards](https://github.com/cjnankervis/Re-Climate#hazard-indices).
 With the two indices described above there are four possible seasonal climate hazards scenarios:
@@ -54,8 +65,8 @@ Mixed scenario with a wet bias. Extended dry periods are less likely than averag
 <img src="https://re-climate.earth/wp-content/uploads/2023/01/Precip_Index.png" width="60%">
 <img src="https://re-climate.earth/wp-content/uploads/2023/01/Drought_Index.png" width="60%">
 
-<sub><b>Figure 1. Seasonal climate forecasts showing Precipitation Index (80th centile shift-of-the-tail, top) and Drought Index (20th centile shift-of-the-tail, bottom) for the same month annotated with analysis of hazards. High hazard scenario (A), Low hazard scenario (B), Mixed scenario with a dry bias (C), Mixed scenario with a wet bias (D).</b></sub>
+<sub><b>Figure 3. Seasonal climate forecasts showing Precipitation Index (80th centile shift-of-the-tail, top) and Drought Index (20th centile shift-of-the-tail, bottom) annotated with analysis of hazards. High hazard scenario (A), Low hazard scenario (B), Mixed scenario with a dry bias (C), Mixed scenario with a wet bias (D).</b></sub>
 
 <img src="https://re-climate.earth/wp-content/uploads/2023/01/SPI_Index.png" width="60%">
 
-<sub><b>Figure 2. Seasonal climate forecasts showing Standardized Precipitation Index (50th centile analysis) for the same month's forecast as Figure 1. The figure indicates that in terms of total monthly accumulated precipitation the English Midlands and Northeast England are likely to be wetter-than-average when including information acrosss all 100 ensemble members.</b></sub>
+<sub><b>Figure 4. Seasonal climate forecasts showing Standardized Precipitation Index (50th centile analysis) for the same month's forecast as Figure 1. The forecast shows that in terms of the central likelihood value for daily precipitation intensity the English Midlands and Northeast England may see more rainy days than usual even though the chances of extreme downpours is reduced (see negative skew in Figure 2). Southeast England on the other hand likely to experience less rainy days and more dry days than average, though according to the Precipitation Index shows a higher-than-average chance of extreme daily precipitation events (indicated in Figure 1). For this region (marked ‘D’ in Figure 3) a positive skew is likely to increase the total accumulated precipitation toward a wetter-than-average season.</b></sub>
