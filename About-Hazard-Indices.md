@@ -33,7 +33,7 @@ Conversely, Figure 2 shows a negative skew (i.e., outcomes with generally more w
 
 For more information see further parameterization and methodologies in [meteorological definitions](https://github.com/cjnankervis/Re-Climate/blob/main/Meteorological_Definitions.md#hazard-indices)
 
-<img src="https://re-climate.earth/wp-content/uploads/2023/01/Positive_Skew.png" width="60%">
+<img src="https://re-climate.earth/wp-content/uploads/2023/01/Positive_Skew.png" width="40%">
 
 <sub><b>Figure 1. Forecasted frequency of daily precipitation plotted against their intensities (black curve) with median value (black dashed line) for a positive skew/ dry event bias. Monthly observations for the same location are shown in orange. In this example heavier precipitation events are less likely (Precipitation Index < 4), dry periods are more likely (Drought Index > 6), while the median ‘average’ of daily precipitation is less than the climatological average (SPI < 4).</b></sub>
   
@@ -67,6 +67,6 @@ Mixed scenario with a wet bias. Extended dry periods are less likely than averag
 
 <sub><b>Figure 3. Seasonal climate forecasts showing Precipitation Index (80th centile shift-of-the-tail, top) and Drought Index (20th centile shift-of-the-tail, bottom) annotated with analysis of hazards. High hazard scenario (A), Low hazard scenario (B), Mixed scenario with a dry bias (C), Mixed scenario with a wet bias (D).</b></sub>
 
-<img src="https://re-climate.earth/wp-content/uploads/2023/01/SPI_Index.png" width="60%">
+<img src="https://re-climate.earth/wp-content/uploads/2023/01/SPI_Index.png" width="40%">
 
 <sub><b>Figure 4. Seasonal climate forecasts showing Standardized Precipitation Index (50th centile analysis) for the same month's forecast as Figure 1. The forecast shows that in terms of the central likelihood value for daily precipitation intensity the English Midlands and Northeast England may see more rainy days than usual even though the chances of extreme downpours is reduced (see negative skew in Figure 2). Southeast England on the other hand likely to experience less rainy days and more dry days than average, though according to the Precipitation Index shows a higher-than-average chance of extreme daily precipitation events (indicated in Figure 1). For this region (marked ‘D’ in Figure 3) a positive skew is likely to increase the total accumulated precipitation toward a wetter-than-average season.</b></sub>
