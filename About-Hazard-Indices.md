@@ -33,11 +33,11 @@ Conversely, Figure 2 shows a negative skew (i.e., outcomes with generally more w
 
 For more information see further parameterization and methodologies in [meteorological definitions](https://github.com/cjnankervis/Re-Climate/blob/main/Meteorological_Definitions.md#hazard-indices)
 
-<img src="https://re-climate.earth/wp-content/uploads/2023/01/Positive_Skew.png" width="70%">
+<img src="https://re-climate.co.uk/wp-content/uploads/2023/01/Positive_Skew.png" width="70%">
 
 <sub><b>Figure 1. Forecasted frequency of daily precipitation plotted against their intensities (black curve) with median value (black dashed line) for a positive skew/ dry event bias. Monthly observations for the same location are shown in orange. In this example heavier precipitation events are less likely (Precipitation Index < 4), dry periods are more likely (Drought Index > 6), while the median ‘average’ of daily precipitation is less than the climatological average (SPI < 4).</b></sub>
   
-<img src="https://re-climate.earth/wp-content/uploads/2023/01/Negative_Skew.png" width="70%">
+<img src="https://re-climate.co.uk/wp-content/uploads/2023/01/Negative_Skew.png" width="70%">
 
 <sub><b>Figure 2. As in Figure 1, but with a negative skew/ wet event bias. Heavier daily precipitation events are more likely in this example (Precipitation Index > 6), dry periods are less likely (Drought Index < 4), while the median of daily precipitation is more than the monthly climatological average at the same location (SPI > 6).</b></sub>
 
