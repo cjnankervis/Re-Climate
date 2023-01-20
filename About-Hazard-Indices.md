@@ -67,6 +67,6 @@ Mixed scenario with a wet bias. Extended dry periods are less likely than averag
 
 <sub><b>Figure 3. Seasonal climate forecasts showing Precipitation Index (80th centile shift-of-the-tail, top) and Drought Index (20th centile shift-of-the-tail, bottom) annotated with analysis of hazards. High hazard scenario (A), Low hazard scenario (B), Mixed scenario with a dry bias (C), Mixed scenario with a wet bias (D).</b></sub>
 
-<img src="https://re-climate.earth/wp-content/uploads/2023/01/SPI_Index.png" width="62%">
+<img src="https://re-climate.earth/wp-content/uploads/2023/01/SPI_Index.png" width="63%">
 
 <sub><b>Figure 4. Seasonal climate forecasts showing Standardized Precipitation Index (50th centile analysis) for the same month's forecast as Figure 1. The forecast shows that in terms of the central likelihood value for daily precipitation intensity the English Midlands and Northeast England may see more rainy days than usual even though the chances of extreme downpours is reduced (see negative skew in Figure 2). Southeast England on the other hand likely to experience less rainy days and more dry days than average, though according to the Precipitation Index shows a higher-than-average chance of extreme daily precipitation events (indicated in Figure 1). For this region (marked ‘D’ in Figure 3) a positive skew is likely to increase the total accumulated precipitation toward a wetter-than-average season.</b></sub>
