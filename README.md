@@ -33,7 +33,7 @@ Future farmers will be able to build smarter precision farming solutions and ben
 
 # Features
 
-Independently and impartially assessed by the [National Physical Laboratory](https://www.npl.co.uk/national-challenges), Re-Climate™ delivers forecasts of climate perils covering the next 3 months and at a 5 kilometre resolution to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see [WeatherLogistics' Docs](https://re-climate.co.uk/docs).
+Independently and impartially assessed by the [National Physical Laboratory](https://www.npl.co.uk/national-challenges), Re-Climate™ delivers forecasts of climate perils covering the next 3 months and at a 5 kilometre resolution to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see [WeatherLogistics' Docs](https://re-climate.earth/docs).
 
 **The Re-Climate (seasonal climate forecast) API**:
 
@@ -91,7 +91,7 @@ Similarly, NPL’s report also provided direct comparisons for the [late summer 
 
 Monthly centile data supplies users with mapped averages of precipitation in addition to minimum, maximum and average monthly temperatures. At present these are available for the mainland geographical area of the United Kingdom, Spain and Turkey. These ASCII grids present the lower to upper thresholds in the respectively meteorological variables at the 10th, 30th, median (50th), 70th and 90th centile confidence bounds. Since the seasonal climate forecasts provide well-calibrated information, 8 in 10 months are likely to present monthly conditions between the 10th and 90th centiles at any specified geographical location.
 
-To request this climate data on a regular 5km grid, see [monthly centile request example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/MonthlyCentiles_example.json). See further [documentation](https://re-climate.co.uk/docs/gridded-datasets/) and [ASCII formatting](https://re-climate.co.uk/docs/climate-data-outputs/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
+To request this climate data on a regular 5km grid, see [monthly centile request example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/MonthlyCentiles_example.json). See further [documentation](https://re-climate.earth/docs/gridded-datasets/) and [ASCII formatting](https://re-climate.earth/docs/climate-data-outputs/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
 
 ## Daily Ensembles
 **Unique access to 100 daily simulations at the town/ city level, ideal for those with assets at specified locations
@@ -100,7 +100,7 @@ WeatherLogistics' daily ensembles provide a Quickstart framework to calculate fr
 
 Ensemble members 1 to 50 are generated using WeatherLogistics' statistical forecast system, while members 51 to 100 are generated using a multi-model average of modified Copernicus seasonal climate forecast data*. Both systems have been developed to achieve the best-on-market accuracy and reliability and have been independently and impartially reviewed by the National Physical Laboratory.
 
-To request this climate data, see [daily ensembles example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/DailyEnsembles_example.json), and its postprocessing scripts provided for [CSV](https://github.com/cjnankervis/Re-Climate/blob/main/CSV_Postprocessing.py) and [JSON](https://github.com/cjnankervis/Re-Climate/blob/main/JSON_Postprocessing.py) inputs. See further [documentation](https://re-climate.co.uk/docs/daily-time-series/).
+To request this climate data, see [daily ensembles example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/DailyEnsembles_example.json), and its postprocessing scripts provided for [CSV](https://github.com/cjnankervis/Re-Climate/blob/main/CSV_Postprocessing.py) and [JSON](https://github.com/cjnankervis/Re-Climate/blob/main/JSON_Postprocessing.py) inputs. See further [documentation](https://re-climate.earth/docs/daily-time-series/).
 
 ### Example A.
 Using "JSON_Postprocessing.py" to calculate the 90th centile of ensemble members with consecutive dry days, where 24-hour accumulated precipitation is less than 1mm
@@ -117,7 +117,7 @@ Using "CSV_Postproccessing.py" to calculate an ensemble average of consecutive d
 
 Please view more detailed information about [how to interpret seasonal climate forecast hazards](https://github.com/cjnankervis/Re-Climate/blob/main/About-Hazard-Indices.md), which explains: what is meant by forecast reliability, how an ensemble prediction can extend short-term forecasts without breaching mathematical constraints, what is possible from a seasonal precipitation forecast, and how to interpret the seasonal climate forecast hazards. [Forecast graphics](https://github.com/cjnankervis/Re-Climate/blob/main/About-Hazard-Indices.md#graphics-showing-a-worked-example) then show how information is combined from probabilistic forecasts as single value hazard indices.
 
-Hazard indices are based on a shift-of-the-tail approach that compares daily distribution to a baseline climatology. Climate hazards indices include precipitation, drought, SPI, aridity, heat, cold, hail, minimum humiditiy, maximum humidity, solar and wind. These are scaled from 1 - 9, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatology reference, with 5 indicating the forecast is on par with baseline climate expectations for the current forecast month or season. To request this climate data, see [hazard indices example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/HazardIndices_example.json). See further [documentation](https://re-climate.co.uk/docs/hazard-indices/).
+Hazard indices are based on a shift-of-the-tail approach that compares daily distribution to a baseline climatology. Climate hazards indices include precipitation, drought, SPI, aridity, heat, cold, hail, minimum humiditiy, maximum humidity, solar and wind. These are scaled from 1 - 9, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatology reference, with 5 indicating the forecast is on par with baseline climate expectations for the current forecast month or season. To request this climate data, see [hazard indices example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/HazardIndices_example.json). See further [documentation](https://re-climate.earth/docs/hazard-indices/).
 
 ### Climatological Hazard References
 | Geography/<br />Country | Meteorological<br /> Variable | Reference<br /> Product | Resolution | Start Year | End Year | Reference<br />Midpoint | Reference<br /> Documentation |
@@ -128,7 +128,7 @@ Hazard indices are based on a shift-of-the-tail approach that compares daily dis
 ## Departures (Anomalies)
 **Country-wide ASCII grid/ town or city CSV provided at a monthly granularity; a departure forecast useful for a big-picture seasonal overview
 
-Like the monthly centiles request, anomalies provide a country-wide mapped overview of departures from a **climatological average** to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data on a regular 5km grid, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/Anomalies_example.json). See further [documentation](https://re-climate.co.uk/docs/gridded-datasets/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
+Like the monthly centiles request, anomalies provide a country-wide mapped overview of departures from a **climatological average** to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data on a regular 5km grid, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/Anomalies_example.json). See further [documentation](https://re-climate.earth/docs/gridded-datasets/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
 
 ### Departure Type
 
