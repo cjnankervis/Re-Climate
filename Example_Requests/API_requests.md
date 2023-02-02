@@ -50,7 +50,7 @@ See more information about the [climatological hazard reference](https://github.
 | month    | integer        | <sub>**REQUIRED** seasonal climate forecast release/ initiation month (up to current month if after 13th day)</sub> |
 | year    | integer        | <sub>**REQUIRED** seasonal climate forecast release/ initiation year (up to current year if before 14th January)</sub> |
 | lead    | integer        | <sub>**REQUIRED** seasonal climate forecast lead time of "1" or "2" months (number of full months after initiation) or "seasonal" for average of 1 + 2 + 3 months. **Note** seasonal option is not available for wind, solar, hail and humidity variables</sub> |
-| extension    | string        | <sub>**REQUIRED** "csv" or "png" for CSV/ XML type data output format or PNG for graphical download to supplied "filename"</sub> |
+| extension    | string        | <sub>**REQUIRED** "csv" for CSV/ XML type data output format or "png" or PNG for graphical download to supplied "filename"</sub> |
 | output_type    | string        | <sub>**REQUIRED** "weatherlogisticsltd" for statistical/ climate signal based output; or "benchmark" for Met Office + ECMWF + Météo-France multi-model (Copernicus) numerical weather prediction average</sub> |
 | meteorological_variable    | string        | <sub>**REQUIRED** "hail", "solar", "wind", "aridity", "cold", "drought", "heat", "humidity", "precipitation" or "spi" for 20th/80th daily weather centile shift-of-the-tails analysis for hazards, or shift-of-the-median (50th) centile for Standard Precipitation Index (SPI) on a scale of low (1) to high (9) extreme</sub> |
 | percentile    | string        | <sub>**NOT REQUIRED** shift-of-the-tail approach examines the 80th (wet or hot)/ 20th centile (dry or cold) daily ensemble </sub> |
