@@ -5,7 +5,7 @@
     "lead": "2",
     "extension": "asc",
     "output_type": "weatherlogisticsltd",
-    "meteorological_variable": "rainfall",
+    "meteorological_variable": "precipitation",
     "percentile": "median",
     "forecast_type": "monthly-centiles",
     "show_metadata": ""
