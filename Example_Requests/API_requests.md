@@ -15,8 +15,8 @@
 | percentile    | string        | <sub>**REQUIRED** confidence interval at either the "10th", "30th", "median", "70th" or "90th" centile</sub> |
 | projection_year    | string        | <sub>**NOT REQUIRED** seasonal climate output is projected forward to this year</sub> |
 | forecast_type    | string        | <sub>**REQUIRED** "monthly-centiles" for country-wide monthly gridded seasonal climate forecast data</sub> |
-| filename    | string        | <sub>**NOT REQUIRED**</sub> |
-| show_metadata    | string        | <sub>**NOT REQUIRED**</sub> | 
+| filename    | string        | <sub>**OPTIONAL**</sub> |
+| show_metadata    | string        | <sub>**OPTIONAL**</sub> | 
 
 ## "Daily Ensembles" JSON request fields
 
@@ -35,8 +35,8 @@
 | percentile    | string        | <sub>**NOT REQUIRED** entire 100 ensemble members are supplied</sub> |
 | projection_year    | string        | <sub>**NOT REQUIRED** seasonal climate output is projected forward to this year</sub> |
 | forecast_type    | string        | <sub>**REQUIRED** "ensemble" for town/ location-specific daily weather realizations at the town or city scale</sub> |
-| filename    | string        | <sub>**NOT REQUIRED**</sub> |
-| show_metadata    | string        | <sub>**NOT REQUIRED**</sub> | 
+| filename    | string        | <sub>**OPTIONAL**</sub> |
+| show_metadata    | string        | <sub>**OPTIONAL**</sub> | 
 
 ## "Hazard Indices" JSON request fields
 See more information about the [climatological hazard reference](https://github.com/cjnankervis/Re-Climate#climatological-hazard-references)
@@ -56,8 +56,8 @@ See more information about the [climatological hazard reference](https://github.
 | percentile    | string        | <sub>**NOT REQUIRED** shift-of-the-tail approach examines the 80th (wet or hot)/ 20th centile (dry or cold) daily ensemble </sub> |
 | projection_year    | string        | <sub>**NOT REQUIRED** seasonal climate output is projected forward to this year</sub> |
 | forecast_type    | string        | <sub>**REQUIRED** "hazard-indices" for country-wide mapped or tabular hazard indices at the town/ city level</sub> |
-| filename    | string        | <sub>**NOT REQUIRED** optional filename for "png" extension only (default is used otherwise)</sub> |
-| show_metadata    | string        | <sub>**NOT REQUIRED**</sub> | 
+| filename    | string        | <sub>**OPTIONAL** optional filename for "png" extension only (default is used otherwise)</sub> |
+| show_metadata    | string        | <sub>**OPTIONAL**</sub> | 
 
 ## "Anomalies" JSON request fields
 See more information about the [climatological departure reference](https://github.com/cjnankervis/Re-Climate#climatological-departure-references)
@@ -77,8 +77,8 @@ See more information about the [climatological departure reference](https://gith
 | percentile    | string        | <sub>**REQUIRED** confidence interval at either the "10th", "30th", "median", "70th" or "90th" centile</sub> |
 | projection_year    | string        | <sub>**NOT REQUIRED** seasonal climate output is projected forward to this year</sub> |
 | forecast_type    | string        | <sub>**REQUIRED** "anomaly" for country-wide monthly gridded seasonal climate forecast departure map data</sub> |
-| filename    | string        | <sub>**NOT REQUIRED**</sub> |
-| show_metadata    | string        | <sub>**NOT REQUIRED**</sub> | 
+| filename    | string        | <sub>**OPTIONAL**</sub> |
+| show_metadata    | string        | <sub>**OPTIONAL**</sub> | 
 
 ## "Daily Profiles (Deciles)" JSON request fields
 See more information about the [climatological daily profile references](https://github.com/cjnankervis/Re-Climate/blob/main/README.md#daily-weather-profiles-reliability-plots)
@@ -98,8 +98,8 @@ See more information about the [climatological daily profile references](https:/
 | percentile    | string        | <sub>**NOT REQUIRED** all daily ensemble data is aggregated into a statistical output</sub> |
 | projection_year    | string        | <sub>**NOT REQUIRED** seasonal climate output is projected forward to this year</sub> |
 | forecast_type    | string        | <sub>**REQUIRED** "daily-profiles" for graphical plots showing deciles of daily ensemble realizations</sub> |
-| filename    | string        | <sub>**NOT REQUIRED** optional filename for "png" extension only (default is used otherwise)</sub> |
-| show_metadata    | string        | <sub>**NOT REQUIRED**</sub> | 
+| filename    | string        | <sub>**OPTIONAL** optional filename for "png" extension only (default is used otherwise)</sub> |
+| show_metadata    | string        | <sub>**OPTIONAL**</sub> | 
 
 ## "Graphical Summaries" JSON request fields
 
@@ -118,5 +118,5 @@ See more information about the [climatological daily profile references](https:/
 | percentile    | string        | <sub>**NOT REQUIRED** all daily ensemble data is aggregated into graphical plots</sub> |
 | projection_year    | string        | <sub>**NOT REQUIRED** seasonal climate output is projected forward to this year</sub> |
 | forecast_type    | string        | <sub>**REQUIRED** "graphical-summaries" for graphical summaries of daily-resolved weather ensemble data at the town/ city scale</sub> |
-| filename    | string        | <sub>**NOT REQUIRED** optional filename for "png" extension only (default is used otherwise)</sub> |
-| show_metadata    | string        | <sub>**NOT REQUIRED**</sub> | 
+| filename    | string        | <sub>**OPTIONAL** user defined filename for "png" extension only (default is used otherwise)</sub> |
+| show_metadata    | string        | <sub>**OPTIONAL**</sub> | 
