@@ -94,12 +94,12 @@ Similarly, NPL’s report also provided direct comparisons for the [late summer 
 </table>
 <sub><b>NWP = Numerical Weather Prediction</b></sub>
 
-## Monthly Centiles
+## Monthly Forecasts
 **Country-wide ASCII grid provided at a monthly granularity, useful for a big-picture seasonal overview
 
 Monthly centile data supplies users with mapped averages of precipitation in addition to minimum, maximum and average monthly temperatures. At present these are available for the mainland geographical area of the United Kingdom, Spain and Turkey. These ASCII grids present the lower to upper thresholds in the respectively meteorological variables at the 10th, 30th, median (50th), 70th and 90th centile confidence bounds. Since the seasonal climate forecasts provide well-calibrated information, 8 in 10 months are likely to present monthly conditions between the 10th and 90th centiles at any specified geographical location.
 
-To request this climate data on a regular 5km grid, see [monthly centile request example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/MonthlyCentiles_example.json). See further [documentation](https://re-climate.earth/docs/gridded-datasets/) and [ASCII formatting](https://re-climate.earth/docs/climate-data-outputs/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
+To request this climate data on a regular 5km grid, see [monthly centile request example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/MonthlyForecasts_example.json). See further [documentation](https://re-climate.earth/docs/gridded-datasets/) and [ASCII formatting](https://re-climate.earth/docs/climate-data-outputs/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
 
 ## Daily Ensembles
 **Unique access to 100 daily simulations at the town/ city level, ideal for those with assets at specified locations
@@ -136,7 +136,7 @@ Hazard indices are based on a shift-of-the-tail approach that compares daily dis
 ## Departures (Anomalies)
 **Country-wide ASCII grid/ town or city CSV provided at a monthly granularity; a departure forecast useful for a big-picture seasonal overview
 
-Like the monthly centiles request, anomalies provide a country-wide mapped overview of departures from a **climatological average** to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data on a regular 5km grid, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/Anomalies_example.json). See further [documentation](https://re-climate.earth/docs/gridded-datasets/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
+Like the monthly forecasts request, anomalies provide a country-wide mapped overview of departures from a **climatological average** to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data on a regular 5km grid, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/Anomalies_example.json). See further [documentation](https://re-climate.earth/docs/gridded-datasets/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
 
 ### Departure Type
 
