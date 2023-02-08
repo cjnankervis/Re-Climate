@@ -31,7 +31,7 @@ The company combines climate and weather models through its algorithms; helping 
 
 Modelling seasonal weather extremes assists decision-makers communicate losses linked to floods, drought, wind damage, hail, heatwaves or freeze days to within a few kilometres.
 
-Supplied as an 'ensemble', a collection of well-calibrated daily weather time series, Re-Climate® enables firms to better hedge or price their risk. The product also helps clients adapt to acute physical risks posed by extreme weather events such as heatwaves and floods, develop rigorous scenario plans, and protect assets from acute climate hazards on operational timescales.
+Supplied as an 'ensemble', a collection of well-calibrated daily weather time series, Re-Climate® enables firms to better hedge or price their risk. Re-Climate® also helps clients adapt to acute physical risks posed by extreme weather events such as heatwaves and floods, develop rigorous scenario plans, and protect assets from acute climate hazards on operational timescales.
 
 ### Supporting Sustainable Agriculture
 
@@ -64,7 +64,7 @@ Independently and impartially assessed by the [National Physical Laboratory](htt
 
 ## Validation
 
-WeatherLogistics completed a successful collaboration with the National Physical Laboratory (NPL) in April 2022. As part of its deliverable, NPL validated its short-term climate forecasts and provided a statistical framework for quality assessment of probabilistic weather predictions. WeatherLogistics used these techniques to ensure the reliability of its Re-Climate® product delivery.
+WeatherLogistics completed a successful collaboration with the National Physical Laboratory (NPL) in April 2022. As part of its deliverable, NPL validated its short-term climate forecasts and provided a statistical framework for quality assessment of probabilistic weather predictions. WeatherLogistics used these techniques to ensure the reliability of its Re-Climate® APIs.
 
 ### Direct Comparisons of Seasonal Forecasts Against Observations
 
