@@ -1,4 +1,4 @@
-## "Monthly Centiles" JSON request fields
+## "Monthly Forecasts" JSON request fields
 
 | Element         | Type          | Description                                                  |
 | --------------- | ------------- | ------------------------------------------------------------ |
