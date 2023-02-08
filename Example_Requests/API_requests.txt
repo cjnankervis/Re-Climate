@@ -5,7 +5,7 @@ BOUNDING_BOX = {'UK': (60.85, 2.69, 49.84, -10.7),
                 'SPAIN': (44.17, 3.67, 35.71, -9.67), 
                 'TURKEY': (42.14, 44.79, 35.82, 26.04)}
 
-Monthly Centiles
+Monthly Forecasts
 - JSON keywords 
 
 {
