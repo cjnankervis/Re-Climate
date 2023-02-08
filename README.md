@@ -16,7 +16,7 @@ To get started, please request an API authentication key and user credentials fr
 ### Endpoints
 
 To get started with the API request code, first specify the URL to access the relevant Re-Climate API. Access is usually restricted to the following product items: 
-- **Re-Climate Re-Forecasts**, supplying access to historical seasonal forecasts pre-2023 for validators
+- **Re-Climate Validators**, supplying access to historical seasonal forecasts pre-2023 for validators
 - **Re-Climate Standard Subscription**, supplying access to seasonal forecasts for towns/ cities for general overview
 - **Re-Climate Gauges Subscription**, supplying access to seasonal forecasts at rainfall gauge locations (England, Scotland or Wales)
 - **Re-Climate Custom Subscription**, contact [accounts@weatherlogistics.com](mailto:accounts@weatherlogistics.com) for a customised solution
