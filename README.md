@@ -21,7 +21,7 @@ To get started with the API request code, first specify the URL to access the re
 - **Re-Climate Gauges Subscription**, supplying access to seasonal forecasts at rainfall gauge locations (England, Scotland or Wales)
 - **Re-Climate Custom Subscription**, contact [accounts@weatherlogistics.com](mailto:accounts@weatherlogistics.com) for a customised solution
 
-## Re-Climate® Product
+## Re-Climate® API Products
 
 [<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/ReClimateAPI.png" width="60%">](https://youtu.be/GkMn4gPZjts "Seasonal climate forecasts Re-Climate API YouTube Marketing Video")
 
