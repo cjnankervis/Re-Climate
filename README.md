@@ -13,6 +13,13 @@ WeatherLogistics' codebase has been verified by the [Science & Technology Facili
 
 To get started, please request an API authentication key and user credentials from the [product owner](mailto:accounts@weatherlogistics.com). To make single requests the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script should be used, while for multiple requests please see [API-Request-Multithreading.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request-Multithreading.py). The Python code can be used to access  six main data streams, with post-processing code also supplied to calculate return periods and other statistics from daily town and city data supplied through "Daily Ensembles". For a description of all available API requests, please see [API_requests.md](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/API_requests.md).
 
+### Endpoints
+
+To get started with the API request code, first specify the URL to access the relevant Re-Climate API. Access is usually restricted to the following product items: 
+- Re-Climate Histories, supplying access to pre-2023 reforecasts for validators
+- Re-Climate Standard Subscription, supplying access to forecasts for towns/ cities
+- Re-Climate Gauges, supplying access to forecasts at English rainfall gauge locations
+
 ## Re-Climate® Product
 
 [<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/ReClimateAPI.png" width="60%">](https://youtu.be/GkMn4gPZjts "Seasonal climate forecasts Re-Climate API YouTube Marketing Video")
