@@ -47,7 +47,11 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 # Loading User Credentials from JSON file and storing in dictionary
 user_credentials = json.load(open(credential_path))
 
-URL = "https://re-climategauges-4un5g5jztq-nw.a.run.app"
+# Endpoints. Specifying the URL to access the Re-Climate APIs
+URL = "https://re-climatehistories-k7c6vv6pla-nw.a.run.app # Re-Climate Histories (supplies access to pre-2023 reforecasts)
+# URL = "https://re-climate-4un5g5jztq-nw.a.run.app" # Re-Climate Standard Subscription (supplies access to town/ city data)
+# URL = "https://re-climategauges-tynkl6dcla-nw.a.run.app" # Re-Climate Gauges (supplies access to English rainfall gauge data)
+# Calling the function 'make_authorized_get_request' and displaying the response
     
 # Fetching the Authentication Request from Environment Variables
 auth_req = google.auth.transport.requests.Request()
