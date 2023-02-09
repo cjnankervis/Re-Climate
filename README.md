@@ -77,7 +77,7 @@ Similarly, NPL’s report also provided direct comparisons for the [late summer 
 <table>
   <tr><center><td width="50%" align="center">
 
-|API Technical<br />Specifications | Monthly<br /> Forecasts | Daily<br /> Ensembles | Hazard<br /> Indices | Departures<br /> (Anomalies) | Daily<br /> Profiles | Graphical<br /> Summaries |
+|API Technical<br />Specifications | Monthly<br /> Forecasts | Daily<br /> Ensembles | Hazard<br /> Indices | Departures<br /> (Anomalies) | Daily<br /> Quantile (Q-Q) Plots | Graphical<br /> Summaries |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | <sub><b>Country-wide Forecasts<br /> (Downscaled to a 5km<br /> Regular Grid)</b></sub> | :white_check_mark: | :x: | :x: | :white_check_mark: | :x: | :x: |
 | <sub><b>Town-level Modelling<br /> (Closest Location Match)</b></sub> | :x: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
@@ -166,10 +166,10 @@ November precipitation anomalies plotted using Re-Climate® data issued on 13th 
 ### 90th Centile
 <center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots_90th.png" alt="Northeast and Central Scotland flooding, 90th centile of precipitation forecast for November 2022" width="80%"></center>
 
-## Daily Weather Profiles (Reliability Plots)
-**Access to figures showing town/ city daily weather profiles as decile line plots for the upcoming season, ideal for who need a quick snapshot view
+## Daily Quantile  (Q-Q) Plots
+**Access to figures showing town/ city daily weather profiles at quantile (decile) intervals for the upcoming season, ideal for who need a quick snapshot view
 
-Comparisons between the seasonal profile (centile distributions) of daily temperature and precipitation plotted at each decile, compared directly to the 4.5km Europen UERRA Re-Analysis climatology from 2004 to 2018. To request this climate data for a specified town or city, see [daily profiles example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/DailyProfiles_example.json).
+Comparisons between the seasonal profile (centile distributions) of daily temperature and precipitation plotted at each decile, compared directly to the 4.5km Europen UERRA Re-Analysis climatology from 2004 to 2018. To request this climate data for a specified town or city, see [daily quantiles (Q-Q) example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/DailyQuantiles_example.json).
 
 ## Graphical Summaries
 **Access to figures showing town/ city daily weather ensemble summaries as box-whisker/ violin plots for the upcoming season, ideal for who need a quick snapshot view
