@@ -176,7 +176,7 @@ Comparisons between the seasonal profile (centile distributions) of daily temper
 
 Comparisons between the seasonal profile (centile distributions) of multiple meteorological variables, compared against WeatherLogistics' real-time equivalent model climatology. To request this climate data for a specified town or city, see [graphical summaries example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/GraphicalSummaries_example.json).
 
-Daily precipitation return period forecast for central London covering the mid-winter 2023 period, using the "meteorological_variable": "Exceedances" option.
+Example below, showing daily minimum temperatures from all 100 ensemble members for central London for the mid-autumn period. Using the "meteorological_variable": "tmin" option.
 <center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/WestminsterSeasonalforecast_MTH3_09-Late-Summer2021_2021TminLondonBoroughsForecast.png" alt="Seasonal climate forecast of minimum temperature for Westminster (London), September 2022" width="80%"></center>
 
 [Heating Degree Days for energy utility demand management, presented as a 7-day running accumulation of daily temperatures, using the "meteorological_variable": "Gdd" option](https://seasonalforecasts.earth/wp-content/uploads/2022/12/GDD.png)
