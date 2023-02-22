@@ -20,14 +20,18 @@ import datetime
 now = datetime.datetime.now()
 copy_yr = now.year
 
-data_paths = ("./Rainfall_AnomalyBenchmark.asc", "./Rainfall_AnomalyWeatherLogistics.asc")
-titles = ("Benchmark", "WeatherLogistics")
+'''User to define 2 ascii plots to be compared'''
+ascii_1 = "./Rainfall_AnomalyBenchmark.asc"
+ascii_2 = "./Rainfall_AnomalyWeatherLogistics.asc"
+#
+data_paths = (ascii_1, ascii_2)
+titles = ("C3S, 10th Centile", "C3S, 90th Centile")
 variable_units = "Precipitation/ % of Climate"
 
 fig, (ax1, ax2) = plt.subplots(1,2,dpi=2000,figsize=(15,5),constrained_layout=True)
-plt.subplots_adjust(wspace=0.3)
-fig.suptitle("Re-Climate® November Rainfall Departure Forecast. Copyright "+str(copy_yr)+". All rights reserved.")
-gs = gridspec.GridSpec(1,3,width_ratios=[5,0.2,5])
+plt.subplots_adjust(wspace=0.15)
+fig.suptitle("Re-Climate® February Rainfall Forecast. Copyright "+str(copy_yr)+". All rights reserved.")
+gs = gridspec.GridSpec(1,4,width_ratios=[0.15,5,0.15,5])
 
 for ind, data_path in enumerate(data_paths):
     # Read in Re-Climate data header data
@@ -58,7 +62,7 @@ for ind, data_path in enumerate(data_paths):
      
     ax.grid(True)
 
-# Place a colorbar next to the map
-cbar = fig.colorbar(img_plot, cax=fig.add_subplot(gs[1]), label=f"{variable_units}")
+    # Place a colorbar next to the map
+    cbar = fig.colorbar(img_plot, cax=fig.add_subplot(gs[ind*2]), label=f"{variable_units}")
 # Show forecast plots
 plt.show()
