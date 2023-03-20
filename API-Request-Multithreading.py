@@ -49,7 +49,7 @@ user_credentials = json.load(open(credential_path))
 
 # Endpoints. Specifying the URL to access the Re-Climate APIs
 URL = "https://re-climatehistories-k7c6vv6pla-nw.a.run.app" # Re-Climate Histories (supplies access to pre-2023 reforecasts)
-# URL = "https://re-climate-4un5g5jztq-nw.a.run.app" # Re-Climate Standard Subscription (supplies access to town/ city data)
+# URL = "https://re-climate-i62czkp3da-nw.a.run.app" # Re-Climate Standard Subscription (supplies access to town/ city data)
 # URL = "https://re-climategauges-tynkl6dcla-nw.a.run.app" # Re-Climate Gauges (supplies access to English rainfall gauge data)
 # Calling the function 'make_authorized_get_request' and displaying the response
     
