@@ -9,9 +9,9 @@
 | month    | integer        | <sub>**REQUIRED** seasonal climate forecast release/ initiation month (up to current month if after 13th day)</sub> |
 | year    | integer        | <sub>**REQUIRED** seasonal climate forecast release/ initiation year (up to current year if before 14th January)</sub> |
 | lead    | integer        | <sub>**REQUIRED** seasonal climate forecast lead time of "1", "2" or "3" months (number of full months after initiation)</sub> |
-| extension    | string        | <sub>**REQUIRED** "asc" for ASCII data output format</sub> |
+| extension    | string        | <sub>**REQUIRED** "asc" for ASCII data output format, or "csv" for "SoilMoisture" only</sub> |
 | output_type    | string        | <sub>**REQUIRED** "weatherlogisticsltd" for statistical/ climate signal based output; or "benchmark" for Met Office + ECMWF + Météo-France multi-model average |
-| meteorological_variable    | string        | <sub>**REQUIRED** "tmin", "tmax", "tmean" or "precipitation" for monthly mean daily minimum, maximum and mean temperatures (degrees Celsius); or monthly accumulated precipitation (millimetres per month)</sub> |
+| meteorological_variable    | string        | <sub>**REQUIRED** "tmin", "tmax", "tmean", "precipitation" or "Soilmoisture" for monthly mean daily minimum, maximum and mean temperatures (degrees Celsius); monthly accumulated precipitation (millimetres per month); or monthly mean volumetric soil moisture respectively</sub> |
 | percentile    | string        | <sub>**REQUIRED** confidence interval at either the "10th", "30th", "median", "70th" or "90th" centile</sub> |
 | projection_year    | string        | <sub>**NOT REQUIRED** seasonal climate output is projected forward to this year</sub> |
 | forecast_type    | string        | <sub>**REQUIRED** "monthly-centiles" for country-wide monthly gridded seasonal climate forecast data</sub> |
@@ -73,7 +73,7 @@ See more information about the [climatological departure reference](https://gith
 | lead    | integer        | <sub>**REQUIRED** seasonal climate forecast lead time of "1", "2" or "3" months (number of full months after initiation)</sub> |
 | extension    | string        | <sub>**REQUIRED** "csv" for CSV/ XML type data, or "asc" for ascii output format</sub> |
 | output_type    | string        | <sub>**REQUIRED** "weatherlogisticsltd" for statistical/ climate signal based output; or "benchmark" for Met Office + ECMWF + Météo-France multi-model (Copernicus) numerical weather prediction average |
-| meteorological_variable    | string        | <sub>**REQUIRED** "tmean" or "precipitation" for monthly mean daily temperature average departure from model climate (degrees Celsius) or monthly accumulated daily precipitation departure (percent of monthly climatology)</sub> |
+| meteorological_variable    | string        | <sub>**REQUIRED** "tmean", "precipitation" or "Soilmoisture" for monthly mean daily temperature average departure from model climate (degrees Celsius); monthly accumulated daily precipitation departure (percentage of monthly climatology); or monthly mean departure in volumetric soil moisture respectively</sub> |
 | percentile    | string        | <sub>**REQUIRED** confidence interval at either the "10th", "30th", "median", "70th" or "90th" centile</sub> |
 | projection_year    | string        | <sub>**NOT REQUIRED** seasonal climate output is projected forward to this year</sub> |
 | forecast_type    | string        | <sub>**REQUIRED** "anomaly" for country-wide monthly gridded seasonal climate forecast departure map data</sub> |
