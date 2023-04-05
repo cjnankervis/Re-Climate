@@ -16,7 +16,7 @@ To get started, please request an API authentication key and user credentials fr
 ### Endpoints
 
 To get started with the API request code, first specify the endpoint URL for the relevant Re-Climate API.
-- **[Re-Climate® Validators](https://seasonalforecasts.earth/docs/pricing/)**, access to historic seasonal forecasts
+- **[Re-Climate® Validators](https://seasonalforecasts.earth/docs/pricing/)**, historic seasonal forecasts
 - **[Re-Climate® Standard](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts for towns and cities
 - **[Re-Climate® Gauges](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts at UK rain gauge sites
 - **[Re-Climate® Custom](https://seasonalforecasts.earth/docs/pricing/)**, contact [accounts@weatherlogistics.com](mailto:accounts@weatherlogistics.com)
