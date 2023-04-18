@@ -16,7 +16,7 @@ To get started, please request an API authentication key and user credentials fr
 ### Endpoints
 
 To get started with the API request code, first specify the endpoint URL for the relevant Re-Climate API.
-- **[Re-Climate® Validators](https://seasonalforecasts.earth/docs/pricing/)**, historic seasonal forecasts
+- **[Re-Climate® Validators](https://seasonalforecasts.earth/docs/pricing/)**, historic seasonal forecasts (from March 2023 to previous issue)
 - **[Re-Climate® Standard](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts for towns and cities
 - **[Re-Climate® Gauges](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts at UK rain gauge sites
 - **[Re-Climate® Custom](https://seasonalforecasts.earth/docs/pricing/)**, contact [accounts@weatherlogistics.com](mailto:accounts@weatherlogistics.com)
@@ -50,7 +50,7 @@ Independently and impartially assessed by the [National Physical Laboratory](htt
 - Simulates daily precipitation event generation to manage local flood/ drought
 - Delivers accurate physical hazard analytics to assess intensities of daily weather events
 - Extends deterministic weather predictions with a seamless 3-month probabilistic forecast extending from 2 to 15 weeks
-- Provides access for historical start dates from month: '10', year: '2022'
+- Provides access for historical start dates from month: '03', year: '2023'
 - Supplies town or city data, reporting the closest datapoint where applicable
 - Updates climate hazard information on the 14th day of each month
 
