@@ -199,4 +199,6 @@ Monitoring summer precipitation deficits and drought conditions, July forecast i
 
 Volumetric soil moisture content (layer 2, 7cm to 28cm) for July 2022. Figure shows the 10th centile of the seasonal climate forecast.
 
-<center><img src="https://seasonalforecasts.earth/wp-content/uploads/2023/04/SoilMoisture_July2022.png" alt "Volumetric soil moisture forecast for July 2022 width="16%"></center>
+<center><img src="https://seasonalforecasts.earth/wp-content/uploads/2023/04/SoilMoisture_July2022.png" alt="Volumetric soil moisture forecast for July 2022" width="16%"><img src="https://seasonalforecasts.earth/wp-content/uploads/2023/04/Soil-Moisture-July23Observed.png" alt="Volumetric soil moisture observed for July 2022" width="16%"></center>
+
+
