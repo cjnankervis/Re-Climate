@@ -197,12 +197,8 @@ Monitoring summer precipitation deficits and drought conditions, July forecast i
 
 <center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Precip_System2.png" alt="Summer 2022 drought management and heatwave conditions" width="80%"></center>
 
-Volumetric soil moisture content forecast (layer 2, 7cm to 28cm) for July 2022, showing the 10th centile of the seasonal climate forecast.
+Volumetric soil moisture content forecast (layer 2, 7cm to 28cm) for May 2023, showing five centiles (10th, 30th, median, 70th and 90th) intervals of the seasonal climate forecast.
 
-<center><img src="https://seasonalforecasts.earth/wp-content/uploads/2023/04/SoilMoisture_July2022.png" alt="Volumetric soil moisture forecast for July 2022" width="16%">
- 
-Observed volumetric soil moisture content forecast for July 2022.
-
-<img src="https://seasonalforecasts.earth/wp-content/uploads/2023/04/Soil-Moisture-July23Observed.png" alt="Volumetric soil moisture observed for July 2022" width="16%"></center>
+<center><img src="https://seasonalforecasts.earth/wp-content/uploads/2023/05/Soilmoisture_Forecast.png" alt="Volumetric soil moisture forecast for May 2023" width="16%">
 
 
