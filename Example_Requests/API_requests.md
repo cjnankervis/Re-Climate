@@ -24,12 +24,12 @@
 | --------------- | ------------- | ------------------------------------------------------------ |
 | country           | string        | <sub>**REQUIRED** geography/ mainland country area; either "uk", "spain" or "turkey" |
 | instance_name    | string        | <sub>**NOT REQUIRED** necessary for tailored/ bespoke client requests only</sub> |
-| latitude    | float        | <sub>**REQUIRED** latitude requirement contained within the country mainland bounding-box area</sub> |
-| longitude    | float        | <sub>**REQUIRED** longitude requirement contained within the country mainland bounding-box area</sub> |
+| latitude    | float        | <sub>**REQUIRED** latitude requirement contained within the country mainland bounding-box area, ***NOT REQUIRED FOR ZARR***</sub> |
+| longitude    | float        | <sub>**REQUIRED** longitude requirement contained within the country mainland bounding-box area, ***NOT REQUIRED FOR ZARR***</sub> |
 | month    | integer        | <sub>**REQUIRED** seasonal climate forecast start date/ initiation month (up to current month if after 13th day)</sub> |
 | year    | integer        | <sub>**REQUIRED** seasonal climate forecast start date/ initiation year (up to current year if before 14th January)</sub> |
 | lead    | integer        | <sub>**REQUIRED** "seasonal" is the only valid option which supplies 3 full months of forecasts after initiation</sub> |
-| extension    | string        | <sub>**REQUIRED** "json" or "csv" for JSON/ CSV data outputs</sub> |
+| extension    | string        | <sub>**REQUIRED** "json" or "csv" for JSON/ CSV data outputs, or "zarr" for geography-wide json-style dictionary</sub> |
 | output_type    | string        | <sub>**REQUIRED** "benchmark"/ "weatherlogisticsltd" options both supply statistical/ climate signal based outputs in the first 50 records, and Met Office + ECMWF + Météo-France + NCEP + Deutscher Wetterdienst + CMCC + JMA + ECCC (Copernicus) numerical weather prediction average forecasts in records 51 - 100. Additionally, a "climatology" option will supply the internal model climatology for the most recent year and season</sub> |
 | meteorological_variable    | string        | <sub>**REQUIRED** "tmin", "tmax", "precipitation", "solar", "wind", "hail", "minhumidity", "maxhumidity" for daily values of: minimum and maximum temperatures (degrees Celsius), precipitation (millimetres), solar radiation (average daily W/m2), average wind speed (metres per second), hail/ precipitation intensity (millimetres per second x 1000), minimum and maximum relative humidity (%)</sub> |
 | percentile    | string        | <sub>**NOT REQUIRED** entire 100 ensemble members are supplied</sub> |
