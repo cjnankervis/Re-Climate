@@ -45,13 +45,12 @@ Independently and impartially assessed by the [National Physical Laboratory](htt
 
 **The Re-Climate API ...**:
 
-- Builds on 10-years of R&D in seasonal climate prediction science
-- Combines state-of-the-art models, downscaling, statistical post-processing, chronic climate trend adjustments, and rigorous validation
+- Builds on 9-years of R&D in seasonal climate prediction science
+- Combines state-of-the-art models with statistical post-processing
 - Simulates daily precipitation event generation to manage local flood/ drought
-- Delivers accurate physical hazard analytics to assess intensities of daily weather events
-- Extends deterministic weather predictions with a seamless 3-month probabilistic forecast extending from 2 to 15 weeks
+- Delivers reliable weather hazard analytics to assess daily events
+- Extends deterministic weather predictions from 2 to 15 weeks
 - Provides access for historical start dates from month: '03', year: '2023'
-- Supplies town or city data, reporting the closest datapoint where applicable
 - Updates climate hazard information on the 14th day of each month
 
 ### Bounding Box Restrictions
