@@ -73,24 +73,8 @@ Similarly, NPL’s report also provided direct comparisons for the [late summer 
 
 ## Understanding Seasonal Forecast Requests
 
-<table>
-  <tr><center><td width="50%" align="center">
+<center><img src="https://re-climate.earth/wp-content/uploads/2023/06/Re-ClimateFeatures.png" alt="Re-Climate Product Features" width="80%"></center>
 
-|API Technical<br />Specifications | <sub>Monthly<br /> Forecasts</sub> | <sub>Daily<br /> Ensembles</sub> | <sub>Hazard<br /> Indices</sub> | <sub>Departures<br /> (Anomalies)</sub> | <sub>Daily Quantile<br />(Q-Q) Plots</sub> | <sub>Graphical<br /> Summaries</sub> |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| <sub><b>Country-wide Forecasts<br /> (Downscaled to a 5km<br /> Regular Grid)</b></sub> | :white_check_mark: | :x: | :x: | :white_check_mark: | :x: | :x: |
-| <sub><b>Town-level Modelling<br /> (Closest Location Match)</b></sub> | :x: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| <sub><b>Confidence Intervals (100<br /> Ensemble Members  'E' or<br /> Centile Bands 'C' or Shift-<br />of-the-Tails 'T')</b></sub> | <font size="20"><b>C</b></font> | <font size="20"><b>E</b></font> | <font size="20"><b>T</b></font> | <font size="20"><b>C</b></font> | <font size="20"><b>E</b></font> | <font size="20"><b>E</b></font> |
-| <sub><b>Temporal Granularity<br /> (Seasonal 'S' or Monthly 'M'<br /> or Daily 'D')</b></sub> | <font size="20"><b>M</b></font> | <font size="20"><b>D</b></font> | <font size="20"><b>S, M</b></font> | <font size="20"><b>M</b></font> | <font size="20"><b>S, M</b></font> | <font size="20"><b>S, M</b></font> |
-| <sub><b>Spatially Correlated Daily<br /> Event Generation</b></sub> | :x: | :white_check_mark: | :white_check_mark:| :x: | :white_check_mark: | :white_check_mark: |
-| <sub><b>Combines C3S/<br /> NWP Model Mean<br /> with Statistical Model</b></sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| <sub><b>Validated by the National<br /> Physical Laboratory</b></sub> | :x: | :white_check_mark: | :x: | :x: | :white_check_mark: | :white_check_mark: |
-| <sub><b>Weather Variability as a<br /> Function of Numerical<br /> Model Output</b></sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| <sub><b>Forecast Trained<br /> to Local Geography</b></sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| <sub><b>Chronic & Acute Physical<br /> Climate Change<br /> Adjustments</b></sub> | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-
-  </td></center></tr>
-</table>
 <sub><b>NWP = Numerical Weather Prediction</b></sub>
 
 ## Monthly Forecasts
