@@ -73,7 +73,7 @@ Similarly, NPL’s report also provided direct comparisons for the [late summer 
 
 ## Understanding Seasonal Forecast Requests
 
-<center><img src="https://re-climate.earth/wp-content/uploads/2023/06/Re-ClimateFeatures.png" alt="Re-Climate Product Features" width="80%"></center>
+<p style="text-align: center;"><img src="https://re-climate.earth/wp-content/uploads/2023/06/Re-ClimateFeatures.png" alt="Re-Climate Product Features" width="80%"></p>
 
 <sub><b>NWP = Numerical Weather Prediction</b></sub>
 
@@ -144,10 +144,10 @@ Chronic climate change adjustments are applied using a monthly temperature trend
 November precipitation anomalies plotted using Re-Climate® data issued on 13th October 2022.
 
 ### Median
-<center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots.png" alt="Extended precipitation forecast for November 2022" width="80%"></center>
+<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots.png" alt="Extended precipitation forecast for November 2022" width="80%"></p>
 
 ### 90th Centile
-<center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots_90th.png" alt="Northeast and Central Scotland flooding, 90th centile of precipitation forecast for November 2022" width="80%"></center>
+<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots_90th.png" alt="Northeast and Central Scotland flooding, 90th centile of precipitation forecast for November 2022" width="80%"></p>
 
 ## Daily Quantile  (Q-Q) Plots
 **Access to figures showing town/ city daily weather profiles at quantile (decile) intervals for the upcoming season, ideal for who need a quick snapshot view
@@ -160,11 +160,11 @@ Comparisons between the seasonal profile (centile distributions) of daily temper
 Comparisons between the seasonal profile (centile distributions) of multiple meteorological variables, compared against WeatherLogistics' real-time equivalent model climatology. To request this climate data for a specified town or city, see [graphical summaries example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/GraphicalSummaries_example.json).
 
 Example below (top), showing daily minimum temperatures from all 100 ensemble members for central London for the mid-autumn period. Using the "meteorological_variable": "tmin" option.
-<center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/WestminsterSeasonalforecast_MTH3_09-Late-Summer2021_2021TminLondonBoroughsForecast.png" alt="Seasonal climate forecast of minimum temperature for Westminster (London), September 2022" width="80%"></center>
+<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/WestminsterSeasonalforecast_MTH3_09-Late-Summer2021_2021TminLondonBoroughsForecast.png" alt="Seasonal climate forecast of minimum temperature for Westminster (London), September 2022" width="80%"></p>
 
 [Heating Degree Days for energy utility demand management, presented as a 7-day running accumulation of daily temperatures, using the "meteorological_variable": "Gdd" option](https://seasonalforecasts.earth/wp-content/uploads/2022/12/GDD.png)
 
-<center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/EXCEEDANCES.png" alt="Likelihood of exceedance for daily precipitation for Bristol, Winter 2023" width="80%"></center>
+<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/EXCEEDANCES.png" alt="Likelihood of exceedance for daily precipitation for Bristol, Winter 2023" width="80%"></p>
 
 ## Acknowledgements
 
@@ -174,14 +174,14 @@ Example below (top), showing daily minimum temperatures from all 100 ensemble me
 
 Monitoring summer temperature extremes and heatwave extremes, July forecast issued on 13th June 2022
 
-<center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/TMax_System2.png" alt="July 2022 temperature extremes and heatwave conditions" width="80%"></center>
+<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/TMax_System2.png" alt="July 2022 temperature extremes and heatwave conditions" width="80%"></p>
 
 Monitoring summer precipitation deficits and drought conditions, July forecast issued on 13th June 2022
 
-<center><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Precip_System2.png" alt="Summer 2022 drought management and heatwave conditions" width="80%"></center>
+<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Precip_System2.png" alt="Summer 2022 drought management and heatwave conditions" width="80%"></p>
 
 Volumetric soil moisture content forecast (layer 2, 7cm to 28cm) for May 2023, showing five centiles (10th, 30th, median, 70th and 90th) intervals of the seasonal climate forecast.
 
-<center><img src="https://seasonalforecasts.earth/wp-content/uploads/2023/05/Soilmoisture_Forecast.png" alt="Volumetric soil moisture forecast for May 2023" width="80%">
+<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2023/05/Soilmoisture_Forecast.png" alt="Volumetric soil moisture forecast for May 2023" width="80%"></p>
 
 
