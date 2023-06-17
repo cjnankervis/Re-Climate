@@ -67,9 +67,9 @@ WeatherLogistics completed a successful collaboration with the National Physical
 
 ### Direct Comparisons of Seasonal Forecasts Against Observations
 
-NPL's validation report presents a comparison of the predicted frequencies of occurrence of daily precipitation events of different intensities against ERA5-land measurements. Covering 96 UK cities for the years 2018 to 2022, the results summarise the [late winter assessment](https://seasonalforecasts.earth/wp-content/uploads/2022/07/Late-WinterNPL_WL.pdf) from January to March period (lead times of 1 to 3 months) as they would be issued on 13th December.
+NPL's validation report presents a comparison of the predicted frequencies of occurrence of daily precipitation events of different intensities against ERA5-land measurements. Covering 96 UK cities for the years 2018 to 2022, the results summarise the [late winter assessment](https://seasonalforecasts.earth/wp-content/uploads/2022/07/Late-WinterNPL_WL.pdf) from January to March period (lead times of 1 to 3 months) as they would be issued on 10th December.
 
-Similarly, NPL’s report also provided direct comparisons for the [late summer period](https://seasonalforecasts.earth/wp-content/uploads/2022/07/Late-SummerNPL-WL.pdf) as issued on 13th June, which cover the months July to September from 2018 to 2022. For both the winter and summer the results demonstrate a good overall seasonal consistency between observations and WeatherLogistics' retrospective seasonal climate predictions  at the city scale.
+Similarly, NPL’s report also provided direct comparisons for the [late summer period](https://seasonalforecasts.earth/wp-content/uploads/2022/07/Late-SummerNPL-WL.pdf) as issued on 10th June, which cover the months July to September from 2018 to 2022. For both the winter and summer the results demonstrate a good overall seasonal consistency between observations and WeatherLogistics' retrospective seasonal climate predictions  at the city scale.
 
 ## Understanding Seasonal Forecast Requests
 
@@ -141,7 +141,7 @@ Like the monthly forecasts request, anomalies provide a country-wide mapped over
 Chronic climate change adjustments are applied using a monthly temperature trend adjustment on an individual gridcell basis. This shifts the reference midpoint climate to present day.
 
 ### Example C.
-November precipitation anomalies plotted using Re-Climate® data issued on 13th October 2022.
+November precipitation anomalies plotted using Re-Climate® data issued on 10th October 2022.
 
 ### Median
 <p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots.png" alt="Extended precipitation forecast for November 2022" width="80%"></p>
@@ -172,11 +172,11 @@ Example below (top), showing daily minimum temperatures from all 100 ensemble me
 
 ## Additional Examples
 
-Monitoring summer temperature extremes and heatwave extremes, July forecast issued on 13th June 2022
+Monitoring summer temperature extremes and heatwave extremes, July forecast issued on 10th June 2022
 
 <p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/TMax_System2.png" alt="July 2022 temperature extremes and heatwave conditions" width="80%"></p>
 
-Monitoring summer precipitation deficits and drought conditions, July forecast issued on 13th June 2022
+Monitoring summer precipitation deficits and drought conditions, July forecast issued on 10th June 2022
 
 <p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Precip_System2.png" alt="Summer 2022 drought management and heatwave conditions" width="80%"></p>
 
