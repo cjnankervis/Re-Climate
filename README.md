@@ -51,7 +51,7 @@ Independently and impartially assessed by the [National Physical Laboratory](htt
 - Delivers reliable weather hazard analytics to assess daily events
 - Extends deterministic weather predictions from 2 to 15 weeks
 - Provides access for historical start dates from month: '03', year: '2023'
-- Updates climate hazard information on the 14th day of each month
+- Updates climate hazard information on the 11th day of each month
 
 ### Bounding Box Restrictions
 
