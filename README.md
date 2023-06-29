@@ -19,7 +19,7 @@ To get started with the API request code, first specify the endpoint URL for the
 - **[Re-Climate® Validators](https://seasonalforecasts.earth/docs/pricing/)**, historic seasonal forecasts (except current issue)
 - **[Re-Climate® Standard](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts for towns and cities
 - **[Re-Climate® Gauges](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts at UK rain gauge sites
-- **[Re-Climate® RCP Projections](https://seasonalforecasts.earth/docs/pricing/)**, downloadable for free
+- **[Re-Climate® RCP Projections](https://seasonalforecasts.earth/docs/pricing/)**, downloadable for [free](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs)
 
 ## Re-Climate® API Products
 
