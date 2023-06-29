@@ -9,7 +9,7 @@ Monthly Forecasts
 - JSON keywords 
 
 {
-"country": "uk" | "spain" | "turkey",
+"country": "uk" | "spain" | "turkey" {*NOTE* "uk" only for gauges},
 "latitude": {defaults to country-wide statistics},
 "longitude": {defaults to country-wide statistics},
 "season": {forecast valid/ start date month},
@@ -29,7 +29,7 @@ Daily Ensembles
 - JSON keywords
 
 {
-"country": "uk" | "spain" | "turkey",
+"country": "uk" | "spain" | "turkey" {*NOTE* "uk" only for gauges},
 "latitude": {latitude within country bounding box}, {*NOTE* not required for Zarr, as geography-wide data is supplied e.g. all UK locations}
 "longitude": {longitude within country bounding box}, {*NOTE* not required for Zarr, as geography-wide data is supplied e.g. all UK locations}
 "season": {forecast valid/ start date month},
@@ -49,7 +49,7 @@ Hazard Indices
 - JSON keywords
 
 {
-"country": "uk" | "spain" | "turkey",
+"country": "uk" | "spain" | "turkey" {*NOTE* "uk" only for gauges},
 "latitude": {defaults to country-wide statistics},
 "longitude": {defaults to country-wide statistics},
 "season": {forecast valid/ start date month},
@@ -69,7 +69,7 @@ Daily Profiles (Deciles)
 - JSON keywords
 
 {
-"country": "uk" | "spain" | "turkey",
+"country": "uk" | "spain" | "turkey" {*NOTE* "uk" only for gauges},
 "latitude": {latitude within country bounding box},
 "longitude": {longitude within country bounding box},
 "season": {forecast valid/ start date month},
@@ -88,7 +88,7 @@ Graphical Summaries
 - JSON keywords
 
 {
-"country": "uk" | "spain" | "turkey",
+"country": "uk" | "spain" | "turkey" {*NOTE* Not available for gauges},
 "latitude": {latitude within country bounding box},
 "longitude": {longitude within country bounding box},
 "season": {forecast valid/ start date month},
