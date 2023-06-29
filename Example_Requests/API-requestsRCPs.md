@@ -8,9 +8,9 @@
 | longitude    | float        | <sub>**NOT REQUIRED** defaults to country-wide statistics</sub> |
 | season    | integer        | <sub>**REQUIRED** seasonal climate forecast start date/ initiation month (up to current month if after 10th day)</sub> |
 | month_of_season    | integer        | <sub>**REQUIRED** seasonal climate forecast lead time of "1", "2" or "3" months (number of full months after initiation)</sub> |
-| extension    | string        | <sub>**REQUIRED** "asc" for ASCII data output format, or "csv" for "SoilMoisture" only</sub> |
+| extension    | string        | <sub>**REQUIRED** "asc" for ASCII data output format</sub> |
 | output_type    | string        | <sub>**REQUIRED** "weatherlogisticsltd" for statistical/ climate signal based output; or "benchmark" for Met Office + ECMWF + Météo-France + NCEP + Deutscher Wetterdienst + CMCC + JMA + ECCC (Copernicus) numerical weather prediction model average |
-| meteorological_variable    | string        | <sub>**REQUIRED** "tmin", "tmax", "tmean", "precipitation" or "Soilmoisture" for monthly mean daily minimum, maximum and mean temperatures (degrees Celsius); monthly accumulated precipitation (millimetres per month); or monthly mean volumetric soil moisture respectively</sub> |
+| meteorological_variable    | string        | <sub>**REQUIRED** "tmin", "tmax", "tmean" or "precipitation" for monthly mean daily minimum, maximum and mean temperatures (degrees Celsius); or monthly accumulated precipitation (millimetres per month) respectively</sub> |
 | percentile    | string        | <sub>**REQUIRED** confidence interval at either the "10th", "30th", "median", "70th" or "90th" centile</sub> |
 | RCP    | string        | <sub>**REQUIRED**: "2.6" or "8.5", for Representative Concentration Pathways from UKCP18 models, available from July 2023 for UK only***
 | projection_year    | string        | <sub>**REQUIRED** seasonal climate output is projected forward to this year. Projection years 2020 to 2030, 2030 to 2040 and 2040 to 2050 from UK Climate Projection Models 2018 available from July 2023 for the United Kingdom only</sub> |
@@ -57,27 +57,6 @@ See more information about the [climatological hazard reference](https://github.
 | projection_year    | string        | <sub>**REQUIRED** seasonal climate output is projected forward to this year. Projection years 2020 to 2030, 2030 to 2040 and 2040 to 2050 from UK Climate Projection Models 2018 available from July 2023 for the United Kingdom only</sub> |
 | forecast_type    | string        | <sub>**REQUIRED** "hazard-indices" for country-wide mapped or tabular hazard indices at the town/ city level</sub> |
 | filename    | string        | <sub>**OPTIONAL** optional filename for "png" extension only (default is used otherwise)</sub> |
-| show_metadata    | string        | <sub>**OPTIONAL**</sub> | 
-
-## "Anomalies" JSON request fields
-See more information about the [climatological departure reference](https://github.com/cjnankervis/Re-Climate#climatological-departure-references)
-
-| Element         | Type          | Description                                                  |
-| --------------- | ------------- | ------------------------------------------------------------ |
-| country           | string        | <sub>**REQUIRED** Geography/ mainland country area; either "uk", "spain" or "turkey"</sub> |
-| instance    | string        | <sub>**NOT REQUIRED** necessary for tailored/ bespoke client requests only</sub> |
-| latitude    | float        | <sub>**NOT REQUIRED** defaults to country-wide statistics</sub> |
-| longitude    | float        | <sub>**NOT REQUIRED** defaults to country-wide statistics</sub> |
-| season    | integer        | <sub>**REQUIRED** seasonal climate forecast start date/ initiation month (up to current month if after 10th day)</sub> |
-| month_of_season    | integer        | <sub>**REQUIRED** seasonal climate forecast lead time of "1", "2" or "3" months (number of full months after initiation)</sub> |
-| extension    | string        | <sub>**REQUIRED** "csv" for CSV/ XML type data, or "asc" for ascii output format</sub> |
-| output_type    | string        | <sub>**REQUIRED** "weatherlogisticsltd" for statistical/ climate signal based output; or "benchmark" for Met Office + ECMWF + Météo-France + NCEP + Deutscher Wetterdienst + CMCC + JMA + ECCC (Copernicus) numerical weather prediction average |
-| meteorological_variable    | string        | <sub>**REQUIRED** "tmean", "precipitation" or "Soilmoisture" for monthly mean daily temperature average departure from model climate (degrees Celsius); monthly accumulated daily precipitation departure (percentage of monthly climatology); or monthly mean departure in volumetric soil moisture respectively</sub> |
-| percentile    | string        | <sub>**REQUIRED** confidence interval at either the "10th", "30th", "median", "70th" or "90th" centile</sub> |
-| RCP    | string        | <sub>**REQUIRED**: "2.6" or "8.5", for Representative Concentration Pathways from UKCP18 models, available from July 2023 for UK only***
-| projection_year    | string        | <sub>**REQUIRED** seasonal climate output is projected forward to this year. Projection years 2020 to 2030, 2030 to 2040 and 2040 to 2050 from UK Climate Projection Models 2018 available from July 2023 for the United Kingdom only</sub> |
-| forecast_type    | string        | <sub>**REQUIRED** "anomaly" for country-wide monthly gridded seasonal climate forecast departure map data</sub> |
-| filename    | string        | <sub>**OPTIONAL**</sub> |
 | show_metadata    | string        | <sub>**OPTIONAL**</sub> | 
 
 ## "Daily Profiles (Deciles)" JSON request fields
