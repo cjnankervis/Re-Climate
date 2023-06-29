@@ -66,7 +66,7 @@ See more information about the [climatological daily profile references](https:/
 | latitude    | float        | <sub>**REQUIRED** latitude requirement contained within the country mainland bounding-box area</sub> |
 | longitude    | float        | <sub>**REQUIRED** longitude requirement contained within the country mainland bounding-box area</sub> |
 | season    | integer        | <sub>**REQUIRED** season for analysis e.g. "Winter", "Spring", "Summer" and "Autumn"</sub> |
-| month_of_season    | integer        | <sub>**REQUIRED** "1", "2", "3" or "seasonal" for single graphic that show both models and climate data at lead times of 1, 2 and 3 months</sub> |
+| month_of_season    | integer        | <sub>**REQUIRED** "seasonal" for single graphic that show both models and climate data as an average of months 1, 2 and 3</sub> |
 | extension    | string        | <sub>**REQUIRED** "png" for graphical download to supplied "filename"</sub> |
 | meteorological_variable    | string        | <sub>**REQUIRED** "tmin", "tmax" or "precipitation" for monthly mean daily minimum and maximum temperatures (degrees Celsius) or monthly accumulated precipitation (millimetres per month)</sub> |
 | percentile    | string        | <sub>**NOT REQUIRED** all daily ensemble data is aggregated into a statistical output</sub> |
