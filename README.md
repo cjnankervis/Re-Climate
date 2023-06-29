@@ -1,4 +1,4 @@
-# WeatherLogistics® Re-Climate® API
+# Re-Climate® API
 [<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" width="250"/>](https://seasonalforecasts.earth "Reliable Seasonal Climate Forecasts")
 
 ## About WeatherLogistics®
