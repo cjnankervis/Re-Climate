@@ -18,7 +18,7 @@ Monthly Forecasts
 "output_type": "weatherlogisticsltd" | "benchmark",
 "meteorological_variable": "tmin" | "tmax" | "tmean" | "precipitation",
 "percentile": "10th" | "30th" | "median" | "70th" | "90th",
-"RCP": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
+"RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
 "forecast_type": "monthly-centiles",
 "show_metadata": "",
@@ -38,7 +38,7 @@ Daily Ensembles
 "output_type": "weatherlogisticsltd" | "benchmark" | "climatology", {*NOTE* both the first two forecast options supply the entire 100 members}
 "meteorological_variable": "tmin" | "tmax" | "precipitation" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity",
 "percentile": {no percentile is required},
-"RCP": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
+"RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
 "forecast_type": "ensemble",
 "show_metadata": "",
@@ -58,7 +58,7 @@ Hazard Indices
 "output_type": "weatherlogisticsltd" | "benchmark",
 "meteorological_variable": "hail" | "solar" | "wind" | "aridity" | "cold" | "drought" | "heat" | "humidity" | "precipitation" | "spi"
 "percentile": {no percentile is required},
-"RCP": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
+"RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
 "forecast_type": "hazard-indices",
 "show_metadata": ""
@@ -78,7 +78,7 @@ Daily Profiles (Deciles)
 "output_type": "weatherlogisticsltd" | "benchmark",
 "meteorological_variable": "tmin" | "tmax" | "precipitation",
 "percentile": {no percentile is required},
-"RCP": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
+"RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
 "forecast_type": "daily-profiles",
 "filename": "{output filename}.{extension}"
@@ -97,7 +97,7 @@ Graphical Summaries
 "output_type": {not required since output includes both weatherlogisticsltd and benchmark),
 "meteorological_variable": "tmin" | "tmax" | "precipitation" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity" | "EXCEEDANCES" | "GDD",
 "percentile": {no percentile is required},
-"RCP": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
+"RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
 "forecast_type": "graphical-summaries",
 "filename": "{output filename}.{extension}"
