@@ -2,7 +2,7 @@
 
 | Element         | Type          | Description                                                  |
 | --------------- | ------------- | ------------------------------------------------------------ |
-| country           | string        | <sub>**REQUIRED** geography/ mainland country area; either "uk", "spain" or "turkey" {**NOTE** "uk" ONLY for gauges product}</sub> |
+| country           | string        | <sub>**REQUIRED** geography/ mainland country area {**NOTE** "uk" ONLY for climate projections}</sub> |
 | instance_name    | string        | <sub>**NOT REQUIRED** necessary for tailored/ bespoke client requests only</sub> |
 | latitude    | float        | <sub>**NOT REQUIRED** defaults to country-wide statistics</sub> |
 | longitude    | float        | <sub>**NOT REQUIRED** defaults to country-wide statistics</sub> |
@@ -21,7 +21,7 @@
 
 | Element         | Type          | Description                                                  |
 | --------------- | ------------- | ------------------------------------------------------------ |
-| country           | string        | <sub>**REQUIRED** geography/ mainland country area; either "uk", "spain" or "turkey" {**NOTE** "uk" ONLY for gauges product}|
+| country           | string        | <sub>**REQUIRED** geography/ mainland country area {**NOTE** "uk" ONLY for climate projections}|
 | instance_name    | string        | <sub>**NOT REQUIRED** necessary for tailored/ bespoke client requests only</sub> |
 | latitude    | float        | <sub>**REQUIRED** latitude requirement contained within the country mainland bounding-box area, ***NOT REQUIRED FOR ZARR***</sub> |
 | longitude    | float        | <sub>**REQUIRED** longitude requirement contained within the country mainland bounding-box area, ***NOT REQUIRED FOR ZARR***</sub> |
@@ -41,7 +41,7 @@ See more information about the [climatological hazard reference](https://github.
 
 | Element         | Type          | Description                                                  |
 | --------------- | ------------- | ------------------------------------------------------------ |
-| country           | string        | <sub>**REQUIRED** Geography/ mainland country area; either "uk", "spain" or "turkey" {**NOTE** "uk" ONLY for gauges product}</sub> |
+| country           | string        | <sub>**REQUIRED** geography/ mainland country area {**NOTE** "uk" ONLY for climate projections}</sub> |
 | instance_name    | string        | <sub>**NOT REQUIRED** necessary for tailored/ bespoke client requests only</sub> |
 | latitude    | float        | <sub>**NOT REQUIRED** defaults to country-wide statistics</sub> |
 | longitude    | float        | <sub>**NOT REQUIRED** defaults to country-wide statistics</sub> |
@@ -61,7 +61,7 @@ See more information about the [climatological daily profile references](https:/
 
 | Element         | Type          | Description                                                  |
 | --------------- | ------------- | ------------------------------------------------------------ |
-| country           | string        | <sub>**REQUIRED** Geography/ mainland country area; either "uk", "spain" or "turkey" {**NOTE** "uk" ONLY for gauges product}</sub> |
+| country           | string        | <sub>**REQUIRED** geography/ mainland country area {**NOTE** "uk" ONLY for climate projections}</sub> |
 | instance_name    | string        | <sub>**NOT REQUIRED** necessary for tailored/ bespoke client requests only</sub> |
 | latitude    | float        | <sub>**REQUIRED** latitude requirement contained within the country mainland bounding-box area</sub> |
 | longitude    | float        | <sub>**REQUIRED** longitude requirement contained within the country mainland bounding-box area</sub> |
@@ -80,7 +80,7 @@ See more information about the [climatological daily profile references](https:/
 
 | Element         | Type          | Description                                                  |
 | --------------- | ------------- | ------------------------------------------------------------ |
-| country           | string        | <sub>**REQUIRED** Geography/ mainland country area; either "uk", "spain" or "turkey" {**NOTE** Not available for gauges product}</sub> |
+| country           | string        | <sub>**REQUIRED** geography/ mainland country area {**NOTE** "uk" ONLY for climate projections}</sub> |
 | instance_name    | string        | <sub>**NOT REQUIRED** necessary for tailored/ bespoke client requests only</sub> |
 | latitude    | float        | <sub>**REQUIRED** latitude requirement contained within the country mainland bounding-box area</sub> |
 | longitude    | float        | <sub>**REQUIRED** longitude requirement contained within the country mainland bounding-box area</sub> |
