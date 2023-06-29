@@ -85,7 +85,7 @@ See more information about the [climatological daily profile references](https:/
 | latitude    | float        | <sub>**REQUIRED** latitude requirement contained within the country mainland bounding-box area</sub> |
 | longitude    | float        | <sub>**REQUIRED** longitude requirement contained within the country mainland bounding-box area</sub> |
 | season    | integer        | <sub>**REQUIRED** season for analysis e.g. "Winter", "Spring", "Summer" and "Autumn"</sub> |
-| month_of_season    | integer        | <sub>**REQUIRED** "seasonal" provides single graphics that show data for months 1, 2 and 3 of season</sub> |
+| month_of_season    | integer        | <sub>**REQUIRED** "1", "2", "3" or "seasonal" for single graphic that show both models and climate data at lead times of 1, 2 and 3 months ("seasonal" for GDD output only)</sub> |
 | extension    | string        | <sub>**REQUIRED** "png" for PNG graphical download to supplied "filename"</sub> |
 | meteorological_variable    | string        | <sub>**REQUIRED** "tmin", "tmax", "precipitation", "solar", "wind", "hail", "minhumidity", "maxhumidity" (or "EXCEEDANCES" or "GDD")  for daily graphical summaries of: minimum and maximum temperatures (degrees Celsius), precipitation (millimetres), solar radiation (average daily W/m2), average wind speed (metres per second), hail/ precipitation intensity (millimetres per second x 1000), minimum and maximum relative humidity (%) (or monthly profiles of precipitation return periods (frequency of occurence for millimetre per day intensities), or degree day type 7-day accumulated daily temperature (degrees Celsius)</sub> |
 | percentile    | string        | <sub>**NOT REQUIRED** all daily ensemble data is aggregated into graphical plots</sub> |
