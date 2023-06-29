@@ -1,4 +1,4 @@
-## "Monthly Forecasts" JSON request fields
+## "Monthly Projections" JSON request fields
 
 | Element         | Type          | Description                                                  |
 | --------------- | ------------- | ------------------------------------------------------------ |
