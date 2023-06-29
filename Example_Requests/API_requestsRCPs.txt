@@ -70,7 +70,7 @@ Daily Profiles (Deciles)
 "latitude": {latitude within country bounding box},
 "longitude": {longitude within country bounding box},
 "season": {forecast valid/ start date month},
-"month_of_season": "seasonal",
+"month_of_season": "1" | "2" | "3",
 "extension": "png",
 "meteorological_variable": "tmin" | "tmax" | "precipitation",
 "percentile": {no percentile is required},
