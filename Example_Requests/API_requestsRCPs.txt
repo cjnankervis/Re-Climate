@@ -14,9 +14,9 @@ Monthly Forecasts
 "longitude": {defaults to country-wide statistics},
 "season": {forecast valid/ start date month},
 "month_of_season": "1" | "2" | "3",
-"extension": "asc" | {"csv" for "Soilmoisture" only},
+"extension": "asc",
 "output_type": "weatherlogisticsltd" | "benchmark",
-"meteorological_variable": "tmin" | "tmax" | "tmean" | "precipitation" | "soilmoisture",
+"meteorological_variable": "tmin" | "tmax" | "tmean" | "precipitation",
 "percentile": "10th" | "30th" | "median" | "70th" | "90th",
 "RCP": "2.6" | "8.5", ***UKCP18 models available from July 2023 for UK only***
 "projection_year": {default is forecast start date year}, ***projection years 2025, 2035, 2045 from UKCP18 models available from July 2023 for UK only***
@@ -62,26 +62,6 @@ Hazard Indices
 "projection_year": {default is forecast start date year}, ***projection years 2025, 2035, 2045 from UKCP18 models available from July 2023 for UK only***
 "forecast_type": "hazard-indices",
 "show_metadata": ""
-"filename": "{output filename}.{extension}"
-}
-
-Anomalies
-- JSON keywords
-
-{
-"country": "uk" | "spain" | "turkey",
-"latitude": {defaults to country-wide statistics},
-"longitude": {defaults to country-wide statistics},
-"season": {forecast valid/ start date month},
-"month_of_season": "1" | "2" | "3",
-"extension": "asc" | "csv",
-"output_type": "weatherlogisticsltd" | "benchmark",
-"meteorological_variable": "Tmean | "Precipitation" | "Soilmoisture",
-"percentile": "10th" | "30th" | "median" | "70th" | "90th",
-"RCP": "2.6" | "8.5", ***UKCP18 models available from July 2023 for UK only***
-"projection_year": {default is forecast start date year}, ***projection years 2025, 2035, 2045 from UKCP18 models available from July 2023 for UK only***
-"forecast_type": "anomaly",
-"show_metadata": "",
 "filename": "{output filename}.{extension}"
 }
 
