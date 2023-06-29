@@ -87,7 +87,7 @@ See more information about the [climatological daily profile references](https:/
 | longitude    | float        | <sub>**REQUIRED** longitude requirement contained within the country mainland bounding-box area</sub> |
 | month    | integer        | <sub>**REQUIRED** seasonal climate forecast start date/ initiation month (up to current month if after 10th day)</sub> |
 | year    | integer        | <sub>**REQUIRED** seasonal climate forecast start date/ initiation year (up to current year if before 11th January)</sub> |
-| lead    | integer        | <sub>**REQUIRED** "seasonal" climate forecast provides single graphics that show data at lead times of 1, 2 and 3 months</sub> |
+| lead    | integer        | <sub>**REQUIRED** "1", "2", "3" or "seasonal" for single graphic that show both models and climate data at lead times of 1, 2 and 3 months</sub> |
 | extension    | string        | <sub>**REQUIRED** "png" for graphical download to supplied "filename"</sub> |
 | output_type    | string        | <sub>**REQUIRED** "weatherlogisticsltd" for statistical/ climate signal based output; or "benchmark" for Met Office + ECMWF + Météo-France + NCEP + Deutscher Wetterdienst + CMCC + JMA + ECCC (Copernicus) numerical weather prediction average</sub> |
 | meteorological_variable    | string        | <sub>**REQUIRED** "tmin", "tmax" or "precipitation" for monthly mean daily minimum and maximum temperatures (degrees Celsius) or monthly accumulated precipitation (millimetres per month)</sub> |
