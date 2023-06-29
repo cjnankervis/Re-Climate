@@ -90,7 +90,7 @@ Daily Profiles (Deciles)
 "longitude": {longitude within country bounding box},
 "month": {forecast valid/ start date month},
 "year": {forecast valid/ start date year},
-"lead": "1" | "2" | "3",
+"lead": "seasonal",
 "extension": "png",
 "output_type": "weatherlogisticsltd" | "benchmark",
 "meteorological_variable": "tmin" | "tmax" | "precipitation",
