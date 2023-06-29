@@ -1,0 +1,14 @@
+{
+    "country": "spain",
+    "latitude": 40.4168,
+    "longitude": -3.7038,
+    "month": "6",
+    "year": "2023",
+    "lead": "seasonal",
+    "extension": "json",
+    "output_type": "benchmark",
+    "meteorological_variable": "maxhumidity",
+    "forecast_type": "ensemble",
+    "show_metadata": "",
+    "filename": "spain-forecast.json"
+}

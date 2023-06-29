@@ -1,0 +1,14 @@
+{
+    "country": "uk",
+    "latitude": 52.9540,
+    "longitude": -1.1550,
+    "month": "6",
+    "year": "2023",
+    "lead": "seasonal",
+    "extension": "json",
+    "output_type": "benchmark",
+    "meteorological_variable": "precipitation",
+    "forecast_type": "ensemble",
+    "show_metadata": "",
+    "filename": "ukgauges-forecast.json"
+}

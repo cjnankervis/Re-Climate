@@ -1,0 +1,15 @@
+{
+    "country": "uk",
+    "latitude": 52.9540,
+    "longitude": -1.1550,
+    "season": "Summer",
+    "month_of_season": 1,
+    "projection_year": 2035,
+    "RCP_type": "rcp26",
+    "percentile": "90th",
+    "extension": "csv",
+    "meteorological_variable": "tmax",
+    "forecast_type": "ensemble",
+    "show_metadata": "",
+    "filename": "ukrcp-tmax.csv"
+}
