@@ -15,10 +15,9 @@ Monthly Forecasts
 "season": {forecast valid/ start date month},
 "month_of_season": "1" | "2" | "3",
 "extension": "asc",
-"output_type": "weatherlogisticsltd" | "benchmark",
 "meteorological_variable": "tmin" | "tmax" | "tmean" | "precipitation",
 "percentile": "10th" | "30th" | "median" | "70th" | "90th",
-"RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
+"RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means ('bcc-csm1-1', 'CCSM4', 'CanESM2', 'HadGEM2-ES', 'IPSL-CM5A-MR', 'CNRM-CM5', 'MPI-ESM-MR', 'MRI-CGCM3', 'GFDL-ESM2G') are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
 "forecast_type": "monthly-centiles",
 "show_metadata": "",
@@ -35,10 +34,9 @@ Daily Ensembles
 "season": {forecast valid/ start date month},
 "month_of_season": "seasonal",
 "extension": "json" | "csv" | "zarr",
-"output_type": "weatherlogisticsltd" | "benchmark" | "climatology", {*NOTE* both the first two forecast options supply the entire 100 members}
 "meteorological_variable": "tmin" | "tmax" | "precipitation" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity",
 "percentile": {no percentile is required},
-"RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
+"RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means ('bcc-csm1-1', 'CCSM4', 'CanESM2', 'HadGEM2-ES', 'IPSL-CM5A-MR', 'CNRM-CM5', 'MPI-ESM-MR', 'MRI-CGCM3', 'GFDL-ESM2G') are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
 "forecast_type": "ensemble",
 "show_metadata": "",
@@ -55,10 +53,9 @@ Hazard Indices
 "season": {forecast valid/ start date month},
 "month_of_season": "1" | "2" | "seasonal",
 "extension": "csv" | "png",
-"output_type": "weatherlogisticsltd" | "benchmark",
 "meteorological_variable": "hail" | "solar" | "wind" | "aridity" | "cold" | "drought" | "heat" | "humidity" | "precipitation" | "spi"
 "percentile": {no percentile is required},
-"RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
+"RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means ('bcc-csm1-1', 'CCSM4', 'CanESM2', 'HadGEM2-ES', 'IPSL-CM5A-MR', 'CNRM-CM5', 'MPI-ESM-MR', 'MRI-CGCM3', 'GFDL-ESM2G') are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
 "forecast_type": "hazard-indices",
 "show_metadata": ""
@@ -75,10 +72,9 @@ Daily Profiles (Deciles)
 "season": {forecast valid/ start date month},
 "month_of_season": "seasonal",
 "extension": "png",
-"output_type": "weatherlogisticsltd" | "benchmark",
 "meteorological_variable": "tmin" | "tmax" | "precipitation",
 "percentile": {no percentile is required},
-"RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
+"RCP_type": "Combined", {*NOTE* UKCP18 model means ('bcc-csm1-1', 'CCSM4', 'CanESM2', 'HadGEM2-ES', 'IPSL-CM5A-MR', 'CNRM-CM5', 'MPI-ESM-MR', 'MRI-CGCM3', 'GFDL-ESM2G') are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
 "forecast_type": "daily-profiles",
 "filename": "{output filename}.{extension}"
@@ -94,10 +90,9 @@ Graphical Summaries
 "season": {forecast valid/ start date month},
 "month_of_season": "1" | "2" | "3" | "seasonal", {*NOTE* GDD is a Seasonal only request, whereas for other meteorological variables lead 1, 2 or 3 are valid}
 "extension": "png",
-"output_type": {not required since output includes both weatherlogisticsltd and benchmark),
 "meteorological_variable": "tmin" | "tmax" | "precipitation" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity" | "EXCEEDANCES" | "GDD",
 "percentile": {no percentile is required},
-"RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means are supplied)
+"RCP_type": "Combined", {*NOTE* UKCP18 model means are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
 "forecast_type": "graphical-summaries",
 "filename": "{output filename}.{extension}"
