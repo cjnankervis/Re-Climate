@@ -1,0 +1,130 @@
+valid_countries = ('UK', 'SPAIN', 'TURKEY') # Specify the valid country
+
+# Bounding box values for UK, Spain and Turkey (North, East, South, West) degrees
+BOUNDING_BOX = {'UK': (60.85, 2.69, 49.84, -10.7),
+                'SPAIN': (44.17, 3.67, 35.71, -9.67), 
+                'TURKEY': (42.14, 44.79, 35.82, 26.04)}
+
+Monthly Forecasts
+- JSON keywords 
+
+{
+"country": "uk" | "spain" | "turkey",
+"latitude": {defaults to country-wide statistics},
+"longitude": {defaults to country-wide statistics},
+"month": {forecast valid/ start date month},
+"year": {forecast valid/ start date year},
+"lead": "1" | "2" | "3",
+"extension": "asc" | {"csv" for "Soilmoisture" only},
+"output_type": "weatherlogisticsltd" | "benchmark",
+"meteorological_variable": "tmin" | "tmax" | "tmean" | "precipitation" | "soilmoisture",
+"percentile": "10th" | "30th" | "median" | "70th" | "90th",
+"RCP": "2.6" | "8.5", ***UKCP18 models available from July 2023 for UK only***
+"projection_year": {default is forecast start date year}, ***projection years 2025, 2035, 2045 from UKCP18 models available from July 2023 for UK only***
+"forecast_type": "monthly-centiles",
+"show_metadata": "",
+"filename": "{output filename}.{extension}"
+}
+
+Daily Ensembles
+- JSON keywords
+
+{
+"country": "uk" | "spain" | "turkey",
+"latitude": {latitude within country bounding box}, {*NOTE* not required for Zarr, as geography-wide data is supplied e.g. all UK locations}
+"longitude": {longitude within country bounding box}, {*NOTE* not required for Zarr, as geography-wide data is supplied e.g. all UK locations}
+"month": {forecast valid/ start date month},
+"year": {forecast valid/ start date year},
+"lead": "seasonal",
+"extension": "json" | "csv" | "zarr",
+"output_type": "weatherlogisticsltd" | "benchmark" | "climatology", {*NOTE* both the first two forecast options supply the entire 100 members}
+"meteorological_variable": "tmin" | "tmax" | "precipitation" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity",
+"percentile": {no percentile is required},
+"RCP": "2.6" | "8.5", ***UKCP18 models available from July 2023 for UK only***
+"projection_year": {default is forecast start date year}, ***projection years 2025, 2035, 2045 from UKCP18 models available from July 2023 for UK only***
+"forecast_type": "ensemble",
+"show_metadata": "",
+"filename": "{output filename}.{extension}"
+}
+
+Hazard Indices
+- JSON keywords
+
+{
+"country": "uk" | "spain" | "turkey",
+"latitude": {defaults to country-wide statistics},
+"longitude": {defaults to country-wide statistics},
+"month": {forecast valid/ start date month},
+"year": {forecast valid/ start date year},
+"lead": "1" | "2" | "seasonal",
+"extension": "csv" | "png",
+"output_type": "weatherlogisticsltd" | "benchmark",
+"meteorological_variable": "hail" | "solar" | "wind" | "aridity" | "cold" | "drought" | "heat" | "humidity" | "precipitation" | "spi"
+"percentile": {no percentile is required},
+"RCP": "2.6" | "8.5", ***UKCP18 models available from July 2023 for UK only***
+"projection_year": {default is forecast start date year}, ***projection years 2025, 2035, 2045 from UKCP18 models available from July 2023 for UK only***
+"forecast_type": "hazard-indices",
+"show_metadata": ""
+"filename": "{output filename}.{extension}"
+}
+
+Anomalies
+- JSON keywords
+
+{
+"country": "uk" | "spain" | "turkey",
+"latitude": {defaults to country-wide statistics},
+"longitude": {defaults to country-wide statistics},
+"month": {forecast valid/ start date month},
+"year": {forecast valid/ start date year},
+"lead": "1" | "2" | "3",
+"extension": "asc" | "csv",
+"output_type": "weatherlogisticsltd" | "benchmark",
+"meteorological_variable": "Tmean | "Precipitation" | "Soilmoisture",
+"percentile": "10th" | "30th" | "median" | "70th" | "90th",
+"RCP": "2.6" | "8.5", ***UKCP18 models available from July 2023 for UK only***
+"projection_year": {default is forecast start date year}, ***projection years 2025, 2035, 2045 from UKCP18 models available from July 2023 for UK only***
+"forecast_type": "anomaly",
+"show_metadata": "",
+"filename": "{output filename}.{extension}"
+}
+
+Daily Profiles (Deciles)
+- JSON keywords
+
+{
+"country": "uk" | "spain" | "turkey",
+"latitude": {latitude within country bounding box},
+"longitude": {longitude within country bounding box},
+"month": {forecast valid/ start date month},
+"year": {forecast valid/ start date year},
+"lead": "seasonal",
+"extension": "png",
+"output_type": "weatherlogisticsltd" | "benchmark",
+"meteorological_variable": "tmin" | "tmax" | "precipitation",
+"percentile": {no percentile is required},
+"RCP": "2.6" | "8.5", ***UKCP18 models available from July 2023 for UK only***
+"projection_year": {default is forecast start date year}, ***projection years 2025, 2035, 2045 from UKCP18 models available from July 2023 for UK only***
+"forecast_type": "daily-profiles",
+"filename": "{output filename}.{extension}"
+}
+
+Graphical Summaries
+- JSON keywords
+
+{
+"country": "uk" | "spain" | "turkey",
+"latitude": {latitude within country bounding box},
+"longitude": {longitude within country bounding box},
+"month": {forecast valid/ start date month},
+"year": {forecast valid/ start date year},
+"lead": "1" | "2" | "3" | "seasonal", {*NOTE* GDD is a Seasonal only request, whereas for other meteorological variables lead 1, 2 or 3 are valid}
+"extension": "png",
+"output_type": {not required since output includes both weatherlogisticsltd and benchmark),
+"meteorological_variable": "tmin" | "tmax" | "precipitation" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity" | "EXCEEDANCES" | "GDD",
+"percentile": {no percentile is required},
+"RCP": "2.6" | "8.5", ***UKCP18 models available from July 2023 for UK only***
+"projection_year": {default is forecast start date year}, ***projection years 2025, 2035, 2045 from UKCP18 models available from July 2023 for UK only***
+"forecast_type": "graphical-summaries",
+"filename": "{output filename}.{extension}"
+}
