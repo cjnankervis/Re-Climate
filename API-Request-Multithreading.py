@@ -1,12 +1,32 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+Created on Thurs Jun  29 10:22:25 2023
 
-Created on Wed Nov  9 17:00:32 2022
 @author: Dr Christopher Nankervis, WeatherLogistics.
 Re-Climate® Product Developer & Owner.
+
 Description.
-Allows multiple Re-Climate® API requests for a set of town/ city locations within a country bounding box
+For a single Re-Climate® API location request within a country bounding box/
+
+'forecast-histories': UK, Spain and Turkey mainland. Seasonal climate forecasts (for the next 3 calendar months), 
+as issued from March 2023 to June 2023 inclusive.
+
+'forecastgauges-histories': English precipitation data only. Seasonal climate forecasts (for the next 3 calendar months), 
+as issued from March 2023 to June 2023 inclusive.
+
+'rcp-standard': UK only. Representative Concentration Pathways (RCPs) 2.6 and 8.5, based on UK Climate Projection Data 2018.
+Projections are available for the seasons spring, summer, autumn and winter - and for the years 2025, 2035 and 2045.
+
+'rcp-gauges': English precipitation data only. Representative Concentration Pathways (RCPs) 2.6 and 8.5, based on UK Climate Projection Data 2018.
+Projections are available for the seasons spring, summer, autumn and winter - and for the years 2025, 2035 and 2045.
+
+Further Information,
+    See https://github.com/cjnankervis/Re-Climate/
+    
+Contact.
+    Dr Christopher Nankervis,
+    Email. accounts@weatherlogistics.com
 
 """
 
@@ -25,6 +45,8 @@ import os
 import json
 
 '''User Inputs'''
+API_CHOICE = 'forecastgauges-histories' # 'rcp-standard' OR 'rcp-gauges' OR 'forecast-histories' OR 'forecastgauges-histories'
+###
 # Define the locations for the specified country
 country = 'uk' # 'uk' or 'spain' or 'turkey'
 Cities = "UK_TownsCities.csv" # "UK_TownCities.csv" or "SPAIN_TownCities.csv" or "TURKEY_TownsCities.csv"
@@ -34,10 +56,22 @@ outputs = [] # Outputs are concatenated into a list
 connections = 100 # Maximum number of concurrent requests
 timeout = 60 # Request should take no longer than 1 minute per request
 
-# Specifying the Service Account Credentials created for the User.
-credential_path = "./User_Cred.json"
-# Specifying the Climate info path
-climate_info_path = "./Climate_Info.json"
+# Specifying the appropriate Google Cloud Service Account Credentials:
+if API_CHOICE.lower() in ('rcp-standard', 'rcp-gauges'):
+    credential_path = './User_Credentials-rcps.json'
+    # Specifying the Climate info path
+    if API_CHOICE.lower() == 'rcp-standard':
+        climate_info_path = './Climate_Info-rcps.json'
+    elif API_CHOICE.lower() == 'rcp-gauges':
+        climate_info_path = './Climate_Info-rcpgauges.json'
+elif API_CHOICE.lower() in ('forecast-histories', 'forecastgauges-histories'):
+    credential_path = './User_Credentials-forecasts.json'
+    # Specifying the Climate info path
+    if API_CHOICE.lower() == 'forecast-histories':
+        climate_info_path = './Climate_Info-forecasts.json'
+    elif API_CHOICE.lower() == 'forecastgauges-histories':
+        climate_info_path = './Climate_Info-forecastsgauges.json'
+print(f'Reading API credentials from {credential_path} and inputs from {climate_info_path}')
 ###
 
 # Determine the number of rows in the Cities location input file
@@ -48,9 +82,17 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 user_credentials = json.load(open(credential_path))
 
 # Endpoints. Specifying the URL to access the Re-Climate APIs
-# URL = "https://re-climatehistories-k7c6vv6pla-nw.a.run.app" # Re-Climate Histories (supplies access to pre-2023 reforecasts)
-URL = "https://re-climate-i62czkp3da-nw.a.run.app" # Re-Climate Standard Subscription (supplies access to town/ city data)
-# URL = "https://re-climategauges-tynkl6dcla-nw.a.run.app" # Re-Climate Gauges (supplies access to English rainfall gauge data)
+# Specifying the URL to access the Re-Climate API
+'''Climate Projections for United Kingdom Town/ Cities or closest match'''
+if API_CHOICE.lower() == 'rcp-standard':
+    URL = "https://europe-west2-weatherdocker-standardrcp.cloudfunctions.net/re-climateRCP"
+elif API_CHOICE.lower() == 'rcp-gauges':
+    '''Climate Projections at English EA (gov.uk) Rainfall Tipping Point Gauges'''
+    URL = "https://europe-west2-weatherdocker-standardrcp.cloudfunctions.net/re-climateRCPGAUGES"
+elif API_CHOICE.lower() == 'forecast-histories':
+    URL = "https://re-climatehistories-k7c6vv6pla-nw.a.run.app"
+elif API_CHOICE.lower() == 'forecastgauges-histories':
+    URL = "https://europe-west2-weatherdocker-histories.cloudfunctions.net/forecast-gaugeshistories"
 # Calling the function 'make_authorized_get_request' and displaying the response
     
 # Fetching the Authentication Request from Environment Variables
