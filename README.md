@@ -1,4 +1,4 @@
-# Re-Climate® API (Free Access Now Available)
+# Re-Climate® API ([Free Access](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs) Now Available)
 ### Last Seasonal Forecast Issue: 13th June, 2023
 [<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" width="250"/>](https://seasonalforecasts.earth "Reliable Seasonal Climate Forecasts")
 
