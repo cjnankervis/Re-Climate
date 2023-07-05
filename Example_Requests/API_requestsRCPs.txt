@@ -12,10 +12,10 @@ Monthly Projections
 "country": "uk", {**NOTE** "uk" ONLY for climate projections}
 "latitude": {defaults to country-wide statistics},
 "longitude": {defaults to country-wide statistics},
-"season": {forecast valid/ start date month},
+"season": "Spring" | "Summer" | "Autumn" | "Winter" **"Summer" only for Re-Climate Gauges**,
 "month_of_season": "1" | "2" | "3",
 "extension": "asc",
-"meteorological_variable": "tmin" | "tmax" | "tmean" | "precipitation",
+"meteorological_variable": "tmin" | "tmax" | "tmean" | "precipitation" **"precipitation" only for Re-Climate Gauges**,
 "percentile": "10th" | "30th" | "median" | "70th" | "90th",
 "RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means ('bcc-csm1-1', 'CCSM4', 'CanESM2', 'HadGEM2-ES', 'IPSL-CM5A-MR', 'CNRM-CM5', 'MPI-ESM-MR', 'MRI-CGCM3', 'GFDL-ESM2G') are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
@@ -31,10 +31,10 @@ Daily Ensembles
 "country": "uk", {**NOTE** "uk" ONLY for climate projections}
 "latitude": {latitude within country bounding box}, {*NOTE* not required for Zarr, as geography-wide data is supplied e.g. all UK locations}
 "longitude": {longitude within country bounding box}, {*NOTE* not required for Zarr, as geography-wide data is supplied e.g. all UK locations}
-"season": {forecast valid/ start date month},
+"season": "Spring" | "Summer" | "Autumn" | "Winter" **"Summer" only for Re-Climate Gauges**,
 "month_of_season": "seasonal",
 "extension": "json" | "csv" | "zarr",
-"meteorological_variable": "tmin" | "tmax" | "precipitation" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity",
+"meteorological_variable": "tmin" | "tmax" | "precipitation" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity" **"precipitation" only for Re-Climate Gauges**,
 "percentile": {no percentile is required},
 "RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means ('bcc-csm1-1', 'CCSM4', 'CanESM2', 'HadGEM2-ES', 'IPSL-CM5A-MR', 'CNRM-CM5', 'MPI-ESM-MR', 'MRI-CGCM3', 'GFDL-ESM2G') are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
@@ -50,10 +50,10 @@ Hazard Indices
 "country": "uk", {**NOTE** "uk" ONLY for climate projections}
 "latitude": {defaults to country-wide statistics},
 "longitude": {defaults to country-wide statistics},
-"season": {forecast valid/ start date month},
+"season": "Spring" | "Summer" | "Autumn" | "Winter" **"Summer" only for Re-Climate Gauges**,
 "month_of_season": "1" | "2" | "seasonal",
 "extension": "csv" | "png",
-"meteorological_variable": "hail" | "solar" | "wind" | "aridity" | "cold" | "drought" | "heat" | "humidity" | "precipitation" | "spi"
+"meteorological_variable": "hail" | "solar" | "wind" | "aridity" | "cold" | "drought" | "heat" | "humidity" | "precipitation" | "spi" **"drought" | "precipitation" | "spi" only for Re-Climate Gauges**,
 "percentile": {no percentile is required},
 "RCP_type": "2.6" | "8.5", {*NOTE* UKCP18 model means ('bcc-csm1-1', 'CCSM4', 'CanESM2', 'HadGEM2-ES', 'IPSL-CM5A-MR', 'CNRM-CM5', 'MPI-ESM-MR', 'MRI-CGCM3', 'GFDL-ESM2G') are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
@@ -69,10 +69,10 @@ Daily Profiles (Deciles)
 "country": "uk", {**NOTE** "uk" ONLY for climate projections}
 "latitude": {latitude within country bounding box},
 "longitude": {longitude within country bounding box},
-"season": {forecast valid/ start date month},
+"season": "Spring" | "Summer" | "Autumn" | "Winter" **"Summer" only for Re-Climate Gauges**,
 "month_of_season": "seasonal",
 "extension": "png",
-"meteorological_variable": "tmin" | "tmax" | "precipitation",
+"meteorological_variable": "tmin" | "tmax" | "precipitation" **"precipitation" only for Re-Climate Gauges**,
 "percentile": {no percentile is required},
 "RCP_type": "Combined", {*NOTE* UKCP18 model means ('bcc-csm1-1', 'CCSM4', 'CanESM2', 'HadGEM2-ES', 'IPSL-CM5A-MR', 'CNRM-CM5', 'MPI-ESM-MR', 'MRI-CGCM3', 'GFDL-ESM2G') are supplied)
 "projection_year": "2025" | "2035" | "2045", {*NOTE* default is 2025. Projection years 2025, 2035, 2045 are based on UKCP18 model means}
@@ -82,6 +82,7 @@ Daily Profiles (Deciles)
 
 Graphical Summaries
 - JSON keywords
+**Not available for Re-Climate Gauges**
 
 {
 "country": "uk", {**NOTE** "uk" ONLY for climate projections}
