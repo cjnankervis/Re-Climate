@@ -17,7 +17,7 @@ Monthly Forecasts
 "lead": "1" | "2" | "3",
 "extension": "asc" | {"csv" for "Soilmoisture" only},
 "output_type": "weatherlogisticsltd" | "benchmark",
-"meteorological_variable": "tmin" | "tmax" | "tmean" | "precipitation" | "soilmoisture",
+"meteorological_variable": "tmin" | "tmax" | "tmean" | "precipitation" | "soilmoisture" **"precipitation" only for Re-Climate Gauges**,
 "percentile": "10th" | "30th" | "median" | "70th" | "90th",
 "forecast_type": "monthly-centiles",
 "show_metadata": "",
@@ -36,7 +36,7 @@ Daily Ensembles
 "lead": "seasonal",
 "extension": "json" | "csv" | "zarr",
 "output_type": "weatherlogisticsltd" | "benchmark" | "climatology", {*NOTE* both the first two forecast options supply the entire 100 members}
-"meteorological_variable": "tmin" | "tmax" | "precipitation" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity",
+"meteorological_variable": "tmin" | "tmax" | "precipitation" | "solar" | "wind" | "hail" | "minhumidity" | "maxhumidity" **"precipitation" only for Re-Climate Gauges**,
 "percentile": {no percentile is required},
 "forecast_type": "ensemble",
 "show_metadata": "",
@@ -55,7 +55,7 @@ Hazard Indices
 "lead": "1" | "2" | "seasonal",
 "extension": "csv" | "png",
 "output_type": "weatherlogisticsltd" | "benchmark",
-"meteorological_variable": "hail" | "solar" | "wind" | "aridity" | "cold" | "drought" | "heat" | "humidity" | "precipitation" | "spi"
+"meteorological_variable": "hail" | "solar" | "wind" | "aridity" | "cold" | "drought" | "heat" | "humidity" | "precipitation" | "spi" **"drought" | "precipitation" | "spi" only for Re-Climate Gauges**,
 "percentile": {no percentile is required},
 "forecast_type": "hazard-indices",
 "show_metadata": ""
@@ -64,6 +64,7 @@ Hazard Indices
 
 Anomalies
 - JSON keywords
+**Not available for Re-Climate Gauges**
 
 {
 "country": "uk" | "spain" | "turkey" {*NOTE* Not available for gauges},
@@ -93,7 +94,7 @@ Daily Profiles (Deciles)
 "lead": "seasonal",
 "extension": "png",
 "output_type": "weatherlogisticsltd" | "benchmark",
-"meteorological_variable": "tmin" | "tmax" | "precipitation",
+"meteorological_variable": "tmin" | "tmax" | "precipitation" **"precipitation" only for Re-Climate Gauges**,
 "percentile": {no percentile is required},
 "forecast_type": "daily-profiles",
 "filename": "{output filename}.{extension}"
@@ -101,7 +102,7 @@ Daily Profiles (Deciles)
 
 Graphical Summaries
 - JSON keywords
-
+**Not available for Re-Climate Gauges**
 {
 "country": "uk" | "spain" | "turkey" {*NOTE* Not available for gauges},
 "latitude": {latitude within country bounding box},
