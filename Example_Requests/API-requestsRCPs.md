@@ -45,7 +45,7 @@ See more information about the [climatological hazard reference](https://github.
 | instance_name    | string        | <sub>**NOT REQUIRED** necessary for tailored/ bespoke client requests only</sub> |
 | latitude    | float        | <sub>**NOT REQUIRED** defaults to country-wide statistics</sub> |
 | longitude    | float        | <sub>**NOT REQUIRED** defaults to country-wide statistics</sub> |
-| season    | integer        | <sub>**REQUIRED** season for analysis e.g. "Winter", "Spring", "Summer" and "Autumn"</sub> |
+| season    | integer        | <sub>**REQUIRED** season for analysis e.g. "Winter", "Spring", "Summer" and "Autumn" **"Summer" only for Re-Climate Gauges**</sub> |
 | month_of_season    | integer        | <sub>**REQUIRED** month of specified season of month e.g. "1" or "2" or "seasonal" for seasonal average of months 1 to 3. **Note** seasonal option is not available for wind, solar, hail and humidity variables</sub> |
 | extension    | string        | <sub>**REQUIRED** "csv" for CSV/ XML type data output format or "png" or PNG for graphical download to supplied "filename"</sub> |
 | meteorological_variable    | string        | <sub>**REQUIRED** "hail", "solar", "wind", "aridity", "cold", "drought", "heat", "humidity", "precipitation" or "spi" for 20th/80th daily weather centile shift-of-the-tails analysis for hazards, or shift-of-the-median (50th) centile for Standard Precipitation Index (SPI) on a scale of low (1) to high (9) extreme **"drought", "precipitation" or "spi" only for Re-Climate Gauges**</sub> |
