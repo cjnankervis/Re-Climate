@@ -19,7 +19,7 @@ as issued from March 2023 to June 2023 inclusive.
 Projections are available for the seasons spring, summer, autumn and winter - and for the years 2025, 2035 and 2045.
 
 'rcp-gauges': English precipitation data only. Representative Concentration Pathways (RCPs) 2.6 and 8.5, based on UK Climate Projection Data 2018.
-Projections are available for the seasons spring, summer, autumn and winter - and for the years 2025, 2035 and 2045.
+Projections are available for the summer season ONLY - and for the years 2025, 2035 and 2045.
 
 Further Information,
     See https://github.com/cjnankervis/Re-Climate/
