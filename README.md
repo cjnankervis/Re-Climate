@@ -3,6 +3,8 @@
 ### ([Limited Free Access](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs))
 [<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" width="250"/>](https://seasonalforecasts.earth "Reliable Seasonal Climate Forecasts")
 
+[<img src="https://seasonalforecasts.earth/wp-content/uploads/2023/07/Re-ClimateQuickStart.png" width="500"/>](https://seasonalforecasts.earth "Reliable Seasonal Climate Forecasts")
+
 ## About WeatherLogistics®
 
 WeatherLogistics® is an innovative climate technology company with 10-years expertise in improving the value of seasonal climate forecasts for operational use.
