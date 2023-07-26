@@ -3,7 +3,7 @@
 ### ([Limited Free Access](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs))
 [<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" width="250"/>](https://seasonalforecasts.earth "Reliable Seasonal Climate Forecasts")
 
-[<img src="https://seasonalforecasts.earth/wp-content/uploads/2023/07/Re-ClimateQuickStart.png" width="800"/>](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Availability for Seasonal Climate Forecasts")
+[<img src="https://seasonalforecasts.earth/wp-content/uploads/2023/07/Re-ClimateQuickStart.png" width="80%"/>](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Availability for Seasonal Climate Forecasts")
 
 ## About WeatherLogistics®
 
