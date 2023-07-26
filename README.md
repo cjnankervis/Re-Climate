@@ -27,8 +27,6 @@ To get started with the API request code, first specify the endpoint URL for the
 
 ## Re-Climate® API Products
 
-<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2018/01/GLOBE-1850-2022-MO-e1688042562751.png" alt="Re-Climate Product Features" width="80%" alt="Global Warming Climate Stripes"></p>
-
 The Re-Climate® API delivers reliable seasonal climate predictions to operations teams in the agri-food, energy and water utilities, and insurance industries. These forecasts have been independently and impartially assessed by the National Physical Laboratory.
 
 The company combines climate and weather models through its algorithms; helping organisations to adapt to near-term climate hazards, calculate their risk exposure and build their resilience accordingly.
