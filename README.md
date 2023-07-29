@@ -7,30 +7,6 @@
 
 [*See Example Requests and Limitations*](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Availability for Seasonal Climate Forecasts")
 
-## About WeatherLogistics®
-
-WeatherLogistics® is an innovative climate technology company with 10-years expertise in improving the value of seasonal climate forecasts for operational use.
-
-The company’s successful projects include a European Space Agency kick-start activity. WeatherLogistics® has also undertaken data validation and meteorological product audits for the agricultural industry. Its clients include renewable energy, water management and insurance firms. Delivered through the Google Cloud Platform, its extended precipitation data offers the most detailed information available to support operations teams in Turkey and the UK impacted by drought.
-
-WeatherLogistics' codebase has been verified by the [Science & Technology Facilities Council](https://www.ukri.org/news-and-events/responding-to-climate-change/predicting-and-managing-climate-risks/flexible-and-scalable-solutions-for-climate-smart-forecasting/) and its results validated by [data specialists at Agrimetrics](https://agrimetrics.co.uk/2020/06/03/seasonal-climate-forecasts-for-agriculture/). [Independent and impartial validation](https://github.com/cjnankervis/Re-Climate#validation) was also undertaken by NPL funded through [UKRI/ A4I programme]((https://www.npl.co.uk/national-challenges/environment)). WeatherLogistics also helped initiate and sponsor [Yield21 ‘Predict Our Harvest’](https://www.agrimetrics.co.uk/news/uk-2021-wheat-yield-prediction) and is also a [UKRI/ NERC project partner for Seasonal Weather Prediction](https://gtr.ukri.org/project/C31D56B3-9A23-4AD9-BD85-752248E3D09F).
-
-## Requesting API Access
-
-To get started, please request an API authentication key and user credentials from the [product owner](mailto:accounts@weatherlogistics.com). To make single requests the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script should be used, while for multiple requests please see [API-Request-Multithreading.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request-Multithreading.py). The Python code can be used to access  six main data streams, with post-processing code also supplied to calculate return periods and other statistics from daily town and city data supplied through "Daily Ensembles". For a description of all available API requests, please see [API_requests.md](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/API_requests.md).
-
-### Endpoints
-
-To get started with the API request code, first specify the endpoint URL for the relevant Re-Climate® API.
-- **[Re-Climate® Validators](https://seasonalforecasts.earth/docs/pricing/)**, historic seasonal forecasts (except current issue)
-- **[Re-Climate® Standard](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts for towns and cities
-- **[Re-Climate® Gauges](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts at UK rain gauge sites
-- **[Re-Climate® RCP Projections](https://seasonalforecasts.earth/docs/pricing/)**, downloadable for [free](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs)
-
-## Availability
-
-[<img src="https://seasonalforecasts.earth/wp-content/uploads/2023/07/Re-ClimateDataAvailability-1.png" alt="Re-Climate Near-Term Climate Data Availability" width="80%"/>](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Near-term Climate Data Availability for Seasonal Climate Forecasts and RCP projections")
-
 ## Re-Climate® API Products
 
 The Re-Climate® API delivers reliable seasonal climate predictions to operations teams in the agri-food, energy and water utilities, and insurance industries. These forecasts have been independently and impartially assessed by the National Physical Laboratory.
@@ -46,6 +22,22 @@ Supplied as an 'ensemble', a collection of well-calibrated daily weather time se
 WeatherLogistics has a mission to help meet UN Sustainable Development Goals (SDGs) for food, water and natural resources. Currently the firm is developing a sustainability monitoring platform to advise farmers on their present and future climate exposure and how to reduce both their agricultural inputs and reduce greenhouse gas emissions. This forms part of a 12-month project in partnership with the University of Leicester, the University of Reading and supported and funded by UKRI/ STFC.
 
 Future farmers will be able to build smarter precision farming solutions and benchmarking platforms, integrated pest management systems, and decision-support applications to avoid food supply distribution. Growers can also optimise their operations with better timed preventative spraying, frost protection, and crop quality assurance.
+
+## Availability
+
+[<img src="https://seasonalforecasts.earth/wp-content/uploads/2023/07/Re-ClimateDataAvailability-1.png" alt="Re-Climate Near-Term Climate Data Availability" width="80%"/>](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Near-term Climate Data Availability for Seasonal Climate Forecasts and RCP projections")
+
+## Requesting API Access
+
+To get started, please request an API authentication key and user credentials from the [product owner](mailto:accounts@weatherlogistics.com). To make single requests the [API-Request.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request.py) script should be used, while for multiple requests please see [API-Request-Multithreading.py](https://github.com/cjnankervis/Re-Climate/blob/main/API-Request-Multithreading.py). The Python code can be used to access  six main data streams, with post-processing code also supplied to calculate return periods and other statistics from daily town and city data supplied through "Daily Ensembles". For a description of all available API requests, please see [API_requests.md](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/API_requests.md).
+
+### Endpoints
+
+To get started with the API request code, first specify the endpoint URL for the relevant Re-Climate® API.
+- **[Re-Climate® Validators](https://seasonalforecasts.earth/docs/pricing/)**, historic seasonal forecasts (except current issue)
+- **[Re-Climate® Standard](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts for towns and cities
+- **[Re-Climate® Gauges](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts at UK rain gauge sites
+- **[Re-Climate® RCP Projections](https://seasonalforecasts.earth/docs/pricing/)**, downloadable for [free](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs)
 
 # Features
 
@@ -174,10 +166,6 @@ Example below (top), showing daily minimum temperatures from all 100 ensemble me
 
 <p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/EXCEEDANCES.png" alt="Likelihood of exceedance for daily precipitation for Bristol, Winter 2023" width="80%"></p>
 
-## Acknowledgements
-
-*Contains modified Copernicus Climate Change Service information 2022. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
-
 ## Additional Examples
 
 Monitoring summer temperature extremes and heatwave extremes, July forecast issued on 10th June 2022
@@ -192,4 +180,14 @@ Volumetric soil moisture content forecast (layer 2, 7cm to 28cm) for May 2023, s
 
 <p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2023/05/Soilmoisture_Forecast.png" alt="Volumetric soil moisture forecast for May 2023" width="80%"></p>
 
+## About WeatherLogistics®
 
+WeatherLogistics® is an innovative climate technology company with 10-years expertise in improving the value of seasonal climate forecasts for operational use.
+
+The company’s successful projects include a European Space Agency kick-start activity. WeatherLogistics® has also undertaken data validation and meteorological product audits for the agricultural industry. Its clients include renewable energy, water management and insurance firms. Delivered through the Google Cloud Platform, its extended precipitation data offers the most detailed information available to support operations teams in Turkey and the UK impacted by drought.
+
+WeatherLogistics' codebase has been verified by the [Science & Technology Facilities Council](https://www.ukri.org/news-and-events/responding-to-climate-change/predicting-and-managing-climate-risks/flexible-and-scalable-solutions-for-climate-smart-forecasting/) and its results validated by [data specialists at Agrimetrics](https://agrimetrics.co.uk/2020/06/03/seasonal-climate-forecasts-for-agriculture/). [Independent and impartial validation](https://github.com/cjnankervis/Re-Climate#validation) was also undertaken by NPL funded through [UKRI/ A4I programme]((https://www.npl.co.uk/national-challenges/environment)). WeatherLogistics also helped initiate and sponsor [Yield21 ‘Predict Our Harvest’](https://www.agrimetrics.co.uk/news/uk-2021-wheat-yield-prediction) and is also a [UKRI/ NERC project partner for Seasonal Weather Prediction](https://gtr.ukri.org/project/C31D56B3-9A23-4AD9-BD85-752248E3D09F).
+
+## Acknowledgements
+
+*Contains modified Copernicus Climate Change Service information 2022. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
