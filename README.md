@@ -29,7 +29,7 @@ To get started with the API request code, first specify the endpoint URL for the
 
 ## Availability
 
-
+[<img src="https://seasonalforecasts.earth/wp-content/uploads/2023/07/Re-ClimateDataAvailability-1.png" alt="Re-Climate Near-Term Climate Data Availability" width="80%"/>](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Near-term Climate Data Availability for Seasonal Climate Forecasts and RCP projections")
 
 ## Re-Climate® API Products
 
