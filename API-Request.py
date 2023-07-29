@@ -63,9 +63,9 @@ def make_authorized_get_request(URL):
     elif API_CHOICE.lower() in ('forecast-histories', 'forecastgauges-histories'):
         credential_path = './User_Credentials-forecasts.json'
         # Specifying the Climate info path
-        if API_CHOICE.lower() == 'forecast-histories':
+        if API_CHOICE.lower() in ('forecast-standard', 'forecast-histories'):
             climate_info_path = './Climate_Info-forecasts.json'
-        elif API_CHOICE.lower() == 'forecastgauges-histories':
+        elif API_CHOICE.lower() in ('forecast-gauges', 'forecast-gauges-histories'):
             climate_info_path = './Climate_Info-forecastsgauges.json'
     print(f'Reading API credentials from {credential_path} and inputs from {climate_info_path}')
     ###
