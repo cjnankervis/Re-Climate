@@ -83,15 +83,19 @@ user_credentials = json.load(open(credential_path))
 # Endpoints. Specifying the URL to access the Re-Climate APIs
 # Specifying the URL to access the Re-Climate API
 '''Climate Projections for United Kingdom Town/ Cities or closest match'''
-if API_CHOICE.lower() == 'rcp-standard':
+if API_CHOICE.lower() == 'forecast-standard':
+    URL = "https://europe-west2-weatherdocker-standard.cloudfunctions.net/re-climate"
+elif API_CHOICE.lower() == 'forecast-histories':
+    URL = "https://europe-west2-weatherdocker-histories.cloudfunctions.net/re-climatehistories"
+elif API_CHOICE.lower() == 'forecast-gauges':
+    URL = "https://europe-west2-weather-docker-gauges.cloudfunctions.net/re-climategauges"
+elif API_CHOICE.lower() == 'forecast-gauges-histories':
+    URL = "https://europe-west2-weatherdocker-histories.cloudfunctions.net/forecast-gaugeshistories"
+elif API_CHOICE.lower() == 'rcp-standard':
     URL = "https://europe-west2-weatherdocker-standardrcp.cloudfunctions.net/re-climateRCP"
 elif API_CHOICE.lower() == 'rcp-gauges':
     '''Climate Projections at English EA (gov.uk) Rainfall Tipping Point Gauges'''
     URL = "https://europe-west2-weatherdocker-standardrcp.cloudfunctions.net/re-climateRCPGAUGES"
-elif API_CHOICE.lower() == 'forecast-histories':
-    URL = "https://re-climatehistories-k7c6vv6pla-nw.a.run.app"
-elif API_CHOICE.lower() == 'forecastgauges-histories':
-    URL = "https://europe-west2-weatherdocker-histories.cloudfunctions.net/forecast-gaugeshistories"
 # Calling the function 'make_authorized_get_request' and displaying the response
     
 # Fetching the Authentication Request from Environment Variables
