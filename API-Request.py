@@ -11,7 +11,7 @@ For a single Re-Climate® API location request within a country bounding box/
 
 'forecast-histories': UK, Spain and Turkey mainland. Seasonal climate forecasts (for the next 3 calendar months), as issued from March 2023 to June 2023 inclusive.
 
-'forecastgauges-histories': English precipitation data only. Seasonal climate forecasts (for the next 3 calendar months), as issued from March 2023 to June 2023 inclusive at the location of ~1000 Environment Agency tipping bucket rainfall gauges.
+'forecast-gauges-histories': English precipitation data only. Seasonal climate forecasts (for the next 3 calendar months), as issued from March 2023 to June 2023 inclusive at the location of ~1000 Environment Agency tipping bucket rainfall gauges.
 
 'rcp-standard': UK only. Representative Concentration Pathways (RCPs) 2.6 and 8.5, based on UK Climate Projection Data 2018. Projections are available for the seasons spring, summer, autumn and winter - and for the years 2025, 2035 and 2045.
 
@@ -41,7 +41,7 @@ import os
 import json
 
 '''USER SPECIFICATION: Re-Climate API type'''
-API_CHOICE = 'forecastgauges-histories' # 'rcp-standard' OR 'rcp-gauges' OR 'forecast-histories' OR 'forecastgauges-histories'
+API_CHOICE = 'forecast-gauges-histories' # 'rcp-standard' OR 'rcp-gauges' OR ('forecast-standard' / 'forecast-histories') OR ('forecast-gauges / 'forecast-gauges-histories')
 ###
 
 # Defining Function to send Authorised Requests.
@@ -135,14 +135,19 @@ def make_authorized_get_request(URL):
 
 # Specifying the URL to access the Re-Climate API
 '''Climate Projections for United Kingdom Town/ Cities or closest match'''
-if API_CHOICE.lower() == 'rcp-standard':
+if API_CHOICE.lower() == 'forecast-standard':
+    URL = "https://europe-west2-weatherdocker-standard.cloudfunctions.net/re-climate"
+elif API_CHOICE.lower() == 'forecast-histories':
+    URL = "https://europe-west2-weatherdocker-histories.cloudfunctions.net/re-climatehistories"
+elif API_CHOICE.lower() == 'forecast-gauges':
+    URL = "https://europe-west2-weather-docker-gauges.cloudfunctions.net/re-climategauges"
+elif API_CHOICE.lower() == 'forecast-gauges-histories':
+    URL = "https://europe-west2-weatherdocker-histories.cloudfunctions.net/forecast-gaugeshistories"
+elif API_CHOICE.lower() == 'rcp-standard':
     URL = "https://europe-west2-weatherdocker-standardrcp.cloudfunctions.net/re-climateRCP"
 elif API_CHOICE.lower() == 'rcp-gauges':
     '''Climate Projections at English EA (gov.uk) Rainfall Tipping Point Gauges'''
     URL = "https://europe-west2-weatherdocker-standardrcp.cloudfunctions.net/re-climateRCPGAUGES"
-elif API_CHOICE.lower() == 'forecast-histories':
-    URL = "https://re-climatehistories-k7c6vv6pla-nw.a.run.app"
-elif API_CHOICE.lower() == 'forecastgauges-histories':
-    URL = "https://europe-west2-weatherdocker-histories.cloudfunctions.net/forecast-gaugeshistories"
+
 # Calling the function 'make_authorized_get_request' and displaying the response
 out = make_authorized_get_request(URL)
