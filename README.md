@@ -27,7 +27,7 @@ To get started with the API request code, first specify the endpoint URL for the
 - **[Re-Climate® Gauges](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts at UK rain gauge sites
 - **[Re-Climate® RCP Projections](https://seasonalforecasts.earth/docs/pricing/)**, downloadable for [free](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs)
 
-### Availability
+## Availability
 
 
 
