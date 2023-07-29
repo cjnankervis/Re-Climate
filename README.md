@@ -3,6 +3,8 @@
 ### ([Limited Free Access](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs))
 [<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" width="250"/>](https://seasonalforecasts.earth "Reliable Seasonal Climate Forecasts")
 
+Figure goes here
+
 [*See Example Requests and Limitations*](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Availability for Seasonal Climate Forecasts")
 
 ## About WeatherLogistics®
