@@ -44,7 +44,7 @@ import os
 import json
 
 '''User Inputs'''
-API_CHOICE = 'forecastgauges-histories' # 'rcp-standard' OR 'rcp-gauges' OR 'forecast-histories' OR 'forecast-gauges-histories'
+API_CHOICE = 'forecastgauges-histories' # 'rcp-standard' OR 'rcp-gauges' OR ('forecast-standard' / 'forecast-histories') OR ('forecast-gauges / 'forecast-gauges-histories')
 ###
 # Define the locations for the specified country
 country = 'uk' # 'uk' or 'spain' or 'turkey'
@@ -63,12 +63,12 @@ if API_CHOICE.lower() in ('rcp-standard', 'rcp-gauges'):
         climate_info_path = './Climate_Info-rcps.json'
     elif API_CHOICE.lower() == 'rcp-gauges':
         climate_info_path = './Climate_Info-rcpgauges.json'
-elif API_CHOICE.lower() in ('forecast-histories', 'forecastgauges-histories'):
+elif API_CHOICE.lower() in ('forecast-standard', 'forecast-histories', 'forecast-gauges', 'forecast-gauges-histories'):
     credential_path = './User_Credentials-forecasts.json'
     # Specifying the Climate info path
-    if API_CHOICE.lower() == 'forecast-histories':
+    if API_CHOICE.lower() in ('forecast-standard', 'forecast-histories'):
         climate_info_path = './Climate_Info-forecasts.json'
-    elif API_CHOICE.lower() == 'forecast-gauges-histories':
+    elif API_CHOICE.lower() in ('forecast-gauges', 'forecast-gauges-histories'):
         climate_info_path = './Climate_Info-forecastsgauges.json'
 print(f'Reading API credentials from {credential_path} and inputs from {climate_info_path}')
 ###
