@@ -11,7 +11,7 @@ For a single Re-Climate® API location request within a country bounding box/
 
 'forecast-histories': UK, Spain and Turkey mainland. Seasonal climate forecasts (for the next 3 calendar months), as issued from March 2023 to June 2023 inclusive.
 
-'forecastgauges-histories': English precipitation data only. Seasonal climate forecasts (for the next 3 calendar months), as issued from March 2023 to June 2023 inclusive at the location of ~1000 Environment Agency tipping bucket rainfall gauges.
+'forecast-gauges-histories': English precipitation data only. Seasonal climate forecasts (for the next 3 calendar months), as issued from March 2023 to June 2023 inclusive at the location of ~1000 Environment Agency tipping bucket rainfall gauges.
 
 'rcp-standard': UK only. Representative Concentration Pathways (RCPs) 2.6 and 8.5, based on UK Climate Projection Data 2018. Projections are available for the seasons spring, summer, autumn and winter - and for the years 2025, 2035 and 2045.
 
@@ -44,7 +44,7 @@ import os
 import json
 
 '''User Inputs'''
-API_CHOICE = 'forecastgauges-histories' # 'rcp-standard' OR 'rcp-gauges' OR 'forecast-histories' OR 'forecastgauges-histories'
+API_CHOICE = 'forecastgauges-histories' # 'rcp-standard' OR 'rcp-gauges' OR 'forecast-histories' OR 'forecast-gauges-histories'
 ###
 # Define the locations for the specified country
 country = 'uk' # 'uk' or 'spain' or 'turkey'
@@ -68,7 +68,7 @@ elif API_CHOICE.lower() in ('forecast-histories', 'forecastgauges-histories'):
     # Specifying the Climate info path
     if API_CHOICE.lower() == 'forecast-histories':
         climate_info_path = './Climate_Info-forecasts.json'
-    elif API_CHOICE.lower() == 'forecastgauges-histories':
+    elif API_CHOICE.lower() == 'forecast-gauges-histories':
         climate_info_path = './Climate_Info-forecastsgauges.json'
 print(f'Reading API credentials from {credential_path} and inputs from {climate_info_path}')
 ###
