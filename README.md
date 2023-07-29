@@ -27,6 +27,10 @@ To get started with the API request code, first specify the endpoint URL for the
 - **[Re-Climate® Gauges](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts at UK rain gauge sites
 - **[Re-Climate® RCP Projections](https://seasonalforecasts.earth/docs/pricing/)**, downloadable for [free](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs)
 
+### Availability
+
+
+
 ## Re-Climate® API Products
 
 The Re-Climate® API delivers reliable seasonal climate predictions to operations teams in the agri-food, energy and water utilities, and insurance industries. These forecasts have been independently and impartially assessed by the National Physical Laboratory.
