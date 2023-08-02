@@ -1,4 +1,5 @@
 # Re-Climate® API
+## Locally Reliable Daily Ensemble of Near-term Climate
 ### Last Seasonal Forecast Issue: 13th June, 2023
 ### ([Limited Free Access](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs))
 [<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" width="250"/>](https://seasonalforecasts.earth "Reliable Seasonal Climate Forecasts")
