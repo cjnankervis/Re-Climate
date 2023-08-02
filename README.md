@@ -24,7 +24,7 @@ WeatherLogistics has a mission to help meet UN Sustainable Development Goals (SD
 
 Future farmers will be able to build smarter precision farming solutions and benchmarking platforms, integrated pest management systems, and decision-support applications to avoid food supply distribution. Growers can also optimise their operations with better timed preventative spraying, frost protection, and crop quality assurance.
 
-## Availability
+## Climate Data Availability
 
 [<img src="https://seasonalforecasts.earth/wp-content/uploads/2023/07/Re-ClimateDataAvailability-1.png" alt="Re-Climate Near-Term Climate Data Availability" width="80%"/>](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Near-term Climate Data Availability for Seasonal Climate Forecasts and RCP projections")
 
