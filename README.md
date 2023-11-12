@@ -1,6 +1,10 @@
 # Re-Climate® API
 ## Locally Reliable Daily Ensemble of Seasonal Climate
 ### Last Seasonal Forecast Issue: 13th June, 2023
+### Subsequent automated runs: 
+#### 10th October 2023, uk rain gauge forecasts for early winter 2024
+#### 10th November 2023, rain gauge and uk town and city forecasts for mid winter 2024
+
 ### ([Limited Free Access](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs))
 [<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" width="250"/>](https://seasonalforecasts.earth "Reliable Seasonal Climate Forecasts")
 
