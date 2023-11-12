@@ -2,7 +2,7 @@
 ## Locally Reliable Daily Ensemble of Seasonal Climate
 ## Last Seasonal Forecast Issues: 
 ### Complete set of runs for all countries 13th June, 2023
-## Subsequent automated runs: 
+## Subsequent Automations: 
 ### 10th October 2023, uk rain gauge forecasts for early winter-2024
 ### 10th November 2023, rain gauge and uk town and city forecasts for mid-winter 2024
 
