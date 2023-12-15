@@ -3,8 +3,10 @@
 ## Last Seasonal Forecast Issues: 
 ### Complete set of runs for all countries 13th June, 2023
 ## Subsequent Automations: 
-### 10th October 2023, uk rain gauge forecasts for early winter-2024
-### 10th November 2023, rain gauge and uk town and city forecasts for mid-winter 2024
+### 10th October 2023, English rain gauge seasonal forecasts for early winter-2024
+### 10th November 2023, English rain gauge and uk town and city level seasonal forecasts for mid-winter 2024
+
+### 10th December 2023, English rain gauge and uk town and city level seasonal forecasts for late-winter 2024
 
 ### ([Limited Free Access](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs))
 [<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" width="250"/>](https://seasonalforecasts.earth "Reliable Seasonal Climate Forecasts")
