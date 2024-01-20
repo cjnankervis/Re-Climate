@@ -86,7 +86,7 @@ for supplier in suppliers:
             ax.add_feature(cf.OCEAN, zorder=100, edgecolor='k', color='#ffffff') # Mask out oceans
             lonsi, latsi = np.meshgrid(first_month["longitude"], first_month["latitude"]) # Create grid from latitude and longitude
             # Plot the data as filled contour
-            vmin = 0.0; vmax = 3.0
+            vmin = -1.0; vmax = 3.0
             levels = np.linspace(vmin, vmax, 32+1)
             cs = ax.contourf(lonsi, latsi, values, transform=data_crs, levels=levels, cmap="seismic", vmin=vmin, vmax=vmax)
             # Get attributes needed for title
