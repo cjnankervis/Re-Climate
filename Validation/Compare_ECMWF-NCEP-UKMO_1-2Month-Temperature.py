@@ -48,7 +48,7 @@ for supplier in suppliers:
                     'format': 'grib',
                     'originating_centre': supplier,
                     'system': systems[supplier],
-                    'variable': 't2m_temperature_anomaly',
+                    'variable': '2m_temperature_anomaly',
                     'product_type': [
                         'ensemble_mean', 'monthly_mean',
                     ],
