@@ -48,7 +48,7 @@ for lead_time in lead_times:
         
         plt.figure(dpi=350)
         ax = plt.axes(projection=ccrs.Mercator(), frameon=True)
-        # ax.suptitle("Re-Climate® February Rainfall Forecast. Copyright "+str(copy_yr)+". All rights reserved.")
+        # ax.suptitle("Re-Climate® February Temperature Forecast. Copyright "+str(copy_yr)+". All rights reserved.")
         
         # Read in Re-Climate data header data
         with open(ascii_file, 'r') as data_f:
