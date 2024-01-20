@@ -69,7 +69,7 @@ for supplier in suppliers:
         
             # We want forecast for month ahead, we chose first element of our dataset
             first_month = ds["tpara"][lead_time-1]
-            # Transform 0 to 360 degree long          itudes, to longitude
+            # Transform 0 to 360 degree longitudes, to true longitude
             first_month["longitude"] = (first_month["longitude"] + 180) % 360 - 180
             first_month = first_month.sortby(first_month.longitude)
             # Create plot and set up basemap
@@ -92,7 +92,7 @@ for supplier in suppliers:
             valid_date = first_month.valid_time.values
             valid_date = pd.to_datetime(valid_date)
             valid_date = valid_date.strftime("%B %Y")
-            plt.suptitle(supplier.upper()+', System '+systems[supplier],, y=1.05, fontsize=18)
+            plt.suptitle(supplier.upper()+', System '+str(systems[supplier]), y=1.05, fontsize=18)
             plt.title(f"{name} ({units}) {valid_date}")
             plt.colorbar(cs,orientation="horizontal",ax=ax,
                         pad=0,
