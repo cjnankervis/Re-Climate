@@ -94,7 +94,7 @@ for supplier in suppliers:
             valid_date = first_month.valid_time.values
             valid_date = pd.to_datetime(valid_date)
             valid_date = valid_date.strftime("%B %Y")
-            plt.suptitle(supplier.upper(), y=1.05, fontsize=18)
+            plt.suptitle(supplier.upper()+', System '+systems[supplier], y=1.05, fontsize=18)
             plt.title(f"{name}\n({units}) {valid_date}")
             plt.colorbar(cs,orientation="horizontal",ax=ax,
                         pad=0,
