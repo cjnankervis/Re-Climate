@@ -83,6 +83,7 @@ for supplier in suppliers:
             values = first_month.values
             ax.add_feature(cf.COASTLINE.with_scale("50m"), lw=0.5) # Add borderlines
             ax.add_feature(cf.BORDERS.with_scale("50m"), lw=0.3) # Add coastlines
+            ax.add_feature(cf.OCEAN, zorder=100, edgecolor='k', color='#ffffff') # Mask out oceans
             lonsi, latsi = np.meshgrid(first_month["longitude"], first_month["latitude"]) # Create grid from latitude and longitude
             # Plot the data as filled contour
             vmin = 0.0; vmax = 3.0
@@ -102,4 +103,3 @@ for supplier in suppliers:
             
             # Save Plot
             plt.savefig(f'raw_data/comparison_{start_month}_{start_year}_{lead_time}_{supplier}_Temperature.png', dpi=350)
-    
