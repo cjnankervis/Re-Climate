@@ -22,7 +22,7 @@ import calendar
 
 country = 'UK'
 start_year = '2023'
-start_months = ('11','12')
+start_months = ('10','11','12')
 lead_times = (1,2)
 
 for lead_time in lead_times:
