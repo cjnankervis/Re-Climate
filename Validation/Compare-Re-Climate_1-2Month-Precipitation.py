@@ -71,7 +71,7 @@ for lead_time in lead_times:
         ax.set_title(title)
         
         # Show a colorbar legend
-        img_plot = ax.imshow(data_array, cmap='seismic_r', vmin=90, vmax=110)
+        img_plot = ax.imshow(data_array, cmap='seismic_r', vmin=85, vmax=115)
          
         ax.grid(True)
         
