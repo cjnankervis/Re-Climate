@@ -14,26 +14,24 @@ Generates a country-wide plot of Re-Climate® temperature variable from an ASCII
 
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.gridspec as gridspec
 import datetime
 import cartopy.crs as ccrs
-import cartopy.feature as cf
 import calendar
 
-country = 'UK'
-start_year = '2023'
-start_months = ('10','11','12')
-lead_times = (1,2)
+country = 'UK' # Analysis data is currently available for the UK only
+start_years = ['2023','2023','2023','2024'] # Forecast initiation years ['2023','2023','2023','2024']
+start_months = ['10','11','12','01'] # Forecast start/ valid month ['10','11','12','01']
+lead_times = [1,2] # Lead month(s)/ extension of forecast from start month e.g. 1 or 2 month forecast
 
 for lead_time in lead_times:
     
-    for start_month in start_months:
+    for mth_index, start_month in enumerate(start_months):
 
         lead_month = (int(start_month)+lead_time-1) % 12
         if lead_month < int(start_month):
-            year_lead = int(start_year) + 1
+            year_lead = int(start_years[mth_index]) + 1
         else:
-            year_lead = int(start_year)
+            year_lead = int(start_years[mth_index])
         month_long = calendar.month_name[lead_month+1]
         print(month_long)
         
@@ -41,12 +39,12 @@ for lead_time in lead_times:
         copy_yr = now.year
         
         '''User to define 2 ascii plots to be compared'''
-        ascii_file = f'raw_data/ReClimate_{start_month}_{start_year}_{lead_time}_Temperature.asc'
+        ascii_file = f'raw_data/ReClimate_{start_month}_{start_years[mth_index]}_{lead_time}_Temperature.asc'
         #
         title = (f'Degrees Celsius Departure from Recent Climate Mean\n{month_long} {year_lead}')
         variable_units = "Mean Temperature/ DegC Departure"
         
-        plt.figure(dpi=350)
+        plt.figure(dpi=350, figsize=(10, 10))
         ax = plt.axes(projection=ccrs.Mercator(), frameon=True)
         # ax.suptitle("Re-Climate® February Temperature Forecast. Copyright "+str(copy_yr)+". All rights reserved.")
         
@@ -84,7 +82,9 @@ for lead_time in lead_times:
                     aspect=50)
         
         # Save
-        plt.savefig(f'raw_data/ReClimate_{start_month}_{start_year}_{lead_time}_Temperature.png', dpi=350)
+        plt.savefig(f'raw_data/ReClimate_{start_month}_{start_years[mth_index]}_{lead_time}_Temperature.png', dpi=350)
         
         # Show forecast plots
         plt.show()
+        
+        
