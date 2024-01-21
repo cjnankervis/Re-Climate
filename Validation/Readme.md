@@ -3,7 +3,7 @@
 # PRECIPITATION ANOMALIES
 
 ## NOVEMBER 2023 START DATES
-### <code style="color : blue">Wet</code> & <code style="color : red">Dry</code> Signal
+<code style="color : blue">Wet</code> & <code style="color : red">Dry</code> Signal
 <sub>VALID OCTOBER 10TH, 2023</sub>
 UKMO | ECMWF | NCEP | RE-CLIMATE<sup>TM</sup>
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
