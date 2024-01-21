@@ -1,9 +1,9 @@
 # SEASONAL CLIMATE FORECAST VALIDATION
 
 # PRECIPITATION ANOMALIES
+$${\color{blue}Wetter Signal in Deeper Blue}$$
 
 ## NOVEMBER 2023 START DATES
-$${\color{blue}Wet}$$ $${\color{red}Dry}$$
 <sub>VALID OCTOBER 10TH, 2023</sub>
 UKMO | ECMWF | NCEP | RE-CLIMATE<sup>TM</sup>
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -40,6 +40,7 @@ UKMO | ECMWF | NCEP | RE-CLIMATE<sup>TM</sup>
 <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/comparison_12_2023_2_ukmo.png" alt="UK Met Office Seasonal Climate Forecast from System 602, initiated on 10th December for February 2024 Precipitation Anomaly" width="350"/> | <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/comparison_12_2023_2_ecmwf.png" alt="European Center for Medium-range Weather Forecasts Seasonal Climate Forecast from System 5, initiated on 10th December for February 2024 Precipitation Anomaly" width="350"/> | <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/comparison_12_2023_2_ncep.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th December for February 2024 Precipitation Anomaly" width="350"/> | <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/ReClimate_12_2023_2.png" alt="Re-Climate Seasonal Climate Forecast for Preciptation Anomaly, initiated on 10th December for February 2024 Temperature Departure" width="350"/>
 
 # TEMPERATURE DEPARTURES
+$${\color{red}Warmer Signal in Deeper Red}$$
 
 ## NOVEMBER 2023
 <sub>VALID OCTOBER 10TH, 2023</sub>
