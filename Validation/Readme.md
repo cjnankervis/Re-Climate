@@ -22,12 +22,12 @@ UKMO | ECMWF
 :-------------------------:|:-------------------------:
 <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/comparison_10_2023_2_ukmo.png" alt="UK Met Office Seasonal Climate Forecast from System 602, initiated on 10th October for December 2023 Precipitation Anomaly" width="350"/> | <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/comparison_10_2023_2_ecmwf.png" alt="European Center for Medium-range Weather Forecasts Seasonal Climate Forecast from System 5, initiated on 10th October for December 2023 Precipitation Anomaly" width="350"/>
 NCEP | Re-Climate<sup>TM</sup>
-<img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/comparison_10_2023_2_ncep.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th October for December 2023 Precipitation Anomaly" width="350"/> | <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/ReClimate_10_2023_2.png" alt="Re-Climate Seasonal Climate Forecast for Preciptation Anomaly, initiated on 10th October for December 2023 Temperature Departure" width="175"/>
+<img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/comparison_10_2023_2_ncep.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th October for December 2023 Precipitation Anomaly" width="350"/> | <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/ReClimate_10_2023_2.png" alt="Re-Climate Seasonal Climate Forecast for Preciptation Anomaly, initiated on 10th October for December 2023 Temperature Departure" width="350"/>
 
 ### Re-Climate<sup>TM</sup> actuals & percentile (from median ensemble)
 Re-Climate | Met Office Obs. 
 :-------------------------:|:-------------------------:
-<img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/Re-ClimateActuals_10_2023_2.png" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th October for December 2023 Precipitation Actuals and Percentile" width="350"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Actual.gif" alt="UK Met Office Observations" width="350"/>
+<img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/Re-ClimateActuals_10_2023_2.png" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th October for December 2023 Precipitation Actuals and Percentile" width="350"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Actual.gif" alt="UK Met Office Observations" width="175"/>
 
 ## 1-MONTH SEASONAL FORECAST FOR DECEMBER 2023
 <sub>VALID NOVEMBER 10TH, 2023</sub>
