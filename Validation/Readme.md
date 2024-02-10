@@ -13,7 +13,7 @@ NCEP | Re-Climate<sup>TM</sup>
 <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/comparison_10_2023_1_ncep.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th October for November 2023 Precipitation Anomaly" width="350"/> | <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/ReClimate_10_2023_1.png" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th October for November 2023 Precipitation Anomaly" width="350"/>
 
 ### Re-Climate<sup>TM</sup> actuals & percentile (from median ensemble)
-Re-Climate | Met Office Obs. 
+<div style="width:350px">Re-Climate</div> |  <div style="width:290px">Met Office Obs.</div>
 :-------------------------:|:-------------------------:
 <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/Re-ClimateActuals_10_2023_1.png" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th October for November 2023 Precipitation Actuals and Percentile" width="350"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_Rainfall_Actual.gif" alt="UK Met Office Observations" width="225"/>
 
