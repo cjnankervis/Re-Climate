@@ -5,8 +5,9 @@
 ## Subsequent Automations: 
 ### 10th October 2023, English rain gauge seasonal forecasts for early winter-2024
 ### 10th November 2023, English rain gauge and uk town and city level seasonal forecasts for mid-winter 2024
-
 ### 10th December 2023, English rain gauge and uk town and city level seasonal forecasts for late-winter 2024
+## Validation Data:
+### 11th January 2024 to unlimited, United Kingdom fully-automated runs for validation purposes only ('anomaly' and 'monthly-centiles')
 
 ### ([Limited Free Access](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs))
 [<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" width="250"/>](https://seasonalforecasts.earth "Reliable Seasonal Climate Forecasts")
