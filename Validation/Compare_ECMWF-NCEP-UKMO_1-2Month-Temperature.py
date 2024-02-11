@@ -21,8 +21,8 @@ import cartopy.feature as cf
 import pandas as pd
 
 country = 'UK' # Analysis data is currently available for the UK only
-start_years = ['2023','2023','2023','2024'] # Forecast initiation years ['2023','2023','2023','2024']
-start_months = ['10','11','12','01'] # Forecast start/ valid month ['10','11','12','01']
+start_years = ['2023','2023','2023','2024','2024'] # Forecast initiation years ['2023','2023','2023','2024']
+start_months = ['10','11','12','01','02'] # Forecast start/ valid month ['10','11','12','01']
 lead_times = [1,2] # Lead month(s)/ extension of forecast from start month e.g. 1 or 2 month forecast
 suppliers = ['ecmwf', 'ukmo', 'ncep'] # 'ecmwf' (sys 51), 'ukmo' (sys 602), 'ncep' (sys 2)
 
@@ -101,5 +101,5 @@ for supplier in suppliers:
                         aspect=50)
             
             # Save Plot
-            plt.savefig(f'raw_data/comparison_{start_month}_{start_years[mth_index]}_{lead_time}_{supplier}_Temperature.png', dpi=350)
+            plt.savefig(f'raw_data/comparison_{start_month}_{start_years[mth_index]}_{lead_time}_{supplier}_Temperature.png', dpi=350, bbox_inches='tight')
     
