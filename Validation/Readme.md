@@ -2,7 +2,7 @@
 ## Company ceased trading in June 2023. Limited data available for review by prospective buyers. No liability accepted.
 
 
-# PRECIPITATION OUTLOOK, 1 to 2 MONTHS
+# PRECIPITATION OUTLOOKS, 1 to 2 MONTHS
 $${\color{red}Drier} &rarr; {\color{blue}Wetter}$$
 
 ## 1-MONTH PRECIPITATION DEPARTURE FORECAST FOR NOVEMBER 2023
@@ -142,10 +142,10 @@ NCEP | Re-Climate<sup>TM</sup>
 
 ### Re-Climate<sup>TM</sup> actuals & percentile (from median ensemble)
 Re-Climate<sup>TM</sup> Seasonal Climate Forecast | Met Office Observations 
-:-------------------------:|:-------------------------:
-<img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/Re-ClimateActuals_2_2024_2.png" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th February for April 2024 Precipitation Actuals and Percentile" width="300"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/4/2024_4_Rainfall_Actual.gif" alt="UK Met Office Observations" width="150" height="225"/>
+<center>:-------------------------:|:-------------------------:
+<img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/Re-ClimateActuals_2_2024_2.png" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th February for April 2024 Precipitation Actuals and Percentile" width="300"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/4/2024_4_Rainfall_Actual.gif" alt="UK Met Office Observations" width="150" height="225"/></center>
 
-# TEMPERATURE OUTLOOK, 1 to 2 MONTHS
+# TEMPERATURE OUTLOOKS, 1 to 2 MONTHS
 $${\color{blue}Cooler} &rarr; {\color{red}Warmer}$$
 
 ## 1-MONTH TEMPERATURE DEPARTURE FORECAST FOR NOVEMBER 2023
