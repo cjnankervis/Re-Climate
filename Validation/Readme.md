@@ -15,7 +15,7 @@ NCEP | Re-Climate<sup>TM</sup>
 ### Re-Climate<sup>TM</sup> actuals & percentile (from median ensemble)
 Re-Climate<sup>TM</sup> Seasonal Climate Forecast |  Met Office Observations
 :-------------------------:|:-------------------------:
-<img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/Re-ClimateActuals_10_2023_1.png" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th October for November 2023 Precipitation Actuals and Percentile" width="200" height="250"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_Rainfall_Actual.gif" alt="UK Met Office Observations" width="200" height="300"/>
+<img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/Re-ClimateActuals_10_2023_1.png" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th October for November 2023 Precipitation Actuals and Percentile" width="300" height="250"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_Rainfall_Actual.gif" alt="UK Met Office Observations" width="200" height="300"/>
 
 ## 2-MONTH SEASONAL FORECAST FOR DECEMBER 2023
 <sub>VALID OCTOBER 10TH, 2023</sub>
