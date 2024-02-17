@@ -142,9 +142,9 @@ NCEP | Re-Climate<sup>TM</sup>
 
 ### Re-Climate<sup>TM</sup> actuals & percentile (from median ensemble)
 <p align="center">
-Re-Climate<sup>TM</sup> Seasonal Climate Forecast | Met Office Observations 
+Re-Climate<sup>TM</sup> Seasonal Climate Forecast | Met Office Observations</p>
 :-------------------------:|:-------------------------:
-<img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/Re-ClimateActuals_2_2024_2.png" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th February for April 2024 Precipitation Actuals and Percentile" width="300"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/4/2024_4_Rainfall_Actual.gif" alt="UK Met Office Observations" width="150" height="225"/></p>
+<img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/Re-ClimateActuals_2_2024_2.png" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th February for April 2024 Precipitation Actuals and Percentile" width="300"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/4/2024_4_Rainfall_Actual.gif" alt="UK Met Office Observations" width="150" height="225"/>
 
 # TEMPERATURE OUTLOOKS, 1 to 2 MONTHS
 $${\color{blue}Cooler} &rarr; {\color{red}Warmer}$$
