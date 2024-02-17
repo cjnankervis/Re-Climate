@@ -141,8 +141,7 @@ NCEP | Re-Climate<sup>TM</sup>
 <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/comparison_02_2024_2_ncep.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th February for April 2024 Precipitation Anomaly" width="350"/> | <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/ReClimate_02_2024_2.png" alt="Re-Climate Seasonal Climate Forecast for Preciptation Anomaly, initiated on 10th February for April 2024 Temperature Departure" width="350"/>
 
 ### Re-Climate<sup>TM</sup> actuals & percentile (from median ensemble)
-<p align="center">
-Re-Climate<sup>TM</sup> Seasonal Climate Forecast | Met Office Observations</p>
+Re-Climate<sup>TM</sup> Seasonal Climate Forecast | Met Office Observations
 :-------------------------:|:-------------------------:
 <img src="https://github.com/cjnankervis/Re-Climate/blob/main/Validation/Results/Re-ClimateActuals_2_2024_2.png" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th February for April 2024 Precipitation Actuals and Percentile" width="300"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/4/2024_4_Rainfall_Actual.gif" alt="UK Met Office Observations" width="150" height="225"/>
 
