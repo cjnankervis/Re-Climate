@@ -19,7 +19,7 @@ use_customcolors = True; ukmo_precip = True; ed_hawkins = False
 '''Set the analysis date'''
 grib_file = True; netcdf_file = False
 '''Specify the forecast month and at what lead time'''
-year = '2024'; month = 'April'; month_no = 4; lead = 1 # Specify the forecast month and at what lead time
+year = '2024'; month = 'April'; month_no = 4; lead = 2 # Specify the forecast month and at what lead time
 '''Define end of 31-year climate (reference) period'''
 climate_end = 2022 # Define end of 31-year climate time series
 
@@ -191,7 +191,7 @@ if not skip_extraplots:
     plt.show(block=False)
 
 # FIGURE: FORECAST
-fig = plt.figure(figsize=(8.4, 6), dpi=350, facecolor='w')
+fig = plt.figure(figsize=(8.4, 6), dpi=150, facecolor='w')
 # alternatively cmap=cm.terrain_r
 ax = fig.add_axes([0.2, 0.2, 0.7, 0.7])
 optional_levels = np.array([15,20,25,35,50,60,75,85,100,125,150,175,200,250,300,400,500,575,650])
@@ -209,7 +209,7 @@ plt.annotate(f'Valid: 10th {month_names[start_month-1]}, {start_year}',(-12.50,6
 plt.annotate('Precip. Percentile: '+str(round(percentile))+ext+'\nReference: ERA5-Land, 1993-2022',(-12.50,59.75), color='red')
 print('Precipitation Percentile: '+str(round(percentile))+ext)
 # Save Plot
-plt.savefig(f'raw_data/Re-ClimateActuals_{start_month}_{start_year}_{lead}.png', dpi=350, bbox_inches='tight')
+plt.savefig(f'raw_data/Re-ClimateActuals_{start_month}_{start_year}_{lead}.png', dpi=150, bbox_inches='tight')
 plt.show(block=False)
 
 if not skip_extraplots:

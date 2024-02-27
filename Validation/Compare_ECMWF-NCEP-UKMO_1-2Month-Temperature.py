@@ -101,5 +101,5 @@ for supplier in suppliers:
                         aspect=50)
             
             # Save Plot
-            plt.savefig(f'raw_data/comparison_{start_month}_{start_years[mth_index]}_{lead_time}_{supplier}_Temperature.png', dpi=350, bbox_inches='tight')
+            plt.savefig(f'raw_data/comparison_{start_month}_{start_years[mth_index]}_{lead_time}_{supplier}_Temperature.png', dpi=150, bbox_inches='tight')
     

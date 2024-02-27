@@ -82,7 +82,7 @@ for lead_time in lead_times:
                     aspect=50)
         
         # Save
-        plt.savefig(f'raw_data/ReClimate_{start_month}_{start_years[mth_index]}_{lead_time}.png', dpi=350, bbox_inches='tight')
+        plt.savefig(f'raw_data/ReClimate_{start_month}_{start_years[mth_index]}_{lead_time}.png', dpi=150, bbox_inches='tight')
         
         # Show forecast plots
         plt.show()

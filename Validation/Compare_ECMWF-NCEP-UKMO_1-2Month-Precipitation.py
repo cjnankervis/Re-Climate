@@ -105,5 +105,5 @@ for supplier in suppliers:
             copy_yr = now.year
             
             # Save Plot
-            plt.savefig(f'raw_data/comparison_{start_month}_{start_years[mth_index]}_{lead_time}_{supplier}.png', dpi=350, bbox_inches='tight')
+            plt.savefig(f'raw_data/comparison_{start_month}_{start_years[mth_index]}_{lead_time}_{supplier}.png', dpi=150, bbox_inches='tight')
     
