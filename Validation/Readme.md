@@ -1,10 +1,10 @@
 # SEASONAL CLIMATE FORECAST VALIDATION
 ## Company ceased trading in June 2023. Limited data available for review by prospective buyers. No liability accepted.
 
+$${\color{blue}Re-Climate<sup>TM</sup> forecasts referenced to current-day equivalent climate mean}, so may indicate a bias when compared to other models}$$
 
 # PRECIPITATION OUTLOOKS, 1 to 2 MONTHS
 $${\color{red}Drier} &rarr; {\color{blue}Wetter}$$
-$${\color{blue}Re-Climate<sup>TM</sup> forecasts referenced to current-day equivalent climate mean}, so may indicate a bias when compared to other models}$$
 
 ## 1-MONTH PRECIPITATION DEPARTURE FORECAST FOR NOVEMBER 2023
 <sub>VALID OCTOBER 10TH, 2023</sub>
