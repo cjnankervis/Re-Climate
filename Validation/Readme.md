@@ -3,7 +3,8 @@
 
 
 # PRECIPITATION OUTLOOKS, 1 to 2 MONTHS
-$${\color{red}Drier} &rarr; {\color{blue}Wetter}
+$${\color{red}Drier} &rarr; {\color{blue}Wetter}$$
+
 $${\color{blue}Re-Climate<sup>TM</sup> forecasts referenced to current-day equivalent climate mean}, so may indicate a bias when compared to other models}$$
 
 ## 1-MONTH PRECIPITATION DEPARTURE FORECAST FOR NOVEMBER 2023
