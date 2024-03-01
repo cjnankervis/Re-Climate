@@ -3,7 +3,8 @@
 
 <b>Re-Climate<sup>TM</sup> forecasts referenced to current-day equivalent climate mean, so may indicate a bias when compared to other models</b>
 
-# WINTER 2024 PRECIPITATION OUTLOOKS FOR MONTH 1 (3 to 8 WEEKS)
+# WINTER 2024 PRECIPITATION OUTLOOKS
+## MONTH 1 (3 to 8 WEEKS)
 
 <img src="https://www.re-climate.earth/Winter2024.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="600"/>
 
