@@ -1,7 +1,7 @@
 # SEASONAL CLIMATE FORECAST VALIDATION
 ## Company ceased trading in June 2023. Limited data supplied for review only. No liability accepted.
 
-{\color{blue}Re-Climate<sup>TM</sup> forecasts referenced to current-day equivalent climate mean, so may indicate a bias when compared to other models}
+<b>Re-Climate<sup>TM</sup> forecasts referenced to current-day equivalent climate mean, so may indicate a bias when compared to other models</b>
 
 # PRECIPITATION OUTLOOKS, 1 to 2 MONTHS
 $${\color{red}Drier} &rarr; {\color{blue}Wetter}$$
