@@ -1,4 +1,5 @@
 # SEASONAL CLIMATE FORECAST VALIDATION
+## Re-Climate<sup>TM</sup> forecasts are referenced to a rolling current-day climatological mean
 ## Company ceased trading in June 2023. Limited data available for review by prospective buyers. No liability accepted.
 
 
