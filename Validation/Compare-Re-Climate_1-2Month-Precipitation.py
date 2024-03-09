@@ -71,13 +71,17 @@ for lead_time in lead_times:
         ax.set_title(title)
         
         # Show a colorbar legend
-        img_plot = ax.imshow(data_array, cmap='seismic_r', vmin=80, vmax=120)
+        img_plot = ax.imshow(data_array, cmap='seismic_r', vmin=80, vmax=120, alpha=0.8)
+        
+        # Greyscale coverage for non-extreme values
+        enhance_color = np.ma.masked_where(np.array(abs(data_array)-100) < 5 , data_array)
+        img_plot2 = ax.imshow(enhance_color, cmap='seismic_r', vmin=80, vmax=120, alpha=0.9)
          
         ax.grid(True)
         
         # Place a colorbar next to the map
         plt.suptitle('RE-CLIMATE Seasonal Climate Forecast', y=1.05, fontsize=18)
-        plt.colorbar(img_plot,orientation="horizontal",ax=ax,
+        plt.colorbar(img_plot2,orientation="horizontal",ax=ax,
                     pad=0,
                     aspect=50)
         
