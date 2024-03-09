@@ -1,7 +1,7 @@
 # SEASONAL CLIMATE FORECAST VALIDATION
 ## Company ceased trading in June 2023. Limited data supplied for review only. No liability accepted.
 
-<b>Re-Climate<sup>TM</sup> forecasts referenced to current-day equivalent climate mean, so may indicate a bias when compared to other models</b>
+<b>Re-Climate<sup>TM</sup> forecasts are referenced to current-day equivalent climate means, and so may indicate a cooler/ drier when compared to other models.</b>
 
 # WINTER 2024 PRECIPITATION OUTLOOKS
 ## MONTH 1 (3 to 8 WEEKS)
