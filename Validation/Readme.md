@@ -8,7 +8,7 @@
 
 <img src="https://www.re-climate.earth/Winter2024.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="600"/>
 
-Dec | Jan | Feb
+Dec' 23 Observations | Jan' 24 Observations | Feb' 24 Observations
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Anomaly_1991-2020.gif" width="200" height="280"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_Rainfall_Anomaly_1991-2020.gif" width="200" height="280"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_Rainfall_Anomaly_1991-2020.gif" width="200" height="280"/>
 
