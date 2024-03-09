@@ -7,10 +7,9 @@
 ## MONTH 1 (3 to 8 WEEKS)
 
 <img src="https://www.re-climate.earth/Winter2024.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="600"/>
-Dec | Jan | Feb 
-:-------------------------:|:-------------------------:|:-------------------------:
-1 | 2 | 3
 
+Dec | Jan | Feb
+:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Anomaly_1991-2020.gif" width="240" height="337.5"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_Rainfall_Anomaly_1991-2020.gif" width="240" height="337.5"/> | 
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_Rainfall_Anomaly_1991-2020.gif" width="240" height="337.5"/>
 
