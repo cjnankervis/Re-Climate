@@ -20,7 +20,7 @@ scale = np.array([0.85,0.85,0.85])
 '''Set the analysis date'''
 grib_file = True; netcdf_file = False
 '''Specify the forecast month and at what lead time'''
-year = '2024'; month = 'April'; month_no = 4; lead = 1 # Specify the forecast month and at what lead time
+year = '2024'; month = 'May'; month_no = 5; lead = 2 # Specify the forecast month and at what lead time
 '''Define end of 31-year climate (reference) period'''
 climate_end = 2022 # Define end of 31-year climate time series
 
@@ -202,19 +202,23 @@ if not skip_extraplots:
 fig = plt.figure(figsize=(8.4, 6), dpi=150, facecolor='w')
 # alternatively cmap=cm.terrain_r
 ax = fig.add_axes([0.2, 0.2, 0.7, 0.7])
+# Hide X and Y axes tick marks
+ax.set_xticks([])
+ax.set_yticks([])
+ax.set_frame_on(False)
 optional_levels = np.array([15,20,25,35,50,60,75,85,100,125,150,175,200,250,300,400,500,575,650])
 surf = ax.contourf(UK_Lon, UK_Lat, np.ma.array(FCSTdata_scipy), rstride=0.25, cstride=0.25, cmap=colors, norm = 'log',
                        linewidth=0, antialiased=False, vmin=20, vmax=650, levels=optional_levels)
 # lines = ax.contour(UK_Lon, UK_Lat, np.ma.array(FCSTdata_scipy), colors=['black']*len(optional_levels), linewidths=[0.5]*len(optional_levels), norm = 'log', alpha=0.5)
-ax.xaxis.set_major_formatter(FormatStrFormatter('%.01f'))
-fig.colorbar(surf, aspect=5, label='Forecast Value (mm)', ticks=optional_levels, format="%d", fraction=0.25)
+# ax.xaxis.set_major_formatter(FormatStrFormatter('%.01f'))
+fig.colorbar(surf, aspect=8, label='Forecast Value (mm)', ticks=optional_levels, format="%d", fraction=0.25)
 plt.title(f'Re-Climate Forecast for {month}, {year}\nAccumulated Precipitation/ mm')
 percentile = st.norm.cdf(np.nanmean(forecast_sds)) * 100.0
 last_digit = int(str(round(percentile))[1])
-exts = ('th','st','nd','rd','th','th','th','th','th')
+exts = ('th','st','nd','rd','th','th','th','th','th','th')
 ext = exts[last_digit]
-plt.annotate(f'Valid: 10th {month_names[start_month-1]}, {start_year}',(-12.50,60.75), color='black')
-plt.annotate('UK-Wide Precipitation Percentile: '+str(round(percentile))+ext+'\nReference: ERA5-Land, 1993-2022',(-12.50,59.75), color='black')
+plt.annotate(f'Valid: 10th {month_names[start_month-1]}, {start_year}',(-10.75,59), color='maroon')
+plt.annotate('UK-Wide Precipitation Percentile: '+str(round(percentile))+ext+'\nReference: ERA5-Land, 1993-2022',(-10.75,59.5), color='maroon')
 print('UK-Wide Precipitation Percentile: '+str(round(percentile))+ext)
 # Save Plot
 plt.savefig(f'raw_data/Re-ClimateActuals_{start_month}_{start_year}_{lead}.png', dpi=150, bbox_inches='tight')

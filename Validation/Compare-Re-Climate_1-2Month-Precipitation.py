@@ -19,8 +19,8 @@ import cartopy.crs as ccrs
 import calendar
 
 country = 'UK' # Analysis data is currently available for the UK only
-start_years = ['2023','2023','2023','2024','2024'] # Forecast initiation years ['2023','2023','2023','2024']
-start_months = ['10','11','12','01','02'] # Forecast start/ valid month ['10','11','12','01']
+start_years = ['2024'] # ['2023','2023','2023','2024','2024','2024'] # Forecast initiation years
+start_months = ['03'] # ['10','11','12','01','02','03'] # Forecast start/ valid month
 lead_times = [1,2] # Lead month(s)/ extension of forecast from start month e.g. 1 or 2 month forecast
 
 for lead_time in lead_times:
