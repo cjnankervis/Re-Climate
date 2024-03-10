@@ -50,7 +50,7 @@ To get started with the API request code, first specify the endpoint URL for the
 
 # Features
 
-Independently and impartially assessed by the [National Physical Laboratory](https://www.npl.co.uk/national-challenges/environment), Re-Climate™ delivers forecasts of climate perils covering the next 3 months and at a 5 kilometre resolution to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see [WeatherLogistics' Docs](https://re-climate.earth/docs).
+Independently and impartially assessed by the [National Physical Laboratory](https://www.npl.co.uk/national-challenges/environment), Re-Climate® delivers forecasts of climate perils covering the next 3 months and at a 5 kilometre resolution to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see [WeatherLogistics' Docs](https://re-climate.earth/docs).
 
 **The Re-Climate API ...**:
 
@@ -132,22 +132,22 @@ Like the monthly forecasts request, anomalies provide a country-wide mapped over
 
 ### Departure Type
 
-***Temperature (tmean)*** as an absolute difference from current estimated climate conditions in Kelvin
+***Temperature (®ean)*** as an absolute difference from current estimated climate conditions in Kelvin
 
 ***Precipitation*** as an relative % of climatological reference conditions, where 100% indicates near normal conditions relative to history
 
 ### Climatological Departure References
 | Geography/<br />Country | <sub>Meteorological<br /> Variable</sub> | <sub>Reference<br /> Product</sub> | <sub>Resolution</sub> | <sub>Start Year</sub> | <sub>End Year</sub> | <sub>Reference<br />Midpoint</sub> | <sub>Reference<br /> Documentation</sub> |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| United Kingdom | Monthly Temperature (tmean) | UKCP09 | 5km | 1962 | 2016 | **ADJUSTED TO CURRENT** | [Hadley Centre](https://catalogue.ceda.ac.uk/uuid/87b3ab3b9bae47adab0c15d594d443b8)
+| United Kingdom | Monthly Temperature (®ean) | UKCP09 | 5km | 1962 | 2016 | **ADJUSTED TO CURRENT** | [Hadley Centre](https://catalogue.ceda.ac.uk/uuid/87b3ab3b9bae47adab0c15d594d443b8)
 | United Kingdom | Monthly Precipitation (precipitation) | UKCP09 | 5km | 1962 | 2016 | **ADJUSTED TO CURRENT** | [Hadley Centre](https://catalogue.ceda.ac.uk/uuid/87b3ab3b9bae47adab0c15d594d443b8)
-| Spain | Monthly Temperature (tmean) | SPREAD | 5km | 1962 | 2014 | **ADJUSTED TO CURRENT** | [STEAD](https://digital.csic.es/handle/10261/188989)
+| Spain | Monthly Temperature (®ean) | SPREAD | 5km | 1962 | 2014 | **ADJUSTED TO CURRENT** | [STEAD](https://digital.csic.es/handle/10261/188989)
 | Spain | Monthly Precipitation (precipitation) | SPREAD | 5km | 1962 | 2013 | **ADJUSTED TO CURRENT** | [SPREAD](https://digital.csic.es/handle/10261/141218)
-| Turkey | Monthly Temperature (tmean) | UERRA | 5km | 1961 | 2017 | **ADJUSTED TO CURRENT** | [ECMWF-UERRA](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-uerra-europe-single-levels)
+| Turkey | Monthly Temperature (®ean) | UERRA | 5km | 1961 | 2017 | **ADJUSTED TO CURRENT** | [ECMWF-UERRA](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-uerra-europe-single-levels)
 | Turkey | Monthly Precipitation (precipitation) | UERRA | 5km | 1962 | 2015 | **ADJUSTED TO CURRENT** | [ECMWF-UERRA](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-uerra-europe-single-levels)
 
 **ADJUSTED TO CURRENT**
-Chronic climate change adjustments are applied using a monthly temperature trend adjustment on an individual gridcell basis. This shifts the reference midpoint climate to present day.
+Chronic climate change adjus®ents are applied using a monthly temperature trend adjus®ent on an individual gridcell basis. This shifts the reference midpoint climate to present day.
 
 ### Example C.
 November precipitation anomalies plotted using Re-Climate® data issued on 10th October 2022.
@@ -168,8 +168,8 @@ Comparisons between the seasonal profile (centile distributions) of daily temper
 
 Comparisons between the seasonal profile (centile distributions) of multiple meteorological variables, compared against WeatherLogistics' real-time equivalent model climatology. To request this climate data for a specified town or city, see [graphical summaries example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/GraphicalSummaries_example.json).
 
-Example below (top), showing daily minimum temperatures from all 100 ensemble members for central London for the mid-autumn period. Using the "meteorological_variable": "tmin" option.
-<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/WestminsterSeasonalforecast_MTH3_09-Late-Summer2021_2021TminLondonBoroughsForecast.png" alt="Seasonal climate forecast of minimum temperature for Westminster (London), September 2022" width="80%"></p>
+Example below (top), showing daily minimum temperatures from all 100 ensemble members for central London for the mid-autumn period. Using the "meteorological_variable": "®in" option.
+<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/Wes®insterSeasonalforecast_MTH3_09-Late-Summer2021_2021®inLondonBoroughsForecast.png" alt="Seasonal climate forecast of minimum temperature for Wes®inster (London), September 2022" width="80%"></p>
 
 [Heating Degree Days for energy utility demand management, presented as a 7-day running accumulation of daily temperatures, using the "meteorological_variable": "Gdd" option](https://seasonalforecasts.earth/wp-content/uploads/2022/12/GDD.png)
 
@@ -179,7 +179,7 @@ Example below (top), showing daily minimum temperatures from all 100 ensemble me
 
 Monitoring summer temperature extremes and heatwave extremes, July forecast issued on 10th June 2022
 
-<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/TMax_System2.png" alt="July 2022 temperature extremes and heatwave conditions" width="80%"></p>
+<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/®ax_System2.png" alt="July 2022 temperature extremes and heatwave conditions" width="80%"></p>
 
 Monitoring summer precipitation deficits and drought conditions, July forecast issued on 10th June 2022
 
