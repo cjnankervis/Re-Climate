@@ -3,14 +3,22 @@
 
 <b>Re-Climate<sup>TM</sup> forecasts are referenced to current-day equivalent climate means, and so may indicate a cooler/ drier departure when compared to other models.</b>
 
-# WINTER 2024 PRECIPITATION OUTLOOKS
-## MONTH 1 (3 to 8 WEEKS)
+# WINTER 2024 OUTLOOKS
+## PRECIPITATION, MONTH 1 (3 to 8 WEEKS)
 
 <img src="https://www.re-climate.earth/Winter2024.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="600"/>
 
 Dec' 23 Observations | Jan' 24 Observations | Feb' 24 Observations
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/>
+
+## MEAN TEMPERATURE, MONTH 1 (3 to 8 WEEKS)
+
+<img src="https://www.re-climate.earth/Winter2024_Tmean.png" alt="Winter seasonal mean temperature outlooks for the United Kingdom" width="600"/>
+
+Dec' 23 Observations | Jan' 24 Observations | Feb' 24 Observations
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_MeanTemp_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_MeanTemp_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_MeanTemp_Anomaly_1991-2020.gif" width="175" height="233"/>
 
 # PRECIPITATION OUTLOOKS, 1 to 2 MONTHS
 $${\color{red}Drier} &rarr; {\color{blue}Wetter}$$
