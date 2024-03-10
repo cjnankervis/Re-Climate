@@ -1,0 +1,13 @@
+{
+    "country": "uk",
+    "month": 4,
+    "year": 2024,
+    "lead": "1",
+    "extension": "asc",
+    "output_type": "benchmark",
+    "meteorological_variable": "TMean",
+    "percentile": "median",
+    "forecast_type": "monthly-centiles",
+    "show_metadata": "",
+    "filename": "ReClimate_03_2024_1_TMean-Actuals.asc"
+}

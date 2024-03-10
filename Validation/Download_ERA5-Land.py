@@ -18,7 +18,7 @@ import cdsapi
 download_singleyear = False; download_climate = True
 country = 'UK' # Country's ERA5-land data to download ('UK', 'SPAIN', or 'TURKEY')
 year = 2022 # Year to download
-month_choices = np.array([1,2,3,4,11,12]) # Numerical month to download
+month_choices = np.array([5]) # np.array([1,2,3,4,11,12]) # Numerical month to download
 ###
 
 month_nums = np.arange(1, 12+1)
