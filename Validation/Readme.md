@@ -4,7 +4,7 @@
 <b>Re-Climate® forecasts are referenced to current-day equivalent climate means, and so may indicate a cooler/ drier departure when compared to other models.</b>
 
 # WINTER 2024 OUTLOOKS
-## PRECIPITATION, MONTH 1 (3 to 8 WEEKS)
+## RE-CLIMATE® PRECIPITATION OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
 *Referenced to 2009 to 2038*
 
@@ -16,7 +16,7 @@ Dec' 23 Observations | Jan' 24 Observations | Feb' 24 Observations
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/>
 
-## MEAN TEMPERATURE, MONTH 1 (3 to 8 WEEKS)
+## RE-CLIMATE® MEAN TEMPERATURE OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
 *Referenced to 2009 to 2038*
 
