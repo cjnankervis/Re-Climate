@@ -8,25 +8,25 @@
 
 **Forecasts referenced to 2009 to 2038**
 
-<img src="https://www.re-climate.earth/Winter2024.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="600"/>
+<img src="https://www.re-climate.earth/Winter2024-to-current.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="600"/>
 
 **Observations referenced to 1981 to 2010**
 
-Dec' 23 Observations | Jan' 24 Observations | Feb' 24 Observations
-:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/>
+Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/3/2024_3_Rainfall_Anomaly_1991-2020.gif" width="175" height="233"/>
 
 ## RE-CLIMATE® MEAN TEMPERATURE OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
 **Forecasts referenced to 2009 to 2038**
 
-<img src="https://www.re-climate.earth/Winter2024_Tmean.png" alt="Winter seasonal mean temperature outlooks for the United Kingdom" width="600"/>
+<img src="https://www.re-climate.earth/Winter2024_Tmean-to-current.png" alt="Winter seasonal mean temperature outlooks for the United Kingdom" width="600"/>
 
 **Observations referenced to 1981 to 2010**
 
-Dec' 23 Observations | Jan' 24 Observations | Feb' 24 Observations
-:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_MeanTemp_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_MeanTemp_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_MeanTemp_Anomaly_1991-2020.gif" width="175" height="233"/>
+Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_MeanTemp_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_MeanTemp_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_MeanTemp_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_MeanTemp_Anomaly_1991-2020.gif" width="175" height="233"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/3/2024_3_MeanTemp_Anomaly_1991-2020.gif" width="175" height="233"/>
 
 # PRECIPITATION OUTLOOKS, 1 to 2 MONTHS
 $${\color{red}Drier} &rarr; {\color{blue}Wetter}$$
