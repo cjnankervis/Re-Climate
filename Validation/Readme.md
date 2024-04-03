@@ -3,10 +3,10 @@
 
 <b>Re-Climate® forecasts are referenced to current-day equivalent climate means, and so may indicate a cooler/ drier departure when compared to other models.</b>
 
-# WINTER 2024 OUTLOOKS
+# 2024 FORECAST REVIEW
 ## RE-CLIMATE® PRECIPITATION OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
-**Forecasts referenced to 2009 to 2038**
+**Forecasts referenced 2009 to 2038**
 
 <img src="https://www.re-climate.earth/Winter2024-to-current.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="600"/>
 
@@ -18,7 +18,7 @@ Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24
 
 ## RE-CLIMATE® MEAN TEMPERATURE OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
-**Forecasts referenced to 2009 to 2038**
+**Forecasts referenced 2009 to 2038**
 
 <img src="https://www.re-climate.earth/Winter2024_Tmean-to-current.png" alt="Winter seasonal mean temperature outlooks for the United Kingdom" width="600"/>
 
