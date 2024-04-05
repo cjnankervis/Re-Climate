@@ -3,7 +3,7 @@
 
 <b>Re-Climate® forecasts are referenced to current-day equivalent climate means, and so may indicate a cooler/ drier departure when compared to other models.</b>
 
-# 2024 FORECAST REVIEW
+# 2024 SEASONAL FORECAST REVIEW
 ## RE-CLIMATE® PRECIPITATION OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
 **Forecasts referenced 2009 to 2038**
