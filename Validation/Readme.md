@@ -1,4 +1,5 @@
 # SEASONAL CLIMATE FORECAST VALIDATION
+**Delay in April 2024 forecast, requires automated re-run**
 ## Company ceased trading in June 2023. Limited data supplied for review only. No liability accepted.
 
 <b>Re-Climate® forecasts are referenced to current-day equivalent climate means, and so may indicate a cooler/ drier departure when compared to other models.</b>
