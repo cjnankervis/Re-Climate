@@ -1,5 +1,5 @@
 # SEASONAL CLIMATE FORECAST VALIDATION
-**! Delay in 10th April 2024 forecast release covering 1st May to 30th June 2024**
+**Delay in 10th April 2024 forecast release covering 1st May to 30th June 2024. Data supplied is temporary, from a previous re-climate model version until the automated re-run is completed.**
 ## Company ceased trading in June 2023. Limited data supplied for review only. No liability accepted.
 
 <b>Re-Climate® forecasts are referenced to current-day equivalent climate means, and so may indicate a cooler/ drier departure when compared to other models.</b>
