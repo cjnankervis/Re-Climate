@@ -1,5 +1,5 @@
 # SEASONAL CLIMATE FORECAST VALIDATION
-**Delay in 10th April 2024 forecast release covering 1st May to 30th June 2024. Data supplied is temporary, from a previous re-climate model version until the automated re-run is completed.**
+**10th April 2024 forecast release covering the period 1st May to 30th June 2024 has now been completed (data valid 22:00, 12th April, 2024).**
 ## Company ceased trading in June 2023. Limited data supplied for review only. No liability accepted.
 
 <b>Re-Climate® forecasts are referenced to current-day equivalent climate means, and so may indicate a cooler/ drier departure when compared to other models.</b>
@@ -17,7 +17,7 @@ Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May '24
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_Rainfall_Anomaly_1991-2020.gif" width="105" height="140"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Anomaly_1991-2020.gif" width="105" height="140"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_Rainfall_Anomaly_1991-2020.gif" width="105" height="140"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_Rainfall_Anomaly_1991-2020.gif" width="105" height="140"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/3/2024_3_Rainfall_Anomaly_1991-2020.gif" width="105" height="140"/> | **NA** | **NA**
 
-<img src="https://www.re-climate.earth/Re-Climate-Assessment-v3.png" alt="Seasonal climate prediction performance for precipitation" width="650"/>
+<img src="https://www.re-climate.earth/Re-Climate-Assessment-v4.png" alt="Seasonal climate prediction performance for precipitation" width="650"/>
 
 <!---## RE-CLIMATE® MEAN TEMPERATURE OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
