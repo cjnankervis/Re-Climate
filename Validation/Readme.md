@@ -17,13 +17,13 @@ Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May '24
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_Rainfall_Anomaly_1991-2020.gif" width="105" height="140"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Anomaly_1991-2020.gif" width="105" height="140"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_Rainfall_Anomaly_1991-2020.gif" width="105" height="140"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_Rainfall_Anomaly_1991-2020.gif" width="105" height="140"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/3/2024_3_Rainfall_Anomaly_1991-2020.gif" width="105" height="140"/> | **NA** | **NA**
 
-<img src="https://www.re-climate.earth/Re-Climate-Assessment-v4.png" alt="Seasonal climate prediction performance for precipitation" width="650"/>
+<img src="https://www.re-climate.earth/Re-Climate-Assessment-v4b.png" alt="Seasonal climate prediction performance for precipitation" width="650"/>
 
 <!---## RE-CLIMATE® MEAN TEMPERATURE OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
 **Forecasts referenced 2009 to 2038**
 
-<img src="https://www.re-climate.earth/Winter2024_Tmean-to-currentApr.png" alt="Winter seasonal mean temperature outlooks for the United Kingdom" width="600"/>
+<img src="https://www.re-climate.earth/Winter2024_Tmean-to-currentMay.png" alt="Winter seasonal mean temperature outlooks for the United Kingdom" width="600"/>
 
 **Observations referenced to 1991 to 2020**
 
