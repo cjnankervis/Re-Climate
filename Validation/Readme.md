@@ -208,7 +208,7 @@ UKMO | ECMWF
 :-------------------------:|:-------------------------:
 <img src="https://www.re-climate.earth/comparison_04_2024_1_ukmo.png" alt="UK Met Office Seasonal Climate Forecast from System 602, initiated on 10th April for May 2024 Precipitation Anomaly" width="350"/> | <img src="https://www.re-climate.earth/comparison_04_2024_1_ecmwf.png" alt="European Center for Medium-range Weather Forecasts Seasonal Climate Forecast from System 5, initiated on 10th April for May 2024 Precipitation Anomaly" width="350"/>
 NCEP | Re-Climate®
-<img src="https://www.re-climate.earth/comparison_04_2024_1_ncep.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for May 2024 Precipitation Anomaly" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_1.png" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th April for May 2024 Precipitation Anomaly" width="350"/>
+<img src="https://www.re-climate.earth/comparison_04_2024_1_ncep.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for May 2024 Precipitation Anomaly" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_1.png?" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th April for May 2024 Precipitation Anomaly" width="350"/>
 
 <!---### Re-Climate® actuals & percentile (from median ensemble)
 Re-Climate® Seasonal Climate Forecast | Met Office Observations 
@@ -222,7 +222,7 @@ UKMO | ECMWF
 :-------------------------:|:-------------------------:
 <img src="https://www.re-climate.earth/comparison_04_2024_2_ukmo.png" alt="UK Met Office Seasonal Climate Forecast from System 602, initiated on 10th April for June 2024 Precipitation Anomaly" width="350"/> | <img src="https://www.re-climate.earth/comparison_04_2024_2_ecmwf.png" alt="European Center for Medium-range Weather Forecasts Seasonal Climate Forecast from System 5, initiated on 10th April for June 2024 Precipitation Anomaly" width="350"/>
 NCEP | Re-Climate®
-<img src="https://www.re-climate.earth/comparison_04_2024_2_ncep.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for June 2024 Precipitation Anomaly" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_2.png" alt="Re-Climate Seasonal Climate Forecast for Preciptation Anomaly, initiated on 10th April for June 2024 Temperature Departure" width="350"/>
+<img src="https://www.re-climate.earth/comparison_04_2024_2_ncep.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for June 2024 Precipitation Anomaly" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_2.png?" alt="Re-Climate Seasonal Climate Forecast for Preciptation Anomaly, initiated on 10th April for June 2024 Temperature Departure" width="350"/>
 
 <!---### Re-Climate® actuals & percentile (from median ensemble)
 Re-Climate® Seasonal Climate Forecast | Met Office Observations
@@ -347,7 +347,7 @@ UKMO | ECMWF
 :-------------------------:|:-------------------------:
 <img src="https://www.re-climate.earth/comparison_04_2024_1_ukmo_Temperature.png" alt="UK Met Office Seasonal Climate Forecast from System 602, initiated on 10th April for May 2024 Temperature Departure" width="350"/> | <img src="https://www.re-climate.earth/comparison_04_2024_1_ecmwf_Temperature.png" alt="European Center for Medium-range Weather Forecasts Seasonal Climate Forecast from System 5, initiated on 10th April for May 2024 Temperature Departure" width="350"/>
 NCEP | Re-Climate®
-<img src="https://www.re-climate.earth/comparison_04_2024_1_ncep_Temperature.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for May 2024 Temperature Departure" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_1_Temperature.png" alt="Re-Climate Seasonal Climate Forecast for Temperature, initiated on 10th April for May 2024 Temperature Departure" width="350"/>
+<img src="https://www.re-climate.earth/comparison_04_2024_1_ncep_Temperature.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for May 2024 Temperature Departure" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_1_Temperature.png?" alt="Re-Climate Seasonal Climate Forecast for Temperature, initiated on 10th April for May 2024 Temperature Departure" width="350"/>
 
 ## 2-MONTH TEMPERATURE DEPARTURE FORECAST FOR MAY 2024
 <sub>VALID APRIL 10TH, 2024</sub>
@@ -356,4 +356,4 @@ UKMO | ECMWF
 :-------------------------:|:-------------------------:
 <img src="https://www.re-climate.earth/comparison_04_2024_2_ukmo_Temperature.png" alt="UK Met Office Seasonal Climate Forecast from System 602, initiated on 10th April for June 2024 Temperature Departure" width="350"/> | <img src="https://www.re-climate.earth/comparison_04_2024_2_ecmwf_Temperature.png" alt="European Center for Medium-range Weather Forecasts Seasonal Climate Forecast from System 5, initiated on 10th March for June 2024 Temperature Departure" width="350"/>
 NCEP | Re-Climate®
-<img src="https://www.re-climate.earth/comparison_04_2024_2_ncep_Temperature.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for June 2024 Temperature Departure" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_2_Temperature.png" alt="Re-Climate Seasonal Climate Forecast for Temperature, initiated on 10th April for June 2024 Temperature Departure" width="350"/>
+<img src="https://www.re-climate.earth/comparison_04_2024_2_ncep_Temperature.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for June 2024 Temperature Departure" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_2_Temperature.png?" alt="Re-Climate Seasonal Climate Forecast for Temperature, initiated on 10th April for June 2024 Temperature Departure" width="350"/>
