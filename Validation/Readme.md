@@ -11,7 +11,7 @@
 
 Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May '24
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/05/storm-cloud-icon.png" width="128"/> | <img src="https://seasonalforecasts.earth/wp-content/uploads/2022/05/storm-cloud-icon.png" width="128"/> | <img src="https://seasonalforecasts.earth/wp-content/uploads/2022/05/storm-cloud-icon.png" width="128"/> | <img src="https://seasonalforecasts.earth/wp-content/uploads/2022/05/storm-cloud-icon.png" width="128"/> | <img src="https://seasonalforecasts.earth/wp-content/uploads/2024/04/Showers.png" width="128"/> | <img src="https://seasonalforecasts.earth/wp-content/uploads/2024/04/Showers.png" width="128"/> | <img src="https://seasonalforecasts.earth/wp-content/uploads/2024/04/Sun.png" width="128"/>
+<img src="https://seasonalforecasts.earth/wp-content/uploads/2022/05/storm-cloud-icon.png" width="115"/> | <img src="https://seasonalforecasts.earth/wp-content/uploads/2022/05/storm-cloud-icon.png" width="115"/> | <img src="https://seasonalforecasts.earth/wp-content/uploads/2022/05/storm-cloud-icon.png" width="115"/> | <img src="https://seasonalforecasts.earth/wp-content/uploads/2022/05/storm-cloud-icon.png" width="115"/> | <img src="https://seasonalforecasts.earth/wp-content/uploads/2024/04/Showers.png" width="115"/> | <img src="https://seasonalforecasts.earth/wp-content/uploads/2024/04/Showers.png" width="115"/> | <img src="https://seasonalforecasts.earth/wp-content/uploads/2024/04/Sun.png" width="115"/>
 <img src="https://www.re-climate.earth/Winter2024-to-currentMay.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="900"/>
 
 **Observations referenced to 1991 to 2020**
@@ -28,7 +28,7 @@ Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May '24
 
 Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May '24
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="?" width="128"/> | <img src="?" width="128"/> | <img src="?" width="128"/> | <img src="?" width="128"/> | <img src="?" width="128"/> | <img src="?" width="128"/> | <img src="?" width="128"/>
+<img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/>
 <img src="https://www.re-climate.earth/Winter2024_Tmean-to-currentMay.png" alt="Winter seasonal mean temperature outlooks for the United Kingdom" width="900"/>
 
 **Observations referenced to 1991 to 2020**
