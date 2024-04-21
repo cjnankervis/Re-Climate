@@ -12,7 +12,7 @@
 &nbsp; &nbsp; Nov' 23 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; Dec' 23 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; Jan' 24 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; Feb' 24 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; Mar' 24 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; Apr '24 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; May '24 &nbsp; &nbsp; &nbsp;
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
  |  |  |  |  |  | 
-<img src="https://www.re-climate.earth/Winter2024-to-currentMay.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="900"/>
+<img src="https://www.re-climate.earth/Winter2024-to-currentMay.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="850"/>
 
 **Observations referenced to 1991 to 2020**
 
@@ -20,7 +20,7 @@ Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May '24
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_Rainfall_Anomaly_1991-2020.gif" width="115"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Anomaly_1991-2020.gif" width="115"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_Rainfall_Anomaly_1991-2020.gif" width="115"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_Rainfall_Anomaly_1991-2020.gif" width="115"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/3/2024_3_Rainfall_Anomaly_1991-2020.gif" width="115"/> | **NA** | **NA**
 
-<img src="https://www.re-climate.earth/Re-Climate-Assessment-v4b.png" alt="Seasonal climate prediction performance for precipitation" width="900"/>
+<img src="https://www.re-climate.earth/Re-Climate-Assessment-v4b.png" alt="Seasonal climate prediction performance for precipitation" width="850"/>
 
 <!---## RE-CLIMATE® MEAN TEMPERATURE OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
@@ -29,7 +29,7 @@ Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May '24
 Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May '24
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/>
-<img src="https://www.re-climate.earth/Winter2024_Tmean-to-currentMay.png" alt="Winter seasonal mean temperature outlooks for the United Kingdom" width="900"/>
+<img src="https://www.re-climate.earth/Winter2024_Tmean-to-currentMay.png" alt="Winter seasonal mean temperature outlooks for the United Kingdom" width="850"/>
 
 **Observations referenced to 1991 to 2020**
 
