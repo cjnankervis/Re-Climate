@@ -1,6 +1,4 @@
-# Re-Climate® API
-## Locally Reliable Daily Ensemble of Seasonal Climate
-## Last Seasonal Forecast Issues: 
+# The Re-Climate® Project - Free Seasonal Climate Prediction APIs
 ### Complete set of runs for all countries 13th June, 2023
 ## Subsequent Automations: 
 ### 10th October 2023, English rain gauge seasonal forecasts for early winter-2024
