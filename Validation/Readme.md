@@ -9,9 +9,9 @@
 
 **Forecasts referenced 2009 to 2038**
 
-Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May '24
+Nov' 23 &nbsp; &nbsp; &nbsp; | Dec' 23 &nbsp; &nbsp; &nbsp; | Jan' 24 &nbsp; &nbsp; &nbsp; | Feb' 24 &nbsp; &nbsp; &nbsp; | Mar' 24 &nbsp; &nbsp; &nbsp; | Apr '24 &nbsp; &nbsp; &nbsp; | May '24 &nbsp; &nbsp; &nbsp;
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-&nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;
+ |  |  |  |  |  | 
 <img src="https://www.re-climate.earth/Winter2024-to-currentMay.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="900"/>
 
 **Observations referenced to 1991 to 2020**
