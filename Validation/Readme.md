@@ -1,6 +1,5 @@
 # SEASONAL CLIMATE FORECAST VALIDATION
-**10th April 2024 forecast release covering the period 1st May to 30th June 2024 has now been completed (data valid 22:00, 12th April, 2024).**
-## Company ceased trading in June 2023. Limited data supplied for review only. No liability accepted.
+## Company ceased trading in June 2023, reverting to project status. No liability accepted.
 
 <b>Re-Climate® forecasts are referenced to current-day equivalent climate means, and so may indicate a cooler/ drier departure when compared to other models.</b>
 
