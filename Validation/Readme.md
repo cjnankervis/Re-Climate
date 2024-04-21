@@ -11,7 +11,7 @@
 &nbsp; &nbsp; Nov' 23 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; Dec' 23 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; Jan' 24 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; Feb' 24 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; Mar' 24 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; Apr '24 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; May '24 &nbsp; &nbsp; &nbsp;
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
  |  |  |  |  |  | 
-<img src="https://www.re-climate.earth/Winter2024-to-currentMay.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="850"/>
+<img src="https://www.re-climate.earth/Winter2024-to-currentMay.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="900"/>
 
 **Observations referenced to 1991 to 2020**
 
