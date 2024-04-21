@@ -1,7 +1,7 @@
 # SEASONAL CLIMATE FORECAST VALIDATION
 ## Company ceased trading in June 2023, reverting to project status. No liability accepted.
 
-<b>Re-Climate® forecasts are referenced to current-day equivalent climate means, and so may indicate a cooler/ drier departure when compared to other models.</b>
+<b>Re-Climate® forecasts are referenced to current-day equivalent climate means centred on the year 2024.</b>
 
 # 2024 SEASONAL FORECAST REVIEW
 ## RE-CLIMATE® PRECIPITATION OUTLOOK, MONTH 1 (3 to 8 WEEKS)
