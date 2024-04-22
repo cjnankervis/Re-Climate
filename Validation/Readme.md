@@ -14,7 +14,7 @@
 
 Winter 2024 Observed | Winter 2024 Forecast
 :-------------------------:|:-------------------------:
-<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/16/2024_16_Rainfall_Anomaly_1991-2020.gif" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1.png" width="220"/>
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/16/2024_16_Rainfall_Anomaly_1991-2020.gif" width="140"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1.png" width="220"/>
 
 **Forecasts referenced 2009 to 2038**
 
@@ -32,7 +32,7 @@ Winter 2024 Observed | Winter 2024 Forecast
 
 Winter 2024 Observed | Winter 2024 Forecast
 :-------------------------:|:-------------------------:
-<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/16/2024_16_MeanTemp_Anomaly_1991-2020.gif" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_Temperatureweatherlogisticsltd.png" width="220"/>
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/16/2024_16_MeanTemp_Anomaly_1991-2020.gif" width="140"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_Temperatureweatherlogisticsltd.png" width="220"/>
 
 **Forecasts referenced 2009 to 2038**
 
