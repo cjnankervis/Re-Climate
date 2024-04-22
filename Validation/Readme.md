@@ -8,7 +8,7 @@
 
 **Winter Analysis, Dec' 2023 to Feb' 2024**
 
-Observations | Statistical Model | **Stat. Downscaled NWP Models** | Combined Model
+Observations | Statistical Model | Trained NWP Model | Combined Model
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/16/2024_16_Rainfall_Anomaly_1991-2020.gif" width="140"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1weatherlogisticsltd.png?1" width="220"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1.png?1" width="220"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1COMBINED.png?1" width="220"/>
 
@@ -28,7 +28,7 @@ Observations | Statistical Model | **Stat. Downscaled NWP Models** | Combined Mo
 
 **Winter Analysis, Dec' 2023 to Feb' 2024**
 
-Observations | Statistical Model | Downscaled NWP Model | **Combined Model**
+Observations | Statistical Model | Trained NWP Model | Combined Model
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/16/2024_16_MeanTemp_Anomaly_1991-2020.gif" width="140"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_Temperatureweatherlogisticsltd.png?1" width="220"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_Temperature.png?1" width="220"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_TemperatureCOMBINED.png?1" width="220"/>
 
