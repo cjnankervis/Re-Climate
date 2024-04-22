@@ -18,20 +18,18 @@
 
 <img src="https://www.re-climate.earth/Re-Climate-Assessment-v4b.png" alt="Seasonal climate prediction performance for precipitation" width="900"/>
 
-<!---## RE-CLIMATE® MEAN TEMPERATURE OUTLOOK, MONTH 1 (3 to 8 WEEKS)
-
-**Forecasts referenced 2009 to 2038**
-
-Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May '24
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/> | <img src="?" width="115"/>
-<img src="https://www.re-climate.earth/Winter2024_Tmean-to-currentMay.png" alt="Winter seasonal mean temperature outlooks for the United Kingdom" width="850"/>
+## RE-CLIMATE® MEAN TEMPERATURE OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
 **Observations referenced to 1991 to 2020**
 
-Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr' 24 | May '24
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_MeanTemp_Anomaly_1991-2020.gif" width="115"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_MeanTemp_Anomaly_1991-2020.gif" width="115"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_MeanTemp_Anomaly_1991-2020.gif" width="115"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_MeanTemp_Anomaly_1991-2020.gif" width="115"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/3/2024_3_MeanTemp_Anomaly_1991-2020.gif" width="115"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/4/2024_4_MeanTemp_Anomaly_1991-2020.gif" width="115"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/5/2024_5_MeanTemp_Anomaly_1991-2020.gif" width="115"/>!--->
+&nbsp; &nbsp; &nbsp; Nov' 23 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; Dec' 23 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; Jan' 24 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; Feb' 24 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; Mar' 24 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; Apr '24 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; May '24 &nbsp; &nbsp; &nbsp;
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_MeanTemp_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_MeanTemp_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_MeanTemp_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_MeanTemp_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/3/2024_3_MeanTemp_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/4/2024_4_MeanTemp_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/5/2024_5_MeanTemp_Anomaly_1991-2020.gif" width="110"/>
+
+**Forecasts referenced 2009 to 2038**
+
+
+
 # PRECIPITATION OUTLOOKS, 1 to 2 MONTHS
 $${\color{red}Drier} &rarr; {\color{blue}Wetter}$$
 
@@ -210,7 +208,7 @@ UKMO | ECMWF
 :-------------------------:|:-------------------------:
 <img src="https://www.re-climate.earth/comparison_04_2024_1_ukmo.png" alt="UK Met Office Seasonal Climate Forecast from System 602, initiated on 10th April for May 2024 Precipitation Anomaly" width="350"/> | <img src="https://www.re-climate.earth/comparison_04_2024_1_ecmwf.png" alt="European Center for Medium-range Weather Forecasts Seasonal Climate Forecast from System 5, initiated on 10th April for May 2024 Precipitation Anomaly" width="350"/>
 NCEP | Re-Climate®
-<img src="https://www.re-climate.earth/comparison_04_2024_1_ncep.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for May 2024 Precipitation Anomaly" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_1.png?" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th April for May 2024 Precipitation Anomaly" width="350"/>
+<img src="https://www.re-climate.earth/comparison_04_2024_1_ncep.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for May 2024 Precipitation Anomaly" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_1.png" alt="Re-Climate Seasonal Climate Forecast for Precipitation Anomaly, initiated on 10th April for May 2024 Precipitation Anomaly" width="350"/>
 
 <!---### Re-Climate® actuals & percentile (from median ensemble)
 Re-Climate® Seasonal Climate Forecast | Met Office Observations 
@@ -224,7 +222,7 @@ UKMO | ECMWF
 :-------------------------:|:-------------------------:
 <img src="https://www.re-climate.earth/comparison_04_2024_2_ukmo.png" alt="UK Met Office Seasonal Climate Forecast from System 602, initiated on 10th April for June 2024 Precipitation Anomaly" width="350"/> | <img src="https://www.re-climate.earth/comparison_04_2024_2_ecmwf.png" alt="European Center for Medium-range Weather Forecasts Seasonal Climate Forecast from System 5, initiated on 10th April for June 2024 Precipitation Anomaly" width="350"/>
 NCEP | Re-Climate®
-<img src="https://www.re-climate.earth/comparison_04_2024_2_ncep.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for June 2024 Precipitation Anomaly" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_2.png?" alt="Re-Climate Seasonal Climate Forecast for Preciptation Anomaly, initiated on 10th April for June 2024 Temperature Departure" width="350"/>
+<img src="https://www.re-climate.earth/comparison_04_2024_2_ncep.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for June 2024 Precipitation Anomaly" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_2.png" alt="Re-Climate Seasonal Climate Forecast for Preciptation Anomaly, initiated on 10th April for June 2024 Temperature Departure" width="350"/>
 
 <!---### Re-Climate® actuals & percentile (from median ensemble)
 Re-Climate® Seasonal Climate Forecast | Met Office Observations
@@ -349,7 +347,7 @@ UKMO | ECMWF
 :-------------------------:|:-------------------------:
 <img src="https://www.re-climate.earth/comparison_04_2024_1_ukmo_Temperature.png" alt="UK Met Office Seasonal Climate Forecast from System 602, initiated on 10th April for May 2024 Temperature Departure" width="350"/> | <img src="https://www.re-climate.earth/comparison_04_2024_1_ecmwf_Temperature.png" alt="European Center for Medium-range Weather Forecasts Seasonal Climate Forecast from System 5, initiated on 10th April for May 2024 Temperature Departure" width="350"/>
 NCEP | Re-Climate®
-<img src="https://www.re-climate.earth/comparison_04_2024_1_ncep_Temperature.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for May 2024 Temperature Departure" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_1_Temperature.png?" alt="Re-Climate Seasonal Climate Forecast for Temperature, initiated on 10th April for May 2024 Temperature Departure" width="350"/>
+<img src="https://www.re-climate.earth/comparison_04_2024_1_ncep_Temperature.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for May 2024 Temperature Departure" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_1_Temperature.png" alt="Re-Climate Seasonal Climate Forecast for Temperature, initiated on 10th April for May 2024 Temperature Departure" width="350"/>
 
 ## 2-MONTH TEMPERATURE DEPARTURE FORECAST FOR MAY 2024
 <sub>VALID APRIL 10TH, 2024</sub>
@@ -358,4 +356,4 @@ UKMO | ECMWF
 :-------------------------:|:-------------------------:
 <img src="https://www.re-climate.earth/comparison_04_2024_2_ukmo_Temperature.png" alt="UK Met Office Seasonal Climate Forecast from System 602, initiated on 10th April for June 2024 Temperature Departure" width="350"/> | <img src="https://www.re-climate.earth/comparison_04_2024_2_ecmwf_Temperature.png" alt="European Center for Medium-range Weather Forecasts Seasonal Climate Forecast from System 5, initiated on 10th March for June 2024 Temperature Departure" width="350"/>
 NCEP | Re-Climate®
-<img src="https://www.re-climate.earth/comparison_04_2024_2_ncep_Temperature.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for June 2024 Temperature Departure" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_2_Temperature.png?" alt="Re-Climate Seasonal Climate Forecast for Temperature, initiated on 10th April for June 2024 Temperature Departure" width="350"/>
+<img src="https://www.re-climate.earth/comparison_04_2024_2_ncep_Temperature.png" alt="National Center for Enironmental Prediction Seasonal Climate Forecast from System 2, initiated on 10th April for June 2024 Temperature Departure" width="350"/> | <img src="https://www.re-climate.earth/ReClimate_04_2024_2_Temperature.png" alt="Re-Climate Seasonal Climate Forecast for Temperature, initiated on 10th April for June 2024 Temperature Departure" width="350"/>
