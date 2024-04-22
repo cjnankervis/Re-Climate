@@ -10,7 +10,7 @@
 
 Observations | Statistical Model | Downscaled NWP Model | Combined Model
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/16/2024_16_Rainfall_Anomaly_1991-2020.gif" width="140"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1weatherlogisticsltd.png?" width="220"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1.png?" width="220"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1COMBINED.png?" width="220"/>
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/16/2024_16_Rainfall_Anomaly_1991-2020.gif" width="140"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1weatherlogisticsltd.png" width="220"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1.png" width="220"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1COMBINED.png" width="220"/>
 
 **Observations referenced to 1991 to 2020**
 
@@ -30,7 +30,7 @@ Observations | Statistical Model | Downscaled NWP Model | Combined Model
 
 Observations | Statistical Model | Downscaled NWP Model | Combined Model
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/16/2024_16_MeanTemp_Anomaly_1991-2020.gif" width="140"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_Temperatureweatherlogisticsltd.png?" width="220"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_Temperature.png?" width="220"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_TemperatureCOMBINED.png?" width="220"/>
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/16/2024_16_MeanTemp_Anomaly_1991-2020.gif" width="140"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_Temperatureweatherlogisticsltd.png" width="220"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_Temperature.png" width="220"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_TemperatureCOMBINED.png" width="220"/>
 
 **Observations referenced to 1991 to 2020**
 
