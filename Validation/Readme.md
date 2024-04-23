@@ -1,7 +1,7 @@
 # SEASONAL CLIMATE FORECAST VALIDATION
 ## No liability accepted.
 
-## Open to requests from strategic partners with experience in large language models (LLMs), meteorology contract work, technology/ IP sale -> [re-climate.earth](https://re-climate.earth)
+## Open to requests from strategic partners experienced in large language models (LLMs), contract work, technology sale -> [re-climate.earth](https://re-climate.earth)
 
 <b>Re-Climate® forecasts are referenced to current-day equivalent climate means centred on the year 2024.</b>
 
