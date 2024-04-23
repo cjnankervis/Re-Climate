@@ -1,5 +1,7 @@
 # SEASONAL CLIMATE FORECAST VALIDATION
-## Company ceased trading in June 2023, reverting to project status. No liability accepted.
+## No liability accepted.
+
+## Open to requests from strategic partners with experience in large language models (LLMs), meteorology contract work, technology/ IP sale.
 
 <b>Re-Climate® forecasts are referenced to current-day equivalent climate means centred on the year 2024.</b>
 
