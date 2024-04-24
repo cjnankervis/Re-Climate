@@ -44,6 +44,8 @@ Observations | Statistical Model | Trained NWP Model | Combined Model
 
 <img src="https://www.re-climate.earth/Winter2024_Tmean-to-currentMay.png?1" alt="Winter seasonal temperature outlooks for the United Kingdom" width="925"/>
 
+<img src="https://www.re-climate.earth/Re-Climate-Assessment-Temperature.png" alt="Seasonal climate prediction performance for precipitation" width="900"/>
+
 # PRECIPITATION OUTLOOKS, 1 to 2 MONTHS
 $${\color{red}Drier} &rarr; {\color{blue}Wetter}$$
 
