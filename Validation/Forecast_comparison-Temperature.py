@@ -11,9 +11,10 @@ import pyproj
 from scipy.interpolate import griddata as griddata_scipy
 '''Note that Basemap version > 1.1 do not work!'''
 # from mpl_toolkits.basemap import Basemap, maskoceans # conda install basemap==1.0.7
-import scipy.stats as st # To calculate percentile of precipitation
+import scipy.stats as st # To calculate percentile of temperature
 
-dist = 'Log-Logistic' # 'Gaussian' or 'Log-Logistic' (Caution: case sensitive)
+forecasts = ['','weatherlogisticsltd']
+dist = 'Gaussian' # 'Gaussian' or 'Log-Logistic' (Caution: case sensitive)
 skip_extraplots = True
 
 use_customcolors = True; ukmo_precip = True; ed_hawkins = False; RichHildebrand = False
@@ -21,9 +22,10 @@ scale = np.array([0.85,0.85,0.85])
 '''Set the analysis date'''
 grib_file = True; netcdf_file = False
 '''Specify the forecast month and at what lead time'''
-year = '2024'; month = 'April'; month_no = 4; lead = 1 # Specify the forecast month and at what lead time
+year = '2023'; month = 'November'; month_no = 11; lead = 1 # Specify the forecast month and at what lead time
 '''Define end of 31-year climate (reference) period'''
-climate_end = 2022 # Define end of 31-year climate time series
+climate_end = 2020 # Define end of 31-year climate time series
+# climate_ref = 
 
 month_names = ('January','February','March','April',
                'May','June','July','August',
@@ -33,12 +35,12 @@ if use_customcolors:
     from matplotlib.colors import LinearSegmentedColormap # To define own colour scale
     if (ed_hawkins or ukmo_precip):
         if ed_hawkins:
-            custom_colors = ['#08306b', '#08519c', '#2171b5', '#4292c6',
+            custom_colors = reversed(['#08306b', '#08519c', '#2171b5', '#4292c6',
                            '#6baed6', '#9ecae1', '#c6dbef', '#deebf7',
                            '#fee0d2', '#fcbba1', '#fc9272', '#fb6a4a',
-                           '#ef3b2c', '#cb181d', '#a50f15', '#67000d']
+                           '#ef3b2c', '#cb181d', '#a50f15', '#67000d'])
         if ukmo_precip:
-            custom_colors = reversed((np.array([0.2078, 0.0, 0.0039])*scale,
+            custom_colors = (np.array([0.2078, 0.0, 0.0039])*scale,
                             np.array([0.0471, 0.1961, 0.4118])*scale,
                             np.array([0.2314, 0.3961, 0.6118])*scale,
                             np.array([0.4275, 0.5961, 0.8118])*scale,
@@ -46,21 +48,20 @@ if use_customcolors:
                             np.array([0.9843, 0.85, 0.8039])*scale,
                             np.array([0.9725, 0.6039, 0.35])*scale,
                             np.array([0.7647, 0.3118, 0.20])*scale,
-                            np.array([0.5725, 0.1014, 0.05])*scale))
+                            np.array([0.5725, 0.1014, 0.05])*scale)
         # Create a list of normalized RGB values for your custom colors
         custom_colors_rgb = [plt.cm.colors.to_rgb(c) for c in custom_colors]
     elif RichHildebrand:
         def create_color(r, g, b):
             return [r/256, g/256, b/256]
-        custom_colors_rgb = [create_color(227, 101, 33), create_color(246, 145, 53), create_color(251, 168, 74),
+        custom_colors_rgb = reversed([create_color(227, 101, 33), create_color(246, 145, 53), create_color(251, 168, 74),
             create_color(218, 212, 200), create_color(141, 193, 223), create_color(114, 167, 208), 
-            create_color(43, 92, 138)]
+            create_color(43, 92, 138)])
     # custom_colors = reversed(['#350001', '#0c3269', '#3b659c', '#6d98cf', '#ffffff', '#fbcccd', '#f89a9b', '#f66935', '#92080d'])
     # Define a custom colormap using `matplotlib.colors.LinearSegmentedColormap`
     colors = LinearSegmentedColormap.from_list('', custom_colors_rgb)
 else:
-    colors = cm.terrain_r
-
+    colors = cm.terrain
 
 def mthdays(yyyy, mth):
     '''Assess number of days in each month'''
@@ -86,38 +87,47 @@ days_in_month = mthdays(year, month[0:3])[0]
 start_month = ((((month_no-1)-lead) % 12) + 1)
 start_year = str(int(year) - 1) if start_month > month_no else year
 FCST_path = 'raw_data'
-filename_hires = '/ReClimate_'+format('%02d' % start_month)+'_'+start_year+'_'+str(lead)+'_Precipitation-Actuals.asc'
-datapath_med = FCST_path + filename_hires
+
+datapath_meds = []
+for forecast in forecasts:
+    filename_hires = f'/ReClimate_{format("%02d" % start_month)}_{start_year}_{str(lead)}_Temperature-Actuals{forecast}.asc'
+    datapath_meds.append(FCST_path + filename_hires)
 
 if grib_file:
     import cfgrib
     import xarray as xr
-    grib_data = cfgrib.open_datasets(f'./ERA5/ERA5-Land-{month[0:3]}{climate_end}_Prev30Yrs.grib')
-    sys.exit()
-    grib_data = xr.merge([grib_data[0], grib_data[1]]); grib_data = grib_data['tp']
-    grib_data *= (1000 * days_in_month) # Convert from m to mm and daily to monthly accumulation
+    grib_data = cfgrib.open_datasets(f'./ERA5/ERA5-Land-{month[0:3]}{climate_end}_Prev30Yrs-Temperature.grib')
+    grib_data = grib_data[0]['t2m']
+    grib_data -= 273.15 # Convert from Kelvin to Degrees Celsius
     lon = grib_data['longitude']
     lat = grib_data['latitude']
     time = grib_data['time']
 
 # Read / define forecast output variables
-file = open(datapath_med, mode='r')
-#Read metadata line-by-line
-h1, h2 = file.readline(), file.readline()     # NCOLS 175    # NROWS 249
-h3, h4 = file.readline(), file.readline()  # XLLCENTER -225160.85671291745  # YLLCENTER 29788.11622501802
-h5 = file.readline()                          # CELLSIZE 5000.0
-h6 = file.readline()                          # NODATA_VALUE -9999
-# define META data for geolocation and grid info
-ddcols, ddrows = h1.strip().split(), h2.strip().split()
-ncols, nrows = float(ddcols[1]), float(ddrows[1])
-xcntr, ycntr = -225160.85671291745, 29788.11622501802
-cellsize     = h5.strip().split() 
-blank        = h6.strip().split()
-
-df = pd.read_csv(datapath_med, header=6, delimiter=' ')
-raw_data = pd.read_csv(datapath_med, header=6, delimiter=' ').values
-aa = (list(df.keys()))
-npa = np.asarray(aa, dtype=np.float32)
+for datapath_med in datapath_meds:
+    file = open(datapath_med, mode='r')
+    # Read metadata line-by-line
+    h1, h2 = file.readline(), file.readline()     # NCOLS 175    # NROWS 249
+    h3, h4 = file.readline(), file.readline()     # XLLCENTER -225160.85671291745  # YLLCENTER 29788.11622501802
+    h5 = file.readline()                          # CELLSIZE 5000.0
+    h6 = file.readline()                          # NODATA_VALUE -9999
+    # define META data for geolocation and grid info
+    ddcols, ddrows = h1.strip().split(), h2.strip().split()
+    ncols, nrows = float(ddcols[1]), float(ddrows[1])
+    xcntr, ycntr = -225160.85671291745, 29788.11622501802
+    cellsize     = h5.strip().split() 
+    blank        = h6.strip().split()
+    
+    df = pd.read_csv(datapath_med, header=6, delimiter=' ')
+    raw_data = pd.read_csv(datapath_med, header=6, delimiter=' ').values
+    aa = (list(df.keys()))
+    if datapath_med == datapath_meds[0]:
+        npa = np.asarray(aa, dtype=np.float32)
+    else:
+        npa += np.asarray(aa, dtype=np.float32)
+    #
+npa /= len(datapath_meds)
+#
 data = np.zeros((int(nrows), int(ncols)))
 data[0,:] = npa; data[1:,:] = raw_data
 # convert BNG easting/ northing --> GPS LON / LAT
@@ -147,49 +157,51 @@ FCSTdata_scipy[FCSTdata_scipy <= 0] = np.nan
 
 # Load ERA5 climatology reference
 if netcdf_file:
-    datapath_ERA5CLIM = 'ERA5/ERA5-Land-'+month[0:3]+climate_end+'_Prev30Yrs.nc'
+    datapath_ERA5CLIM = 'ERA5/ERA5-Land-'+month[0:3]+climate_end+'_Prev30Yrs-Temperature.nc'
     ncc = Dataset(datapath_ERA5CLIM, 'r')
     lon = ncc.variables['longitude'][:]
     lat = ncc.variables['latitude'][:] # Degrees latitude is a regular spatial (km) grid      
     time = ncc.variables['time']
-    precip_allyrs = ncc.variables['tp'][:]
-    precip_allyrs[precip_allyrs == precip_allyrs.fill_value] = np.nan
-    precip_allyrs *= (1000 * days_in_month) # Convert from m to mm and daily to monthly accumulation
+    temp_allyrs = ncc.variables['t2m'][:]
+    temp_allyrs[temp_allyrs == temp_allyrs.fill_value] = np.nan
+    temp_allyrs -= 273.15 # Convert from Kelvin to Degrees Celsius
 if grib_file:
-    precip_allyrs = grib_data[:]
-precip_climate = np.mean(precip_allyrs, axis=0)
-precip_climateSD = np.std(precip_allyrs, axis=0)
+    temp_allyrs = grib_data[:]
+temp_climate = np.mean(temp_allyrs, axis=0)
+temp_climateSD = np.std(temp_allyrs, axis=0)
 
 # Loading ERA5 data into workspace
 if netcdf_file:
-    datapath_ERA5 = 'ERA5/ERA5-Land-'+month[0:3]+year+'.nc'
+    datapath_ERA5 = 'ERA5/ERA5-Land-'+month[0:3]+year+'-Temperature.nc'
     ncc = Dataset(datapath_ERA5, 'r')
     lon = ncc.variables['longitude'][:]
     lat = ncc.variables['latitude'][:] # Degrees latitude is a regular spatial (km) grid      
     time = ncc.variables['time']
-    monthly_precip = ncc.variables['tp'][:]
-    monthly_precip[monthly_precip == monthly_precip.fill_value] = np.nan
-    monthly_precip *= (1000 * days_in_month) # Convert from m to mm and daily to monthly accumulation
+    monthly_temp = ncc.variables['t2m'][:]
+    monthly_temp[monthly_temp == monthly_temp.fill_value] = np.nan
+    monthly_temp -= 273.15 # Convert from Kelvin to Degrees Celsius
 if grib_file:
-    monthly_precip = grib_data[-1,:,:]
+    monthly_temp = grib_data[-1,:,:]
 # mth_daysERA, dayofyearERA = mthdays(year, month[0:3])
 
 # Scale grid of ERA5 data
 lon, lat = np.meshgrid(lon, lat)
 x_ERA5flat = lon.flatten(); y_ERA5flat = lat.flatten()
-z_ERA5flat = np.array(monthly_precip).flatten()
+z_ERA5flat = np.array(monthly_temp).flatten()
 ERA5data_month = griddata_scipy((x_ERA5flat, y_ERA5flat), z_ERA5flat, (UK_Lon, UK_Lat), method='linear') # SciPy version
-z_ERA5CLIMflat = np.array(precip_climate).flatten()
+z_ERA5CLIMflat = np.array(temp_climate).flatten()
 ERA5data_climate = griddata_scipy((x_ERA5flat, y_ERA5flat), z_ERA5CLIMflat, (UK_Lon, UK_Lat), method='linear') # SciPy version
-z_ERA5SDflat = np.array(precip_climateSD).flatten()
+z_ERA5SDflat = np.array(temp_climateSD).flatten()
 ERA5data_sd = griddata_scipy((x_ERA5flat, y_ERA5flat), z_ERA5SDflat, (UK_Lon, UK_Lat), method='linear') # SciPy version
 # remove nans
 ERA5data_month = np.nan_to_num(ERA5data_month); ERA5data_climate = np.nan_to_num(ERA5data_climate); ERA5data_sd = np.nan_to_num(ERA5data_sd)
 ERA5data_month[ERA5data_month == 0] = np.nan; ERA5data_climate[ERA5data_climate == 0] = np.nan; ERA5data_sd[ERA5data_sd <= 0] = np.nan
 '''Make sure that comparison arrays allign perfectly'''
 mask = [(~np.isnan(FCSTdata_scipy)) & (~np.isnan(ERA5data_climate))]
-monthly_sds = np.nanmean((ERA5data_month[mask] - ERA5data_climate)) / np.nanmean(ERA5data_sd[mask])
-forecast_sds = np.nanmean((FCSTdata_scipy[mask] - ERA5data_climate)) / np.nanmean(ERA5data_sd[mask])
+# monthly_sds = np.nanmean((ERA5data_month - ERA5data_climate)) / np.nanmean(ERA5data_sd)
+monthly_sds = np.nanmean(ERA5data_month[mask] - ERA5data_climate[mask])
+# forecast_sds = np.nanmean((FCSTdata_scipy - ERA5data_climate)) / np.nanmean(ERA5data_sd)
+forecast_sds = np.nanmean(FCSTdata_scipy[mask] - ERA5data_climate[mask])
 
 if not skip_extraplots:
     # FIGURE: OBSERVATION
@@ -199,7 +211,7 @@ if not skip_extraplots:
                            linewidth=0, antialiased=False, vmin=25, vmax=350)
     ax.xaxis.set_major_formatter(FormatStrFormatter('%.02f'))
     fig.colorbar(surf, aspect=5)
-    plt.title('Observation of Monthly Accumulated Precipitation')
+    plt.title('Observation of Mean Daily Temperature')
     plt.show(block=False)
 
 # FIGURE: FORECAST
@@ -210,25 +222,31 @@ ax = fig.add_axes([0.2, 0.2, 0.7, 0.7])
 ax.set_xticks([])
 ax.set_yticks([])
 ax.set_frame_on(False)
-optional_levels = np.array([15,20,25,35,50,60,75,85,100,125,150,175,200,250,300,400,500,575,650])
-surf = ax.contourf(UK_Lon, UK_Lat, np.ma.array(FCSTdata_scipy), rstride=0.25, cstride=0.25, cmap=colors, norm = 'log',
-                       linewidth=0, antialiased=False, vmin=20, vmax=650, levels=optional_levels)
-# lines = ax.contour(UK_Lon, UK_Lat, np.ma.array(FCSTdata_scipy), colors=['black']*len(optional_levels), linewidths=[0.5]*len(optional_levels), norm = 'log', alpha=0.5)
+# optional_levels = np.arange(1,20)
+optional_levels = np.arange(8,18,0.5)
+surf = ax.contourf(UK_Lon, UK_Lat, np.ma.array(ERA5data_climate), rstride=0.25, cstride=0.25, cmap=colors,
+                       linewidth=0, antialiased=False, vmin=10, vmax=18, levels=optional_levels)
+# lines = ax.contour(UK_Lon, UK_Lat, np.ma.array(FCSTdata_scipy), colors=['black']*len(optional_levels), linewidths=[0.5]*len(optional_levels), alpha=0.5)
 # ax.xaxis.set_major_formatter(FormatStrFormatter('%.01f'))
-fig.colorbar(surf, aspect=8, label='Forecast Value (mm)', ticks=optional_levels, format="%d", fraction=0.25)
-plt.title(f'Re-Climate Forecast for {month}, {year}\nAccumulated Precipitation/ mm')
+fig.colorbar(surf, aspect=8, label='Forecast Value (degC)', ticks=optional_levels, format="%d", fraction=0.25)
+plt.title(f'Re-Climate Forecast for {month}, {year}\nMean Daily Temperature')
 #
 if dist == 'Log-Logistic':
     percentile = (st.fisk.cdf(np.nanmean(forecast_sds),0.835)+0.35) * 100.0
 elif dist == 'Gaussian':
     percentile = st.norm.cdf(np.nanmean(forecast_sds)) * 100.0
+anomaly = np.nanmean(forecast_sds)
 #
-last_digit = int(str(round(percentile))[1])
-exts = ('th','st','nd','rd','th','th','th','th','th','th')
-ext = exts[last_digit]
+# last_digit = int(str(round(percentile))[1])
+# exts = ('th','st','nd','rd','th','th','th','th','th','th')
+# ext = exts[last_digit]
+ERA5data_month = ERA5data_month[mask]; ERA5data_climate = ERA5data_climate[mask]; FCSTdata_scipy = FCSTdata_scipy[mask]
+ext = ' degC'
 plt.annotate(f'Valid: 10th {month_names[start_month-1]}, {start_year}',(-10.75,59), color='maroon')
-plt.annotate('UK-Wide Precipitation Percentile: '+str(round(percentile))+ext+'\nReference: ERA5-Land, 1993-2022',(-10.75,59.5), color='maroon')
-print('UK-Wide Precipitation Percentile: '+str(round(percentile))+ext)
+plt.annotate('UK-Wide Temperature Anomaly: '+str(round(anomaly, 2))+ext+'\nReference: ERA5-Land, 1993-2022',(-10.75,59.5), color='maroon')
+print(month+' UK-Wide Temperature Anomaly: '+str(round(anomaly, 2))+ext)
+print(month+' UK-Wide Temperature Climate: '+str(round(np.nanmean(ERA5data_climate), 2))+ext)
+print(month+' Re-Climate forecast: '+str(round(np.nanmean(FCSTdata_scipy), 2))+ext)
 # Save Plot
 plt.savefig(f'raw_data/Re-ClimateActuals_{start_month}_{start_year}_{lead}.png', dpi=150, bbox_inches='tight')
 plt.show(block=False)
@@ -241,7 +259,7 @@ if not skip_extraplots:
                            linewidth=0, antialiased=False, vmin=20, vmax=180)
     ax.xaxis.set_major_formatter(FormatStrFormatter('%.02f'))
     fig.colorbar(surf, aspect=5)
-    plt.title('Observed Precipitation SD')
+    plt.title('Observed Temperature SD')
     plt.show(block=False)
 
     # FIGURE: STANDARD DEVIATIONS OF MONTHLY CLIMATE
@@ -251,7 +269,7 @@ if not skip_extraplots:
                            linewidth=0, antialiased=False, vmin=-2, vmax=2)
     ax.xaxis.set_major_formatter(FormatStrFormatter('%.02f'))
     fig.colorbar(surf, aspect=5)
-    plt.title('Observed Precipitation SDs (Z Value)')
+    plt.title('Observed Temperature SDs (Z Value)')
     plt.show(block=False)
     
     # FIGURE: STANDARD DEVIATIONS OF MONTHLY CLIMATE
@@ -261,9 +279,9 @@ if not skip_extraplots:
                            linewidth=0, antialiased=False, vmin=-2, vmax=2)
     ax.xaxis.set_major_formatter(FormatStrFormatter('%.02f'))
     fig.colorbar(surf, aspect=5)
-    plt.title('Forecasted Precipitation SDs (Z Values)')
+    plt.title('Forecasted Temperature SDs (Z Values)')
     percentile = st.norm.cdf(np.nanmean(forecast_sds)) * 100.0
-    plt.annotate('Precip. Percentile: '+str(round(percentile))+ext+'\nReference: ERA5-Land, 1993-2022',(-12.50,50.00), color='r')
-    print('Precipitation Percentile: '+str(round(percentile))+ext)
+    plt.annotate('Temp. Percentile: '+str(round(percentile))+ext+'\nReference: ERA5-Land, 1993-2022',(-12.50,50.00), color='r')
+    print('Temperature Percentile: '+str(round(percentile))+ext)
     plt.show(block=False)
 
