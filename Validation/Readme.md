@@ -8,7 +8,7 @@
 # 2024 SEASONAL FORECAST REVIEW
 ## RE-CLIMATE® PRECIPITATION OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
-**Spring 'Atlantic Blocking' and Sea Temperature Analysis**
+**Late spring/ early summer 'atlantic blocking' and sea surface temperature analysis**
 
 Blocking Metric | UK Met Office | ECMWF | Météo-France | Combined
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
