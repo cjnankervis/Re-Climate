@@ -8,6 +8,14 @@
 # 2024 SEASONAL FORECAST REVIEW
 ## RE-CLIMATE® PRECIPITATION OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
+**Spring 'Atlantic Blocking' and Sea Temperature Analysis**
+
+Blocking Metric | UK Met Office | ECMWF | Météo-France | Combined
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+NAO Pattern | 8.4 | 6.2 | 9.5 | 8.0 / 10 (extreme block)
+Low-level Jet Stream | 6.7 | 6.6 | 8.0 | 7.1 / 10 (strong block)
+Atlantic SST Anomaly | +0.3°C | -0.3°C | +1.5°C | +0.5°C (above 2024 baseline)
+
 **Winter Analysis, Dec' 2023 to Feb' 2024**
 
 Observations | Statistical Model | Trained NWP Model | Combined Model
