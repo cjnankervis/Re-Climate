@@ -10,7 +10,7 @@
 
 **Late spring/ early summer 'Atlantic blocking' and sea surface temperature analysis**
 
-Blocking Metric | UK Met Office | ECMWF | Météo-France | Combined
+Blocking Metric | UK Met Office | ECMWF | Météo-France | Average
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 NAO Pattern | 8.4 | 6.2 | 9.5 | 8.0 / 10 (extreme block)
 Low-level Jet Stream | 6.7 | 6.6 | 8.0 | 7.1 / 10 (strong block)
