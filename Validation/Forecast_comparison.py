@@ -16,6 +16,7 @@ import scipy.stats as st # To calculate percentile of precipitation
 dist = 'Log-Logistic' # 'Gaussian' or 'Log-Logistic' (Caution: case sensitive)
 skip_extraplots = True
 
+moistening_sd = 0.35
 use_customcolors = True; ukmo_precip = True; ed_hawkins = False; RichHildebrand = False
 scale = np.array([0.85,0.85,0.85])
 '''Set the analysis date'''
@@ -93,7 +94,6 @@ if grib_file:
     import cfgrib
     import xarray as xr
     grib_data = cfgrib.open_datasets(f'./ERA5/ERA5-Land-{month[0:3]}{climate_end}_Prev30Yrs.grib')
-    sys.exit()
     grib_data = xr.merge([grib_data[0], grib_data[1]]); grib_data = grib_data['tp']
     grib_data *= (1000 * days_in_month) # Convert from m to mm and daily to monthly accumulation
     lon = grib_data['longitude']
@@ -188,8 +188,8 @@ ERA5data_month = np.nan_to_num(ERA5data_month); ERA5data_climate = np.nan_to_num
 ERA5data_month[ERA5data_month == 0] = np.nan; ERA5data_climate[ERA5data_climate == 0] = np.nan; ERA5data_sd[ERA5data_sd <= 0] = np.nan
 '''Make sure that comparison arrays allign perfectly'''
 mask = [(~np.isnan(FCSTdata_scipy)) & (~np.isnan(ERA5data_climate))]
-monthly_sds = np.nanmean((ERA5data_month[mask] - ERA5data_climate)) / np.nanmean(ERA5data_sd[mask])
-forecast_sds = np.nanmean((FCSTdata_scipy[mask] - ERA5data_climate)) / np.nanmean(ERA5data_sd[mask])
+monthly_sds = np.nanmean((ERA5data_month[mask] - ERA5data_climate[mask])) / np.nanmean(ERA5data_sd[mask])
+forecast_sds = np.nanmean((FCSTdata_scipy[mask] - ERA5data_climate[mask])) / np.nanmean(ERA5data_sd[mask])
 
 if not skip_extraplots:
     # FIGURE: OBSERVATION
@@ -219,7 +219,7 @@ fig.colorbar(surf, aspect=8, label='Forecast Value (mm)', ticks=optional_levels,
 plt.title(f'Re-Climate Forecast for {month}, {year}\nAccumulated Precipitation/ mm')
 #
 if dist == 'Log-Logistic':
-    percentile = (st.fisk.cdf(np.nanmean(forecast_sds),0.835)+0.35) * 100.0
+    percentile = (st.fisk.cdf(np.nanmean(forecast_sds),0.835)+moistening_sd) * 100.0
 elif dist == 'Gaussian':
     percentile = st.norm.cdf(np.nanmean(forecast_sds)) * 100.0
 #
