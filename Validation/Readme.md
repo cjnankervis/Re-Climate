@@ -28,11 +28,11 @@ Observations | Statistical Model | Trained NWP Model | Combined Model
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_Rainfall_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_Rainfall_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_Rainfall_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/3/2024_3_Rainfall_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/4/2024_4_Rainfall_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/5/2024_5_Rainfall_Anomaly_1991-2020.gif" width="110"/>
 
-**Trained NWP forecast referenced 2009 to 2038**
+**Trained NWP (Re-Climate® forecasts)**
 
-<img src="https://www.re-climate.earth/Winter2024-to-currentMay.png?1" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="925"/>
+<img src="https://www.re-climate.earth/Precip-to-currentJune.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="925"/>
 
-<img src="https://www.re-climate.earth/Re-Climate-Assessment-v5x.png" alt="Seasonal climate prediction performance for precipitation" width="900"/>
+<img src="https://www.re-climate.earth/Re-Climate-Assessment-v6.png" alt="Seasonal climate prediction performance for precipitation" width="900"/>
 
 ## RE-CLIMATE® MEAN TEMPERATURE OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
@@ -48,11 +48,11 @@ Observations | Statistical Model | Trained NWP Model | Combined Model
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_MeanTemp_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_MeanTemp_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_MeanTemp_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_MeanTemp_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/3/2024_3_MeanTemp_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/4/2024_4_MeanTemp_Anomaly_1991-2020.gif" width="110"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/5/2024_5_MeanTemp_Anomaly_1991-2020.gif" width="110"/>
 
-**Combined forecast referenced 2009 to 2038**
+**Statistical (Re-Climate® forecasts)**
 
-<img src="https://www.re-climate.earth/Winter2024_Tmean-to-currentMay.png?1" alt="Winter seasonal temperature outlooks for the United Kingdom" width="925"/>
+<img src="https://www.re-climate.earth/Tmean-to-currentJune.png" alt="Winter seasonal temperature outlooks for the United Kingdom" width="925"/>
 
-<img src="https://www.re-climate.earth/Re-Climate-Assessment-Temperature-v2x.png" alt="Seasonal climate prediction performance for precipitation" width="900"/>
+<img src="https://www.re-climate.earth/Re-Climate-Assessment-Temperature-v6.png" alt="Seasonal climate prediction performance for precipitation" width="900"/>
 
 # PRECIPITATION OUTLOOKS, 1 to 2 MONTHS
 $${\color{red}Drier} &rarr; {\color{blue}Wetter}$$
