@@ -1,5 +1,6 @@
 # SEASONAL CLIMATE FORECAST VALIDATION
 ## No liability accepted.
+## View [Brier Scores](http://www.tinyurl.com/seasonalforecasts), [RMS Error](http://www.tinyurl.com/seasonalforecasts), [Spearman Rank](http://www.tinyurl.com/seasonalforecasts) and [Pearson's Correlation](http://www.tinyurl.com/seasonalforecasts)
 
 ## Open to requests from strategic partners experienced in large language models (LLMs), contract work, technology sale -> [re-climate.earth](https://re-climate.earth)
 
