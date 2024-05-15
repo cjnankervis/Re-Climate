@@ -33,7 +33,7 @@ Observations | Statistical Model | Trained NWP Model | Combined Model
 
 <img src="https://www.re-climate.earth/Precip-to-currentJune.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="925"/>
 
-<img src="https://www.re-climate.earth/Re-Climate-Assessment-v6.png" alt="Seasonal climate prediction performance for precipitation" width="900"/>
+<img src="https://www.re-climate.earth/Re-Climate-Assessment-v6.png?" alt="Seasonal climate prediction performance for precipitation" width="900"/>
 
 ## RE-CLIMATE® MEAN TEMPERATURE OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
@@ -53,7 +53,7 @@ Observations | Statistical Model | Trained NWP Model | Combined Model
 
 <img src="https://www.re-climate.earth/Tmean-to-currentJune.png" alt="Winter seasonal temperature outlooks for the United Kingdom" width="925"/>
 
-<img src="https://www.re-climate.earth/Re-Climate-Assessment-Temperature-v6.png" alt="Seasonal climate prediction performance for precipitation" width="900"/>
+<img src="https://www.re-climate.earth/Re-Climate-Assessment-Temperature-v6.png?" alt="Seasonal climate prediction performance for precipitation" width="900"/>
 
 # PRECIPITATION OUTLOOKS, 1 to 2 MONTHS
 $${\color{red}Drier} &rarr; {\color{blue}Wetter}$$
