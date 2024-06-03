@@ -23,6 +23,12 @@ Observations | Statistical Model | Trained NWP Model | Combined Model
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/16/2024_16_Rainfall_Anomaly_1991-2020.gif" height="150" width="110"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1weatherlogisticsltd.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1COMBINED.png?1" width="180"/>
 
+**Spring Analysis, Mar' 2024 to May' 2024**
+
+Observations | Statistical Model | Trained NWP Model | Combined Model
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/13/2024_13_Rainfall_Anomaly_1991-2020.gif" height="150" width="110"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1weatherlogisticsltd.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1COMBINED.png?1" width="180"/>
+
 **Observations referenced to 1991 to 2020**
 
 &nbsp; &nbsp; Nov' 23 &nbsp; &nbsp; | &nbsp; &nbsp; Dec' 23 &nbsp; &nbsp; | &nbsp; &nbsp; Jan' 24 &nbsp; &nbsp; | &nbsp; &nbsp; Feb' 24 &nbsp; &nbsp; | &nbsp; &nbsp; Mar' 24 &nbsp; &nbsp; | &nbsp; &nbsp; Apr '24 &nbsp; &nbsp; | &nbsp; &nbsp; May 24 &nbsp; &nbsp; | &nbsp; &nbsp; Jun' 24 &nbsp; &nbsp;
@@ -42,6 +48,12 @@ Observations | Statistical Model | Trained NWP Model | Combined Model
 Observations | Statistical Model | Trained NWP Model | Combined Model
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/16/2024_16_MeanTemp_Anomaly_1991-2020.gif" height="150" width="110"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_Temperatureweatherlogisticsltd.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_Temperature.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Winter_2024_1_TemperatureCOMBINED.png?1" width="180"/>
+
+**Spring Analysis, Mar' 2024 to May' 2024**
+
+Observations | Statistical Model | Trained NWP Model | Combined Model
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/13/2024_13_MeanTemp_Anomaly_1991-2020.gif" height="150" width="110"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1_Temperatureweatherlogisticsltd.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1_Temperature.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1_TemperatureCOMBINED.png?1" width="180"/>
 
 **Observations referenced to 1991 to 2020**
 
