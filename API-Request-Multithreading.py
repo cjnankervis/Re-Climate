@@ -64,11 +64,12 @@ if API_CHOICE.lower() in ('rcp-standard', 'rcp-gauges'):
     elif API_CHOICE.lower() == 'rcp-gauges':
         climate_info_path = './Climate_Info-rcpgauges.json'
 elif API_CHOICE.lower() in ('forecast-standard', 'forecast-histories', 'forecast-gauges', 'forecast-gauges-histories'):
-    credential_path = './User_Credentials-forecasts.json'
     # Specifying the Climate info path
     if API_CHOICE.lower() in ('forecast-standard', 'forecast-histories'):
+        credential_path = './User_Credentials-forecasts.json'
         climate_info_path = './Climate_Info-forecasts.json'
     elif API_CHOICE.lower() in ('forecast-gauges', 'forecast-gauges-histories'):
+        credential_path = './User_Credentials-forecastsgauges.json'
         climate_info_path = './Climate_Info-forecastsgauges.json'
 print(f'Reading API credentials from {credential_path} and inputs from {climate_info_path}')
 ###
