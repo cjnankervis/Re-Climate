@@ -37,7 +37,7 @@ Observations | Statistical Model | Trained NWP Model | Combined Model
 
 **Trained NWP (Re-Climate® forecasts)**
 
-<img src="https://www.re-climate.earth/Precip-to-currentJune.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="925"/>
+<img src="https://www.re-climate.earth/Precip-to-currentJuly.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="925"/>
 
 <img src="https://www.re-climate.earth/Re-Climate-Assessment-v7.png?" alt="Seasonal climate prediction performance for precipitation" width="900"/>
 
@@ -63,7 +63,7 @@ Observations | Statistical Model | Trained NWP Model | Combined Model
 
 **Statistical (Re-Climate® forecasts)**
 
-<img src="https://www.re-climate.earth/Tmean-to-currentJune.png" alt="Winter seasonal temperature outlooks for the United Kingdom" width="925"/>
+<img src="https://www.re-climate.earth/Tmean-to-currentJuly.png" alt="Winter seasonal temperature outlooks for the United Kingdom" width="925"/>
 
 <img src="https://www.re-climate.earth/Re-Climate-Assessment-Temperature-v7.png?" alt="Seasonal climate prediction performance for precipitation" width="900"/>
 
