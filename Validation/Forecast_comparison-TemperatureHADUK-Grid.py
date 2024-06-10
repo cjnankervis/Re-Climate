@@ -189,7 +189,7 @@ FCSTdata_scipyX = np.where(~mask2, FCSTdata_scipyX, np.nan)
 mask3 = [(np.isnan(benchmarkFCST_scipyX)) | (benchmarkFCST_scipyX > 40) | (benchmarkFCST_scipyX < -20)][0]
 benchmarkFCST_scipyX = np.where(~mask3, benchmarkFCST_scipyX, np.nan)
 
-# FIGURE: SPEARMAN
+# FIGURE A: SPEARMAN
 fig = plt.figure(figsize=(8.4, 6), dpi=150, facecolor='w')
 # alternatively cmap=cm.terrain_r
 ax = fig.add_axes([0.2, 0.2, 0.7, 0.7])
@@ -220,7 +220,7 @@ plt.annotate('UK-Wide Spearman Rank Corr. '+str(round(np.nanmean(spearman_cor), 
 plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Spearman{output_ext}.png', dpi=150, bbox_inches='tight')
 plt.show(block=False)
 
-# FIGURE: PEARSON
+# FIGURE B: PEARSON
 fig = plt.figure(figsize=(8.4, 6), dpi=150, facecolor='w')
 # alternatively cmap=cm.terrain_r
 ax = fig.add_axes([0.2, 0.2, 0.7, 0.7])
@@ -244,12 +244,12 @@ plt.title('Re-Climate Pearson Corr. for \nMean Daily Mean Temperature')
 # exts = ('th','st','nd','rd','th','th','th','th','th','th')
 # ext = exts[last_digit]
 plt.annotate('Valid: November 2023 to May 2024',(-10.75,59), color='maroon')
-plt.annotate('UK-Wide Pearson Rank Corr. '+str(round(np.nanmean(pearson_cor), 2))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
+plt.annotate('UK-Wide Pearson Corr. '+str(round(np.nanmean(pearson_cor), 2))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
 # Save Plot
 plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Pearson{output_ext}.png', dpi=150, bbox_inches='tight')
 plt.show(block=False)
 
-# FIGURE: RMS ERROR
+# FIGURE C: RMS ERROR
 fig = plt.figure(figsize=(8.4, 6), dpi=150, facecolor='w')
 # alternatively cmap=cm.terrain_r
 ax = fig.add_axes([0.2, 0.2, 0.7, 0.7])
@@ -276,7 +276,7 @@ plt.annotate('UK-Wide RMS Error '+str(round(np.nanmean(rms_error), 2))+'\nRefere
 plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_RMS{output_ext}.png', dpi=150, bbox_inches='tight')
 plt.show(block=False)
 
-# FIGURE: BRIER SCORE
+# FIGURE D: BRIER SCORE
 fig = plt.figure(figsize=(8.4, 6), dpi=150, facecolor='w')
 # alternatively cmap=cm.terrain_r
 ax = fig.add_axes([0.2, 0.2, 0.7, 0.7])

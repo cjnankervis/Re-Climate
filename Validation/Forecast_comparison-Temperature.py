@@ -22,7 +22,7 @@ scale = np.array([0.85,0.85,0.85])
 '''Set the analysis date'''
 grib_file = True; netcdf_file = False
 '''Specify the forecast month and at what lead time'''
-year = '2024'; month = 'April'; month_no = 4; lead = 1 # Specify the forecast month and at what lead time
+year = '2024'; month = 'July'; month_no = 7; lead = 1 # Specify the forecast month and at what lead time
 '''Define end of 31-year climate (reference) period'''
 climate_end = 2020 # Define end of 31-year climate time series
 # climate_ref = 
@@ -119,13 +119,15 @@ for datapath_med in datapath_meds:
     blank        = h6.strip().split()
     
     df = pd.read_csv(datapath_med, header=6, delimiter=' ')
-    raw_data = pd.read_csv(datapath_med, header=6, delimiter=' ').values
     aa = (list(df.keys()))
     if datapath_med == datapath_meds[0]:
+        raw_data = pd.read_csv(datapath_med, header=6, delimiter=' ').values
         npa = np.asarray(aa, dtype=np.float32)
     else:
+        raw_data += pd.read_csv(datapath_med, header=6, delimiter=' ').values
         npa += np.asarray(aa, dtype=np.float32)
     #
+raw_data /= len(datapath_meds)
 npa /= len(datapath_meds)
 #
 data = np.zeros((int(nrows), int(ncols)))

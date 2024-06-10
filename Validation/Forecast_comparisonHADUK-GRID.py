@@ -244,7 +244,7 @@ plt.title('Re-Climate Pearson Corr. for \nTotal Monthly Precipitation')
 # exts = ('th','st','nd','rd','th','th','th','th','th','th')
 # ext = exts[last_digit]
 plt.annotate('Valid: November 2023 to May 2024',(-10.75,59), color='maroon')
-plt.annotate('UK-Wide Pearson Rank Corr. '+str(round(np.nanmean(pearson_cor), 2))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
+plt.annotate('UK-Wide Pearson Corr. '+str(round(np.nanmean(pearson_cor), 2))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
 # Save Plot
 plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Pearson-Precip{output_ext}.png', dpi=150, bbox_inches='tight')
 plt.show(block=False)

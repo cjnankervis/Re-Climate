@@ -16,13 +16,13 @@ import scipy.stats as st # To calculate percentile of precipitation
 dist = 'Log-Logistic' # 'Gaussian' or 'Log-Logistic' (Caution: case sensitive)
 skip_extraplots = True
 
-moistening_sd = 0.35
+moistening_sd = 0.10 # 0.10 is 10% 
 use_customcolors = True; ukmo_precip = True; ed_hawkins = False; RichHildebrand = False
 scale = np.array([0.85,0.85,0.85])
 '''Set the analysis date'''
 grib_file = True; netcdf_file = False
 '''Specify the forecast month and at what lead time'''
-year = '2024'; month = 'April'; month_no = 4; lead = 1 # Specify the forecast month and at what lead time
+year = '2024'; month = 'July'; month_no = 7; lead = 1 # Specify the forecast month and at what lead time
 '''Define end of 31-year climate (reference) period'''
 climate_end = 2022 # Define end of 31-year climate time series
 
@@ -219,7 +219,7 @@ fig.colorbar(surf, aspect=8, label='Forecast Value (mm)', ticks=optional_levels,
 plt.title(f'Re-Climate Forecast for {month}, {year}\nAccumulated Precipitation/ mm')
 #
 if dist == 'Log-Logistic':
-    percentile = (st.fisk.cdf(np.nanmean(forecast_sds),0.835)+moistening_sd) * 100.0
+    percentile = (st.fisk.cdf(np.nanmean(forecast_sds),0.835)+0.25+moistening_sd) * 100.0
 elif dist == 'Gaussian':
     percentile = st.norm.cdf(np.nanmean(forecast_sds)) * 100.0
 #
