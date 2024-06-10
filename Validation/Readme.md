@@ -37,9 +37,9 @@ Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May 24 | Jun' 24 | J
 
 **Trained NWP (Re-Climate® forecasts)**
 
-<img src="https://www.re-climate.earth/Precip-to-currentJuly.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="900"/>
+<img src="https://www.re-climate.earth/Precip-to-currentJuly.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="970"/>
 
-<img src="https://www.re-climate.earth/Re-Climate-Assessment-v8.png?1" alt="Seasonal climate prediction performance for precipitation" width="945"/>
+<img src="https://www.re-climate.earth/Re-Climate-Assessment-v8.png?1" alt="Seasonal climate prediction performance for precipitation" width="996"/>
 
 ## RE-CLIMATE® MEAN TEMPERATURE OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
@@ -63,9 +63,9 @@ Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May 24 | Jun' 24 | J
 
 **Statistical (Re-Climate® forecasts)**
 
-<img src="https://www.re-climate.earth/Tmean-to-currentJuly.png" alt="Winter seasonal temperature outlooks for the United Kingdom" width="900"/>
+<img src="https://www.re-climate.earth/Tmean-to-currentJuly.png" alt="Winter seasonal temperature outlooks for the United Kingdom" width="970"/>
 
-<img src="https://www.re-climate.earth/Re-Climate-Assessment-Temperature-v8.png?1" alt="Seasonal climate prediction performance for precipitation" width="945"/>
+<img src="https://www.re-climate.earth/Re-Climate-Assessment-Temperature-v8.png?1" alt="Seasonal climate prediction performance for precipitation" width="996"/>
 
 # PRECIPITATION OUTLOOKS, 1 to 2 MONTHS
 $${\color{red}Drier} &rarr; {\color{blue}Wetter}$$
