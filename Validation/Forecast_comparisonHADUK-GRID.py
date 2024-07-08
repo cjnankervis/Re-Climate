@@ -30,7 +30,7 @@ scale = np.array([0.85,0.85,0.85])
 '''Set the analysis date'''
 netcdf_file = True
 '''Specify the forecast month and at what lead time'''
-years = ('2023','2023','2024','2024','2024','2024','2024'); months = ('November','December','January','February','March','April','May'); month_nos = (11,12,1,2,3,4,5); leads = (1,1,1,1,1,1,1) # Specify the forecast month and at what lead time
+years = ('2023','2023','2024','2024','2024','2024','2024','2024'); months = ('November','December','January','February','March','April','May','June'); month_nos = (11,12,1,2,3,4,5,6); leads = (1,1,1,1,1,1,1,1) # Specify the forecast month and at what lead time
 climate_end = '2020'
 
 month_names = ('January','February','March','April',
@@ -200,6 +200,9 @@ ax.set_frame_on(False)
 # optional_levels = np.arange(1,20)
 optional_levels = np.arange(-1,1.1,0.1)
 a = xr.DataArray(HADUKdata_monthX[:]-HADUKdata_clim[:], dims=['time', 'x', 'y'])
+HADUKdata_climX[HADUKdata_climX > 1000] = np.nan
+clim = np.zeros((len(month_nos),245,179)); clim[0:len(month_nos),:,:] = HADUKdata_climX[:]; clim[clim > 1000] = np.nan
+a_CLIM = xr.DataArray(clim[:], dims=['time', 'x', 'y'])
 b = xr.DataArray(FCSTdata_scipyX[:]-HADUKdata_clim[:], dims=['time', 'x', 'y'])
 spearman_cor = xs.spearman_r(a, b, dim='time')
 # spearman_cor = scipy.stats.spearmanr(HADUKdata_monthX[:], FCSTdata_scipyX[:], alternative='greater', axis=0)
@@ -214,7 +217,7 @@ plt.title('Re-Climate Spearman Rank Corr. for \nTotal Monthly Precipitation')
 # exts = ('th','st','nd','rd','th','th','th','th','th','th')
 # ext = exts[last_digit]
 ERA5data_month = HADUKdata_month[mask1[0]]; FCSTdata_scipy = FCSTdata_scipy[mask2[0]]
-plt.annotate('Valid: November 2023 to May 2024',(-10.75,59), color='maroon')
+plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
 plt.annotate('UK-Wide Spearman Rank Corr. '+str(round(np.nanmean(spearman_cor), 2))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
 # Save Plot
 plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Spearman-Precip{output_ext}.png', dpi=150, bbox_inches='tight')
@@ -243,7 +246,7 @@ plt.title('Re-Climate Pearson Corr. for \nTotal Monthly Precipitation')
 # last_digit = int(str(round(percentile))[1])
 # exts = ('th','st','nd','rd','th','th','th','th','th','th')
 # ext = exts[last_digit]
-plt.annotate('Valid: November 2023 to May 2024',(-10.75,59), color='maroon')
+plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
 plt.annotate('UK-Wide Pearson Corr. '+str(round(np.nanmean(pearson_cor), 2))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
 # Save Plot
 plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Pearson-Precip{output_ext}.png', dpi=150, bbox_inches='tight')
@@ -259,21 +262,38 @@ ax.set_yticks([])
 ax.set_frame_on(False)
 a = xr.DataArray(HADUKdata_monthX[:], dims=['time', 'x', 'y'])
 b = xr.DataArray(FCSTdata_scipyX[:], dims=['time', 'x', 'y'])
-rms_error = xs.rmse(a, b, dim='time')
+optional_levels = np.arange(0,200,20)
+rms_error = xs.rmse(a, b, dim='time'); rms_errorCLIM = xs.rmse(a_CLIM, b, dim='time')
 surf = ax.contourf(UK_Lon, UK_Lat, np.ma.array(rms_error), rstride=0.25, cstride=0.25, cmap=colors,
-                       linewidth=0, antialiased=False)
+                       linewidth=0, antialiased=False, vmin=0, vmax=200, levels=optional_levels)
+fig.colorbar(surf, aspect=8, label='Root-Mean-Square Error', format="%.02f", fraction=0.25, ticks=optional_levels)
 # lines = ax.contour(UK_Lon, UK_Lat, np.ma.array(FCSTdata_scipy), colors=['black']*len(optional_levels), linewidths=[0.5]*len(optional_levels), alpha=0.5)
 # ax.xaxis.set_major_formatter(FormatStrFormatter('%.01f'))
-fig.colorbar(surf, aspect=8, label='Root-Mean-Square Error', format="%d", fraction=0.25)
 plt.title('Re-Climate RMS Error for \nTotal Monthly Precipitation')
 #
 # last_digit = int(str(round(percentile))[1])
 # exts = ('th','st','nd','rd','th','th','th','th','th','th')
 # ext = exts[last_digit]
-plt.annotate('Valid: November 2023 to May 2024',(-10.75,59), color='maroon')
+plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
 plt.annotate('UK-Wide RMS Error '+str(round(np.nanmean(rms_error)))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
 # Save Plot
 plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_RMS-Precip{output_ext}.png', dpi=150, bbox_inches='tight')
+plt.show(block=False)
+
+### FIGURE Cii: RMS ERROR (Climatology)
+fig = plt.figure(figsize=(8.4, 6), dpi=150, facecolor='w')
+ax = fig.add_axes([0.2, 0.2, 0.7, 0.7])
+ax.set_xticks([])
+ax.set_yticks([])
+ax.set_frame_on(False)
+optional_levels = np.arange(0,200,20)
+surf = ax.contourf(UK_Lon, UK_Lat, np.ma.array(rms_errorCLIM), rstride=0.25, cstride=0.25, cmap=colors,
+                       linewidth=0, antialiased=False, vmin=0, vmax=200, levels=optional_levels)
+fig.colorbar(surf, aspect=8, label='Root-Mean-Square Error', format="%.02f", fraction=0.25, ticks=optional_levels)
+plt.title('Re-Climate RMS Error for \nTotal Monthly Precipitation')
+plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
+plt.annotate('UK-Wide RMS Error '+str(round(np.nanmean(rms_errorCLIM)))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
+plt.savefig('raw_data/Re-ClimateActuals_HADUK_Grid_RMS-Precip_CLIM.png', dpi=150, bbox_inches='tight')
 plt.show(block=False)
 
 # FIGURE D: BRIER SCORE
@@ -324,7 +344,7 @@ plt.title('Re-Climate Brier Score for \nTotal Monthly Precipitation')
 brier_score = np.ma.masked_array(brier_score, mask=z)
 brier_score[brier_score == 0.05] = 0.0
 mean_brier = str(round(np.nanmean(brier_score), 3))
-plt.annotate('UK-Wide Brier Score '+mean_brier+',\nValid: November 2023 to\n         May 2024\nReference: HADUK-Grid',(1000,1000), color='maroon')
+plt.annotate(f'UK-Wide Brier Score '+mean_brier+',\nValid: '+months[0]+' '+years[0]+' to\n         '+months[-1]+' '+years[-1]+'\nReference: HADUK-Grid',(1000,1000), color='maroon')
 # Save Plot
 plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Brier-Precip{output_ext}.png', dpi=150, bbox_inches='tight')
 plt.show(block=False)
