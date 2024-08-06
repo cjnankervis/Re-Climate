@@ -206,7 +206,7 @@ for model_type in range(3):
     clim = np.zeros((len(month_nos),245,179)); clim[0:len(month_nos),:,:] = HADUKdata_climX[:]; clim[clim > 1000] = np.nan
     a_CLIM = xr.DataArray(clim[:], dims=['time', 'x', 'y'])
     b = xr.DataArray(FCSTdata_scipyX[:]-HADUKdata_clim[:], dims=['time', 'x', 'y'])
-    spearman_cor = xs.spearman_r(a-HADUKdata_climX[:], b-HADUKdata_climX[:], dim='time')
+    spearman_cor = xs.spearman_r(a, b, dim='time')
     # spearman_cor = scipy.stats.spearmanr(HADUKdata_monthX[:], FCSTdata_scipyX[:], alternative='greater', axis=0)
     surf = ax.contourf(UK_Lon, UK_Lat, np.ma.array(spearman_cor), rstride=0.25, cstride=0.25, cmap=colors,
                            linewidth=0, antialiased=False, vmin=-1, vmax=1, levels=optional_levels)
