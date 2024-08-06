@@ -213,7 +213,7 @@ for model_type in range(3):
     # lines = ax.contour(UK_Lon, UK_Lat, np.ma.array(FCSTdata_scipy), colors=['black']*len(optional_levels), linewidths=[0.5]*len(optional_levels), alpha=0.5)
     # ax.xaxis.set_major_formatter(FormatStrFormatter('%.01f'))
     fig.colorbar(surf, aspect=8, label='Skill Score', ticks=optional_levels, format="%.02f", fraction=0.25)
-    plt.title('Re-Climate Spearman Rank Corr. for \nMean Daily Mean Temperature')
+    plt.title('Re-Climate Spearman Rank Corr. for \nMonthly Average of Daily Mean Temperature')
     #
     # last_digit = int(str(round(percentile))[1])
     # exts = ('th','st','nd','rd','th','th','th','th','th','th')
@@ -243,7 +243,7 @@ for model_type in range(3):
     # lines = ax.contour(UK_Lon, UK_Lat, np.ma.array(FCSTdata_scipy), colors=['black']*len(optional_levels), linewidths=[0.5]*len(optional_levels), alpha=0.5)
     # ax.xaxis.set_major_formatter(FormatStrFormatter('%.01f'))
     fig.colorbar(surf, aspect=8, label='Skill Score', ticks=optional_levels, format="%.02f", fraction=0.25)
-    plt.title('Re-Climate Pearson Corr. for \nMean Daily Mean Temperature')
+    plt.title('Re-Climate Pearson Corr. for \nMonthly Average of Daily Mean Temperature')
     #
     # last_digit = int(str(round(percentile))[1])
     # exts = ('th','st','nd','rd','th','th','th','th','th','th')
@@ -271,7 +271,7 @@ for model_type in range(3):
     # lines = ax.contour(UK_Lon, UK_Lat, np.ma.array(FCSTdata_scipy), colors=['black']*len(optional_levels), linewidths=[0.5]*len(optional_levels), alpha=0.5)
     # ax.xaxis.set_major_formatter(FormatStrFormatter('%.01f'))
     fig.colorbar(surf, aspect=8, label='Root-Mean-Square Error', format="%.02f", fraction=0.25, ticks=optional_levels)
-    plt.title('Re-Climate RMS Error for \nMean Daily Mean Temperature')
+    plt.title('Re-Climate RMS Error for \nMonthly Average of Daily Mean Temperature')
     #
     # last_digit = int(str(round(percentile))[1])
     # exts = ('th','st','nd','rd','th','th','th','th','th','th')
@@ -292,7 +292,7 @@ for model_type in range(3):
     surf = ax.contourf(UK_Lon, UK_Lat, np.ma.array(rms_errorCLIM), rstride=0.25, cstride=0.25, cmap=colors,
                            linewidth=0, antialiased=False, vmin=0, vmax=5, levels=optional_levels)
     fig.colorbar(surf, aspect=8, label='Root-Mean-Square Error', format="%.02f", fraction=0.25, ticks=optional_levels)
-    plt.title('Re-Climate RMS Error for \nMean Daily Mean Temperature')
+    plt.title('Re-Climate RMS Error for \nMonthly Average of Daily Mean Temperature')
     plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
     plt.annotate('UK-Wide RMS Error '+str(round(np.nanmean(rms_errorCLIM), 2))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
     plt.savefig('raw_data/Re-ClimateActuals_HADUK_Grid_RMS_CLIM.png', dpi=150, bbox_inches='tight')
@@ -337,7 +337,7 @@ for model_type in range(3):
     # lines = ax.contour(UK_Lon, UK_Lat, np.ma.array(FCSTdata_scipy), colors=['black']*len(optional_levels), linewidths=[0.5]*len(optional_levels), alpha=0.5)
     # ax.xaxis.set_major_formatter(FormatStrFormatter('%.01f'))
     fig.colorbar(surf, aspect=8, label='Skill Score (0.0 = Perfect, 0.5 = Climatology)', ticks=optional_levels, format="%.02f", fraction=0.25)
-    plt.title('Re-Climate Brier Score for \nMean Daily Mean Temperature')
+    plt.title('Re-Climate Brier Score for \nMonthly Average of Daily Mean Temperature')
     #
     # last_digit = int(str(round(percentile))[1])
     # exts = ('th','st','nd','rd','th','th','th','th','th','th')
