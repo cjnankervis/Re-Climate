@@ -1,7 +1,7 @@
 # Source: https://www.metoffice.gov.uk/hadobs/hadukgrid/data/download_2023-11.html
 # Climatology: https://data.ceda.ac.uk/badc/ukmo-hadobs/data/insitu/MOHC/HadOBS/HadUK-Grid/v1.2.0.ceda/5km/tas/
 import sys
-import numpy as np 
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from netCDF4 import Dataset
@@ -331,7 +331,7 @@ for model_type in range(3):
     
     UK_LonM, UK_LatM = m(UK_Lon, UK_Lat) # Map projections
     optional_levels = np.arange(0,1.1,0.1)
-    brier_score[(brier_score == 0.0) & (z == False) & (UK_Lon > -5.3) & (UK_Lon < 1.46)] = 0.05
+    brier_score[(brier_score == 0.0) & (z == False) & (UK_Lon > -5.3) & (UK_Lon < 1.6)] = 0.05
     surf = m.contourf(UK_LonM, UK_LatM, brier_score, rstride=0.25, cstride=0.25, cmap=colors,
                            linewidth=0, antialiased=False, vmin=0, vmax=1, levels=optional_levels)
     # lines = ax.contour(UK_Lon, UK_Lat, np.ma.array(FCSTdata_scipy), colors=['black']*len(optional_levels), linewidths=[0.5]*len(optional_levels), alpha=0.5)

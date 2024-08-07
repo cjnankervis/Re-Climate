@@ -332,7 +332,7 @@ for model_type in range(3):
     UK_LonM, UK_LatM = m(UK_Lon, UK_Lat) # Map projections
     optional_levels = np.arange(0,1.1,0.1)
     
-    brier_score[(brier_score == 0.0) & (z == False) & (UK_Lon > -5.3) & (UK_Lon < 1.46)] = 0.05
+    brier_score[(brier_score == 0.0) & (z == False) & (UK_Lon > -5.3) & (UK_Lon < 1.6)] = 0.05
     surf = m.contourf(UK_LonM, UK_LatM, brier_score, rstride=0.25, cstride=0.25, cmap=colors,
                            linewidth=0, antialiased=False, vmin=0, vmax=1, levels=optional_levels)
     # lines = ax.contour(UK_Lon, UK_Lat, np.ma.array(FCSTdata_scipy), colors=['black']*len(optional_levels), linewidths=[0.5]*len(optional_levels), alpha=0.5)
