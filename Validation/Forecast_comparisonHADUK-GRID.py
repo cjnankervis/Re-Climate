@@ -183,7 +183,7 @@ for model_type in range(3):
         HADUKdata_month[HADUKdata_month == 0] = np.nan; HADUKdata_clim[HADUKdata_clim == 0] = np.nan
         HADUKdata_monthX[ind,:,:] = HADUKdata_month[:]; HADUKdata_climX[ind,:,:] = HADUKdata_clim[:]
         
-    '''Make sure that comparison arrays allign perfectly'''
+    '''Make sure that comparison arrays align perfectly'''
     mask1 = [(np.isnan(HADUKdata_monthX)) | (HADUKdata_monthX > 1000) | (HADUKdata_monthX < 0)][0]
     HADUKdata_monthX = np.where(~mask1, HADUKdata_monthX, np.nan)
     mask2 = [(np.isnan(FCSTdata_scipyX)) | (FCSTdata_scipyX > 1000) | (FCSTdata_scipyX < 0)][0]
@@ -204,7 +204,7 @@ for model_type in range(3):
     HADUKdata_climX[HADUKdata_climX > 1000] = np.nan
     clim = np.zeros((len(month_nos),245,179)); clim[0:len(month_nos),:,:] = HADUKdata_climX[:]; clim[clim > 1000] = np.nan
     a = xr.DataArray(HADUKdata_monthX[:]-clim[:], dims=['time', 'x', 'y'])
-    a_CLIM = xr.DataArray(clim[:], dims=['time', 'x', 'y'])
+    b_CLIM = xr.DataArray(HADUKdata_climX[:]-HADUKdata_climX, dims=['time', 'x', 'y'])
     b = xr.DataArray(FCSTdata_scipyX[:]-clim[:], dims=['time', 'x', 'y'])
     spearman_cor = xs.spearman_r(a, b, dim='time')
     # spearman_cor = scipy.stats.spearmanr(HADUKdata_monthX[:], FCSTdata_scipyX[:], alternative='greater', axis=0)
@@ -265,7 +265,7 @@ for model_type in range(3):
     a = xr.DataArray(HADUKdata_monthX[:], dims=['time', 'x', 'y'])
     b = xr.DataArray(FCSTdata_scipyX[:], dims=['time', 'x', 'y'])
     optional_levels = np.arange(0,200,20)
-    rms_error = xs.rmse(a, b, dim='time'); rms_errorCLIM = xs.rmse(a_CLIM, b, dim='time')
+    rms_error = xs.rmse(a, b, dim='time'); rms_errorCLIM = xs.rmse(a, b_CLIM, dim='time')
     surf = ax.contourf(UK_Lon, UK_Lat, np.ma.array(rms_error), rstride=0.25, cstride=0.25, cmap=colors,
                            linewidth=0, antialiased=False, vmin=0, vmax=200, levels=optional_levels)
     fig.colorbar(surf, aspect=8, label='Root-Mean-Square Error', format="%.02f", fraction=0.25, ticks=optional_levels)
@@ -288,7 +288,7 @@ for model_type in range(3):
     ax.set_xticks([])
     ax.set_yticks([])
     ax.set_frame_on(False)
-    optional_levels = np.arange(0,200,20)
+    optional_levels = np.arange(0,320,20)
     surf = ax.contourf(UK_Lon, UK_Lat, np.ma.array(rms_errorCLIM), rstride=0.25, cstride=0.25, cmap=colors,
                            linewidth=0, antialiased=False, vmin=0, vmax=200, levels=optional_levels)
     fig.colorbar(surf, aspect=8, label='Root-Mean-Square Error', format="%.02f", fraction=0.25, ticks=optional_levels)
@@ -346,9 +346,43 @@ for model_type in range(3):
     brier_score = np.ma.masked_array(brier_score, mask=z)
     brier_score[brier_score == 0.05] = 0.0
     mean_brier = str(round(np.nanmean(brier_score), 3))
-    plt.annotate(f'UK-Wide Brier Score '+mean_brier+',\nValid: '+months[0]+' '+years[0]+' to\n         '+months[-1]+' '+years[-1]+'\nReference: HADUK-Grid',(1000,1000), color='maroon')
+    plt.annotate('UK-Wide Brier Score '+mean_brier+',\nValid: '+months[0]+' '+years[0]+' to\n         '+months[-1]+' '+years[-1]+'\nReference: HADUK-Grid',(1000,1000), color='maroon')
     # Save Plot
     plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Brier-Precip{output_ext[model_type]}.png', dpi=150, bbox_inches='tight')
+    plt.show(block=False)
+    
+    # FIGURE Dii: BRIER SCORE (Climatology)
+    fig = plt.figure(figsize=(8.4, 6), dpi=150, facecolor='w')
+    # alternatively cmap=cm.terrain_r
+    ax = fig.add_axes([0.2, 0.2, 0.7, 0.7])
+    # Hide X and Y axes tick marks
+    ax.set_xticks([])
+    ax.set_yticks([])
+    ax.set_frame_on(False)
+    brier_clim = xs.brier_score(a, HADUKdata_climX-HADUKdata_climX, np.linspace(0, 1, 11), dim='time')
+    
+    # Get whether the points are on land.
+    z = globe.is_ocean(UK_Lat, UK_Lon)
+    m = Basemap(llcrnrlon=-15, llcrnrlat=50, urcrnrlon=5, urcrnrlat=60,
+                projection='merc', resolution='i')
+    m.drawstates(linewidth=0.2)
+    m.drawcoastlines(linewidth=0.2)
+    m.drawcountries(linewidth=0.2)
+    
+    brier_clim = np.where(z == False, brier_clim, -9999)
+    
+    UK_LonM, UK_LatM = m(UK_Lon, UK_Lat) # Map projections
+    optional_levels = np.arange(0,1.1,0.1)
+    brier_clim[(brier_clim == 0.0) & (z == False) & (UK_Lon > -5.3) & (UK_Lon < 1.6)] = 0.05
+    surf = m.contourf(UK_LonM, UK_LatM, brier_clim, rstride=0.25, cstride=0.25, cmap=colors,
+                           linewidth=0, antialiased=False, vmin=0, vmax=1, levels=optional_levels)
+    fig.colorbar(surf, aspect=8, label='Skill Score (0.0 = Perfect, 0.5 = Climatology)', ticks=optional_levels, format="%.02f", fraction=0.25)
+    plt.title('Re-Climate Brier Score for \nTotal Monthly Precipitation')
+    brier_clim = np.ma.masked_array(brier_clim, mask=z)
+    brier_clim[brier_clim == 0.05] = 0.0
+    mean_brier = str(round(np.nanmean(brier_clim), 3))
+    plt.annotate('UK-Wide Brier Score '+mean_brier+',\nValid: '+months[0]+' '+years[0]+' to\n         '+months[-1]+' '+years[-1]+'\nReference: HADUK-Grid',(1000,1000), color='maroon')
+    plt.savefig('raw_data/Re-ClimateActuals_HADUK_Grid_Brier-Precip_CLIM.png', dpi=150, bbox_inches='tight')
     plt.show(block=False)
     
     ### ENDS
