@@ -352,39 +352,5 @@ for model_type in range(3):
     plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Brier{output_ext[model_type]}.png', dpi=150, bbox_inches='tight')
     plt.show(block=False)
     
-    # FIGURE Dii: BRIER SCORE (Climatology)
-    fig = plt.figure(figsize=(8.4, 6), dpi=150, facecolor='w')
-    # alternatively cmap=cm.terrain_r
-    ax = fig.add_axes([0.2, 0.2, 0.7, 0.7])
-    # Hide X and Y axes tick marks
-    ax.set_xticks([])
-    ax.set_yticks([])
-    ax.set_frame_on(False)
-    brier_clim = xs.brier_score(a, HADUKdata_climX-HADUKdata_climX, np.linspace(0, 1, 21), dim='time')
-    
-    # Get whether the points are on land.
-    z = globe.is_ocean(UK_Lat, UK_Lon)
-    m = Basemap(llcrnrlon=-15, llcrnrlat=50, urcrnrlon=5, urcrnrlat=60,
-                projection='merc', resolution='i')
-    m.drawstates(linewidth=0.2)
-    m.drawcoastlines(linewidth=0.2)
-    m.drawcountries(linewidth=0.2)
-    
-    brier_clim = np.where(z == False, brier_clim, -9999)
-    
-    UK_LonM, UK_LatM = m(UK_Lon, UK_Lat) # Map projections
-    optional_levels = np.arange(0,1.1,0.1)
-    brier_clim[(brier_clim == 0.0) & (z == False) & (UK_Lon > -5.3) & (UK_Lon < 1.6)] = 0.05
-    surf = m.contourf(UK_LonM, UK_LatM, brier_clim, rstride=0.25, cstride=0.25, cmap=colors,
-                           linewidth=0, antialiased=False, vmin=0, vmax=1, levels=optional_levels)
-    fig.colorbar(surf, aspect=8, label='Skill Score (0.0 = Perfect, 0.5 = Climatology)', ticks=optional_levels, format="%.02f", fraction=0.25)
-    plt.title('Re-Climate Brier Score for \nMonthly Average of Daily Mean Temperature')
-    brier_clim = np.ma.masked_array(brier_clim, mask=z)
-    brier_clim[brier_clim == 0.05] = 0.0
-    mean_brier = str(round(np.nanmean(brier_clim), 3))
-    plt.annotate('UK-Wide Brier Score '+mean_brier+',\nValid: '+months[0]+' '+years[0]+' to\n         '+months[-1]+' '+years[-1]+'\nReference: HADUK-Grid',(1000,1000), color='maroon')
-    plt.savefig('raw_data/Re-ClimateActuals_HADUK_Grid_Brier_CLIM.png', dpi=150, bbox_inches='tight')
-    plt.show(block=False)
-    
     ### ENDS
     
