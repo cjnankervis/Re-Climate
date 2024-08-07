@@ -201,11 +201,11 @@ for model_type in range(3):
     ax.set_frame_on(False)
     # optional_levels = np.arange(1,20)
     optional_levels = np.arange(-1,1.1,0.1)
-    a = xr.DataArray(HADUKdata_monthX[:]-HADUKdata_clim[:], dims=['time', 'x', 'y'])
     HADUKdata_climX[HADUKdata_climX > 1000] = np.nan
     clim = np.zeros((len(month_nos),245,179)); clim[0:len(month_nos),:,:] = HADUKdata_climX[:]; clim[clim > 1000] = np.nan
+    a = xr.DataArray(HADUKdata_monthX[:]-clim[:], dims=['time', 'x', 'y'])
     a_CLIM = xr.DataArray(clim[:], dims=['time', 'x', 'y'])
-    b = xr.DataArray(FCSTdata_scipyX[:]-HADUKdata_clim[:], dims=['time', 'x', 'y'])
+    b = xr.DataArray(FCSTdata_scipyX[:]-clim[:], dims=['time', 'x', 'y'])
     spearman_cor = xs.spearman_r(a, b, dim='time')
     # spearman_cor = scipy.stats.spearmanr(HADUKdata_monthX[:], FCSTdata_scipyX[:], alternative='greater', axis=0)
     surf = ax.contourf(UK_Lon, UK_Lat, np.ma.array(spearman_cor), rstride=0.25, cstride=0.25, cmap=colors,
@@ -235,8 +235,8 @@ for model_type in range(3):
     ax.set_frame_on(False)
     # optional_levels = np.arange(1,20)
     optional_levels = np.arange(-1,1.1,0.1)
-    a = xr.DataArray(HADUKdata_monthX[:]-HADUKdata_clim[:], dims=['time', 'x', 'y'])
-    b = xr.DataArray(FCSTdata_scipyX[:]-HADUKdata_clim[:], dims=['time', 'x', 'y'])
+    a = xr.DataArray(HADUKdata_monthX[:]-clim[:], dims=['time', 'x', 'y'])
+    b = xr.DataArray(FCSTdata_scipyX[:]-clim[:], dims=['time', 'x', 'y'])
     pearson_cor = xs.pearson_r(a, b, dim='time')
     surf = ax.contourf(UK_Lon, UK_Lat, np.ma.array(pearson_cor), rstride=0.25, cstride=0.25, cmap=colors,
                            linewidth=0, antialiased=False, vmin=-1, vmax=1, levels=optional_levels)
@@ -307,8 +307,8 @@ for model_type in range(3):
     ax.set_yticks([])
     ax.set_frame_on(False)
     min_h = np.nanmin(HADUKdata_monthX, axis=0)
-    forecast = FCSTdata_scipyX - HADUKdata_climX
-    observation = HADUKdata_monthX - HADUKdata_climX
+    forecast = FCSTdata_scipyX - clim
+    observation = HADUKdata_monthX - clim
     mask1 = observation > 0 # 1 (Warmer than climate)
     mask2 = observation < 0 # 0 (Cooler than climate)
     observationX = np.where(mask1, observation, 1); observationX = np.where(mask2, observationX, 0)
