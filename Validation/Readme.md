@@ -17,7 +17,7 @@ Low-level Jet Stream | 6.7 | 6.6 | 8.0 | 7.1 / 10 (strong block)
 Atlantic SST Anomaly | +0.3°C | -0.3°C | +1.5°C | +0.5°C (above 2024 baseline)
 
 ## RE-CLIMATE® PRECIPITATION OUTLOOK, MONTH 1 (3 to 8 WEEKS)
-**Winter Analysis, Dec' 2023 to Feb' 2024**
+<!--**Winter Analysis, Dec' 2023 to Feb' 2024**
 
 Observations | Statistical Model | Trained NWP Model | Combined Model
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -27,23 +27,23 @@ Observations | Statistical Model | Trained NWP Model | Combined Model
 
 Observations | Statistical Model | Trained NWP Model | Combined Model
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/13/2024_13_Rainfall_Anomaly_1991-2020.gif" height="150" width="110"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1weatherlogisticsltd.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1COMBINED.png?1" width="180"/>
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/13/2024_13_Rainfall_Anomaly_1991-2020.gif" height="150" width="110"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1weatherlogisticsltd.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1COMBINED.png?1" width="180"/>-->
 
 **Observations referenced to 1991 to 2020**
 
-Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May 24 | Jun' 24 | Jul' 24 
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_Rainfall_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_Rainfall_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_Rainfall_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/3/2024_3_Rainfall_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/4/2024_4_Rainfall_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/5/2024_5_Rainfall_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/6/2024_6_Rainfall_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/7/2024_7_Rainfall_Anomaly_1991-2020.gif" width="80"/>
+Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May 24 | Jun' 24 | Jul' 24 | Aug' 24
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_Rainfall_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_Rainfall_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_Rainfall_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_Rainfall_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/3/2024_3_Rainfall_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/4/2024_4_Rainfall_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/5/2024_5_Rainfall_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/6/2024_6_Rainfall_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/7/2024_7_Rainfall_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/8/2024_8_Rainfall_Anomaly_1991-2020.gif" width="60"/>
 
 **Trained NWP (Re-Climate® forecasts)**
 
-<img src="https://www.re-climate.earth/Precip-to-currentJuly.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="970"/>
+<img src="https://www.re-climate.earth/Precip-to-currentAug.png" alt="Winter seasonal precipitation outlooks for the United Kingdom" width="970"/>
 
-<img src="https://www.re-climate.earth/Re-Climate-Assessment-v10.png?" alt="Seasonal climate prediction performance for precipitation" width="970"/>
+<img src="https://www.re-climate.earth/Re-Climate-Assessment-v11.png?" alt="Seasonal climate prediction performance for precipitation" width="970"/>
 
 ## RE-CLIMATE® MEAN TEMPERATURE OUTLOOK, MONTH 1 (3 to 8 WEEKS)
 
-**Winter Analysis, Dec' 2023 to Feb' 2024**
+<!--**Winter Analysis, Dec' 2023 to Feb' 2024**
 
 Observations | Statistical Model | Trained NWP Model | Combined Model
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -53,23 +53,23 @@ Observations | Statistical Model | Trained NWP Model | Combined Model
 
 Observations | Statistical Model | Trained NWP Model | Combined Model
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/13/2024_13_MeanTemp_Anomaly_1991-2020.gif" height="150" width="110"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1_Temperatureweatherlogisticsltd.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1_Temperature.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1_TemperatureCOMBINED.png?1" width="180"/>
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/13/2024_13_MeanTemp_Anomaly_1991-2020.gif" height="150" width="110"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1_Temperatureweatherlogisticsltd.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1_Temperature.png?1" width="180"/> | <img src="https://www.re-climate.earth/ReClimate_Spring_2024_1_TemperatureCOMBINED.png?1" width="180"/>-->
 
 **Observations referenced to 1991 to 2020**
 
-Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May 24 | Jun' 24 | Jul' 24 
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_MeanTemp_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_MeanTemp_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_MeanTemp_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_MeanTemp_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/3/2024_3_MeanTemp_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/4/2024_4_MeanTemp_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/5/2024_5_MeanTemp_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/6/2024_6_MeanTemp_Anomaly_1991-2020.gif" width="80"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/7/2024_7_MeanTemp_Anomaly_1991-2020.gif" width="80"/>
+Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May 24 | Jun' 24 | Jul' 24 | Aug' 24
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/11/2023_11_MeanTemp_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2023/12/2023_12_MeanTemp_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/1/2024_1_MeanTemp_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/2/2024_2_MeanTemp_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/3/2024_3_MeanTemp_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/4/2024_4_MeanTemp_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/5/2024_5_MeanTemp_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/6/2024_6_MeanTemp_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/7/2024_7_MeanTemp_Anomaly_1991-2020.gif" width="60"/> | <img src="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/anomacts/2024/8/2024_8_MeanTemp_Anomaly_1991-2020.gif" width="60"/>
 
-**Combined Statistical & NWP (Re-Climate® forecasts)**
+<!--**Combined Statistical & NWP (Re-Climate® forecasts)**
 
-<img src="https://www.re-climate.earth/Tmean-to-currentJulyCOMBINED.png" alt="Winter seasonal temperature outlooks for the United Kingdom" width="970"/>
+<img src="https://www.re-climate.earth/Tmean-to-currentAugCOMBINED.png" alt="Winter seasonal temperature outlooks for the United Kingdom" width="970"/>-->
 
 **Statistical (Re-Climate® forecasts)**
 
-<img src="https://www.re-climate.earth/Tmean-to-currentJuly.png" alt="Winter seasonal temperature outlooks for the United Kingdom" width="970"/>
+<img src="https://www.re-climate.earth/Tmean-to-currentAug.png" alt="Winter seasonal temperature outlooks for the United Kingdom" width="970"/>
 
-<img src="https://www.re-climate.earth/Re-Climate-Assessment-Temperature-v10.png?" alt="Seasonal climate prediction performance for precipitation" width="970"/>
+<img src="https://www.re-climate.earth/Re-Climate-Assessment-Temperature-v11.png?" alt="Seasonal climate prediction performance for precipitation" width="970"/>
 
 # PRECIPITATION OUTLOOKS, 1 to 2 MONTHS
 $${\color{red}Drier} &rarr; {\color{blue}Wetter}$$
