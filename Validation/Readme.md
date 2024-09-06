@@ -63,7 +63,7 @@ Nov' 23 | Dec' 23 | Jan' 24 | Feb' 24 | Mar' 24 | Apr '24 | May 24 | Jun' 24 | J
 
 <!--**Combined Statistical & NWP (Re-Climate® forecasts)**
 
-<img src="https://www.re-climate.earth/Tmean-to-currentAugCOMBINED.png" alt="Winter seasonal temperature outlooks for the United Kingdom" width="970"/>-->
+<img src="https://www.re-climate.earth/Tmean-to-currentAugCOMBINED.png?" alt="Winter seasonal temperature outlooks for the United Kingdom" width="970"/>-->
 
 **Statistical (Re-Climate® forecasts)**
 
