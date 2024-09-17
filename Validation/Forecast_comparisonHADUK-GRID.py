@@ -30,7 +30,12 @@ scale = np.array([0.85,0.85,0.85])
 '''Set the analysis date'''
 netcdf_file = True
 '''Specify the forecast month and at what lead time'''
-years = ('2023','2023','2024','2024','2024','2024','2024','2024','2024'); months = ('November','December','January','February','March','April','May','June','July'); month_nos = (11,12,1,2,3,4,5,6,7); leads = (1,1,1,1,1,1,1,1,1) # Specify the forecast month and at what lead time
+### LEAD 1 MONTH
+years = ('2023','2023','2024','2024','2024','2024','2024','2024','2024','2024'); months = ('November','December','January','February','March','April','May','June','July','August'); month_nos = (11,12,1,2,3,4,5,6,7,8); leads = (1,1,1,1,1,1,1,1,1,1) # Specify the forecast month and at what lead time
+### LEAD 2 MONTHS
+## years = ('2023','2024','2024','2024','2024','2024','2024','2024','2024'); months = ('December','January','February','March','April','May','June','July','August'); month_nos = (12,1,2,3,4,5,6,7,8); leads = (2,2,2,2,2,2,2,2,2) # Specify the forecast month and at what lead time
+### SINGLE MONTH
+## years = (['2024']); months = (['August']); month_nos = ([8]); leads = ([1])
 climate_end = '2020'
 
 month_names = ('January','February','March','April',
@@ -118,6 +123,7 @@ for model_type in range(3):
         data = np.zeros((int(nrows), int(ncols)))
         data[0,:] = npa; data[1:,:] = raw_data
         benchmark_data[0,:] = benchmark1; benchmark_data[1:,:] = benchmark2
+        
         # convert BNG easting/ northing --> GPS LON / LAT
         #Define easting and northing initialisation as an array
         incre = float(cellsize[1])
@@ -222,7 +228,7 @@ for model_type in range(3):
     plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
     plt.annotate('UK-Wide Spearman Rank Corr. '+str(round(np.nanmean(spearman_cor), 2))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
     # Save Plot
-    plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Spearman-Precip{output_ext[model_type]}.png', dpi=150, bbox_inches='tight')
+    plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Spearman-Precip{output_ext[model_type]}_{leads[0]}.png', dpi=150, bbox_inches='tight')
     plt.show(block=False)
     
     # FIGURE B: PEARSON
@@ -251,7 +257,7 @@ for model_type in range(3):
     plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
     plt.annotate('UK-Wide Pearson Corr. '+str(round(np.nanmean(pearson_cor), 2))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
     # Save Plot
-    plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Pearson-Precip{output_ext[model_type]}.png', dpi=150, bbox_inches='tight')
+    plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Pearson-Precip{output_ext[model_type]}_{leads[0]}.png', dpi=150, bbox_inches='tight')
     plt.show(block=False)
     
     # FIGURE C: RMS ERROR
@@ -279,7 +285,7 @@ for model_type in range(3):
     plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
     plt.annotate('UK-Wide RMS Error '+str(round(np.nanmean(rms_error)))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
     # Save Plot
-    plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_RMS-Precip{output_ext[model_type]}.png', dpi=150, bbox_inches='tight')
+    plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_RMS-Precip{output_ext[model_type]}_{leads[0]}.png', dpi=150, bbox_inches='tight')
     plt.show(block=False)
     
     ### FIGURE Cii: RMS ERROR (Climatology)
@@ -295,7 +301,7 @@ for model_type in range(3):
     plt.title('Re-Climate RMS Error for \nTotal Monthly Precipitation')
     plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
     plt.annotate('UK-Wide RMS Error '+str(round(np.nanmean(rms_errorCLIM)))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
-    plt.savefig('raw_data/Re-ClimateActuals_HADUK_Grid_RMS-Precip_CLIM.png', dpi=150, bbox_inches='tight')
+    plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_RMS-Precip_CLIM_{leads[0]}.png', dpi=150, bbox_inches='tight')
     plt.show(block=False)
     
     # FIGURE D: BRIER SCORE
@@ -332,7 +338,6 @@ for model_type in range(3):
     UK_LonM, UK_LatM = m(UK_Lon, UK_Lat) # Map projections
     optional_levels = np.arange(0,1.1,0.1)
     
-    brier_score[(brier_score == 0.0) & (z == False) & (UK_Lon > -5.3) & (UK_Lon < 1.6)] = 0.05
     surf = m.contourf(UK_LonM, UK_LatM, brier_score, rstride=0.25, cstride=0.25, cmap=colors,
                            linewidth=0, antialiased=False, vmin=0, vmax=1, levels=optional_levels)
     # lines = ax.contour(UK_Lon, UK_Lat, np.ma.array(FCSTdata_scipy), colors=['black']*len(optional_levels), linewidths=[0.5]*len(optional_levels), alpha=0.5)
@@ -348,7 +353,7 @@ for model_type in range(3):
     mean_brier = str(round(np.nanmean(brier_score), 3))
     plt.annotate('UK-Wide Brier Score '+mean_brier+',\nValid: '+months[0]+' '+years[0]+' to\n         '+months[-1]+' '+years[-1]+'\nReference: HADUK-Grid',(1000,1000), color='maroon')
     # Save Plot
-    plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Brier-Precip{output_ext[model_type]}.png', dpi=150, bbox_inches='tight')
+    plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_Brier-Precip{output_ext[model_type]}_{leads[0]}.png', dpi=150, bbox_inches='tight')
     plt.show(block=False)
     
     ### ENDS
