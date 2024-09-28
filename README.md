@@ -1,22 +1,22 @@
-# The Re-Climate® Project, Seasonal Forecast APIs
+# The Re-Climate® Project, Seasonal Outlook APIs
 ### Complete set of runs for all countries 13th June, 2023
 ## Subsequent Automations: 
-### 10th October/ November/ December 2023, English rain gauge seasonal forecasts for winter 2024
+### 10th October/ November/ December 2023, English rain gauge seasonal outlooks for winter 2024
 ## [Validation Data:](https://github.com/cjnankervis/Re-Climate/tree/main/Validation/Readme.md)
 ### 11th January 2024 to unlimited, United Kingdom fully-automated runs for validation purposes only ('anomaly' and 'monthly-centiles')
 
 ## Open to requests from strategic partners experienced in large language models (LLMs), contract work, technology sale -> [re-climate.earth](https://re-climate.earth)
 
 ### ([Limited Free Access](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs))
-[<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" width="250"/>](https://seasonalforecasts.earth "Reliable Seasonal Climate Forecasts")
+[<img src="https://seasonalforecasts.earth/wp-content/themes/dropX/assets/images/logo.png" width="250"/>](https://seasonalforecasts.earth "Reliable Seasonal Climate Outlooks")
 
-[<img src="https://seasonalforecasts.earth/wp-content/uploads/2023/07/Re-ClimateQuickStart-1.png" alt="Re-Climate Quick Start Visual" width="80%"/>](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Availability for Seasonal Climate Forecasts")
+[<img src="https://seasonalforecasts.earth/wp-content/uploads/2023/07/Re-ClimateQuickStart-1.png" alt="Re-Climate Quick Start Visual" width="80%"/>](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Availability for Seasonal Climate Outlooks")
 
-[*See Example Requests and Limitations*](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Availability for Seasonal Climate Forecasts")
+[*See Example Requests and Limitations*](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Availability for Seasonal Climate Outlooks")
 
 ## Re-Climate® API Products
 
-The Re-Climate® API delivers reliable seasonal climate predictions to operations teams in the agri-food, energy and water utilities, and insurance industries. These forecasts have been independently and impartially assessed by the National Physical Laboratory.
+The Re-Climate® API delivers reliable seasonal climate predictions to operations teams in the agri-food, energy and water utilities, and insurance industries. These climate outlooks have been independently and impartially assessed by the National Physical Laboratory.
 
 The company combines climate and weather models through its algorithms; helping organisations to adapt to near-term climate hazards, calculate their risk exposure and build their resilience accordingly.
 
@@ -32,7 +32,7 @@ Future farmers will be able to build smarter precision farming solutions and ben
 
 ## Climate Data Availability
 
-[<img src="https://seasonalforecasts.earth/wp-content/uploads/2023/07/Re-ClimateDataAvailability-1.png" alt="Re-Climate Near-Term Climate Data Availability" width="80%"/>](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Near-term Climate Data Availability for Seasonal Climate Forecasts and RCP projections")
+[<img src="https://seasonalforecasts.earth/wp-content/uploads/2023/07/Re-ClimateDataAvailability-1.png" alt="Re-Climate Near-Term Climate Data Availability" width="80%"/>](https://github.com/cjnankervis/Re-Climate/tree/main/Example_Requests "Near-term Climate Data Availability for Seasonal Climate Outlooks and RCPs")
 
 ## Requesting API Access
 
@@ -41,14 +41,14 @@ To get started, please request an API authentication key and user credentials fr
 ### Endpoints
 
 To get started with the API request code, first specify the endpoint URL for the relevant Re-Climate® API.
-- **[Re-Climate® Validators](https://seasonalforecasts.earth/docs/pricing/)**, historic seasonal forecasts (except current issue)
-- **[Re-Climate® Standard](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts for towns and cities
-- **[Re-Climate® Gauges](https://seasonalforecasts.earth/docs/pricing/)**, seasonal forecasts at UK rain gauge sites
+- **[Re-Climate® Validators](https://seasonalforecasts.earth/docs/pricing/)**, seasonal outlook histories
+- **[Re-Climate® Standard](https://seasonalforecasts.earth/docs/pricing/)**, seasonal outlooks for cities
+- **[Re-Climate® Gauges](https://seasonalforecasts.earth/docs/pricing/)**, seasonal precipitation outlooks
 - **[Re-Climate® RCP Projections](https://seasonalforecasts.earth/docs/pricing/)**, downloadable for [free](https://github.com/cjnankervis/Re-Climate/tree/main/Free-APIs)
 
 # Features
 
-Independently and impartially assessed by the [National Physical Laboratory](https://www.npl.co.uk/national-challenges/environment), Re-Climate® delivers forecasts of climate perils covering the next 3 months and at a 5 kilometre resolution to prepare for extended weather hazards. For more information on the seasonal climate forecast services please see [WeatherLogistics' Docs](https://re-climate.earth/docs).
+Independently and impartially assessed by the [National Physical Laboratory](https://www.npl.co.uk/national-challenges/environment), Re-Climate® delivers outlooks of climate perils covering the next 3 months and at a 5 kilometre resolution to prepare for extended weather hazards. For more information on the seasonal climate outlook services please see [WeatherLogistics' Docs](https://re-climate.earth/docs).
 
 **The Re-Climate API ...**:
 
@@ -70,24 +70,24 @@ Independently and impartially assessed by the [National Physical Laboratory](htt
 
 ## Validation
 
-WeatherLogistics completed a successful collaboration with the National Physical Laboratory (NPL) in April 2022. As part of its deliverable, NPL validated its short-term climate forecasts and provided a statistical framework for quality assessment of probabilistic weather predictions. WeatherLogistics used these techniques to ensure the reliability of its Re-Climate® APIs.
+WeatherLogistics completed a successful collaboration with the National Physical Laboratory (NPL) in April 2022. As part of its deliverable, NPL validated its short-term climate outlooks and provided a statistical framework for quality assessment of probabilistic weather predictions. WeatherLogistics used these techniques to ensure the reliability of its Re-Climate® APIs.
 
-### Direct Comparisons of Seasonal Forecasts Against Observations
+### Direct Comparisons of Seasonal Outlooks With Observations
 
 NPL's validation report presents a comparison of the predicted frequencies of occurrence of daily precipitation events of different intensities against ERA5-land measurements. Covering 96 UK cities for the years 2018 to 2022, the results summarise the [late winter assessment](https://seasonalforecasts.earth/wp-content/uploads/2022/07/Late-WinterNPL_WL.pdf) from January to March period (lead times of 1 to 3 months) as they would be issued on 10th December.
 
 Similarly, NPL’s report also provided direct comparisons for the [late summer period](https://seasonalforecasts.earth/wp-content/uploads/2022/07/Late-SummerNPL-WL.pdf) as issued on 10th June, which cover the months July to September from 2018 to 2022. For both the winter and summer the results demonstrate a good overall seasonal consistency between observations and WeatherLogistics' retrospective seasonal climate predictions  at the city scale.
 
-## Understanding Seasonal Forecast Requests
+## Understanding Seasonal Outlook Requests
 
 <p style="text-align: center;"><img src="https://re-climate.earth/wp-content/uploads/2023/06/Re-ClimateFeatures.png" alt="Re-Climate Product Features" width="80%"></p>
 
 <sub><b>NWP = Numerical Weather Prediction</b></sub>
 
-## Monthly Forecasts
+## Monthly Outlooks
 **Country-wide ASCII grid provided at a monthly granularity, useful for a big-picture seasonal overview
 
-Monthly centile data supplies users with mapped averages of precipitation in addition to minimum, maximum and average monthly temperatures. At present these are available for the mainland geographical area of the United Kingdom, Spain and Turkey. These ASCII grids present the lower to upper thresholds in the respectively meteorological variables at the 10th, 30th, median (50th), 70th and 90th centile confidence bounds. Since the seasonal climate forecasts provide well-calibrated information, 8 in 10 months are likely to present monthly conditions between the 10th and 90th centiles at any specified geographical location.
+Monthly centile data supplies users with mapped averages of precipitation in addition to minimum, maximum and average monthly temperatures. At present these are available for the mainland geographical area of the United Kingdom, Spain and Turkey. These ASCII grids present the lower to upper thresholds in the respectively meteorological variables at the 10th, 30th, median (50th), 70th and 90th centile confidence bounds. Since the seasonal climate outlooks provide well-calibrated information, 8 in 10 months are likely to present monthly conditions between the 10th and 90th centiles at any specified geographical location.
 
 To request this climate data on a regular 5km grid, see [monthly centile request example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/MonthlyForecasts_example.json). See further [documentation](https://re-climate.earth/docs/gridded-datasets/) and [ASCII formatting](https://re-climate.earth/docs/climate-data-outputs/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
 
@@ -96,7 +96,7 @@ To request this climate data on a regular 5km grid, see [monthly centile request
 
 WeatherLogistics' daily ensembles provide a Quickstart framework to calculate frequencies of occurrence, threshold or centile-based exceedance calculations, consecutive day counts or accumulations; and generate customised metrics.
 
-Ensemble members 1 to 50 are generated using WeatherLogistics' statistical forecast system, while members 51 to 100 are generated using a multi-model average of modified Copernicus Climate Change Service (C3S) [seasonal forecast](https://climate.copernicus.eu/seasonal-forecasts) model data*. Both systems have been developed to achieve the best-on-market accuracy and reliability and have been independently and impartially reviewed by the National Physical Laboratory.
+Ensemble members 1 to 50 are generated using WeatherLogistics' statistical prediction system, while members 51 to 100 are generated using a multi-model average of modified Copernicus Climate Change Service (C3S) [seasonal outlook](https://climate.copernicus.eu/seasonal-forecasts) model data*. Both systems have been developed to achieve the best-on-market accuracy and reliability and have been independently and impartially reviewed by the National Physical Laboratory.
 
 To request this climate data, see [daily ensembles example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/DailyEnsembles_example.json), and its postprocessing scripts provided for [CSV](https://github.com/cjnankervis/Re-Climate/blob/main/CSV_Postprocessing.py) and [JSON](https://github.com/cjnankervis/Re-Climate/blob/main/JSON_Postprocessing.py) inputs. See further [documentation](https://re-climate.earth/docs/daily-time-series/).
 
@@ -113,9 +113,9 @@ Using "CSV_Postproccessing.py" to calculate an ensemble average of consecutive d
 ## Hazard Indices
 **Mapped country-wide town/ city indices, useful for a snapshot overview of acute seasonal climate hazards
 
-Please view more detailed information about [how to interpret seasonal climate forecast hazards](https://github.com/cjnankervis/Re-Climate/blob/main/About-Hazard-Indices.md), which explains: what is meant by forecast reliability, how an ensemble prediction can extend short-term forecasts without breaching mathematical constraints, what is possible from a seasonal precipitation forecast, and how to interpret the seasonal climate forecast hazards. [Forecast graphics](https://github.com/cjnankervis/Re-Climate/blob/main/About-Hazard-Indices.md#graphics-showing-a-worked-example) then show how information is combined from probabilistic forecasts as single value hazard indices.
+Please view more detailed information about [how to interpret seasonal climate outlook hazards](https://github.com/cjnankervis/Re-Climate/blob/main/About-Hazard-Indices.md), which explains: what is meant by forecast reliability, how an ensemble prediction can extend short-term forecasts without breaching mathematical constraints, what is possible from a seasonal precipitation outlook, and how to interpret hazards from seasonal climate outlooks. [Forecast graphics](https://github.com/cjnankervis/Re-Climate/blob/main/About-Hazard-Indices.md#graphics-showing-a-worked-example) then show how information is combined from probabilistic forecasts as single value hazard indices.
 
-Hazard indices are based on a shift-of-the-tail approach that compares daily distribution to a baseline climatology. Climate hazards indices include precipitation, drought, SPI, aridity, heat, cold, hail, minimum and maximum relative humidity, incoming solar radiation and wind speeds. These are scaled from 1 - 9, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatology reference, with 5 indicating the forecast is on par with baseline climate expectations for the current forecast month or season. To request this climate data, see [hazard indices example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/HazardIndices_example.json). See further [documentation](https://re-climate.earth/docs/hazard-indices/).
+Hazard indices are based on a shift-of-the-tail approach that compares daily distribution to a baseline climatology. Climate hazards indices include precipitation, drought, SPI, aridity, heat, cold, hail, minimum and maximum relative humidity, incoming solar radiation and wind speeds. These are scaled from 1 - 9, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatology reference, with 5 indicating the outlook is on par with baseline climate expectations for the current month or season. To request this climate data, see [hazard indices example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/HazardIndices_example.json). See further [documentation](https://re-climate.earth/docs/hazard-indices/).
 
 ### Climatological Hazard References
 | Geography/<br />Country | <sub>Meteorological<br /> Variable</sub> | <sub>Reference<br /> Product</sub> | <sub>Resolution</sub> | <sub>Start Year</sub> | <sub>End Year</sub> | <sub>Reference<br />Midpoint</sub> | <sub>Reference<br /> Documentation</sub> |
@@ -154,7 +154,7 @@ November precipitation anomalies plotted using Re-Climate® data issued on 10th 
 <p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots.png" alt="Extended precipitation forecast for November 2022" width="80%"></p>
 
 ### 90th Centile
-<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots_90th.png" alt="Northeast and Central Scotland flooding, 90th centile of precipitation forecast for November 2022" width="80%"></p>
+<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/ASCII_Plots_90th.png" alt="Northeast and Central Scotland flooding, 90th centile of precipitation outlook for November 2022" width="80%"></p>
 
 ## Daily Quantile  (Q-Q) Plots
 **Access to figures showing town/ city daily weather profiles at quantile (decile) intervals for the upcoming season, ideal for who need a quick snapshot view
@@ -167,7 +167,7 @@ Comparisons between the seasonal profile (centile distributions) of daily temper
 Comparisons between the seasonal profile (centile distributions) of multiple meteorological variables, compared against WeatherLogistics' real-time equivalent model climatology. To request this climate data for a specified town or city, see [graphical summaries example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/GraphicalSummaries_example.json).
 
 Example below (top), showing daily minimum temperatures from all 100 ensemble members for central London for the mid-autumn period. Using the "meteorological_variable": "TMin" option.
-<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/WestminsterSeasonalforecast_MTH3_09-Late-Summer2021_2021TminLondonBoroughsForecast.png" alt="Seasonal climate forecast of minimum temperature for Westminster (London), September 2022" width="80%"></p>
+<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/12/WestminsterSeasonalforecast_MTH3_09-Late-Summer2021_2021TminLondonBoroughsForecast.png" alt="Seasonal outlook of minimum temperature for Westminster (London), September 2022" width="80%"></p>
 
 [Heating Degree Days for energy utility demand management, presented as a 7-day running accumulation of daily temperatures, using the "meteorological_variable": "Gdd" option](https://seasonalforecasts.earth/wp-content/uploads/2022/12/GDD.png)
 
@@ -175,21 +175,21 @@ Example below (top), showing daily minimum temperatures from all 100 ensemble me
 
 ## Additional Examples
 
-Monitoring summer temperature extremes and heatwave extremes, July forecast issued on 10th June 2022
+Monitoring summer temperature extremes and heatwave extremes, July climate outlook issued on 10th June 2022
 
 <p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/TMax_System2.png" alt="July 2022 temperature extremes and heatwave conditions" width="80%"></p>
 
-Monitoring summer precipitation deficits and drought conditions, July forecast issued on 10th June 2022
+Monitoring summer precipitation deficits and drought conditions, July climate outlook issued on 10th June 2022
 
 <p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2022/11/Precip_System2.png" alt="Summer 2022 drought management and heatwave conditions" width="80%"></p>
 
-Volumetric soil moisture content forecast (layer 2, 7cm to 28cm) for May 2023, showing five centiles (10th, 30th, median, 70th and 90th) intervals of the seasonal climate forecast.
+Volumetric soil moisture content outlook (layer 2, 7cm to 28cm) for May 2023, showing five centiles (10th, 30th, median, 70th and 90th) intervals of the seasonal climate outlook.
 
-<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2023/05/Soilmoisture_Forecast.png" alt="Volumetric soil moisture forecast for May 2023" width="80%"></p>
+<p style="text-align: center;"><img src="https://seasonalforecasts.earth/wp-content/uploads/2023/05/Soilmoisture_Forecast.png" alt="Volumetric soil moisture outlook for May 2023" width="80%"></p>
 
 ## About WeatherLogistics®
 
-WeatherLogistics® is an innovative climate technology company with 10-years expertise in improving the value of seasonal climate forecasts for operational use.
+WeatherLogistics® is an innovative climate technology company with 10-years expertise in improving the value of seasonal climate outlooks for operational use.
 
 The company’s successful projects include a European Space Agency kick-start activity. WeatherLogistics® has also undertaken data validation and meteorological product audits for the agricultural industry. Its clients include renewable energy, water management and insurance firms. Delivered through the Google Cloud Platform, its extended precipitation data offers the most detailed information available to support operations teams in Turkey and the UK impacted by drought.
 
