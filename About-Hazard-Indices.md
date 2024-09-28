@@ -1,12 +1,12 @@
-# How to interpret [seasonal climate forecast hazards](https://github.com/cjnankervis/Re-Climate#hazard-indices).
+# How to interpret [hazard data from seasonal climate outlooks](https://github.com/cjnankervis/Re-Climate#hazard-indices).
 
-Seasonal climate forecasts provide probabilistic outlooks. These describe the prevailing weather conditions over the coming months. Understanding and quantifying their uncertainties helps guide decision making processes, with actionable information obtained by weighing up benefits against losses.
+Seasonal climate outlooks provide probabilistic outlooks. These describe the prevailing weather conditions over the coming months. Understanding and quantifying their uncertainties helps guide decision making processes, with actionable information obtained by weighing up benefits against losses.
 
 What a reliable seasonal forecast permits are good estimates of weather event likelihood, though they cannot be used to acquire time-specific knowledge and single value outcomes. For the latter the forecast must be deterministic, wrongly implying little or no uncertainty in the future.
 
 Firstly, it is important to explain four bounds that restrict what is possible from a seasonal forecast.
 
-•	Good reliability in a seasonal climate forecast implies that the event counts are proportional to their respective likelihoods of occurrence, which permits decision making
+•	Good reliability in a seasonal climate outlook implies that the event counts are proportional to their respective likelihoods of occurrence, which permits decision making
 
 •	Extended precipitation forecasts should always be probabilistic in nature, since uncertainty is a natural outcome from mathematical constraints, noting Lorenz’s paper on prediction
 [Edward Norton Lorenz, 1972 American Association for the Advancement of Sciences; 139th meeting](http://eapsweb.mit.edu/research/Lorenz/Butterfly_1972.pdf)
@@ -23,7 +23,7 @@ We quantify the shift-of-the-tail to drier conditions, increasing the index valu
 We define another index to assess the wettest 20% of model runs (‘ensemble’), then compare this statistic to local observations over the same observational history. We can quantify the shift-of-the-tail to wetter daily conditions and increase the Precipitation Index upward for each unit departure toward the upper tail of the precipitation distribution. Figure 3 (bottom) shows an example forecast for this index, noting that analyses should be combined with the Drought Index and Standard Precipitation Index.
 
 ## Standardized Precipitation Index (SPI)
-One measure of precipitation is to accumulate precipitation over the course of the seasonal climate forecast. However, we define an SPI as the median (50th centile) of daily weather simulations. When using a median value as a measure of precipitation the shape of the distribution curve proves especially problematic. The SPI index, combined with our other hydrological indices, can be used to evaluate the predicted skewness of daily precipitation events.
+One measure of precipitation is to accumulate precipitation over the course of the seasonal climate outlook. However, we define an SPI as the median (50th centile) of daily weather simulations. When using a median value as a measure of precipitation the shape of the distribution curve proves especially problematic. The SPI index, combined with our other hydrological indices, can be used to evaluate the predicted skewness of daily precipitation events.
 
 With expert analysis, hazard indices can help support flood and drought operations on seasonal timescales, which is unique offering of the Re-Climate® prediction system. Figure 4 shows an example of SPI mapped onto Environment Agency rainfall gauge sites, which provides additional information to indices presented in Figure 3.
 
@@ -42,7 +42,7 @@ For more information see further parameterization and methodologies in [meteorol
 <sub><b>Figure 2. As in Figure 1, but with a negative skew/ wet event bias. Heavier daily precipitation events are more likely in this example (Precipitation Index > 6), dry periods are less likely (Drought Index < 4), while the median of daily precipitation is more than the monthly climatological average at the same location (SPI > 6).</b></sub>
 
 ## [Analysis of climate hazards](https://github.com/cjnankervis/Re-Climate#hazard-indices).
-With the two indices described above there are four possible seasonal climate hazards scenarios:
+With the two indices described above there are four possible seasonal outlook hazards scenarios:
 
 ### A.	Drought Index > 6, Precipitation Index > 6
 
@@ -65,8 +65,8 @@ Mixed scenario with a wet bias. Extended dry periods are less likely than averag
 <img src="https://re-climate.earth/wp-content/uploads/2023/01/Precip_Index.png" width="70%">
 <img src="https://re-climate.earth/wp-content/uploads/2023/01/Drought_Index.png" width="70%">
 
-<sub><b>Figure 3. Seasonal climate forecasts showing Precipitation Index (80th centile shift-of-the-tail, top) and Drought Index (20th centile shift-of-the-tail, bottom) annotated with analysis of hazards. High hazard scenario (A), Low hazard scenario (B), Mixed scenario with a dry bias (C), Mixed scenario with a wet bias (D).</b></sub>
+<sub><b>Figure 3. Seasonal climate outlooks showing Precipitation Index (80th centile shift-of-the-tail, top) and Drought Index (20th centile shift-of-the-tail, bottom) annotated with analysis of hazards. High hazard scenario (A), Low hazard scenario (B), Mixed scenario with a dry bias (C), Mixed scenario with a wet bias (D).</b></sub>
 
 <img src="https://re-climate.earth/wp-content/uploads/2023/01/SPI_Index.png" width="63%">
 
-<sub><b>Figure 4. Seasonal climate forecasts showing Standardized Precipitation Index (50th centile analysis) for the same month's forecast as Figure 1. The forecast shows that in terms of the central likelihood value for daily precipitation intensity the English Midlands and Northeast England may see more rainy days than usual even though the chances of extreme downpours is reduced (see negative skew in Figure 2). Southeast England on the other hand likely to experience less rainy days and more dry days than average, though according to the Precipitation Index shows a higher-than-average chance of extreme daily precipitation events (indicated in Figure 1). For this region (marked ‘D’ in Figure 3) a positive skew is likely to increase the total accumulated precipitation toward a wetter-than-average season.</b></sub>
+<sub><b>Figure 4. Seasonal climate outlooks showing Standardized Precipitation Index (50th centile analysis) for the same month's forecast as Figure 1. The forecast shows that in terms of the central likelihood value for daily precipitation intensity the English Midlands and Northeast England may see more rainy days than usual even though the chances of extreme downpours is reduced (see negative skew in Figure 2). Southeast England on the other hand likely to experience less rainy days and more dry days than average, though according to the Precipitation Index shows a higher-than-average chance of extreme daily precipitation events (indicated in Figure 1). For this region (marked ‘D’ in Figure 3) a positive skew is likely to increase the total accumulated precipitation toward a wetter-than-average season.</b></sub>
