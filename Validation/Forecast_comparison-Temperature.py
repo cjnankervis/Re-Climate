@@ -13,7 +13,7 @@ from scipy.interpolate import griddata as griddata_scipy
 # from mpl_toolkits.basemap import Basemap, maskoceans # conda install basemap==1.0.7
 import scipy.stats as st # To calculate percentile of temperature
 
-forecasts = ['']
+forecasts = ['','weatherlogisticsltd']
 dist = 'Gaussian' # 'Gaussian' or 'Log-Logistic' (Caution: case sensitive)
 skip_extraplots = True
 
@@ -22,7 +22,7 @@ scale = np.array([0.85,0.85,0.85])
 '''Set the analysis date'''
 grib_file = True; netcdf_file = False
 '''Specify the forecast month and at what lead time'''
-year = '2024'; month = 'August'; month_no = 8; lead = 1 # Specify the forecast month and at what lead time
+year = '2024'; month = 'September'; month_no = 9; lead = 1 # Specify the forecast month and at what lead time
 '''Define end of 31-year climate (reference) period'''
 climate_end = 2020 # Define end of 31-year climate time series
 # climate_ref = 
@@ -240,7 +240,7 @@ elif dist == 'Gaussian':
 anomaly = np.nanmean(forecast_sds)
 #
 # last_digit = int(str(round(percentile))[1])
-# exts = ('th','st','nd','rd','th','th','th','th','th','th')
+# exts = ('st','st','nd','rd','th','th','th','th','th','th')
 # ext = exts[last_digit]
 ERA5data_month = ERA5data_month[mask]; ERA5data_climate = ERA5data_climate[mask]; FCSTdata_scipy = FCSTdata_scipy[mask]
 ext = ' degC'

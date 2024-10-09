@@ -31,11 +31,11 @@ scale = np.array([0.85,0.85,0.85])
 netcdf_file = True
 '''Specify the forecast month and at what lead time'''
 ### LEAD 1 MONTH
-years = ('2023','2023','2024','2024','2024','2024','2024','2024','2024','2024'); months = ('November','December','January','February','March','April','May','June','July','August'); month_nos = (11,12,1,2,3,4,5,6,7,8); leads = (1,1,1,1,1,1,1,1,1,1) # Specify the forecast month and at what lead time
+years = ('2023','2023','2024','2024','2024','2024','2024','2024','2024','2024','2024'); months = ('November','December','January','February','March','April','May','June','July','August','September'); month_nos = (11,12,1,2,3,4,5,6,7,8,9); leads = (1,1,1,1,1,1,1,1,1,1,1) # Specify the forecast month and at what lead time
 ### LEAD 2 MONTHS
-## years = ('2023','2024','2024','2024','2024','2024','2024','2024','2024'); months = ('December','January','February','March','April','May','June','July','August'); month_nos = (12,1,2,3,4,5,6,7,8); leads = (2,2,2,2,2,2,2,2,2) # Specify the forecast month and at what lead time
+## years = ('2023','2024','2024','2024','2024','2024','2024','2024','2024','2024'); months = ('December','January','February','March','April','May','June','July','August','September'); month_nos = (12,1,2,3,4,5,6,7,8,9); leads = (2,2,2,2,2,2,2,2,2,2) # Specify the forecast month and at what lead time
 ### SINGLE MONTH
-## years = (['2024']); months = (['August']); month_nos = ([8]); leads = ([1])
+## years = (['2024']); months = (['September']); month_nos = ([9]); leads = ([1])
 climate_end = '2020'
 
 month_names = ('January','February','March','April',
@@ -221,7 +221,7 @@ for model_type in range(3):
     plt.title('Re-Climate Spearman Rank Corr. for \nMonthly Average of Daily Mean Temperature')
     #
     # last_digit = int(str(round(percentile))[1])
-    # exts = ('th','st','nd','rd','th','th','th','th','th','th')
+    # exts = ('st','st','nd','rd','th','th','th','th','th','th')
     # ext = exts[last_digit]
     ERA5data_month = HADUKdata_month[mask1[0]]; FCSTdata_scipy = FCSTdata_scipy[mask2[0]]
     plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
@@ -252,7 +252,7 @@ for model_type in range(3):
     plt.title('Re-Climate Pearson Corr. for \nMonthly Average of Daily Mean Temperature')
     #
     # last_digit = int(str(round(percentile))[1])
-    # exts = ('th','st','nd','rd','th','th','th','th','th','th')
+    # exts = ('st','st','nd','rd','th','th','th','th','th','th')
     # ext = exts[last_digit]
     plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
     plt.annotate('UK-Wide Pearson Corr. '+str(round(np.nanmean(pearson_cor), 2))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
@@ -280,7 +280,7 @@ for model_type in range(3):
     plt.title('Re-Climate RMS Error for \nMonthly Average of Daily Mean Temperature')
     #
     # last_digit = int(str(round(percentile))[1])
-    # exts = ('th','st','nd','rd','th','th','th','th','th','th')
+    # exts = ('st','st','nd','rd','th','th','th','th','th','th')
     # ext = exts[last_digit]
     plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
     plt.annotate('UK-Wide RMS Error '+str(round(np.nanmean(rms_error), 2))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
@@ -345,7 +345,7 @@ for model_type in range(3):
     plt.title('Re-Climate Brier Score for \nMonthly Average of Daily Mean Temperature')
     #
     # last_digit = int(str(round(percentile))[1])
-    # exts = ('th','st','nd','rd','th','th','th','th','th','th')
+    # exts = ('st','st','nd','rd','th','th','th','th','th','th')
     # ext = exts[last_digit]
     brier_score = np.ma.masked_array(brier_score, mask=z)
     brier_score[brier_score == 0.05] = 0.0

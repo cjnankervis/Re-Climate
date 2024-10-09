@@ -13,6 +13,7 @@ from scipy.interpolate import griddata as griddata_scipy
 # from mpl_toolkits.basemap import Basemap, maskoceans # conda install basemap==1.0.7
 import scipy.stats as st # To calculate percentile of precipitation
 
+forecasts = ['']
 dist = 'Log-Logistic' # 'Gaussian' or 'Log-Logistic' (Caution: case sensitive)
 skip_extraplots = True
 
@@ -22,7 +23,7 @@ scale = np.array([0.85,0.85,0.85])
 '''Set the analysis date'''
 grib_file = True; netcdf_file = False
 '''Specify the forecast month and at what lead time'''
-year = '2024'; month = 'August'; month_no = 8; lead = 1 # Specify the forecast month and at what lead time
+year = '2024'; month = 'September'; month_no = 9; lead = 1 # Specify the forecast month and at what lead time
 '''Define end of 31-year climate (reference) period'''
 climate_end = 2022 # Define end of 31-year climate time series
 
@@ -87,8 +88,11 @@ days_in_month = mthdays(year, month[0:3])[0]
 start_month = ((((month_no-1)-lead) % 12) + 1)
 start_year = str(int(year) - 1) if start_month > month_no else year
 FCST_path = 'raw_data'
-filename_hires = '/ReClimate_'+format('%02d' % start_month)+'_'+start_year+'_'+str(lead)+'_Precipitation-Actuals.asc'
-datapath_med = FCST_path + filename_hires
+
+datapath_meds = []
+for forecast in forecasts:
+    filename_hires = f'/ReClimate_{format("%02d" % start_month)}_{start_year}_{str(lead)}_Precipitation-Actuals{forecast}.asc'
+    datapath_meds.append(FCST_path + filename_hires)
 
 if grib_file:
     import cfgrib
@@ -101,23 +105,32 @@ if grib_file:
     time = grib_data['time']
 
 # Read / define forecast output variables
-file = open(datapath_med, mode='r')
-#Read metadata line-by-line
-h1, h2 = file.readline(), file.readline()     # NCOLS 175    # NROWS 249
-h3, h4 = file.readline(), file.readline()  # XLLCENTER -225160.85671291745  # YLLCENTER 29788.11622501802
-h5 = file.readline()                          # CELLSIZE 5000.0
-h6 = file.readline()                          # NODATA_VALUE -9999
-# define META data for geolocation and grid info
-ddcols, ddrows = h1.strip().split(), h2.strip().split()
-ncols, nrows = float(ddcols[1]), float(ddrows[1])
-xcntr, ycntr = -225160.85671291745, 29788.11622501802
-cellsize     = h5.strip().split() 
-blank        = h6.strip().split()
-
-df = pd.read_csv(datapath_med, header=6, delimiter=' ')
-raw_data = pd.read_csv(datapath_med, header=6, delimiter=' ').values
-aa = (list(df.keys()))
-npa = np.asarray(aa, dtype=np.float32)
+for datapath_med in datapath_meds:
+    file = open(datapath_med, mode='r')
+    # Read metadata line-by-line
+    h1, h2 = file.readline(), file.readline()     # NCOLS 175    # NROWS 249
+    h3, h4 = file.readline(), file.readline()     # XLLCENTER -225160.85671291745  # YLLCENTER 29788.11622501802
+    h5 = file.readline()                          # CELLSIZE 5000.0
+    h6 = file.readline()                          # NODATA_VALUE -9999
+    # define META data for geolocation and grid info
+    ddcols, ddrows = h1.strip().split(), h2.strip().split()
+    ncols, nrows = float(ddcols[1]), float(ddrows[1])
+    xcntr, ycntr = -225160.85671291745, 29788.11622501802
+    cellsize     = h5.strip().split() 
+    blank        = h6.strip().split()
+    
+    df = pd.read_csv(datapath_med, header=6, delimiter=' ')
+    aa = (list(df.keys()))
+    if datapath_med == datapath_meds[0]:
+        raw_data = pd.read_csv(datapath_med, header=6, delimiter=' ').values
+        npa = np.asarray(aa, dtype=np.float32)
+    else:
+        raw_data += pd.read_csv(datapath_med, header=6, delimiter=' ').values
+        npa += np.asarray(aa, dtype=np.float32)
+    #
+raw_data /= len(datapath_meds)
+npa /= len(datapath_meds)
+#
 data = np.zeros((int(nrows), int(ncols)))
 data[0,:] = npa; data[1:,:] = raw_data
 # convert BNG easting/ northing --> GPS LON / LAT
@@ -224,7 +237,7 @@ elif dist == 'Gaussian':
     percentile = st.norm.cdf(np.nanmean(forecast_sds)) * 100.0
 #
 last_digit = int(str(round(percentile))[1])
-exts = ('th','st','nd','rd','th','th','th','th','th','th')
+exts = ('st','st','nd','rd','th','th','th','th','th','th')
 ext = exts[last_digit]
 plt.annotate(f'Valid: 10th {month_names[start_month-1]}, {start_year}',(-10.75,59), color='maroon')
 plt.annotate('UK-Wide Precipitation Percentile: '+str(round(percentile))+ext+'\nReference: ERA5-Land, 1993-2022',(-10.75,59.5), color='maroon')
