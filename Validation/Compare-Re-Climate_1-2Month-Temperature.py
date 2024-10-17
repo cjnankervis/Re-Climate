@@ -20,9 +20,9 @@ import calendar
 
 country = 'UK' # Analysis data is currently available for the UK only
 start_years = ['2024'] # ['2023','2023','2023','2024','2024','2024','2024','2024','2024','2024','2024'] # Forecast initiation years
-start_months = ['09'] # ['10','11','12','01','02','03','04','05','06','07','08','09'] # Forecast start/ valid month
+start_months = ['10'] # ['10','11','12','01','02','03','04','05','06','07','08','09'] # Forecast start/ valid month
 lead_times = [1,2] # Lead month(s)/ extension of forecast from start month e.g. 1 or 2 month forecast
-forecasts = ['weatherlogisticsltd']
+forecasts = ['','weatherlogisticsltd'] # '' C3S multi-model mean, or 'weatherlogisticsltd' statistical, or '','weatherlogisticsltd' combined
 
 for lead_time in lead_times:
     
