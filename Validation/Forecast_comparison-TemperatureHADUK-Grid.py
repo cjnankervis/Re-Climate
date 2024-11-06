@@ -31,11 +31,11 @@ scale = np.array([0.85,0.85,0.85])
 netcdf_file = True
 '''Specify the forecast month and at what lead time'''
 ### LEAD 1 MONTH
-years = ('2023','2023','2024','2024','2024','2024','2024','2024','2024','2024','2024'); months = ('November','December','January','February','March','April','May','June','July','August','September'); month_nos = (11,12,1,2,3,4,5,6,7,8,9); leads = (1,1,1,1,1,1,1,1,1,1,1) # Specify the forecast month and at what lead time
+years = ('2023','2023','2024','2024','2024','2024','2024','2024','2024','2024','2024','2024'); months = ('November','December','January','February','March','April','May','June','July','August','September','October'); month_nos = (11,12,1,2,3,4,5,6,7,8,9,10); leads = (1,1,1,1,1,1,1,1,1,1,1,1) # Specify the forecast month and at what lead time
 ### LEAD 2 MONTHS
-## years = ('2023','2024','2024','2024','2024','2024','2024','2024','2024','2024'); months = ('December','January','February','March','April','May','June','July','August','September'); month_nos = (12,1,2,3,4,5,6,7,8,9); leads = (2,2,2,2,2,2,2,2,2,2) # Specify the forecast month and at what lead time
+## years = ('2023','2024','2024','2024','2024','2024','2024','2024','2024','2024','2024'); months = ('December','January','February','March','April','May','June','July','August','September','October'); month_nos = (12,1,2,3,4,5,6,7,8,9,10); leads = (2,2,2,2,2,2,2,2,2,2,2) # Specify the forecast month and at what lead time
 ### SINGLE MONTH
-## years = (['2024']); months = (['September']); month_nos = ([9]); leads = ([1])
+## years = (['2024']); months = (['October']); month_nos = ([10]); leads = ([1])
 climate_end = '2020'
 
 month_names = ('January','February','March','April',
