@@ -22,10 +22,9 @@ scale = np.array([0.85,0.85,0.85])
 '''Set the analysis date'''
 grib_file = True; netcdf_file = False
 '''Specify the forecast month and at what lead time'''
-year = '2024'; month = 'September'; month_no = 9; lead = 1 # Specify the forecast month and at what lead time
+year = '2024'; month = 'October'; month_no = 10; lead = 1 # Specify the forecast month and at what lead time
 '''Define end of 31-year climate (reference) period'''
 climate_end = 2020 # Define end of 31-year climate time series
-# climate_ref = 
 
 month_names = ('January','February','March','April',
                'May','June','July','August',
