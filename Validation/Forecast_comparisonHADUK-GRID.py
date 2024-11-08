@@ -283,7 +283,7 @@ for model_type in range(3):
     # exts = ('st','st','nd','rd','th','th','th','th','th','th')
     # ext = exts[last_digit]
     plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
-    plt.annotate('UK-Wide RMS Error '+str(round(np.nanmean(rms_error)))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
+    plt.annotate('UK-Wide RMS Error '+str(round(np.nanmean(rms_error), 1))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
     # Save Plot
     plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_RMS-Precip{output_ext[model_type]}_{leads[0]}.png', dpi=150, bbox_inches='tight')
     plt.show(block=False)
@@ -300,7 +300,7 @@ for model_type in range(3):
     fig.colorbar(surf, aspect=8, label='Root-Mean-Square Error', format="%.02f", fraction=0.25, ticks=optional_levels)
     plt.title('Re-Climate RMS Error for \nTotal Monthly Precipitation')
     plt.annotate(f'Valid: {months[0]} {years[0]} to {months[-1]} {years[-1]}',(-10.75,59), color='maroon')
-    plt.annotate('UK-Wide RMS Error '+str(round(np.nanmean(rms_errorCLIM)))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
+    plt.annotate('UK-Wide RMS Error '+str(round(np.nanmean(rms_errorCLIM), 1))+'\nReference: HADUK-Grid',(-10.75,59.5), color='maroon')
     plt.savefig(f'raw_data/Re-ClimateActuals_HADUK_Grid_RMS-Precip_CLIM_{leads[0]}.png', dpi=150, bbox_inches='tight')
     plt.show(block=False)
     
