@@ -20,7 +20,7 @@ The Re-Climate® API delivers reliable seasonal climate predictions to operation
 
 The company combines climate and weather models through its algorithms; helping organisations to adapt to near-term climate hazards, calculate their risk exposure and build their resilience accordingly.
 
-Modelling seasonal weather extremes assists decision-makers communicate losses linked to floods, drought, wind damage, hail, heatwaves or freeze days to within a few kilometres.
+Modelling seasonal weather extremes assists decision-makers communicate losses linked to floods, drought, heatwaves or freeze days to within a few kilometres.
 
 Supplied as an 'ensemble', a collection of well-calibrated daily weather time series, Re-Climate® enables firms to better hedge or price their risk. Re-Climate® also helps clients adapt to acute physical risks posed by extreme weather events such as heatwaves and floods, develop rigorous scenario plans, and protect assets from acute climate hazards on operational timescales.
 
