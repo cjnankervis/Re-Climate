@@ -16,19 +16,19 @@
 
 ## Re-Climate® API Products
 
-The Re-Climate® API delivers reliable seasonal climate predictions to operations teams in the agri-food, energy and water utilities, and insurance industries. These climate outlooks have been independently and impartially assessed by the National Physical Laboratory.
+The Re-Climate® API delivers reliable seasonal climate predictions to operations teams such as the agri-food, energy and water utilities, and insurance industries. These climate outlooks have been independently and impartially assessed by the National Physical Laboratory.
 
 The company combines climate and weather models through its algorithms; helping organisations to adapt to near-term climate hazards, calculate their risk exposure and build their resilience accordingly.
 
-Modelling seasonal weather extremes assists decision-makers communicate losses linked to floods, drought, heatwaves or freeze days to within a few kilometres.
+Assists decision-makers communicate losses linked to pluvial flood, drought, heatwave or freeze days at high resolution (5-kilometre scale).
 
-Supplied as an 'ensemble', a collection of well-calibrated daily weather time series, Re-Climate® enables firms to better hedge or price their risk. Re-Climate® also helps clients adapt to acute physical risks posed by extreme weather events such as heatwaves and floods, develop rigorous scenario plans, and protect assets from acute climate hazards on operational timescales.
+Supplied as an 'ensemble', a collection of well-calibrated daily weather time series, Re-Climate® enables firms to better hedge or price their risk. Re-Climate® also helps clients adapt to acute physical climate risks including extreme weather events, develop robust scenario plans, and protect assets accordingly.
 
 ### Supporting Sustainable Agriculture
 
-WeatherLogistics has a mission to help meet UN Sustainable Development Goals (SDGs) for food, water and natural resources. Currently the firm is developing a sustainability monitoring platform to advise farmers on their present and future climate exposure and how to reduce both their agricultural inputs and reduce greenhouse gas emissions. This forms part of a 12-month project in partnership with the University of Leicester, the University of Reading and supported and funded by UKRI/ STFC.
+WeatherLogistics has a mission to help meet UN Sustainable Development Goals (SDGs) for food, water and natural resources. In 2023 the firm supported the development of a sustainability monitoring platform to advise farmers on their present and future climate exposure, reduce their agricultural inputs, and reduce greenhouse gas emissions. This formed part of a 12-month project in partnership with the University of Leicester, the University of Reading and supported and funded by UKRI/ STFC.
 
-Future farmers will be able to build smarter precision farming solutions and benchmarking platforms, integrated pest management systems, and decision-support applications to avoid food supply distribution. Growers can also optimise their operations with better timed preventative spraying, frost protection, and crop quality assurance.
+Re-Climate will help future farmers to build smarter precision farming solutions and benchmarking platforms, integrated pest management systems, and decision-support applications to avoid food supply distribution. Growers can also optimise their operations with better timed preventative spraying, frost protection, and crop quality assurance.
 
 ## Climate Data Availability
 
@@ -54,23 +54,23 @@ Independently and impartially assessed by the [National Physical Laboratory](htt
 
 - Builds on 9-years of R&D in seasonal climate prediction science
 - Combines state-of-the-art models with statistical post-processing
-- Simulates daily precipitation event generation to manage local flood/ drought
+- Simulates daily precipitation event generation to manage local flood/ drought hazards
 - Delivers reliable weather hazard analytics to assess daily events
-- Extends deterministic weather predictions from 2 to 15 weeks
+- Seemlessly extends deterministic weather predictions into a well-calibrated 15-week ensemble
 - Provides access for historical start dates from month: '03', year: '2023'
 - Updates climate hazard information on the 11th day of each month
 
-### Bounding Box Restrictions
+### Bounding Box Limitations
 
 - UK: 49.84° to 60.85° North, -10.7° to 2.69° East
 - Spain: 35.71° to 44.17° North, -9.67° to 3.67° East
 - Turkey: 35.82° to 42.14° North, 26.04° to 44.79° East
 
-*USA is in our future development pipeline, expanding to other geographies
+*No more future geographical expansion is in the pipeline
 
 ## Validation
 
-WeatherLogistics completed a successful collaboration with the National Physical Laboratory (NPL) in April 2022. As part of its deliverable, NPL validated its short-term climate outlooks and provided a statistical framework for quality assessment of probabilistic weather predictions. WeatherLogistics used these techniques to ensure the reliability of its Re-Climate® APIs.
+WeatherLogistics completed a successful collaboration with the National Physical Laboratory (NPL) in April 2022. As part of its deliverable, NPL validated its short-term climate outlooks and provided a statistical framework for quality assessment of probabilistic weather predictions.
 
 ### Direct Comparisons of Seasonal Outlooks With Observations
 
@@ -92,16 +92,16 @@ Monthly centile data supplies users with mapped averages of precipitation in add
 To request this climate data on a regular 5km grid, see [monthly centile request example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/MonthlyForecasts_example.json). See further [documentation](https://re-climate.earth/docs/gridded-datasets/) and [ASCII formatting](https://re-climate.earth/docs/climate-data-outputs/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
 
 ## Daily Ensembles
-**Unique access to 100 daily simulations at the town/ city level, ideal for those with assets at specified locations
+**Localised daily simulations at the town/ city/ rain gauge level, ideal for those with assets at specified locations
 
-WeatherLogistics' daily ensembles provide a Quickstart framework to calculate frequencies of occurrence, threshold or centile-based exceedance calculations, consecutive day counts or accumulations; and generate customised metrics.
+WeatherLogistics' daily ensembles provides Quickstart scripts to help calculate frequencies of occurrence, threshold or centile-based exceedance calculations, consecutive day counts or accumulations; and generate customised metrics.
 
-Ensemble members 1 to 50 are generated using WeatherLogistics' statistical prediction system, while members 51 to 100 are generated using a multi-model average of modified Copernicus Climate Change Service (C3S) [seasonal outlook](https://climate.copernicus.eu/seasonal-forecasts) model data*. Both systems have been developed to achieve the best-on-market accuracy and reliability and have been independently and impartially reviewed by the National Physical Laboratory.
+Ensemble members 1 to 50 are generated using WeatherLogistics' statistical prediction system, while members 51 to 100 are generated using a multi-model average of modified Copernicus Climate Change Service (C3S) [seasonal outlook](https://climate.copernicus.eu/seasonal-forecasts) model data*. Both systems have been independently validated.
 
 To request this climate data, see [daily ensembles example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/DailyEnsembles_example.json), and its postprocessing scripts provided for [CSV](https://github.com/cjnankervis/Re-Climate/blob/main/CSV_Postprocessing.py) and [JSON](https://github.com/cjnankervis/Re-Climate/blob/main/JSON_Postprocessing.py) inputs. See further [documentation](https://re-climate.earth/docs/daily-time-series/).
 
 ### Example A.
-Using "JSON_Postprocessing.py" to calculate the 90th centile of ensemble members with consecutive dry days, where 24-hour accumulated precipitation is less than 1mm
+Using "JSON_Postprocessing.py" to calculate the 90th centile of ensemble members with consecutive dry days, where 24-hour accumulated precipitation is less than 1 mm
 
 <code>Mean consecutive days with an event intensity equal to or below 1.0 is 13.67, which is based on analysis of 50 ensemble members and 31 days in July</code>
 
@@ -113,7 +113,7 @@ Using "CSV_Postproccessing.py" to calculate an ensemble average of consecutive d
 ## Hazard Indices
 **Mapped country-wide town/ city indices, useful for a snapshot overview of acute seasonal climate hazards
 
-Please view more detailed information about [how to interpret seasonal climate outlook hazards](https://github.com/cjnankervis/Re-Climate/blob/main/About-Hazard-Indices.md), which explains: what is meant by forecast reliability, how an ensemble prediction can extend short-term forecasts without breaching mathematical constraints, what is possible from a seasonal precipitation outlook, and how to interpret hazards from seasonal climate outlooks. [Forecast graphics](https://github.com/cjnankervis/Re-Climate/blob/main/About-Hazard-Indices.md#graphics-showing-a-worked-example) then show how information is combined from probabilistic forecasts as single value hazard indices.
+Please view more detailed information about [how to interpret seasonal climate outlook hazards](https://github.com/cjnankervis/Re-Climate/blob/main/About-Hazard-Indices.md), which explains: what is meant by forecast reliability, how an ensemble prediction can extend short-term forecasts without breaching mathematical constraints, what is possible from a seasonal precipitation outlook, and how to interpret hazards from seasonal climate outlooks. [Forecast graphics](https://github.com/cjnankervis/Re-Climate/blob/main/About-Hazard-Indices.md#graphics-showing-a-worked-example) show how probabilistic forecasts are combined into a single hazard index.
 
 Hazard indices are based on a shift-of-the-tail approach that compares daily distribution to a baseline climatology. Climate hazards indices include precipitation, drought, SPI, aridity, heat, cold, hail, minimum and maximum relative humidity, incoming solar radiation and wind speeds. These are scaled from 1 - 9, with the extremes in the index indicating probability shifted by 4 deciles below or above its local climatology reference, with 5 indicating the outlook is on par with baseline climate expectations for the current month or season. To request this climate data, see [hazard indices example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/HazardIndices_example.json). See further [documentation](https://re-climate.earth/docs/hazard-indices/).
 
@@ -124,7 +124,7 @@ Hazard indices are based on a shift-of-the-tail approach that compares daily dis
 | ALL GEOGRAPHIES | heat, cold, hail, minimum and maximum humidity, incoming solar radiation and wind speeds | ECMWF ReAnalysis v5 | 31km | 1981 | 2019 | 2000 | [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels)
 
 ## Departures (Anomalies)
-**Country-wide ASCII grid/ town or city CSV provided at a monthly granularity; a departure forecast useful for a big-picture seasonal overview
+**Country-wide ASCII grid/ town or city CSV provided at a monthly granularity; geospatial spatial maps for a big-picture seasonal forecast overview
 
 Like the monthly forecasts request, anomalies provide a country-wide mapped overview of departures from a **climatological average** to assess whether the seasonal forecast period is likely to be warmer/ cooler or wetter/ drier than the average monthly conditions over the most recent years. To request this climate data on a regular 5km grid, see [anomalies example input](https://github.com/cjnankervis/Re-Climate/blob/main/Example_Requests/Anomalies_example.json). See further [documentation](https://re-climate.earth/docs/gridded-datasets/). To visualise ASCII output data please see [Visualise_ASCII.py](https://github.com/cjnankervis/Re-Climate/blob/main/Visualise_ASCII.py).
 
@@ -191,7 +191,7 @@ Volumetric soil moisture content outlook (layer 2, 7cm to 28cm) for May 2023, sh
 
 WeatherLogistics® is an innovative climate technology company with 10-years expertise in improving the value of seasonal climate outlooks for operational use.
 
-The company’s successful projects include a European Space Agency kick-start activity. WeatherLogistics® has also undertaken data validation and meteorological product audits for the agricultural industry. Its clients include renewable energy, water management and insurance firms. Delivered through the Google Cloud Platform, its extended precipitation data offers the most detailed information available to support operations teams in Turkey and the UK impacted by drought.
+The company’s successful projects include a European Space Agency kick-start activity. WeatherLogistics® also undertook data validation and meteorological product audits for the agricultural industry. Its clients included a renewable energy firm, water management and insurance firms. Delivered through the Google Cloud Platform, its extended precipitation data offers the most detailed information available to support operations teams in Turkey and the UK impacted by drought.
 
 WeatherLogistics' codebase has been verified by the [Science & Technology Facilities Council](https://www.ukri.org/news-and-events/responding-to-climate-change/predicting-and-managing-climate-risks/flexible-and-scalable-solutions-for-climate-smart-forecasting/) and its results validated by [data specialists at Agrimetrics](https://agrimetrics.co.uk/2020/06/03/seasonal-climate-forecasts-for-agriculture/). [Independent and impartial validation](https://github.com/cjnankervis/Re-Climate#validation) was also undertaken by NPL funded through [UKRI/ A4I programme]((https://www.npl.co.uk/national-challenges/environment)). WeatherLogistics also helped initiate and sponsor [Yield21 ‘Predict Our Harvest’](https://www.agrimetrics.co.uk/news/uk-2021-wheat-yield-prediction) and is also a [UKRI/ NERC project partner for Seasonal Weather Prediction](https://gtr.ukri.org/project/C31D56B3-9A23-4AD9-BD85-752248E3D09F).
 
